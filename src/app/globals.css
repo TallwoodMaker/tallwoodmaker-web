@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-inter), "Inter", sans-serif;
+
+  --color-cream: oklch(0.98 0.006 60);
+  --color-ink: oklch(0.22 0.012 60);
+  --color-ink-muted: oklch(0.48 0.012 60);
+  --color-ink-muted-2: oklch(0.4 0.02 60);
+  --color-ink-soft: oklch(0.32 0.012 60);
+  --color-border: oklch(0.87 0.01 60);
+  --color-brand: #f5d142;
+  --color-link: oklch(0.53 0.1 25);
+  --color-link-hover: oklch(0.46 0.1 25);
+}
+
+/* Site grid: shared max-width + fluid horizontal gutters used by every section. */
+@utility container-page {
+  margin-inline: auto;
+  max-width: 1400px;
+}
+@utility section-px {
+  padding-inline: clamp(24px, 5vw, 64px);
+}
+@utility section-py {
+  padding-block: clamp(24px, 5vw, 64px);
+}
+
+/*
+ * Layered (not left bare) so Tailwind utility classes like `text-ink` or
+ * `text-black` can override these defaults: unlayered CSS always beats
+ * layered CSS in the cascade regardless of selector specificity, so a bare
+ * `a { color }` here would win over every color utility applied to a link.
+ */
+@layer base {
+  body {
+    background: var(--color-cream);
+    color: var(--color-ink);
+  }
+
+  a {
+    color: var(--color-link);
+    text-decoration: none;
+  }
+  a:hover {
+    color: var(--color-link-hover);
+  }
+}
