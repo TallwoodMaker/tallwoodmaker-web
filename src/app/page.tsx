@@ -69,8 +69,8 @@ export default function HomePage() {
         </div>
         <div className="relative aspect-[4/5] w-full overflow-hidden rounded-md border border-border">
           <Image
-            src="/images/workshop/workshop-10.jpg"
-            alt="Wide view of the TallWoodMaker workshop with a panel saw and spindle moulder"
+            src="/images/workshop/hero-panelsaw-centered.jpg"
+            alt="Tom, TallWoodMaker, at the panel saw with a wood board"
             fill
             priority
             className="object-cover"
@@ -86,8 +86,14 @@ export default function HomePage() {
       </section>
 
       <section className="container-page section-px section-py grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] items-center gap-14">
-        <div className="aspect-square w-full max-w-[400px]">
-          <ImageSlot placeholder="portrait photo" className="h-full w-full" />
+        <div className="relative aspect-square w-full max-w-[400px] overflow-hidden rounded-md border border-border">
+          <Image
+            src="/images/workshop/hero-centered.jpg"
+            alt="Tom, TallWoodMaker, holding a saw blade in the workshop"
+            fill
+            className="object-cover"
+            sizes="(max-width: 768px) 100vw, 400px"
+          />
         </div>
         <div>
           <h2 className="mb-4 inline-block bg-brand px-3.5 py-1 text-[28px] font-bold">

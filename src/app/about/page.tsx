@@ -103,8 +103,8 @@ export default async function AboutPage() {
         </div>
         <div className="relative aspect-[4/5] w-full overflow-hidden rounded-md border border-border">
           <Image
-            src="/images/workshop/workshop-4.jpg"
-            alt="Tom, TallWoodMaker, at the panel saw in the workshop"
+            src="/images/workshop/hero-centered.jpg"
+            alt="Tom, TallWoodMaker, holding a saw blade in the workshop"
             fill
             className="object-cover"
             sizes="(max-width: 768px) 100vw, 50vw"
