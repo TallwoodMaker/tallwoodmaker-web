@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { notFound } from "next/navigation";
 import ImageSlot from "@/components/ImageSlot";
+import { COURSE_ENABLED } from "@/lib/config";
 
 export const metadata: Metadata = {
   title: "Online Course",
@@ -30,6 +32,10 @@ const CURRICULUM = [
 ];
 
 export default function CoursePage() {
+  if (!COURSE_ENABLED) {
+    notFound();
+  }
+
   return (
     <>
       <section className="container-page section-px section-py grid grid-cols-[repeat(auto-fit,minmax(340px,1fr))] items-center gap-14">

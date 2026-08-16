@@ -1,15 +1,23 @@
+import { SHOP_ENABLED, COURSE_ENABLED } from "@/lib/config";
+
 export type NavLink = {
   href: string;
   label: string;
 };
 
-export const NAV_LINKS: NavLink[] = [
+const ALL_NAV_LINKS: NavLink[] = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About" },
-  { href: "/gallery", label: "Gallery" },
-  { href: "/video", label: "Video" },
   { href: "/course", label: "Course" },
   { href: "/collaborate", label: "Collaborate" },
+  { href: "/benefits", label: "Benefits" },
   { href: "/shop", label: "Shop" },
+  { href: "/premium", label: "Premium" },
   { href: "/contact", label: "Contact" },
 ];
+
+export const NAV_LINKS: NavLink[] = ALL_NAV_LINKS.filter((link) => {
+  if (link.href === "/shop") return SHOP_ENABLED;
+  if (link.href === "/course") return COURSE_ENABLED;
+  return true;
+});

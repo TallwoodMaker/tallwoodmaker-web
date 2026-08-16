@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
+import { notFound } from "next/navigation";
 import ImageSlot from "@/components/ImageSlot";
+import { SHOP_ENABLED } from "@/lib/config";
 
 export const metadata: Metadata = {
   title: "Shop",
@@ -17,6 +19,10 @@ const PRODUCTS = [
 ];
 
 export default function ShopPage() {
+  if (!SHOP_ENABLED) {
+    notFound();
+  }
+
   return (
     <>
       <div className="h-2 bg-brand" />

@@ -3,8 +3,8 @@ import Link from "next/link";
 type PromoBannerProps = {
   title: string;
   description: string;
-  linkHref: string;
-  linkLabel: string;
+  linkHref?: string;
+  linkLabel?: string;
 };
 
 export default function PromoBanner({
@@ -20,9 +20,11 @@ export default function PromoBanner({
           <h2 className="mb-2 text-[28px] font-bold">{title}</h2>
           <p className="m-0 text-base text-ink-muted-2">{description}</p>
         </div>
-        <Link href={linkHref} className="text-[15px] font-semibold">
-          {linkLabel}
-        </Link>
+        {linkHref && linkLabel && (
+          <Link href={linkHref} className="text-[15px] font-semibold">
+            {linkLabel}
+          </Link>
+        )}
       </div>
     </div>
   );
