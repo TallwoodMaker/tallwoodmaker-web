@@ -19,7 +19,8 @@ export async function joinWaitlist(
 
   try {
     await addToWaitlist(email);
-  } catch {
+  } catch (error) {
+    console.error("Failed to join waitlist:", error);
     return {
       status: "error",
       message: "Couldn't join the waitlist. Please try again.",
