@@ -1,7 +1,11 @@
 import "server-only";
 import { createAdminClient } from "@/lib/supabase/admin";
 
-export type PremiumContentType = "video" | "plan_download" | "announcement";
+export type PremiumContentType =
+  | "video"
+  | "plan_download"
+  | "announcement"
+  | "article";
 
 export type PremiumContent = {
   id: string;
@@ -11,6 +15,7 @@ export type PremiumContent = {
   video_embed_url: string | null;
   file_url: string | null;
   thumbnail_url: string | null;
+  body_markdown: string | null;
   published: boolean;
   sort_order: number;
   created_at: string;
@@ -48,6 +53,7 @@ export type PremiumContentInput = {
   video_embed_url: string | null;
   file_url: string | null;
   thumbnail_url: string | null;
+  body_markdown: string | null;
   published: boolean;
 };
 

@@ -37,6 +37,12 @@ exception
   when duplicate_object then null;
 end $$;
 
+-- Added for the member-dashboard article section (src/app/premium/page.tsx).
+-- ALTER TYPE ... ADD VALUE can't run inside the same transaction as a
+-- statement that uses the new value, but as its own statement here (outside
+-- any explicit BEGIN/COMMIT) it's safe to run standalone in the SQL editor.
+alter type premium_content_type add value if not exists 'article';
+
 create table if not exists public.premium_content (
   id uuid primary key default gen_random_uuid(),
   title text not null,
@@ -45,10 +51,15 @@ create table if not exists public.premium_content (
   video_embed_url text,
   file_url text,
   thumbnail_url text,
+  -- Markdown source for content_type = 'article'; rendered to HTML with
+  -- html:false (src/lib/markdown.ts) so no raw author HTML is ever injected.
+  body_markdown text,
   published boolean not null default false,
   sort_order integer not null default 0,
   created_at timestamptz not null default now()
 );
+
+alter table public.premium_content add column if not exists body_markdown text;
 
 create index if not exists premium_content_sort_order_idx
   on public.premium_content (sort_order);

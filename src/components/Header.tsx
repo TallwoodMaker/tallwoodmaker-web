@@ -43,6 +43,12 @@ export default function Header() {
               </Link>
             );
           })}
+          <Link
+            href="/premium/subscribe"
+            className="inline-flex items-center rounded-full border border-ink px-4 py-2.5 sm:py-1.5 text-black hover:text-black"
+          >
+            Sign in
+          </Link>
         </nav>
       </div>
     </header>

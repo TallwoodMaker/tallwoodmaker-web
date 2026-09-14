@@ -113,6 +113,7 @@ export async function saveContent(
     formData.get("content_type") ?? ""
   ) as PremiumContentType;
   const videoEmbedUrl = String(formData.get("video_embed_url") ?? "").trim();
+  const bodyMarkdown = String(formData.get("body_markdown") ?? "").trim();
   const published = formData.get("published") === "on";
   const existingFileUrl = String(
     formData.get("existing_file_url") ?? ""
@@ -126,7 +127,11 @@ export async function saveContent(
   if (!title) {
     return { status: "error", message: "Title is required." };
   }
-  if (!["video", "plan_download", "announcement"].includes(contentType)) {
+  if (
+    !["video", "plan_download", "announcement", "article"].includes(
+      contentType
+    )
+  ) {
     return { status: "error", message: "Choose a content type." };
   }
   if (contentType === "video" && !videoEmbedUrl) {
@@ -134,6 +139,9 @@ export async function saveContent(
       status: "error",
       message: "Paste a Vimeo or YouTube embed URL.",
     };
+  }
+  if (contentType === "article" && !bodyMarkdown) {
+    return { status: "error", message: "Write the article body." };
   }
 
   let fileUrl: string | null = existingFileUrl || null;
@@ -165,6 +173,7 @@ export async function saveContent(
     video_embed_url: contentType === "video" ? videoEmbedUrl : null,
     file_url: contentType === "plan_download" ? fileUrl : null,
     thumbnail_url: thumbnailUrl,
+    body_markdown: contentType === "article" ? bodyMarkdown : null,
     published,
   };
 

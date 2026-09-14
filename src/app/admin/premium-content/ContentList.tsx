@@ -8,6 +8,7 @@ const TYPE_LABEL: Record<PremiumContent["content_type"], string> = {
   video: "Video",
   plan_download: "Plan / download",
   announcement: "Announcement",
+  article: "Article",
 };
 
 export default function ContentList({
