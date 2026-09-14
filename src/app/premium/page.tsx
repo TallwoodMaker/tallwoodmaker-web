@@ -4,7 +4,7 @@ import { createClient } from "@/lib/supabase/server";
 import { getSubscriberByEmail, hasActiveSubscription } from "@/lib/subscribers";
 import { listPublishedContent, type PremiumContent } from "@/lib/premiumContent";
 import { renderMarkdown } from "@/lib/markdown";
-import ImageSlot from "@/components/ImageSlot";
+import PremiumFeed, { type FeedEntry } from "./PremiumFeed";
 
 export const metadata: Metadata = {
   title: "Premium",
@@ -32,20 +32,25 @@ export default async function PremiumPage() {
 
   const entries = await listPublishedContent();
 
-  // Sections are ordered by recency within each content type, not the
-  // admin's manual sort_order — that still controls the admin list's own
-  // ordering, but no longer this page's display order.
+  // Announcements stay pinned above the tabs/feed regardless of which tab
+  // is active — top 3, most recent first.
   const announcements = entries
     .filter((e) => e.content_type === "announcement")
     .sort(byRecency)
     .slice(0, 3);
-  const articles = entries
-    .filter((e) => e.content_type === "article")
-    .sort(byRecency);
-  const videos = entries.filter((e) => e.content_type === "video").sort(byRecency);
-  const downloads = entries
-    .filter((e) => e.content_type === "plan_download")
-    .sort(byRecency);
+
+  // Everything else feeds the tab bar (All/Articles/Videos/Downloads),
+  // most-recent-first across the whole mixed set. Article bodies are
+  // rendered to HTML here (server-side) rather than shipping markdown-it
+  // to every visitor's client bundle.
+  const feedEntries: FeedEntry[] = entries
+    .filter((e) => e.content_type !== "announcement")
+    .sort(byRecency)
+    .map((e) =>
+      e.content_type === "article"
+        ? { ...e, bodyHtml: renderMarkdown(e.body_markdown ?? "") }
+        : e
+    );
 
   return (
     <>
@@ -90,114 +95,9 @@ export default async function PremiumPage() {
             </section>
           )}
 
-          {articles.length > 0 && (
-            <section className="container-page section-px mb-12">
-              <h2 className="mb-4 text-xl font-bold">Articles</h2>
-              <div className="grid gap-8">
-                {articles.map((entry) => (
-                  <article
-                    key={entry.id}
-                    className="rounded-md border border-border p-6"
-                  >
-                    <h3 className="mb-1 text-lg font-bold">{entry.title}</h3>
-                    {entry.description && (
-                      <p className="mb-4 text-sm text-ink-muted">
-                        {entry.description}
-                      </p>
-                    )}
-                    <div
-                      className="text-[15px] leading-[1.6] text-ink [&_a]:text-link [&_h1]:mt-5 [&_h1]:text-xl [&_h1]:font-bold [&_h2]:mt-5 [&_h2]:text-lg [&_h2]:font-bold [&_h3]:mt-4 [&_h3]:font-semibold [&_li]:ml-5 [&_ol]:list-decimal [&_p]:mb-3 [&_ul]:list-disc [&_ul]:mb-3 first:[&>*]:mt-0"
-                      // Safe: body_markdown is rendered with markdown-it's
-                      // html:false option (src/lib/markdown.ts), so raw
-                      // author-supplied HTML is escaped, never executed —
-                      // this only contains markdown-it's own generated markup.
-                      dangerouslySetInnerHTML={{
-                        __html: renderMarkdown(entry.body_markdown ?? ""),
-                      }}
-                    />
-                  </article>
-                ))}
-              </div>
-            </section>
-          )}
-
-          {videos.length > 0 && (
-            <section className="container-page section-px mb-12">
-              <h2 className="mb-6 text-xl font-bold">Videos</h2>
-              <div className="grid grid-cols-[repeat(auto-fit,minmax(280px,1fr))] gap-x-6 gap-y-10">
-                {videos.map((entry) => (
-                  <div key={entry.id}>
-                    <div className="mb-3.5 aspect-video overflow-hidden rounded-md">
-                      {entry.video_embed_url ? (
-                        <iframe
-                          src={entry.video_embed_url}
-                          title={entry.title}
-                          className="h-full w-full"
-                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                          allowFullScreen
-                        />
-                      ) : (
-                        <ImageSlot
-                          placeholder="video thumbnail"
-                          className="h-full w-full"
-                        />
-                      )}
-                    </div>
-                    <div className="mb-1 text-[15px] font-semibold">
-                      {entry.title}
-                    </div>
-                    {entry.description && (
-                      <div className="text-sm text-ink-muted">
-                        {entry.description}
-                      </div>
-                    )}
-                  </div>
-                ))}
-              </div>
-            </section>
-          )}
-
-          {downloads.length > 0 && (
-            <section className="container-page section-px">
-              <h2 className="mb-6 text-xl font-bold">Downloads</h2>
-              <div className="grid grid-cols-[repeat(auto-fit,minmax(280px,1fr))] gap-x-6 gap-y-10">
-                {downloads.map((entry) => (
-                  <div key={entry.id}>
-                    <div className="mb-3.5 aspect-video overflow-hidden rounded-md">
-                      {entry.thumbnail_url ? (
-                        // eslint-disable-next-line @next/next/no-img-element
-                        <img
-                          src={entry.thumbnail_url}
-                          alt=""
-                          className="h-full w-full object-cover"
-                        />
-                      ) : (
-                        <ImageSlot placeholder="download" className="h-full w-full" />
-                      )}
-                    </div>
-                    <div className="mb-1 text-[15px] font-semibold">
-                      {entry.title}
-                    </div>
-                    {entry.description && (
-                      <div className="mb-3 text-sm text-ink-muted">
-                        {entry.description}
-                      </div>
-                    )}
-                    {entry.file_url && (
-                      <a
-                        href={entry.file_url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-block rounded bg-brand px-4 py-2 text-[14px] font-bold text-ink"
-                      >
-                        Download
-                      </a>
-                    )}
-                  </div>
-                ))}
-              </div>
-            </section>
-          )}
+          <section className="container-page section-px">
+            <PremiumFeed entries={feedEntries} />
+          </section>
         </div>
       )}
     </>

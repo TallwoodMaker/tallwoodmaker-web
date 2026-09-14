@@ -83,6 +83,13 @@ insert into storage.buckets (id, name, public)
 values ('premium-thumbnails', 'premium-thumbnails', true)
 on conflict (id) do nothing;
 
+-- Images embedded in article body_markdown (src/app/admin/premium-content
+-- ContentForm.tsx's "Insert image" control), separate from
+-- premium-thumbnails since an article can carry many of these.
+insert into storage.buckets (id, name, public)
+values ('premium-article-images', 'premium-article-images', true)
+on conflict (id) do nothing;
+
 drop policy if exists "Public read premium-files" on storage.objects;
 create policy "Public read premium-files" on storage.objects
   for select using (bucket_id = 'premium-files');
@@ -90,6 +97,10 @@ create policy "Public read premium-files" on storage.objects
 drop policy if exists "Public read premium-thumbnails" on storage.objects;
 create policy "Public read premium-thumbnails" on storage.objects
   for select using (bucket_id = 'premium-thumbnails');
+
+drop policy if exists "Public read premium-article-images" on storage.objects;
+create policy "Public read premium-article-images" on storage.objects
+  for select using (bucket_id = 'premium-article-images');
 
 -- No insert/update/delete policies for anon/authenticated: all writes go
 -- through the service-role client in admin server actions.

@@ -1,7 +1,11 @@
 "use client";
 
-import { useActionState, useState } from "react";
-import { saveContent, type ContentFormState } from "./actions";
+import { useActionState, useRef, useState } from "react";
+import {
+  saveContent,
+  uploadArticleImage,
+  type ContentFormState,
+} from "./actions";
 import type { PremiumContent, PremiumContentType } from "@/lib/premiumContent";
 import { renderMarkdown } from "@/lib/markdown";
 
@@ -26,6 +30,47 @@ export default function ContentForm({
   const [bodyMarkdown, setBodyMarkdown] = useState(
     editing?.body_markdown ?? ""
   );
+  const [imageUploading, setImageUploading] = useState(false);
+  const [imageError, setImageError] = useState<string | null>(null);
+  const bodyTextareaRef = useRef<HTMLTextAreaElement>(null);
+
+  async function handleImageFile(e: React.ChangeEvent<HTMLInputElement>) {
+    const file = e.target.files?.[0];
+    e.target.value = ""; // reset so the same file can be picked again later
+    if (!file) return;
+
+    setImageError(null);
+    setImageUploading(true);
+    try {
+      const fd = new FormData();
+      fd.append("file", file);
+      const result = await uploadArticleImage(fd);
+      if ("error" in result) {
+        setImageError(result.error);
+        return;
+      }
+
+      const altText = file.name
+        .replace(/\.[^.]+$/, "")
+        .replace(/[-_]+/g, " ");
+      const snippet = `![${altText}](${result.url})`;
+      const textarea = bodyTextareaRef.current;
+      const start = textarea?.selectionStart ?? bodyMarkdown.length;
+      const end = textarea?.selectionEnd ?? bodyMarkdown.length;
+      const next =
+        bodyMarkdown.slice(0, start) + snippet + bodyMarkdown.slice(end);
+      setBodyMarkdown(next);
+
+      // Restore focus + cursor just after the inserted snippet.
+      requestAnimationFrame(() => {
+        textarea?.focus();
+        const caret = start + snippet.length;
+        textarea?.setSelectionRange(caret, caret);
+      });
+    } finally {
+      setImageUploading(false);
+    }
+  }
 
   return (
     <form action={formAction} className="grid gap-4">
@@ -102,10 +147,29 @@ export default function ContentForm({
 
       {contentType === "article" && (
         <div>
-          <label className={labelClass} htmlFor="body_markdown">
-            Article body (Markdown)
-          </label>
+          <div className="mb-1.5 flex items-center justify-between">
+            <label
+              className="block text-[13px] font-semibold text-ink-soft"
+              htmlFor="body_markdown"
+            >
+              Article body (Markdown)
+            </label>
+            <label className="cursor-pointer text-[13px] font-semibold text-link">
+              {imageUploading ? "Uploading…" : "+ Insert image"}
+              <input
+                type="file"
+                accept="image/*"
+                onChange={handleImageFile}
+                disabled={imageUploading}
+                className="hidden"
+              />
+            </label>
+          </div>
+          {imageError && (
+            <p className="mb-1.5 text-[13px] text-link">{imageError}</p>
+          )}
           <textarea
+            ref={bodyTextareaRef}
             id="body_markdown"
             name="body_markdown"
             rows={12}
@@ -117,7 +181,7 @@ export default function ContentForm({
             <div className="mt-3">
               <div className={labelClass}>Preview</div>
               <div
-                className="rounded border border-border bg-cream px-4 py-3 text-[15px] leading-[1.6] text-ink [&_a]:text-link [&_h1]:mt-4 [&_h1]:text-xl [&_h1]:font-bold [&_h2]:mt-4 [&_h2]:text-lg [&_h2]:font-bold [&_h3]:mt-3 [&_h3]:font-semibold [&_li]:ml-5 [&_ol]:list-decimal [&_p]:mb-3 [&_ul]:list-disc [&_ul]:mb-3 first:[&>*]:mt-0"
+                className="rounded border border-border bg-cream px-4 py-3 text-[15px] leading-[1.6] text-ink [&_a]:text-link [&_h1]:mt-4 [&_h1]:text-xl [&_h1]:font-bold [&_h2]:mt-4 [&_h2]:text-lg [&_h2]:font-bold [&_h3]:mt-3 [&_h3]:font-semibold [&_img]:my-3 [&_img]:max-w-full [&_img]:rounded [&_li]:ml-5 [&_ol]:list-decimal [&_p]:mb-3 [&_ul]:list-disc [&_ul]:mb-3 first:[&>*]:mt-0"
                 // Safe: renderMarkdown uses markdown-it with html:false, so
                 // raw HTML in the source is escaped, not executed — this
                 // only ever contains markdown-it's own generated markup.

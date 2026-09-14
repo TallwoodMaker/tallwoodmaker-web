@@ -77,7 +77,7 @@ export async function sendAdminMagicLink(
 
 async function uploadFile(
   file: File,
-  bucket: "premium-files" | "premium-thumbnails"
+  bucket: "premium-files" | "premium-thumbnails" | "premium-article-images"
 ): Promise<string> {
   const admin = createAdminClient();
   const ext = file.name.includes(".") ? file.name.split(".").pop() : "";
@@ -93,6 +93,30 @@ async function uploadFile(
     data: { publicUrl },
   } = admin.storage.from(bucket).getPublicUrl(path);
   return publicUrl;
+}
+
+/**
+ * Called directly from ContentForm's "Insert image" input (not a form
+ * submit) so an image can be uploaded and spliced into the markdown
+ * textarea mid-edit, well before the entry itself is saved.
+ */
+export async function uploadArticleImage(
+  formData: FormData
+): Promise<{ url: string } | { error: string }> {
+  await requireAdmin();
+
+  const file = formData.get("file");
+  if (!(file instanceof File) || file.size === 0) {
+    return { error: "No file selected." };
+  }
+
+  try {
+    const url = await uploadFile(file, "premium-article-images");
+    return { url };
+  } catch (error) {
+    console.error("Article image upload failed:", error);
+    return { error: "Upload failed. Please try again." };
+  }
 }
 
 export type ContentFormState = {
