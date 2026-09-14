@@ -70,6 +70,9 @@ export async function createCheckoutSession() {
     success_url: `${origin}/premium`,
     cancel_url: `${origin}/premium/subscribe`,
     metadata: { supabase_user_id: user.id, email: user.email },
+    // Lets the launch-offer discount be entered as a promo code at checkout
+    // (code itself is configured in the Stripe dashboard, not here).
+    allow_promotion_codes: true,
   });
 
   if (!session.url) {
