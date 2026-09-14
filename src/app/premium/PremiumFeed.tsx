@@ -95,13 +95,23 @@ export default function PremiumFeed({ entries }: { entries: FeedEntry[] }) {
               )}
 
               {entry.content_type === "article" && (
-                <div
-                  className="text-[15px] leading-[1.6] text-ink [&_a]:text-link [&_h1]:mt-5 [&_h1]:text-xl [&_h1]:font-bold [&_h2]:mt-5 [&_h2]:text-lg [&_h2]:font-bold [&_h3]:mt-4 [&_h3]:font-semibold [&_img]:my-4 [&_img]:max-w-full [&_img]:rounded [&_li]:ml-5 [&_ol]:list-decimal [&_p]:mb-3 [&_ul]:list-disc [&_ul]:mb-3 first:[&>*]:mt-0"
-                  // Safe: bodyHtml is precomputed server-side with
-                  // renderMarkdown (markdown-it, html:false) — raw
-                  // author-supplied HTML is escaped, never executed.
-                  dangerouslySetInnerHTML={{ __html: entry.bodyHtml ?? "" }}
-                />
+                <>
+                  {entry.thumbnail_url && (
+                    // eslint-disable-next-line @next/next/no-img-element
+                    <img
+                      src={entry.thumbnail_url}
+                      alt=""
+                      className="mb-4 max-h-[420px] w-full rounded-md object-cover"
+                    />
+                  )}
+                  <div
+                    className="text-[15px] leading-[1.6] text-ink [&_a]:text-link [&_h1]:mt-5 [&_h1]:text-xl [&_h1]:font-bold [&_h2]:mt-5 [&_h2]:text-lg [&_h2]:font-bold [&_h3]:mt-4 [&_h3]:font-semibold [&_img]:my-4 [&_img]:max-w-full [&_img]:rounded [&_li]:ml-5 [&_ol]:list-decimal [&_p]:mb-3 [&_ul]:list-disc [&_ul]:mb-3 first:[&>*]:mt-0"
+                    // Safe: bodyHtml is precomputed server-side with
+                    // renderMarkdown (markdown-it, html:false) — raw
+                    // author-supplied HTML is escaped, never executed.
+                    dangerouslySetInnerHTML={{ __html: entry.bodyHtml ?? "" }}
+                  />
+                </>
               )}
 
               {entry.content_type === "plan_download" && (
