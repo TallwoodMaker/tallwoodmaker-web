@@ -24,7 +24,8 @@ export async function GET(request: NextRequest) {
     }
   }
 
-  return NextResponse.redirect(
-    `${origin}/premium/subscribe?error=link_expired`
-  );
+  // Preserve `next` so the error lands back on whichever page requested the
+  // link (e.g. /admin/premium-content) rather than always /premium/subscribe
+  // — this callback is shared by both magic-link sign-in flows.
+  return NextResponse.redirect(`${origin}${next}?error=link_expired`);
 }
