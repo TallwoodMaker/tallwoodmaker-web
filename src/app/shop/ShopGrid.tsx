@@ -75,7 +75,7 @@ export default function ShopGrid({
             href={`/shop/${product.id}`}
             className="group block max-w-[200px]"
           >
-            <div className="relative mb-2 aspect-square overflow-hidden rounded">
+            <div className="relative mb-2 aspect-[2/3] overflow-hidden rounded">
               {product.imageUrl ? (
                 <Image
                   src={product.imageUrl}

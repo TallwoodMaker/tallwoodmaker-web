@@ -50,7 +50,7 @@ export default async function ShopProductPage({
         </Link>
 
         <div className="grid gap-10 sm:grid-cols-[minmax(0,420px)_1fr]">
-          <div className="relative aspect-[4/3]">
+          <div className="relative aspect-[2/3]">
             {product.imageUrl ? (
               <Image
                 src={product.imageUrl}
