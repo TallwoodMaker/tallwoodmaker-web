@@ -1,4 +1,5 @@
 import Link from "next/link";
+import CookieSettingsLink from "@/components/cookies/CookieSettingsLink";
 
 const SOCIAL_LINKS = ["YouTube", "Instagram", "TikTok", "Facebook"];
 
@@ -23,6 +24,12 @@ export default function Footer() {
           <div>tom@tallwoodmaker.com</div>
           <div>© 2026 TallWoodMaker</div>
         </div>
+      </div>
+      <div className="container-page mt-8 flex flex-wrap gap-5 border-t border-ink/15 pt-5 text-[13px] text-ink-muted">
+        <Link href="/cookies" className="text-ink-muted hover:text-ink">
+          Cookie Policy
+        </Link>
+        <CookieSettingsLink className="cursor-pointer text-ink-muted underline-offset-2 hover:text-ink hover:underline" />
       </div>
     </footer>
   );
