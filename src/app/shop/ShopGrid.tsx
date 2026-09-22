@@ -67,9 +67,13 @@ export default function ShopGrid({
         </div>
       )}
 
-      <div className="grid grid-cols-[repeat(auto-fit,minmax(150px,1fr))] gap-x-4 gap-y-7">
+      <div className="grid grid-cols-[repeat(auto-fit,minmax(150px,200px))] gap-x-4 gap-y-7">
         {filtered.map((product) => (
-          <Link key={product.id} href={`/shop/${product.id}`} className="group block">
+          <Link
+            key={product.id}
+            href={`/shop/${product.id}`}
+            className="group block max-w-[200px]"
+          >
             <div className="mb-2 aspect-square overflow-hidden rounded">
               <ImageSlot
                 placeholder={PLACEHOLDER_BY_TYPE[product.type]}
