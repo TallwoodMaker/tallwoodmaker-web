@@ -1,19 +1,14 @@
 "use client";
 
 import { useState } from "react";
-import Image from "next/image";
 import Link from "next/link";
-import ImageSlot from "@/components/ImageSlot";
 import type {
   ShopCategoryDef,
   ShopProduct,
   ShopProductCategory,
 } from "@/lib/shopProducts";
-
-const PLACEHOLDER_BY_TYPE: Record<ShopProduct["type"], string> = {
-  plan: "plan preview",
-  ebook: "ebook cover",
-};
+import ProductThumbnail from "./ProductThumbnail";
+import AddToCartButton from "./AddToCartButton";
 
 type FilterValue = "all" | ShopProductCategory;
 
@@ -70,32 +65,20 @@ export default function ShopGrid({
 
       <div className="grid grid-cols-[repeat(auto-fit,minmax(150px,200px))] gap-x-4 gap-y-7">
         {filtered.map((product) => (
-          <Link
-            key={product.id}
-            href={`/shop/${product.id}`}
-            className="group block max-w-[200px]"
-          >
-            <div className="relative mb-2 aspect-[2/3] overflow-hidden rounded">
-              {product.imageUrl ? (
-                <Image
-                  src={product.imageUrl}
-                  alt={product.title}
-                  fill
-                  sizes="200px"
-                  className="object-cover"
-                />
-              ) : (
-                <ImageSlot
-                  placeholder={PLACEHOLDER_BY_TYPE[product.type]}
-                  className="h-full w-full"
-                />
-              )}
+          <div key={product.id} className="max-w-[200px]">
+            <Link href={`/shop/${product.id}`} className="group block">
+              <div className="relative mb-2 aspect-[2/3] overflow-hidden rounded">
+                <ProductThumbnail product={product} sizes="200px" />
+              </div>
+              <div className="text-[13px] font-semibold leading-snug text-ink group-hover:underline">
+                {product.title}
+              </div>
+            </Link>
+            <div className="mb-2 text-[13px] text-ink-muted">
+              €{product.priceEur}
             </div>
-            <div className="text-[13px] font-semibold leading-snug text-ink group-hover:underline">
-              {product.title}
-            </div>
-            <div className="text-[13px] text-ink-muted">€{product.priceEur}</div>
-          </Link>
+            <AddToCartButton productId={product.id} compact />
+          </div>
         ))}
       </div>
     </>

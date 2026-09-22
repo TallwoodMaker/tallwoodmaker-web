@@ -1,16 +1,10 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import ImageSlot from "@/components/ImageSlot";
 import { SHOP_ENABLED } from "@/lib/config";
-import { getShopProduct, type ShopProduct } from "@/lib/shopProducts";
-import { createShopCheckoutSession } from "../actions";
-
-const PLACEHOLDER_BY_TYPE: Record<ShopProduct["type"], string> = {
-  plan: "plan preview",
-  ebook: "ebook cover",
-};
+import { getShopProduct } from "@/lib/shopProducts";
+import ProductThumbnail from "../ProductThumbnail";
+import AddToCartButton from "../AddToCartButton";
 
 export async function generateMetadata({
   params,
@@ -51,20 +45,10 @@ export default async function ShopProductPage({
 
         <div className="grid gap-10 sm:grid-cols-[minmax(0,420px)_1fr]">
           <div className="relative aspect-[2/3]">
-            {product.imageUrl ? (
-              <Image
-                src={product.imageUrl}
-                alt={product.title}
-                fill
-                sizes="(min-width: 640px) 420px, 100vw"
-                className="object-cover"
-              />
-            ) : (
-              <ImageSlot
-                placeholder={PLACEHOLDER_BY_TYPE[product.type]}
-                className="h-full w-full"
-              />
-            )}
+            <ProductThumbnail
+              product={product}
+              sizes="(min-width: 640px) 420px, 100vw"
+            />
           </div>
 
           <div>
@@ -75,15 +59,9 @@ export default async function ShopProductPage({
               {product.description}
             </p>
             <div className="mb-6 text-2xl font-bold">€{product.priceEur}</div>
-            <form action={createShopCheckoutSession}>
-              <input type="hidden" name="productId" value={product.id} />
-              <button
-                type="submit"
-                className="cursor-pointer rounded bg-brand px-7 py-3.5 text-[15px] font-bold text-ink"
-              >
-                Buy — €{product.priceEur}
-              </button>
-            </form>
+            <div className="max-w-[280px]">
+              <AddToCartButton productId={product.id} />
+            </div>
           </div>
         </div>
       </section>

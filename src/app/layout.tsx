@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Analytics from "@/components/Analytics";
 import { ConsentProvider } from "@/components/cookies/ConsentContext";
+import { CartProvider } from "@/lib/cart/CartContext";
 import CookieBanner from "@/components/cookies/CookieBanner";
 import CookiePreferencesModal from "@/components/cookies/CookiePreferencesModal";
 
@@ -28,12 +29,14 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     <html lang="en" className={inter.variable}>
       <body className="flex min-h-screen flex-col bg-cream font-sans text-ink antialiased">
         <ConsentProvider>
-          <Analytics />
-          <Header />
-          <main className="flex-1">{children}</main>
-          <Footer />
-          <CookieBanner />
-          <CookiePreferencesModal />
+          <CartProvider>
+            <Analytics />
+            <Header />
+            <main className="flex-1">{children}</main>
+            <Footer />
+            <CookieBanner />
+            <CookiePreferencesModal />
+          </CartProvider>
         </ConsentProvider>
       </body>
     </html>

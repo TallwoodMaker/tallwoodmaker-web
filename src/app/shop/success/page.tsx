@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { stripe } from "@/lib/stripe";
 import { createAdminClient } from "@/lib/supabase/admin";
-import { getShopProduct } from "@/lib/shopProducts";
+import { getShopProduct, type ShopProduct } from "@/lib/shopProducts";
+import ClearCartOnSuccess from "./ClearCartOnSuccess";
 
 export const metadata: Metadata = {
   title: "Order confirmed",
@@ -10,6 +11,33 @@ export const metadata: Metadata = {
 };
 
 const SIGNED_URL_TTL_SECONDS = 60 * 60 * 24; // 24h
+
+function parseProductIds(
+  metadata: Record<string, string> | null | undefined
+): string[] {
+  if (!metadata) return [];
+
+  // New checkout sessions (cart) set product_ids as a JSON array — Stripe
+  // metadata values must be strings. Old single-item sessions set the
+  // singular product_id; kept working here for any in-flight orders from
+  // before this change.
+  if (metadata.product_ids) {
+    try {
+      const parsed: unknown = JSON.parse(metadata.product_ids);
+      if (Array.isArray(parsed)) {
+        return parsed.filter((x): x is string => typeof x === "string");
+      }
+    } catch {
+      // fall through to the singular check below
+    }
+  }
+
+  if (metadata.product_id) {
+    return [metadata.product_id];
+  }
+
+  return [];
+}
 
 export default async function ShopSuccessPage({
   searchParams,
@@ -44,28 +72,64 @@ export default async function ShopSuccessPage({
     );
   }
 
-  const productId = session.metadata?.product_id;
-  const product = productId ? getShopProduct(productId) : undefined;
-  if (!product) {
+  const productIds = parseProductIds(session.metadata);
+  const products = productIds
+    .map((id) => getShopProduct(id))
+    .filter((p): p is ShopProduct => !!p);
+
+  if (products.length === 0) {
     notFound();
   }
 
   const admin = createAdminClient();
-  const { data, error } = await admin.storage
-    .from("shop-files")
-    .createSignedUrl(product.storagePath, SIGNED_URL_TTL_SECONDS);
+  const downloads: { product: ShopProduct; signedUrl: string }[] = [];
+  const failures: ShopProduct[] = [];
 
-  if (error || !data?.signedUrl) {
-    return (
-      <>
-        <div className="h-2 bg-brand" />
-        <section className="container-page section-px py-[clamp(24px,5vw,64px)]">
-          <h1 className="mb-4 text-[clamp(32px,5vw,44px)] font-extrabold leading-[1.1] tracking-[-0.01em]">
-            Payment received — download link trouble
-          </h1>
-          <p className="max-w-[560px] text-[17px] leading-[1.6] text-ink-muted">
-            Your payment went through, but we hit a snag generating your
-            download link. Email{" "}
+  for (const product of products) {
+    const { data, error } = await admin.storage
+      .from("shop-files")
+      .createSignedUrl(product.storagePath, SIGNED_URL_TTL_SECONDS);
+
+    if (error || !data?.signedUrl) {
+      failures.push(product);
+    } else {
+      downloads.push({ product, signedUrl: data.signedUrl });
+    }
+  }
+
+  return (
+    <>
+      <div className="h-2 bg-brand" />
+      <ClearCartOnSuccess />
+      <section className="container-page section-px py-[clamp(24px,5vw,64px)]">
+        <h1 className="mb-4 text-[clamp(32px,5vw,44px)] font-extrabold leading-[1.1] tracking-[-0.01em]">
+          Thanks — here&apos;s your download{downloads.length > 1 ? "s" : ""}
+        </h1>
+
+        {downloads.length > 0 && (
+          <div className="mb-8 grid max-w-[480px] gap-5">
+            {downloads.map(({ product, signedUrl }) => (
+              <div key={product.id}>
+                <p className="mb-2 text-[17px] leading-[1.6] text-ink">
+                  {product.title}
+                </p>
+                <a
+                  href={signedUrl}
+                  download
+                  className="inline-block rounded bg-brand px-7 py-3.5 text-[15px] font-bold text-ink"
+                >
+                  Download {product.fileName}
+                </a>
+              </div>
+            ))}
+          </div>
+        )}
+
+        {failures.length > 0 && (
+          <p className="max-w-[560px] text-[15px] leading-[1.6] text-ink-muted">
+            Your payment went through, but we hit a snag generating the
+            download link for{" "}
+            {failures.map((p) => p.title).join(", ")}. Email{" "}
             <a
               href={`mailto:tom@tallwoodmaker.com?subject=${encodeURIComponent(
                 `Download link — order ${session_id}`
@@ -77,32 +141,14 @@ export default async function ShopSuccessPage({
             with this order ID and we&apos;ll send it over:{" "}
             <span className="font-mono text-[15px]">{session_id}</span>
           </p>
-        </section>
-      </>
-    );
-  }
+        )}
 
-  return (
-    <>
-      <div className="h-2 bg-brand" />
-      <section className="container-page section-px py-[clamp(24px,5vw,64px)]">
-        <h1 className="mb-4 text-[clamp(32px,5vw,44px)] font-extrabold leading-[1.1] tracking-[-0.01em]">
-          Thanks — here&apos;s your download
-        </h1>
-        <p className="mb-6 max-w-[560px] text-[17px] leading-[1.6] text-ink-muted">
-          {product.title}
-        </p>
-        <a
-          href={data.signedUrl}
-          download
-          className="inline-block rounded bg-brand px-7 py-3.5 text-[15px] font-bold text-ink"
-        >
-          Download {product.fileName}
-        </a>
-        <p className="mt-6 max-w-[560px] text-sm text-ink-muted">
-          This link works for 24 hours. If it expires, bookmark this page and
-          revisit it — reopening it generates a fresh link.
-        </p>
+        {downloads.length > 0 && (
+          <p className="mt-6 max-w-[560px] text-sm text-ink-muted">
+            These links work for 24 hours. If one expires, bookmark this page
+            and revisit it — reopening it generates fresh links.
+          </p>
+        )}
       </section>
     </>
   );
