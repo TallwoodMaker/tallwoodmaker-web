@@ -7,6 +7,10 @@ export type ShopProduct = {
   stripePriceId: string;
   storagePath: string;
   fileName: string;
+  // False hides the product from /shop and refuses checkout for it — for a
+  // product whose Stripe Price exists but whose file isn't uploaded to
+  // shop-files yet. Flip to true once storagePath is actually in the bucket.
+  available: boolean;
 };
 
 // Copy is still placeholder wording — edit freely. Prices are real, live
@@ -28,6 +32,9 @@ export const SHOP_PRODUCTS: ShopProduct[] = [
     stripePriceId: "price_1UIS0OCa2aoiD18oHS8iwiTY",
     storagePath: "plans/kids-chair.pdf",
     fileName: "tallwoodmaker-kids-chair-plan.pdf",
+    // Stripe product/price are real and live; the PDF isn't uploaded to
+    // shop-files yet. Hidden until it is — see chat history.
+    available: false,
   },
   {
     id: "ebook-zero-to-first-client",
@@ -39,9 +46,14 @@ export const SHOP_PRODUCTS: ShopProduct[] = [
     stripePriceId: "price_1UIRv7Ca2aoiD18osZlUAuYB",
     storagePath: "ebooks/zero-to-first-client-en.pdf",
     fileName: "zero-to-first-client.pdf",
+    available: true,
   },
 ];
 
 export function getShopProduct(id: string): ShopProduct | undefined {
   return SHOP_PRODUCTS.find((product) => product.id === id);
+}
+
+export function getAvailableShopProducts(): ShopProduct[] {
+  return SHOP_PRODUCTS.filter((product) => product.available);
 }

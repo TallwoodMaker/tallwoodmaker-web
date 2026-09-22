@@ -18,6 +18,12 @@ export async function createShopCheckoutSession(formData: FormData) {
   if (!product) {
     throw new Error(`Unknown shop product: ${productId}`);
   }
+  if (!product.available) {
+    // Defense in depth: /shop only renders available products, but this
+    // action is a reachable POST endpoint regardless of the UI — refuse a
+    // direct request too, since there's no deliverable file for it yet.
+    throw new Error(`Shop product not currently available: ${productId}`);
+  }
 
   const origin = await getOrigin();
 

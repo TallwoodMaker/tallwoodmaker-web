@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import ImageSlot from "@/components/ImageSlot";
 import { SHOP_ENABLED } from "@/lib/config";
-import { SHOP_PRODUCTS, type ShopProduct } from "@/lib/shopProducts";
+import { getAvailableShopProducts, type ShopProduct } from "@/lib/shopProducts";
 import { createShopCheckoutSession } from "./actions";
 
 export const metadata: Metadata = {
@@ -21,6 +21,8 @@ export default function ShopPage() {
     notFound();
   }
 
+  const products = getAvailableShopProducts();
+
   return (
     <>
       <div className="h-2 bg-brand" />
@@ -36,7 +38,7 @@ export default function ShopPage() {
       </section>
 
       <section className="container-page section-px grid grid-cols-[repeat(auto-fit,minmax(260px,1fr))] gap-x-6 gap-y-8 pb-[clamp(24px,5vw,64px)]">
-        {SHOP_PRODUCTS.map((product) => (
+        {products.map((product) => (
           <div key={product.id}>
             <div className="mb-3.5 aspect-[4/3]">
               <ImageSlot
