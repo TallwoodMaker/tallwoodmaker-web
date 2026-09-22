@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import ImageSlot from "@/components/ImageSlot";
 import type {
@@ -74,11 +75,21 @@ export default function ShopGrid({
             href={`/shop/${product.id}`}
             className="group block max-w-[200px]"
           >
-            <div className="mb-2 aspect-square overflow-hidden rounded">
-              <ImageSlot
-                placeholder={PLACEHOLDER_BY_TYPE[product.type]}
-                className="h-full w-full"
-              />
+            <div className="relative mb-2 aspect-square overflow-hidden rounded">
+              {product.imageUrl ? (
+                <Image
+                  src={product.imageUrl}
+                  alt={product.title}
+                  fill
+                  sizes="200px"
+                  className="object-cover"
+                />
+              ) : (
+                <ImageSlot
+                  placeholder={PLACEHOLDER_BY_TYPE[product.type]}
+                  className="h-full w-full"
+                />
+              )}
             </div>
             <div className="text-[13px] font-semibold leading-snug text-ink group-hover:underline">
               {product.title}

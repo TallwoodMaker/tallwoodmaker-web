@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import ImageSlot from "@/components/ImageSlot";
@@ -49,11 +50,21 @@ export default async function ShopProductPage({
         </Link>
 
         <div className="grid gap-10 sm:grid-cols-[minmax(0,420px)_1fr]">
-          <div className="aspect-[4/3]">
-            <ImageSlot
-              placeholder={PLACEHOLDER_BY_TYPE[product.type]}
-              className="h-full w-full"
-            />
+          <div className="relative aspect-[4/3]">
+            {product.imageUrl ? (
+              <Image
+                src={product.imageUrl}
+                alt={product.title}
+                fill
+                sizes="(min-width: 640px) 420px, 100vw"
+                className="object-cover"
+              />
+            ) : (
+              <ImageSlot
+                placeholder={PLACEHOLDER_BY_TYPE[product.type]}
+                className="h-full w-full"
+              />
+            )}
           </div>
 
           <div>

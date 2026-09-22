@@ -20,6 +20,10 @@ export type ShopProduct = {
   stripePriceId: string;
   storagePath: string;
   fileName: string;
+  // Real product photo/cover, e.g. "/shop/zero-to-first-client-cover.png"
+  // (served from public/). Optional — falls back to the ImageSlot
+  // placeholder when unset.
+  imageUrl?: string;
   // False hides the product from /shop and refuses checkout for it — for a
   // product whose Stripe Price exists but whose file isn't uploaded to
   // shop-files yet. Flip to true once storagePath is actually in the bucket.
@@ -61,6 +65,7 @@ export const SHOP_PRODUCTS: ShopProduct[] = [
     stripePriceId: "price_1UIRv7Ca2aoiD18osZlUAuYB",
     storagePath: "ebooks/zero-to-first-client-en.pdf",
     fileName: "zero-to-first-client.pdf",
+    imageUrl: "/shop/zero-to-first-client-cover.png",
     available: true,
   },
 ];
