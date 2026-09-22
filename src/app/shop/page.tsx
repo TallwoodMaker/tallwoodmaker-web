@@ -1,19 +1,13 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import ImageSlot from "@/components/ImageSlot";
 import { SHOP_ENABLED } from "@/lib/config";
-import { getAvailableShopProducts, type ShopProduct } from "@/lib/shopProducts";
-import { createShopCheckoutSession } from "./actions";
+import { SHOP_CATEGORIES, getAvailableShopProducts } from "@/lib/shopProducts";
+import ShopGrid from "./ShopGrid";
 
 export const metadata: Metadata = {
   title: "Shop",
   description:
     "Digital plans, guides, and a few finished pieces, straight from the shop.",
-};
-
-const PLACEHOLDER_BY_TYPE: Record<ShopProduct["type"], string> = {
-  plan: "plan preview",
-  ebook: "ebook cover",
 };
 
 export default function ShopPage() {
@@ -37,32 +31,8 @@ export default function ShopPage() {
         </p>
       </section>
 
-      <section className="container-page section-px grid grid-cols-[repeat(auto-fit,minmax(260px,1fr))] gap-x-6 gap-y-8 pb-[clamp(24px,5vw,64px)]">
-        {products.map((product) => (
-          <div key={product.id}>
-            <div className="mb-3.5 aspect-[4/3]">
-              <ImageSlot
-                placeholder={PLACEHOLDER_BY_TYPE[product.type]}
-                className="h-full w-full"
-              />
-            </div>
-            <div className="mb-1 text-[15px] font-semibold">
-              {product.title}
-            </div>
-            <div className="mb-3 text-sm text-ink-muted">
-              {product.description} · €{product.priceEur}
-            </div>
-            <form action={createShopCheckoutSession}>
-              <input type="hidden" name="productId" value={product.id} />
-              <button
-                type="submit"
-                className="cursor-pointer rounded border border-border px-5 py-2.5 text-sm font-semibold text-ink"
-              >
-                Buy — €{product.priceEur}
-              </button>
-            </form>
-          </div>
-        ))}
+      <section className="container-page section-px pb-[clamp(24px,5vw,64px)]">
+        <ShopGrid products={products} categories={SHOP_CATEGORIES} />
       </section>
     </>
   );

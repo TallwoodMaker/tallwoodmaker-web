@@ -1,8 +1,21 @@
+// Browsable grouping, shown as filter pills on /shop — distinct from `type`
+// below, which drives presentation (placeholder copy) rather than browsing.
+// Add more as the catalog grows (e.g. a future "kitchen-plans").
+export type ShopProductCategory = "ebooks" | "plans";
+
+export type ShopCategoryDef = { id: ShopProductCategory; label: string };
+
+export const SHOP_CATEGORIES: ShopCategoryDef[] = [
+  { id: "ebooks", label: "Ebooks" },
+  { id: "plans", label: "Plans" },
+];
+
 export type ShopProduct = {
   id: string;
   title: string;
   description: string;
   type: "plan" | "ebook";
+  category: ShopProductCategory;
   priceEur: number;
   stripePriceId: string;
   storagePath: string;
@@ -28,6 +41,7 @@ export const SHOP_PRODUCTS: ShopProduct[] = [
     description:
       "Full dimensioned plan and cut list for a simple, sturdy kids' chair — beginner-friendly, no jigs required.",
     type: "plan",
+    category: "plans",
     priceEur: 4.99,
     stripePriceId: "price_1UIS0OCa2aoiD18oHS8iwiTY",
     storagePath: "plans/kids-chair.pdf",
@@ -42,6 +56,7 @@ export const SHOP_PRODUCTS: ShopProduct[] = [
     description:
       "How I went from making things for myself to landing my first paying woodworking client — the exact steps, in order.",
     type: "ebook",
+    category: "ebooks",
     priceEur: 19,
     stripePriceId: "price_1UIRv7Ca2aoiD18osZlUAuYB",
     storagePath: "ebooks/zero-to-first-client-en.pdf",
