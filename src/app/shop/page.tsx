@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import ImageSlot from "@/components/ImageSlot";
 import { SHOP_ENABLED } from "@/lib/config";
+import { SHOP_PRODUCTS, type ShopProduct } from "@/lib/shopProducts";
+import { createShopCheckoutSession } from "./actions";
 
 export const metadata: Metadata = {
   title: "Shop",
@@ -9,14 +11,10 @@ export const metadata: Metadata = {
     "Digital plans, guides, and a few finished pieces, straight from the shop.",
 };
 
-const PRODUCTS = [
-  { title: "Plan: Dining Table", meta: "Digital PDF plan · $18" },
-  { title: "Cutting Board Set", meta: "Finished product · $64" },
-  { title: "Guide: Mortise & Tenon Joints", meta: "Digital video · $9" },
-  { title: "Plan: Corner Shelf", meta: "Digital PDF plan · $12" },
-  { title: "Wooden Clock", meta: "Finished product · $38" },
-  { title: "Guide Bundle (5×)", meta: "Digital video · $29" },
-];
+const PLACEHOLDER_BY_TYPE: Record<ShopProduct["type"], string> = {
+  plan: "plan preview",
+  ebook: "ebook cover",
+};
 
 export default function ShopPage() {
   if (!SHOP_ENABLED) {
@@ -38,19 +36,29 @@ export default function ShopPage() {
       </section>
 
       <section className="container-page section-px grid grid-cols-[repeat(auto-fit,minmax(260px,1fr))] gap-x-6 gap-y-8 pb-[clamp(24px,5vw,64px)]">
-        {PRODUCTS.map((product) => (
-          <div key={product.title}>
+        {SHOP_PRODUCTS.map((product) => (
+          <div key={product.id}>
             <div className="mb-3.5 aspect-[4/3]">
-              <ImageSlot placeholder="product photo" className="h-full w-full" />
+              <ImageSlot
+                placeholder={PLACEHOLDER_BY_TYPE[product.type]}
+                className="h-full w-full"
+              />
             </div>
-            <div className="mb-1 text-[15px] font-semibold">{product.title}</div>
-            <div className="mb-3 text-sm text-ink-muted">{product.meta}</div>
-            <a
-              href="#"
-              className="inline-block rounded border border-border px-5 py-2.5 text-sm font-semibold text-ink"
-            >
-              Buy
-            </a>
+            <div className="mb-1 text-[15px] font-semibold">
+              {product.title}
+            </div>
+            <div className="mb-3 text-sm text-ink-muted">
+              {product.description} · €{product.priceEur}
+            </div>
+            <form action={createShopCheckoutSession}>
+              <input type="hidden" name="productId" value={product.id} />
+              <button
+                type="submit"
+                className="cursor-pointer rounded border border-border px-5 py-2.5 text-sm font-semibold text-ink"
+              >
+                Buy — €{product.priceEur}
+              </button>
+            </form>
           </div>
         ))}
       </section>

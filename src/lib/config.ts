@@ -1,5 +1,5 @@
 /** Feature flags for the site. */
-export const SHOP_ENABLED = false;
+export const SHOP_ENABLED = true;
 export const COURSE_ENABLED = false;
 export const HOME_PROJECTS_ENABLED = false;
 

@@ -42,3 +42,6 @@ next-env.d.ts
 
 .vercel
 .env*
+
+# local scratch (ebook PDF exports staged for manual Supabase Storage upload)
+/ebook-exports/
