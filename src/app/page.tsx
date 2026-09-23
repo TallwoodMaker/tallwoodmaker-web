@@ -10,6 +10,8 @@ import {
   FacebookIcon,
 } from "@/components/SocialIcons";
 import { SHOP_ENABLED, HOME_PROJECTS_ENABLED } from "@/lib/config";
+import { getAvailableShopProducts } from "@/lib/shopProducts";
+import ProductThumbnail from "./shop/ProductThumbnail";
 
 const SOCIAL_LINKS = [
   { name: "YouTube", url: "https://youtube.com/@tallwoodmaker", Icon: YouTubeIcon },
@@ -40,6 +42,11 @@ const LONG_FORM_VIDEOS = [
 ];
 
 export default function HomePage() {
+  // Featured on the homepage Shop preview — first 3 available products, in
+  // catalog order (see src/lib/shopProducts.ts). Automatically reflects
+  // whatever is actually live, so this never drifts out of sync with /shop.
+  const homeShopProducts = getAvailableShopProducts().slice(0, 3);
+
   return (
     <>
       <section className="container-page section-px section-py grid grid-cols-[repeat(auto-fit,minmax(340px,1fr))] items-center gap-14">
@@ -312,31 +319,30 @@ export default function HomePage() {
             linkLabel="Visit the shop →"
           />
 
-          <section className="container-page section-px section-py grid grid-cols-[repeat(auto-fit,minmax(240px,1fr))] gap-6">
-            <div>
-              <div className="mb-3.5 aspect-[4/3]">
-                <ImageSlot placeholder="product photo" className="h-full w-full" />
-              </div>
-              <div className="mb-1 text-[15px] font-semibold">Plan: Dining Table</div>
-              <div className="text-[15px] text-ink-muted">$18</div>
-            </div>
-            <div>
-              <div className="mb-3.5 aspect-[4/3]">
-                <ImageSlot placeholder="product photo" className="h-full w-full" />
-              </div>
-              <div className="mb-1 text-[15px] font-semibold">Cutting Board Set</div>
-              <div className="text-[15px] text-ink-muted">$64</div>
-            </div>
-            <div>
-              <div className="mb-3.5 aspect-[4/3]">
-                <ImageSlot placeholder="product photo" className="h-full w-full" />
-              </div>
-              <div className="mb-1 text-[15px] font-semibold">
-                Guide: Mortise &amp; Tenon Joints
-              </div>
-              <div className="text-[15px] text-ink-muted">$9</div>
-            </div>
-          </section>
+          {homeShopProducts.length > 0 && (
+            <section className="container-page section-px section-py grid grid-cols-[repeat(auto-fit,minmax(200px,240px))] gap-6">
+              {homeShopProducts.map((product) => (
+                <Link
+                  key={product.id}
+                  href={`/shop/${product.id}`}
+                  className="group block text-ink hover:text-ink"
+                >
+                  <div className="relative mb-3.5 aspect-[2/3] overflow-hidden rounded-md border border-border">
+                    <ProductThumbnail
+                      product={product}
+                      sizes="(max-width: 768px) 50vw, 240px"
+                    />
+                  </div>
+                  <div className="mb-1 text-[15px] font-semibold group-hover:underline">
+                    {product.title}
+                  </div>
+                  <div className="text-[15px] text-ink-muted">
+                    €{product.priceEur}
+                  </div>
+                </Link>
+              ))}
+            </section>
+          )}
         </>
       )}
     </>
