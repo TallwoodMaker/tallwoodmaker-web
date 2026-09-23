@@ -1,7 +1,12 @@
 import Link from "next/link";
 import CookieSettingsLink from "@/components/cookies/CookieSettingsLink";
 
-const SOCIAL_LINKS = ["YouTube", "Instagram", "TikTok", "Facebook"];
+const SOCIAL_LINKS = [
+  { label: "YouTube", href: "https://www.youtube.com/@tallwoodmaker" },
+  { label: "Instagram", href: "https://www.instagram.com/tallwoodmaker" },
+  { label: "TikTok", href: "https://www.tiktok.com/@tallwoodmaker" },
+  { label: "Facebook", href: "https://www.facebook.com/tallwoodmaker" },
+];
 
 export default function Footer() {
   return (
@@ -14,10 +19,10 @@ export default function Footer() {
           <div className="text-sm text-ink-muted">Build. Share. Inspire.</div>
         </div>
         <div className="flex flex-wrap gap-5 text-sm font-medium">
-          {SOCIAL_LINKS.map((label) => (
-            <Link key={label} href="/video">
+          {SOCIAL_LINKS.map(({ label, href }) => (
+            <a key={label} href={href} target="_blank" rel="noopener noreferrer">
               {label}
-            </Link>
+            </a>
           ))}
         </div>
         <div className="text-right text-sm text-ink-muted">
