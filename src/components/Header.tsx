@@ -48,19 +48,6 @@ export default function Header() {
         <nav className="hidden flex-wrap items-center gap-[clamp(14px,2.4vw,28px)] text-sm font-medium uppercase md:flex">
           {NAV_LINKS.map((link) => {
             const active = pathname === link.href;
-            const isPremium = link.href === "/premium";
-
-            if (isPremium) {
-              return (
-                <Link
-                  key={link.href}
-                  href={link.href}
-                  className={`inline-flex items-center rounded-full bg-ink px-4 py-2.5 sm:py-1.5 text-brand hover:text-brand ${active ? "underline underline-offset-2" : ""}`}
-                >
-                  {link.label}
-                </Link>
-              );
-            }
 
             return (
               <Link
@@ -154,15 +141,12 @@ export default function Header() {
           <nav className="container-page section-px flex flex-col divide-y divide-black/10 py-2 text-sm font-medium uppercase">
             {NAV_LINKS.map((link) => {
               const active = pathname === link.href;
-              const isPremium = link.href === "/premium";
               return (
                 <Link
                   key={link.href}
                   href={link.href}
                   onClick={() => setMobileOpen(false)}
-                  className={`flex items-center py-3.5 text-black ${
-                    isPremium ? "font-bold" : ""
-                  } ${active ? "underline underline-offset-2" : ""}`}
+                  className={`flex items-center py-3.5 text-black ${active ? "underline underline-offset-2" : ""}`}
                 >
                   {link.label}
                 </Link>
