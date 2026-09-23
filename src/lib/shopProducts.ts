@@ -111,6 +111,21 @@ export const SHOP_PRODUCTS: ShopProduct[] = [
     imageUrl: "/shop/wardrobes-closets-cover.png",
     available: true,
   },
+  {
+    id: "plan-kids-bunk-bed",
+    title: "Kids' Bunk Bed",
+    description:
+      "Twin-over-full solid pine bunk bed with a fixed ladder and full-height guard rail — cut list, dimensioned drawing, and step-by-step assembly.",
+    type: "plan",
+    category: "plans",
+    priceEur: 4.9,
+    // Stripe product prod_VJXRX1r8w7gpze
+    stripePriceId: "price_1UIuMUCa2aoiD18o7BxIZ3Wn",
+    storagePath: "plans/kids-bunk-bed-en.pdf",
+    fileName: "tallwoodmaker-kids-bunk-bed-plan.pdf",
+    imageUrl: "/shop/kids-bunk-bed-cover.png",
+    available: true,
+  },
 ];
 
 export function getShopProduct(id: string): ShopProduct | undefined {
