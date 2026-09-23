@@ -68,6 +68,49 @@ export const SHOP_PRODUCTS: ShopProduct[] = [
     imageUrl: "/shop/zero-to-first-client-cover.png",
     available: true,
   },
+  // Stripe product prod_VJUW7uQYLWl0Ce, prod_VJUW7DXpAlKaQM, prod_VJUWmpeon9p1Wi
+  {
+    id: "plan-kitchen-cabinet-library",
+    title: "Kitchen Cabinet Library",
+    description:
+      "Dimensioned plans and cut lists for all four kitchen cabinet types — base, wall, tall/pantry, and corner — as one module system.",
+    type: "plan",
+    category: "plans",
+    priceEur: 24,
+    stripePriceId: "price_1UIrXCCa2aoiD18oRZbgyz6V",
+    storagePath: "plans/kitchen-cabinet-library.pdf",
+    fileName: "tallwoodmaker-kitchen-cabinet-library-plan.pdf",
+    imageUrl: "/shop/kitchen-cabinet-library-cover.png",
+    available: true,
+  },
+  {
+    id: "ebook-kitchen-from-scratch",
+    title: "Kitchen from Scratch",
+    description:
+      "A step-by-step guide to planning, building, and installing your own kitchen — without a professional workshop.",
+    type: "ebook",
+    category: "ebooks",
+    priceEur: 19,
+    stripePriceId: "price_1UIrXECa2aoiD18oqBLxjvVW",
+    storagePath: "ebooks/kitchen-from-scratch-en.pdf",
+    fileName: "kitchen-from-scratch.pdf",
+    imageUrl: "/shop/kitchen-from-scratch-cover.png",
+    available: true,
+  },
+  {
+    id: "ebook-wardrobes-closets",
+    title: "Wardrobes & Closets",
+    description:
+      "Built-in sliding-door wardrobes, freestanding hinged wardrobes, and open walk-in systems — how to plan, build, and fit all three.",
+    type: "ebook",
+    category: "ebooks",
+    priceEur: 19,
+    stripePriceId: "price_1UIrXFCa2aoiD18oFhBzlEwG",
+    storagePath: "ebooks/wardrobes-closets-en.pdf",
+    fileName: "wardrobes-closets.pdf",
+    imageUrl: "/shop/wardrobes-closets-cover.png",
+    available: true,
+  },
 ];
 
 export function getShopProduct(id: string): ShopProduct | undefined {
