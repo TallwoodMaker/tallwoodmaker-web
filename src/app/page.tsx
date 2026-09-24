@@ -9,7 +9,11 @@ import {
   TikTokIcon,
   FacebookIcon,
 } from "@/components/SocialIcons";
-import { SHOP_ENABLED, HOME_PROJECTS_ENABLED } from "@/lib/config";
+import {
+  SHOP_ENABLED,
+  HOME_PROJECTS_ENABLED,
+  isPremiumLaunched,
+} from "@/lib/config";
 import { getAvailableShopProducts } from "@/lib/shopProducts";
 import ProductThumbnail from "./shop/ProductThumbnail";
 
@@ -46,6 +50,7 @@ export default function HomePage() {
   // catalog order (see src/lib/shopProducts.ts). Automatically reflects
   // whatever is actually live, so this never drifts out of sync with /shop.
   const homeShopProducts = getAvailableShopProducts().slice(0, 3);
+  const premiumLive = isPremiumLaunched();
 
   return (
     <>
@@ -289,11 +294,12 @@ export default function HomePage() {
             Premium
           </h2>
           <p className="mb-5 text-[15px] leading-[1.6] text-ink-muted">
-            Full builds, extended cuts, and shop files for members — launching
-            soon. Join the waitlist now for an early-bird discount.
+            {premiumLive
+              ? "Full builds, extended cuts, and shop files for members — €9/month, cancel anytime."
+              : "Full builds, extended cuts, and shop files for members — launching soon. Join the waitlist now for an early-bird discount."}
           </p>
           <Link href="/premium/subscribe" className="text-[15px] font-semibold">
-            Learn more →
+            {premiumLive ? "Join Premium →" : "Learn more →"}
           </Link>
         </div>
         <div className="rounded-md border border-border p-8">
