@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Contact",
@@ -76,10 +75,34 @@ export default function ContactPage() {
               Social
             </h3>
             <div className="flex flex-col gap-2 text-[17px] font-medium">
-              <Link href="/video">YouTube · @tallwoodmaker</Link>
-              <Link href="/video">Instagram · @tallwoodmaker</Link>
-              <Link href="/video">TikTok · @tallwoodmaker</Link>
-              <Link href="/video">Facebook · TallWoodMaker</Link>
+              <a
+                href="https://www.youtube.com/@tallwoodmaker"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                YouTube · @tallwoodmaker
+              </a>
+              <a
+                href="https://www.instagram.com/tallwoodmaker"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Instagram · @tallwoodmaker
+              </a>
+              <a
+                href="https://www.tiktok.com/@tallwoodmaker"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                TikTok · @tallwoodmaker
+              </a>
+              <a
+                href="https://www.facebook.com/tallwoodmaker"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Facebook · TallWoodMaker
+              </a>
             </div>
           </div>
         </div>

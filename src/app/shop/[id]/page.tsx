@@ -13,7 +13,25 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { id } = await params;
   const product = getShopProduct(id);
-  return { title: product?.title ?? "Shop" };
+  if (!product) {
+    return { title: "Shop" };
+  }
+  return {
+    title: product.title,
+    description: product.description,
+    openGraph: {
+      title: product.title,
+      description: product.description,
+      type: "website",
+      images: product.imageUrl ? [{ url: product.imageUrl }] : undefined,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: product.title,
+      description: product.description,
+      images: product.imageUrl ? [product.imageUrl] : undefined,
+    },
+  };
 }
 
 export default async function ShopProductPage({
@@ -31,8 +49,30 @@ export default async function ShopProductPage({
     notFound();
   }
 
+  const productJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    name: product.title,
+    description: product.description,
+    image: product.imageUrl
+      ? `https://www.tallwoodmaker.com${product.imageUrl}`
+      : undefined,
+    brand: { "@type": "Brand", name: "TallWoodMaker" },
+    offers: {
+      "@type": "Offer",
+      url: `https://www.tallwoodmaker.com/shop/${product.id}`,
+      priceCurrency: "EUR",
+      price: product.priceEur,
+      availability: "https://schema.org/InStock",
+    },
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(productJsonLd) }}
+      />
       <div className="h-2 bg-brand" />
 
       <section className="container-page section-px py-[clamp(24px,5vw,64px)]">

@@ -15,13 +15,31 @@ const inter = Inter({
   weight: ["400", "500", "600", "700", "800"],
 });
 
+const SITE_URL = "https://www.tallwoodmaker.com";
+const SITE_DESCRIPTION =
+  "Woodworking content for a growing community on YouTube, Instagram, and TikTok. From first sketch to final finish — the whole process, on camera.";
+
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: {
     default: "TallWoodMaker",
     template: "%s · TallWoodMaker",
   },
-  description:
-    "Woodworking content for a growing community on YouTube, Instagram, and TikTok. From first sketch to final finish — the whole process, on camera.",
+  description: SITE_DESCRIPTION,
+  openGraph: {
+    type: "website",
+    siteName: "TallWoodMaker",
+    title: "TallWoodMaker",
+    description: SITE_DESCRIPTION,
+    url: SITE_URL,
+    images: [{ url: "/images/workshop/hero-panelsaw-centered.jpg" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "TallWoodMaker",
+    description: SITE_DESCRIPTION,
+    images: ["/images/workshop/hero-panelsaw-centered.jpg"],
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
