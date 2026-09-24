@@ -108,7 +108,16 @@ export default async function SubscribePage() {
     }
   }
 
-  const published = await listPublishedContent();
+  // Teaser section only ever shows the most recent few, so the page stays
+  // short and visitors reach pricing without endless scrolling.
+  const MAX_TEASER_ITEMS = 4;
+  const published = (await listPublishedContent())
+    .slice()
+    .sort(
+      (a, b) =>
+        new Date(b.created_at).getTime() - new Date(a.created_at).getTime(),
+    )
+    .slice(0, MAX_TEASER_ITEMS);
 
   return (
     <>
