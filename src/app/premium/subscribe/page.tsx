@@ -8,6 +8,7 @@ import { PREMIUM_LAUNCH_DATE, isPremiumLaunched } from "@/lib/config";
 import { createClient } from "@/lib/supabase/server";
 import { getSubscriberByEmail, hasActiveSubscription } from "@/lib/subscribers";
 import { listPublishedContent } from "@/lib/premiumContent";
+import ImageSlot from "@/components/ImageSlot";
 
 export const metadata: Metadata = {
   title: "Premium",
@@ -19,6 +20,7 @@ const TYPE_LABEL: Record<string, string> = {
   video: "Video",
   plan_download: "Download",
   announcement: "Update",
+  article: "Article",
 };
 
 // Shown under "What's included" until real premium_content entries are
@@ -128,37 +130,71 @@ export default async function SubscribePage() {
 
       {/* What's included */}
       <section className="container-page section-px border-t border-border py-12">
-        <h2 className="mb-6 text-center text-2xl font-bold">
+        <h2 className="mb-2 text-center text-2xl font-bold">
           What&apos;s included
         </h2>
-        <ul className="mx-auto grid max-w-[640px] gap-3.5">
-          {(published.length > 0
-            ? published.map((entry) => ({
-                key: entry.id,
-                label: entry.title,
-                tag: TYPE_LABEL[entry.content_type],
-              }))
-            : FALLBACK_BENEFITS.map((label, i) => ({
-                key: i,
-                label,
-                tag: null,
-              }))
-          ).map((item) => (
-            <li key={item.key} className="flex items-start gap-3">
-              <span className="mt-1 h-5 w-5 flex-none rounded-full bg-brand text-center text-[13px] font-bold leading-5 text-ink">
-                ✓
-              </span>
-              <span className="text-[15px] leading-[1.6] text-ink">
-                {item.label}
-                {item.tag && (
-                  <span className="ml-2 rounded-full bg-ink/10 px-2 py-0.5 text-[11px] font-bold uppercase tracking-[0.04em] text-ink-muted">
-                    {item.tag}
-                  </span>
-                )}
-              </span>
-            </li>
-          ))}
-        </ul>
+
+        {published.length > 0 ? (
+          <>
+            <p className="mx-auto mb-8 max-w-[560px] text-center text-[15px] leading-[1.6] text-ink-muted">
+              A preview of what&apos;s waiting inside — new content added
+              every month.
+            </p>
+            <div className="mx-auto grid max-w-[920px] gap-6 sm:grid-cols-2">
+              {published.map((entry) => (
+                <div
+                  key={entry.id}
+                  className="overflow-hidden rounded-md border border-border"
+                >
+                  <div className="relative aspect-video overflow-hidden bg-ink/[0.05]">
+                    {entry.thumbnail_url ? (
+                      // eslint-disable-next-line @next/next/no-img-element
+                      <img
+                        src={entry.thumbnail_url}
+                        alt=""
+                        className="h-full w-full object-cover"
+                      />
+                    ) : (
+                      <ImageSlot
+                        placeholder={TYPE_LABEL[entry.content_type] ?? "preview"}
+                        className="h-full w-full"
+                      />
+                    )}
+                    <span className="absolute right-2 top-2 rounded-full bg-ink/80 px-2.5 py-1 text-[11px] font-bold uppercase tracking-[0.04em] text-brand">
+                      Members only
+                    </span>
+                  </div>
+                  <div className="p-4">
+                    <span className="mb-2 inline-block rounded-full bg-ink/10 px-2 py-0.5 text-[11px] font-bold uppercase tracking-[0.04em] text-ink-muted">
+                      {TYPE_LABEL[entry.content_type] ?? entry.content_type}
+                    </span>
+                    <h3 className="mb-1 text-[15px] font-bold leading-[1.4] text-ink">
+                      {entry.title}
+                    </h3>
+                    {entry.description && (
+                      <p className="text-[13px] leading-[1.5] text-ink-muted">
+                        {entry.description}
+                      </p>
+                    )}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </>
+        ) : (
+          <ul className="mx-auto grid max-w-[640px] gap-3.5">
+            {FALLBACK_BENEFITS.map((label, i) => (
+              <li key={i} className="flex items-start gap-3">
+                <span className="mt-1 h-5 w-5 flex-none rounded-full bg-brand text-center text-[13px] font-bold leading-5 text-ink">
+                  ✓
+                </span>
+                <span className="text-[15px] leading-[1.6] text-ink">
+                  {label}
+                </span>
+              </li>
+            ))}
+          </ul>
+        )}
       </section>
 
       {/* Pricing + CTA */}
