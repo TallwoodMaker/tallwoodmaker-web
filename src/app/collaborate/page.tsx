@@ -26,6 +26,33 @@ const WHAT_BRANDS_GET = [
   },
 ];
 
+const MEDIA_KIT_STATS = [
+  { label: "Combined followers", value: "30,000+" },
+  { label: "Monthly reach", value: "20M+" },
+  { label: "Years in the trade", value: "15" },
+];
+
+const PARTNERSHIP_OPTIONS = [
+  {
+    title: "Product mention",
+    description:
+      "Your tool or material shown and named in a regular build video.",
+    price: "Get a quote",
+  },
+  {
+    title: "Dedicated feature",
+    description:
+      "A full video built around your product — review, test, or tutorial.",
+    price: "Get a quote",
+  },
+  {
+    title: "Ongoing partnership",
+    description:
+      "Multiple videos over a season, plus shop and social mentions.",
+    price: "Get a quote",
+  },
+];
+
 export default function CollaboratePage() {
   return (
     <>
@@ -48,58 +75,35 @@ export default function CollaboratePage() {
       />
       <section className="container-page section-px pb-[clamp(24px,5vw,64px)] pt-12">
         <p className="max-w-[640px] text-[17px] leading-[1.75] text-ink-soft">
-          That&apos;s the whole operation in three words. I build real pieces
-          in a real shop, I share the process — the good cuts and the bad
-          ones — and the goal is always to leave people knowing more than
-          they did before they watched. Every partnership has to fit inside
-          that, or it doesn&apos;t happen.
+          I&apos;m Tom — fifteen years working wood professionally, not since
+          I picked up a camera. TallWoodMaker documents real client work:
+          kitchens, custom furniture, and full interior fit-outs, run on CNC
+          machinery and panel saws every day, not weekend projects. The
+          channel exists to pass the trade on properly, the way it was taught
+          to me — entertainment is a side effect, not the point.
         </p>
       </section>
 
       <PromoBanner
-        title="Fifteen years in the trade"
-        description="A working shop in Slovakia, not a hobby that turned into content."
-        linkHref="/about"
-        linkLabel="More about me →"
+        title="By the numbers"
+        description="A quick look at the audience behind the channel."
       />
       <section className="container-page section-px pb-[clamp(24px,5vw,64px)] pt-12">
-        <p className="max-w-[640px] text-[17px] leading-[1.75] text-ink-soft">
-          I&apos;m Tom. I&apos;ve been working wood professionally for
-          fifteen years, not since I picked up a camera. TallWoodMaker
-          isn&apos;t a hobby that turned into content — it&apos;s a working
-          shop in Slovakia that happens to be filmed. I run CNC machinery,
-          panel saws, and edge banders every day for actual paying work, and
-          the channel documents that — not a weekend-warrior version of it.
-        </p>
-      </section>
-
-      <PromoBanner
-        title="Real work, not weekend projects"
-        description="Kitchens, custom furniture, and full interior fit-outs — not birdhouses."
-      />
-      <section className="container-page section-px pb-[clamp(24px,5vw,64px)] pt-12">
-        <p className="max-w-[640px] text-[17px] leading-[1.75] text-ink-soft">
-          The builds on this channel are kitchens, custom furniture, and full
-          interior fit-outs — the kind of jobs that take weeks, not an
-          afternoon. I&apos;m not filming birdhouses for beginners.
-          It&apos;s professional-grade work, shot as it actually happens on
-          the shop floor, cut list to finished install.
-        </p>
-      </section>
-
-      <PromoBanner
-        title="Passing the trade on"
-        description="Helping the next generation actually learn the trade, not just watch it."
-      />
-      <section className="container-page section-px pb-[clamp(24px,5vw,64px)] pt-12">
-        <p className="max-w-[640px] text-[17px] leading-[1.75] text-ink-soft">
-          Woodworking got passed down to me by people who took the time to
-          explain it properly, and I want to do the same for whoever&apos;s
-          watching. The goal isn&apos;t views for their own sake — it&apos;s
-          helping the next generation of woodworkers actually learn the
-          trade: the joinery, the machines, the judgment calls you only get
-          from doing it. Entertainment is a side effect, not the point.
-        </p>
+        <div className="grid grid-cols-[repeat(auto-fit,minmax(180px,1fr))] gap-6">
+          {MEDIA_KIT_STATS.map((stat) => (
+            <div
+              key={stat.label}
+              className="rounded-md border border-border p-6 text-center"
+            >
+              <div className="mb-1 text-[clamp(28px,4vw,36px)] font-extrabold leading-none">
+                {stat.value}
+              </div>
+              <div className="text-[13px] font-semibold uppercase tracking-[0.03em] text-ink-muted">
+                {stat.label}
+              </div>
+            </div>
+          ))}
+        </div>
       </section>
 
       <PromoBanner
@@ -117,6 +121,29 @@ export default function CollaboratePage() {
               <p className="text-[15px] leading-[1.6] text-ink-muted">
                 {item.description}
               </p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <PromoBanner
+        title="Partnership options"
+        description="A few ways to work together — every partnership is scoped to fit."
+      />
+      <section className="container-page section-px pb-[clamp(24px,5vw,64px)] pt-12">
+        <div className="grid grid-cols-[repeat(auto-fit,minmax(260px,1fr))] gap-6">
+          {PARTNERSHIP_OPTIONS.map((option) => (
+            <div
+              key={option.title}
+              className="flex flex-col gap-3 rounded-md border border-border p-6"
+            >
+              <h3 className="text-[17px] font-bold">{option.title}</h3>
+              <p className="flex-1 text-[14px] leading-[1.6] text-ink-muted">
+                {option.description}
+              </p>
+              <div className="text-[15px] font-bold text-ink">
+                {option.price}
+              </div>
             </div>
           ))}
         </div>

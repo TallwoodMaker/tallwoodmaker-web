@@ -9,8 +9,6 @@ const ALL_NAV_LINKS: NavLink[] = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About" },
   { href: "/course", label: "Course" },
-  { href: "/collaborate", label: "Collaborate" },
-  { href: "/benefits", label: "Benefits" },
   { href: "/shop", label: "Shop" },
   { href: "/premium", label: "Premium" },
   { href: "/contact", label: "Contact" },

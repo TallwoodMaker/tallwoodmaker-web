@@ -19,6 +19,14 @@ export default function Footer() {
           <div className="text-sm text-ink-muted">Build. Share. Inspire.</div>
         </div>
         <div className="flex flex-wrap gap-5 text-sm font-medium">
+          <Link href="/collaborate" className="text-ink hover:text-ink">
+            Collaborate
+          </Link>
+          <Link href="/benefits" className="text-ink hover:text-ink">
+            Benefits
+          </Link>
+        </div>
+        <div className="flex flex-wrap gap-5 text-sm font-medium">
           {SOCIAL_LINKS.map(({ label, href }) => (
             <a key={label} href={href} target="_blank" rel="noopener noreferrer">
               {label}
