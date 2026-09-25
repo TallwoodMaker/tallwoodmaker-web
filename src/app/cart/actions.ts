@@ -39,6 +39,20 @@ export async function createCartCheckoutSession(
     };
   }
 
+  // Digital content is delivered instantly on payment, which under EU
+  // consumer law (Terms of Service, Section 4) requires the buyer's prior
+  // express consent to immediate delivery and acknowledgment that they
+  // lose their 14-day right of withdrawal. The checkbox in the checkout
+  // form is `required` client-side; this re-checks it server-side since a
+  // server action can be invoked directly, bypassing HTML validation.
+  if (formData.get("withdrawalConsent") !== "true") {
+    return {
+      status: "error",
+      message:
+        "Please confirm you want immediate access to your digital purchase to continue.",
+    };
+  }
+
   const origin = await getOrigin();
 
   const session = await stripe.checkout.sessions.create({

@@ -90,6 +90,24 @@ export default function CartPageClient() {
                     value={product.id}
                   />
                 ))}
+                <label className="mb-3 flex items-start gap-2 text-[12px] leading-[1.5] text-ink-muted">
+                  <input
+                    type="checkbox"
+                    name="withdrawalConsent"
+                    value="true"
+                    required
+                    className="mt-0.5"
+                  />
+                  <span>
+                    I want immediate access to this digital content and I
+                    acknowledge that I lose my right of withdrawal once
+                    delivery begins. I agree to the{" "}
+                    <Link href="/terms" className="underline">
+                      Terms of Service
+                    </Link>
+                    .
+                  </span>
+                </label>
                 <button
                   type="submit"
                   disabled={pending}

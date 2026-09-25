@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { redirect } from "next/navigation";
 import CountdownTimer from "./CountdownTimer";
 import WaitlistForm from "./WaitlistForm";
@@ -52,7 +53,11 @@ const FAQ_ITEMS = [
   },
 ];
 
-export default async function SubscribePage() {
+export default async function SubscribePage({
+  searchParams,
+}: {
+  searchParams: Promise<{ error?: string }>;
+}) {
   const launchOpen = isPremiumLaunched();
 
   if (!launchOpen) {
@@ -107,6 +112,8 @@ export default async function SubscribePage() {
       redirect("/premium");
     }
   }
+
+  const { error } = await searchParams;
 
   // Teaser section only ever shows the most recent few, so the page stays
   // short and visitors reach pricing without endless scrolling.
@@ -222,6 +229,29 @@ export default async function SubscribePage() {
 
           {user?.email ? (
             <form action={createCheckoutSession}>
+              <label className="mb-4 flex items-start gap-2 text-left text-[12px] leading-[1.5] text-ink-muted">
+                <input
+                  type="checkbox"
+                  name="immediateAccessConsent"
+                  value="true"
+                  required
+                  className="mt-0.5"
+                />
+                <span>
+                  I want immediate access to Premium and I acknowledge that I
+                  lose my right of withdrawal once access begins. I agree to
+                  the{" "}
+                  <Link href="/terms" className="underline">
+                    Terms of Service
+                  </Link>
+                  .
+                </span>
+              </label>
+              {error === "consent" && (
+                <p className="mb-3 text-[13px] text-link">
+                  Please confirm the checkbox to continue.
+                </p>
+              )}
               <button
                 type="submit"
                 className="w-full cursor-pointer rounded bg-brand px-6 py-3.5 text-[16px] font-bold text-ink"

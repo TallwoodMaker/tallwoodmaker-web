@@ -48,7 +48,7 @@ export async function sendMagicLink(
   return { status: "sent", message: `Check ${email} for a sign-in link.` };
 }
 
-export async function createCheckoutSession() {
+export async function createCheckoutSession(formData: FormData) {
   const supabase = await createClient();
   const {
     data: { user },
@@ -56,6 +56,16 @@ export async function createCheckoutSession() {
 
   if (!user?.email) {
     redirect("/premium/subscribe");
+  }
+
+  // Premium access starts immediately on payment, which under EU consumer
+  // law (Terms of Service, Section 5.4) requires the member's express
+  // request for immediate access and acknowledgment of the pro-rated loss
+  // of their 14-day right of withdrawal. The checkbox on this page is
+  // `required` client-side; this re-checks it server-side since a server
+  // action can be invoked directly, bypassing HTML validation.
+  if (formData.get("immediateAccessConsent") !== "true") {
+    redirect("/premium/subscribe?error=consent");
   }
 
   const origin = await getOrigin();

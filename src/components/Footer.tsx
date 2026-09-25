@@ -31,6 +31,12 @@ export default function Footer() {
         </div>
       </div>
       <div className="container-page mt-8 flex flex-wrap gap-5 border-t border-ink/15 pt-5 text-[13px] text-ink-muted">
+        <Link href="/terms" className="text-ink-muted hover:text-ink">
+          Terms of Service
+        </Link>
+        <Link href="/privacy" className="text-ink-muted hover:text-ink">
+          Privacy Policy
+        </Link>
         <Link href="/cookies" className="text-ink-muted hover:text-ink">
           Cookie Policy
         </Link>
