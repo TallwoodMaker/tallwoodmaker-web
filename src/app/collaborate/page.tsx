@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import PromoBanner from "@/components/PromoBanner";
 
 export const metadata: Metadata = {
@@ -69,6 +70,18 @@ export default function CollaboratePage() {
         </p>
       </section>
 
+      <section className="container-page section-px pb-[clamp(24px,5vw,64px)]">
+        <div className="relative aspect-[16/7] w-full overflow-hidden rounded-md border border-border">
+          <Image
+            src="/images/workshop/workshop-1.jpg"
+            alt="Biesse Rover A Smart CNC machining center in the workshop"
+            fill
+            className="object-cover"
+            sizes="100vw"
+          />
+        </div>
+      </section>
+
       <PromoBanner
         title="Build. Share. Inspire."
         description="The philosophy behind everything I build, on camera or off."
@@ -111,6 +124,35 @@ export default function CollaboratePage() {
         description="Here's what a partnership actually puts in front of real woodworkers."
       />
       <section className="container-page section-px pb-[clamp(24px,5vw,64px)] pt-12">
+        <div className="mb-8 grid grid-cols-[repeat(auto-fit,minmax(220px,1fr))] gap-4">
+          {[
+            {
+              src: "/images/workshop/workshop-4.jpg",
+              alt: "Tom loading a board onto the Biesse Selco panel saw",
+            },
+            {
+              src: "/images/workshop/workshop-2.jpg",
+              alt: "Edge banding machine applying banding to a panel",
+            },
+            {
+              src: "/images/workshop/workshop-8.jpg",
+              alt: "Wide view of the workshop with lumber racks and a hot press",
+            },
+          ].map((photo) => (
+            <div
+              key={photo.src}
+              className="relative aspect-[4/3] overflow-hidden rounded-md border border-border"
+            >
+              <Image
+                src={photo.src}
+                alt={photo.alt}
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 33vw"
+              />
+            </div>
+          ))}
+        </div>
         <div className="grid grid-cols-[repeat(auto-fit,minmax(280px,1fr))] gap-8">
           {WHAT_BRANDS_GET.map((item) => (
             <div
