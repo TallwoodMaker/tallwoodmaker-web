@@ -135,46 +135,6 @@ export default function HomePage() {
       )}
 
       <section className="container-page section-px section-py border-t border-border">
-        <h2 className="mb-2.5 inline-block bg-brand px-3.5 py-1 text-[28px] font-bold">
-          Get Started
-        </h2>
-        <p className="mb-8 max-w-[560px] text-[15px] leading-[1.6] text-ink-muted">
-          Already following along? Here&apos;s where to go next.
-        </p>
-
-        <div className="grid grid-cols-[repeat(auto-fit,minmax(320px,1fr))] gap-10">
-          <div className="rounded-md border border-border p-8">
-            <h3 className="mb-2.5 text-[22px] font-bold">Shop</h3>
-            <p className="mb-5 text-[15px] leading-[1.6] text-ink-muted">
-              Build plans and cut lists ready to download — pick a project
-              and start today.
-            </p>
-            <Link
-              href="/shop"
-              className="inline-block rounded bg-brand px-6 py-3 text-[15px] font-bold text-ink"
-            >
-              Visit the shop →
-            </Link>
-          </div>
-
-          <div className="rounded-md border border-border p-8">
-            <h3 className="mb-2.5 text-[22px] font-bold">Premium</h3>
-            <p className="mb-5 text-[15px] leading-[1.6] text-ink-muted">
-              {premiumLive
-                ? "Full builds, extended cuts, and shop files for members — €9/month, cancel anytime."
-                : "Full builds, extended cuts, and shop files for members — launching soon. Join the waitlist now for an early-bird discount."}
-            </p>
-            <Link
-              href="/premium/subscribe"
-              className="inline-block rounded bg-brand px-6 py-3 text-[15px] font-bold text-ink"
-            >
-              {premiumLive ? "Join Premium →" : "Learn more →"}
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      <section className="container-page section-px section-py border-t border-border">
         <h2 className="mb-4 inline-block bg-brand px-3.5 py-1 text-[28px] font-bold">
           Long-Form Videos
         </h2>
