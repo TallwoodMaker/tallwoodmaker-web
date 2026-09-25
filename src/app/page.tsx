@@ -2,13 +2,6 @@ import Link from "next/link";
 import Image from "next/image";
 import ImageSlot from "@/components/ImageSlot";
 import PromoBanner from "@/components/PromoBanner";
-import TikTokCreatorEmbed from "@/components/TikTokCreatorEmbed";
-import {
-  YouTubeIcon,
-  InstagramIcon,
-  TikTokIcon,
-  FacebookIcon,
-} from "@/components/SocialIcons";
 import {
   SHOP_ENABLED,
   HOME_PROJECTS_ENABLED,
@@ -16,13 +9,6 @@ import {
 } from "@/lib/config";
 import { getAvailableShopProducts } from "@/lib/shopProducts";
 import ProductThumbnail from "./shop/ProductThumbnail";
-
-const SOCIAL_LINKS = [
-  { name: "YouTube", url: "https://youtube.com/@tallwoodmaker", Icon: YouTubeIcon },
-  { name: "Instagram", url: "https://instagram.com/tallwoodmaker", Icon: InstagramIcon },
-  { name: "TikTok", url: "https://tiktok.com/@tallwoodmaker", Icon: TikTokIcon },
-  { name: "Facebook", url: "https://facebook.com/Tallwoodmaker", Icon: FacebookIcon },
-];
 
 const LONG_FORM_VIDEOS = [
   {
@@ -148,95 +134,42 @@ export default function HomePage() {
         </>
       )}
 
-      <PromoBanner
-        title="Follow the build"
-        description="New video every week — process, tools, mistakes, and results."
-        linkHref="/about#video"
-        linkLabel="All videos →"
-      />
-
-      <section className="container-page section-px section-py">
-        <h2 className="mb-4 inline-block bg-brand px-3.5 py-1 text-[28px] font-bold">
-          Follow Along
+      <section className="container-page section-px section-py border-t border-border">
+        <h2 className="mb-2.5 inline-block bg-brand px-3.5 py-1 text-[28px] font-bold">
+          Get Started
         </h2>
-        <p className="mb-8 max-w-[520px] text-[15px] leading-[1.6] text-ink-muted">
-          New builds and behind-the-scenes drop across every platform — pick
-          where you want to follow.
+        <p className="mb-8 max-w-[560px] text-[15px] leading-[1.6] text-ink-muted">
+          Already following along? Here&apos;s where to go next.
         </p>
 
-        <div className="mb-10 flex flex-wrap gap-3">
-          {SOCIAL_LINKS.map(({ name, url, Icon }) => (
-            <a
-              key={name}
-              href={url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 rounded-full border border-border px-5 py-2.5 text-[15px] font-semibold text-ink hover:border-ink hover:text-ink"
-            >
-              <Icon className="text-ink" />
-              Follow on {name}
-            </a>
-          ))}
-        </div>
-
-        <div className="grid grid-cols-[repeat(auto-fit,minmax(280px,1fr))] gap-6">
-          <div className="rounded-md border border-border p-6">
-            <div className="mb-4 flex items-center gap-2.5">
-              <YouTubeIcon className="text-ink" />
-              <h3 className="text-lg font-bold">YouTube</h3>
-            </div>
-            <div className="grid grid-cols-3 gap-2">
-              {LONG_FORM_VIDEOS.map((video) => (
-                <a
-                  key={video.id}
-                  href={`https://www.youtube.com/watch?v=${video.id}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="aspect-video overflow-hidden rounded border border-border"
-                >
-                  <img
-                    src={`https://i.ytimg.com/vi/${video.id}/hqdefault.jpg`}
-                    alt={video.title}
-                    className="h-full w-full object-cover transition-transform hover:scale-105"
-                  />
-                </a>
-              ))}
-            </div>
-            <a
-              href="https://youtube.com/@tallwoodmaker"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-4 inline-block text-[15px] font-semibold"
-            >
-              Watch more on YouTube →
-            </a>
-          </div>
-
-          <div className="flex flex-col rounded-md border border-border p-6">
-            <div className="mb-4 flex items-center gap-2.5">
-              <InstagramIcon className="text-ink" />
-              <h3 className="text-lg font-bold">Instagram</h3>
-            </div>
-            <p className="mb-5 flex-1 text-[15px] text-ink-muted">
-              See our latest posts on Instagram — daily cuts, reels, and
-              behind-the-scenes from the shop.
+        <div className="grid grid-cols-[repeat(auto-fit,minmax(320px,1fr))] gap-10">
+          <div className="rounded-md border border-border p-8">
+            <h3 className="mb-2.5 text-[22px] font-bold">Shop</h3>
+            <p className="mb-5 text-[15px] leading-[1.6] text-ink-muted">
+              Build plans and cut lists ready to download — pick a project
+              and start today.
             </p>
-            <a
-              href="https://instagram.com/tallwoodmaker"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-[15px] font-semibold"
+            <Link
+              href="/shop"
+              className="inline-block rounded bg-brand px-6 py-3 text-[15px] font-bold text-ink"
             >
-              Follow on Instagram →
-            </a>
+              Visit the shop →
+            </Link>
           </div>
 
-          <div className="rounded-md border border-border p-6">
-            <div className="mb-4 flex items-center gap-2.5">
-              <TikTokIcon className="text-ink" />
-              <h3 className="text-lg font-bold">TikTok</h3>
-            </div>
-            <TikTokCreatorEmbed />
+          <div className="rounded-md border border-border p-8">
+            <h3 className="mb-2.5 text-[22px] font-bold">Premium</h3>
+            <p className="mb-5 text-[15px] leading-[1.6] text-ink-muted">
+              {premiumLive
+                ? "Full builds, extended cuts, and shop files for members — €9/month, cancel anytime."
+                : "Full builds, extended cuts, and shop files for members — launching soon. Join the waitlist now for an early-bird discount."}
+            </p>
+            <Link
+              href="/premium/subscribe"
+              className="inline-block rounded bg-brand px-6 py-3 text-[15px] font-bold text-ink"
+            >
+              {premiumLive ? "Join Premium →" : "Learn more →"}
+            </Link>
           </div>
         </div>
       </section>
