@@ -1,20 +1,21 @@
 // Browsable grouping, shown as filter pills on /shop — distinct from `type`
 // below, which drives presentation (placeholder copy) rather than browsing.
 // Add more as the catalog grows (e.g. a future "kitchen-plans").
-export type ShopProductCategory = "ebooks" | "plans";
+export type ShopProductCategory = "ebooks" | "plans" | "bundles";
 
 export type ShopCategoryDef = { id: ShopProductCategory; label: string };
 
 export const SHOP_CATEGORIES: ShopCategoryDef[] = [
   { id: "ebooks", label: "Ebooks" },
   { id: "plans", label: "Plans" },
+  { id: "bundles", label: "Bundles" },
 ];
 
 export type ShopProduct = {
   id: string;
   title: string;
   description: string;
-  type: "plan" | "ebook";
+  type: "plan" | "ebook" | "bundle";
   category: ShopProductCategory;
   priceEur: number;
   stripePriceId: string;
@@ -32,8 +33,14 @@ export type ShopProduct = {
   // A single sample page image from the actual PDF (e.g.
   // "/shop/ebook-kitchen-from-scratch-sample.png"), shown on the product
   // page so buyers can see real inside pages before purchasing. Optional —
-  // extracted from the real file per product, never a placeholder.
+  // extracted from the real file per product, never a placeholder. Not
+  // used for bundles — see `includes` instead.
   samplePageUrl?: string;
+  // Other product ids (from this same catalog) included in a bundle.
+  // Rendered as a "What's included" section linking to each item's own
+  // /shop/{id} page, where its own description and sample page live.
+  // Optional — only set for type: "bundle".
+  includes?: string[];
   // False hides the product from /shop and refuses checkout for it — for a
   // product whose Stripe Price exists but whose file isn't uploaded to
   // shop-files yet. Flip to true once storagePath is actually in the bucket.
@@ -174,6 +181,31 @@ export const SHOP_PRODUCTS: ShopProduct[] = [
       "Finish it safe for kids — the guard-rail spacing and age guidance to check against your local safety standard before it's used.",
     ],
     // Stripe Price is live and verified (fixed 2026-09-26).
+    available: true,
+  },
+  // Stripe product prod_VKcm6JCiXseegN (live)
+  {
+    id: "bundle-kitchen-starter",
+    title: "Kitchen Starter Bundle",
+    description:
+      "Everything you need to build your own kitchen — the complete how-to ebook plus the matching cabinet plans, together for less than buying them separately.",
+    type: "bundle",
+    category: "bundles",
+    priceEur: 33,
+    stripePriceId: "price_1UJxXMCa2aoiD18oiINDUZAU",
+    storagePath: "bundles/kitchen-starter-bundle.zip",
+    fileName: "tallwoodmaker-kitchen-starter-bundle.zip",
+    imageUrl: "/shop/kitchen-starter-bundle-cover.png",
+    includes: ["ebook-kitchen-from-scratch", "plan-kitchen-cabinet-library"],
+    whatYouLearn: [
+      "Plan and build a complete kitchen from scratch — measuring the room, setting a work triangle, ordering materials, and installing cabinets, start to finish.",
+      "Build every cabinet type you need from one matched system — base, wall, tall/pantry, and corner cabinets, all sharing the same construction, material, and hardware.",
+      "Get every cutting list and dimensioned drawing in one package — nothing guessed, nothing left to figure out on the workshop floor.",
+      "Fit and finish it like a pro — template and fit the worktop yourself, hang doors straight, and finish cabinets that hold up to daily use.",
+      "Save €10 versus buying both separately — €33 instead of €43.",
+    ],
+    // Verified end to end 2026-09-26: live price, zip contents confirmed
+    // readable, checkout-session dry run passed.
     available: true,
   },
 ];

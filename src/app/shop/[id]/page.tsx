@@ -134,6 +134,43 @@ export default async function ShopProductPage({
           </div>
         </div>
 
+        {product.includes && product.includes.length > 0 && (
+          <div className="mt-12 border-t border-border pt-10">
+            <h2 className="mb-4 text-[13px] font-bold uppercase tracking-[0.05em] text-ink-muted">
+              What&apos;s included
+            </h2>
+            <div className="grid max-w-[560px] gap-4">
+              {product.includes.map((includedId) => {
+                const includedProduct = getShopProduct(includedId);
+                if (!includedProduct) return null;
+                return (
+                  <Link
+                    key={includedId}
+                    href={`/shop/${includedId}`}
+                    className="group flex items-center gap-4 rounded-md border border-border p-4 text-ink hover:border-ink"
+                  >
+                    <div className="relative aspect-[2/3] w-16 flex-none overflow-hidden rounded">
+                      <ProductThumbnail
+                        product={includedProduct}
+                        sizes="64px"
+                      />
+                    </div>
+                    <div className="flex-1">
+                      <div className="mb-0.5 font-semibold group-hover:underline">
+                        {includedProduct.title}
+                      </div>
+                      <div className="text-sm text-ink-muted">
+                        €{includedProduct.priceEur} on its own
+                      </div>
+                    </div>
+                    <span className="text-sm text-ink-muted">View →</span>
+                  </Link>
+                );
+              })}
+            </div>
+          </div>
+        )}
+
         {product.samplePageUrl && (
           <div className="mt-12 border-t border-border pt-10">
             <h2 className="mb-4 text-[13px] font-bold uppercase tracking-[0.05em] text-ink-muted">

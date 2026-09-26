@@ -5,6 +5,7 @@ import type { ShopProduct } from "@/lib/shopProducts";
 const PLACEHOLDER_BY_TYPE: Record<ShopProduct["type"], string> = {
   plan: "plan preview",
   ebook: "ebook cover",
+  bundle: "bundle cover",
 };
 
 // Shared by ShopGrid, the detail page, and the cart page — no hooks, so it
