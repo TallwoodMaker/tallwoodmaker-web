@@ -78,7 +78,8 @@ export const SHOP_PRODUCTS: ShopProduct[] = [
     imageUrl: "/shop/zero-to-first-client-cover.png",
     available: true,
   },
-  // Stripe product prod_VJUW7uQYLWl0Ce, prod_VJUW7DXpAlKaQM, prod_VJUWmpeon9p1Wi
+  // Stripe product prod_VKcaCwDe9xgKdV (live; replaces the old test-mode
+  // product prod_VJUW7uQYLWl0Ce)
   {
     id: "plan-kitchen-cabinet-library",
     title: "Kitchen Cabinet Library",
@@ -87,7 +88,7 @@ export const SHOP_PRODUCTS: ShopProduct[] = [
     type: "plan",
     category: "plans",
     priceEur: 24,
-    stripePriceId: "price_1UIrXCCa2aoiD18oRZbgyz6V",
+    stripePriceId: "price_1UJxLVCa2aoiD18ooGWIzIcI",
     storagePath: "plans/kitchen-cabinet-library.pdf",
     fileName: "tallwoodmaker-kitchen-cabinet-library-plan.pdf",
     imageUrl: "/shop/kitchen-cabinet-library-cover.png",
@@ -99,9 +100,8 @@ export const SHOP_PRODUCTS: ShopProduct[] = [
       "Handle the corner cabinet with confidence — the one part of most kitchens that trips people up, planned and drawn like every other module.",
       "Finish cabinets that hold up to daily use — the surface and maintenance steps that keep a kitchen looking right for years.",
     ],
-    // Stripe Price is TEST MODE, not live — created with the .env.local
-    // test key by mistake. Hidden until it's replaced with a real live
-    // Price. See chat history (2026-09-26).
+    // Stripe Price is now live (fixed 2026-09-26). Still hidden pending a
+    // live checkout-session dry run — see chat history.
     available: false,
   },
   {
@@ -112,7 +112,8 @@ export const SHOP_PRODUCTS: ShopProduct[] = [
     type: "ebook",
     category: "ebooks",
     priceEur: 19,
-    stripePriceId: "price_1UIrXECa2aoiD18oqBLxjvVW",
+    // Stripe product prod_VKca8EX6yTJvYa (live)
+    stripePriceId: "price_1UJxLWCa2aoiD18obo3YKlof",
     storagePath: "ebooks/kitchen-from-scratch-en.pdf",
     fileName: "kitchen-from-scratch.pdf",
     imageUrl: "/shop/kitchen-from-scratch-cover.png",
@@ -124,9 +125,8 @@ export const SHOP_PRODUCTS: ShopProduct[] = [
       "Template and fit a worktop yourself — including sink and hob cutouts, joins, and sealing, without paying a fabricator to do it for you.",
       "Finish it like a pro — doors hung straight in one pass, plinths fitted, lighting wired in, and a final checklist so nothing gets missed.",
     ],
-    // Stripe Price is TEST MODE, not live — created with the .env.local
-    // test key by mistake. Hidden until it's replaced with a real live
-    // Price. See chat history (2026-09-26).
+    // Stripe Price is now live (fixed 2026-09-26). Still hidden pending a
+    // live checkout-session dry run — see chat history.
     available: false,
   },
   {
@@ -137,7 +137,8 @@ export const SHOP_PRODUCTS: ShopProduct[] = [
     type: "ebook",
     category: "ebooks",
     priceEur: 19,
-    stripePriceId: "price_1UIrXFCa2aoiD18oFhBzlEwG",
+    // Stripe product prod_VKca7yKGVqUi9U (live)
+    stripePriceId: "price_1UJxLWCa2aoiD18o2Eul7ki9",
     storagePath: "ebooks/wardrobes-closets-en.pdf",
     fileName: "wardrobes-closets.pdf",
     imageUrl: "/shop/wardrobes-closets-cover.png",
@@ -149,9 +150,8 @@ export const SHOP_PRODUCTS: ShopProduct[] = [
       "Lay out the inside properly — hanging heights, rail specs, and shelf spacing that actually fit clothes, not just look right on paper.",
       "Fit the hardware and finish the job — sliding door tracks, drawers, and accessories, through to a final install-day checklist.",
     ],
-    // Stripe Price is TEST MODE, not live — created with the .env.local
-    // test key by mistake. Hidden until it's replaced with a real live
-    // Price. See chat history (2026-09-26).
+    // Stripe Price is now live (fixed 2026-09-26). Still hidden pending a
+    // live checkout-session dry run — see chat history.
     available: false,
   },
   {
@@ -162,8 +162,9 @@ export const SHOP_PRODUCTS: ShopProduct[] = [
     type: "plan",
     category: "plans",
     priceEur: 4.9,
-    // Stripe product prod_VJXRX1r8w7gpze
-    stripePriceId: "price_1UIuMUCa2aoiD18o7BxIZ3Wn",
+    // Stripe product prod_VKcakOindifAMb (live; replaces the old test-mode
+    // product prod_VJXRX1r8w7gpze)
+    stripePriceId: "price_1UJxLXCa2aoiD18ofeFoMjLt",
     storagePath: "plans/kids-bunk-bed-en.pdf",
     fileName: "tallwoodmaker-kids-bunk-bed-plan.pdf",
     imageUrl: "/shop/kids-bunk-bed-cover.png",
@@ -175,9 +176,8 @@ export const SHOP_PRODUCTS: ShopProduct[] = [
       "Fit a fixed ladder and a full-height guard rail — built in from the start, not bolted on as an afterthought.",
       "Finish it safe for kids — the guard-rail spacing and age guidance to check against your local safety standard before it's used.",
     ],
-    // Stripe Price is TEST MODE, not live — created with the .env.local
-    // test key by mistake. Hidden until it's replaced with a real live
-    // Price. See chat history (2026-09-26).
+    // Stripe Price is now live (fixed 2026-09-26). Still hidden pending a
+    // live checkout-session dry run — see chat history.
     available: false,
   },
 ];
