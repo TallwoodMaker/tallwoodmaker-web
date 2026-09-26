@@ -91,6 +91,7 @@ export const SHOP_PRODUCTS: ShopProduct[] = [
     storagePath: "plans/kitchen-cabinet-library.pdf",
     fileName: "tallwoodmaker-kitchen-cabinet-library-plan.pdf",
     imageUrl: "/shop/kitchen-cabinet-library-cover.png",
+    samplePageUrl: "/shop/kitchen-cabinet-library-sample.png",
     whatYouLearn: [
       "Build all four core cabinet types — base, wall, tall/pantry, and corner cabinets — as one matched module system, not four separate one-off builds.",
       "Get a full cutting list and dimensioned drawing for every module — nothing guessed, nothing left to figure out on the workshop floor.",
