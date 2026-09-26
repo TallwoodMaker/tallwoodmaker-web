@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import { SHOP_ENABLED } from "@/lib/config";
 import { getShopProduct } from "@/lib/shopProducts";
@@ -132,6 +133,23 @@ export default async function ShopProductPage({
             </div>
           </div>
         </div>
+
+        {product.samplePageUrl && (
+          <div className="mt-12 border-t border-border pt-10">
+            <h2 className="mb-4 text-[13px] font-bold uppercase tracking-[0.05em] text-ink-muted">
+              A sample page from the {product.type === "ebook" ? "ebook" : "plan"}
+            </h2>
+            <div className="relative aspect-[210/297] w-full max-w-[420px] overflow-hidden rounded-md border border-border">
+              <Image
+                src={product.samplePageUrl}
+                alt={`Sample page from ${product.title}`}
+                fill
+                className="object-cover"
+                sizes="420px"
+              />
+            </div>
+          </div>
+        )}
       </section>
     </>
   );

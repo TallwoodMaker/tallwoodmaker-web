@@ -29,6 +29,11 @@ export type ShopProduct = {
   // of contents. Each string's lead-in phrase (before the em dash) is
   // rendered bold. Optional — omit for products that don't have this yet.
   whatYouLearn?: string[];
+  // A single sample page image from the actual PDF (e.g.
+  // "/shop/ebook-kitchen-from-scratch-sample.png"), shown on the product
+  // page so buyers can see real inside pages before purchasing. Optional —
+  // extracted from the real file per product, never a placeholder.
+  samplePageUrl?: string;
   // False hides the product from /shop and refuses checkout for it — for a
   // product whose Stripe Price exists but whose file isn't uploaded to
   // shop-files yet. Flip to true once storagePath is actually in the bucket.
@@ -78,7 +83,7 @@ export const SHOP_PRODUCTS: ShopProduct[] = [
     id: "plan-kitchen-cabinet-library",
     title: "Kitchen Cabinet Library",
     description:
-      "Dimensioned plans and cut lists for all four kitchen cabinet types — base, wall, tall/pantry, and corner — as one module system.",
+      "Four kitchen cabinet types, one module system — dimensioned plans and cut lists for base, wall, tall/pantry, and corner cabinets that all fit together.",
     type: "plan",
     category: "plans",
     priceEur: 24,
@@ -86,6 +91,13 @@ export const SHOP_PRODUCTS: ShopProduct[] = [
     storagePath: "plans/kitchen-cabinet-library.pdf",
     fileName: "tallwoodmaker-kitchen-cabinet-library-plan.pdf",
     imageUrl: "/shop/kitchen-cabinet-library-cover.png",
+    whatYouLearn: [
+      "Build all four core cabinet types — base, wall, tall/pantry, and corner cabinets — as one matched module system, not four separate one-off builds.",
+      "Get a full cutting list and dimensioned drawing for every module — nothing guessed, nothing left to figure out on the workshop floor.",
+      "Order the right hardware the first time — confirmat screws, cam locks, hinges, and adjustable feet, sized correctly for each cabinet type.",
+      "Handle the corner cabinet with confidence — the one part of most kitchens that trips people up, planned and drawn like every other module.",
+      "Finish cabinets that hold up to daily use — the surface and maintenance steps that keep a kitchen looking right for years.",
+    ],
     available: true,
   },
   {
@@ -113,7 +125,7 @@ export const SHOP_PRODUCTS: ShopProduct[] = [
     id: "ebook-wardrobes-closets",
     title: "Wardrobes & Closets",
     description:
-      "Built-in sliding-door wardrobes, freestanding hinged wardrobes, and open walk-in systems — how to plan, build, and fit all three.",
+      "Three wardrobe systems, one guide — built-in sliding-door, freestanding hinged, and walk-in open shelving, planned, built, and fitted.",
     type: "ebook",
     category: "ebooks",
     priceEur: 19,
@@ -121,13 +133,20 @@ export const SHOP_PRODUCTS: ShopProduct[] = [
     storagePath: "ebooks/wardrobes-closets-en.pdf",
     fileName: "wardrobes-closets.pdf",
     imageUrl: "/shop/wardrobes-closets-cover.png",
+    whatYouLearn: [
+      "Choose the right system for your space — built-in sliding-door, freestanding hinged-door, or walk-in open shelving, compared by the depth and clearance each one actually needs.",
+      "Build a built-in sliding wardrobe into an alcove — using the walls and ceiling as structure, with the header rail and track sized right.",
+      "Build a freestanding hinged wardrobe from a full six-sided carcass — with the correct hinge count for the door height, not guessed.",
+      "Lay out the inside properly — hanging heights, rail specs, and shelf spacing that actually fit clothes, not just look right on paper.",
+      "Fit the hardware and finish the job — sliding door tracks, drawers, and accessories, through to a final install-day checklist.",
+    ],
     available: true,
   },
   {
     id: "plan-kids-bunk-bed",
     title: "Kids' Bunk Bed",
     description:
-      "Twin-over-full solid pine bunk bed with a fixed ladder and full-height guard rail — cut list, dimensioned drawing, and step-by-step assembly.",
+      "A twin-over-full solid pine bunk bed, built safe from the start — fixed ladder, full-height guard rail, complete cut list, and step-by-step assembly.",
     type: "plan",
     category: "plans",
     priceEur: 4.9,
@@ -136,6 +155,13 @@ export const SHOP_PRODUCTS: ShopProduct[] = [
     storagePath: "plans/kids-bunk-bed-en.pdf",
     fileName: "tallwoodmaker-kids-bunk-bed-plan.pdf",
     imageUrl: "/shop/kids-bunk-bed-cover.png",
+    whatYouLearn: [
+      "Build a complete twin-over-full bunk bed — a narrower single bed up top, a wider bed below, from one solid pine cutting list.",
+      "Follow a full cutting list and dimensioned drawing — 13 rows, 50 parts, front and side views with every measurement called out.",
+      "Assemble it in the right order — base frame, slats, upper frame, slats, guard rail and ladder, then a final check, step by step.",
+      "Fit a fixed ladder and a full-height guard rail — built in from the start, not bolted on as an afterthought.",
+      "Finish it safe for kids — the guard-rail spacing and age guidance to check against your local safety standard before it's used.",
+    ],
     available: true,
   },
 ];
