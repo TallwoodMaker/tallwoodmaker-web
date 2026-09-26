@@ -178,10 +178,9 @@ export const SHOP_PRODUCTS: ShopProduct[] = [
       "Get hanging heights, shelf spacing, and door hardware specs that apply across all three systems — sized correctly the first time.",
       "Assemble step by step — from marking the first wall cleat or header rail through to the final trim and hardware fit.",
     ],
-    // Live Stripe price created, PDF uploaded and byte-verified in
-    // shop-files. Hidden pending the checkout-session dry run and final
-    // sign-off — see chat history (2026-09-27).
-    available: false,
+    // Verified end to end 2026-09-27: live price, PDF byte-verified,
+    // checkout-session dry run passed. Reviewed and flipped live.
+    available: true,
   },
   {
     id: "plan-kids-bunk-bed",
@@ -260,13 +259,10 @@ export const SHOP_PRODUCTS: ShopProduct[] = [
       "Get every cutting list and dimensioned drawing across all four plans in one package — nothing guessed, nothing left to figure out on the workshop floor.",
       "Save €42 versus buying all five separately — €63 instead of €105.",
     ],
-    // Live Stripe price created, zip uploaded and byte-verified in
-    // shop-files (all 5 source PDFs confirmed current/readable by
-    // page-count spot-check before zipping). "What's included" rendering
-    // spot-checked with all 5 items — no code changes needed. Hidden
-    // pending the checkout-session dry run and final sign-off — see chat
-    // history (2026-09-27).
-    available: false,
+    // Verified end to end 2026-09-27: live price, zip byte-verified (all 5
+    // PDFs current/readable), checkout-session dry run passed. Reviewed
+    // and flipped live.
+    available: true,
   },
 ];
 
