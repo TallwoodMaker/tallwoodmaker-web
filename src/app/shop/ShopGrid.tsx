@@ -63,15 +63,12 @@ export default function ShopGrid({
         </div>
       )}
 
-      <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3">
         {filtered.map((product) => (
-          <div key={product.id}>
+          <div key={product.id} className="mx-auto w-full max-w-[240px]">
             <Link href={`/shop/${product.id}`} className="group block">
               <div className="relative mb-2 aspect-[2/3] overflow-hidden rounded">
-                <ProductThumbnail
-                  product={product}
-                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                />
+                <ProductThumbnail product={product} sizes="240px" />
               </div>
               <div className="text-[13px] font-semibold leading-snug text-ink group-hover:underline">
                 {product.title}
