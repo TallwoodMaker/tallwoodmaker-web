@@ -112,6 +112,7 @@ export const SHOP_PRODUCTS: ShopProduct[] = [
     storagePath: "ebooks/kitchen-from-scratch-en.pdf",
     fileName: "kitchen-from-scratch.pdf",
     imageUrl: "/shop/kitchen-from-scratch-cover.png",
+    samplePageUrl: "/shop/kitchen-from-scratch-sample.png",
     whatYouLearn: [
       "Read any kitchen — measure a room, set a story pole, and lay out a work triangle that actually works before you cut a single board.",
       "Turn a layout into a real order — merge cut lists, count boards, and order the hardware you need, with nothing guessed and nothing wasted.",
@@ -133,6 +134,7 @@ export const SHOP_PRODUCTS: ShopProduct[] = [
     storagePath: "ebooks/wardrobes-closets-en.pdf",
     fileName: "wardrobes-closets.pdf",
     imageUrl: "/shop/wardrobes-closets-cover.png",
+    samplePageUrl: "/shop/wardrobes-closets-sample.png",
     whatYouLearn: [
       "Choose the right system for your space — built-in sliding-door, freestanding hinged-door, or walk-in open shelving, compared by the depth and clearance each one actually needs.",
       "Build a built-in sliding wardrobe into an alcove — using the walls and ceiling as structure, with the header rail and track sized right.",
@@ -155,6 +157,7 @@ export const SHOP_PRODUCTS: ShopProduct[] = [
     storagePath: "plans/kids-bunk-bed-en.pdf",
     fileName: "tallwoodmaker-kids-bunk-bed-plan.pdf",
     imageUrl: "/shop/kids-bunk-bed-cover.png",
+    samplePageUrl: "/shop/kids-bunk-bed-sample.png",
     whatYouLearn: [
       "Build a complete twin-over-full bunk bed — a narrower single bed up top, a wider bed below, from one solid pine cutting list.",
       "Follow a full cutting list and dimensioned drawing — 13 rows, 50 parts, front and side views with every measurement called out.",
