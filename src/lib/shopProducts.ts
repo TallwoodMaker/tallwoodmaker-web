@@ -100,9 +100,8 @@ export const SHOP_PRODUCTS: ShopProduct[] = [
       "Handle the corner cabinet with confidence — the one part of most kitchens that trips people up, planned and drawn like every other module.",
       "Finish cabinets that hold up to daily use — the surface and maintenance steps that keep a kitchen looking right for years.",
     ],
-    // Stripe Price is now live (fixed 2026-09-26). Still hidden pending a
-    // live checkout-session dry run — see chat history.
-    available: false,
+    // Stripe Price is live and verified (fixed 2026-09-26).
+    available: true,
   },
   {
     id: "ebook-kitchen-from-scratch",
@@ -125,9 +124,8 @@ export const SHOP_PRODUCTS: ShopProduct[] = [
       "Template and fit a worktop yourself — including sink and hob cutouts, joins, and sealing, without paying a fabricator to do it for you.",
       "Finish it like a pro — doors hung straight in one pass, plinths fitted, lighting wired in, and a final checklist so nothing gets missed.",
     ],
-    // Stripe Price is now live (fixed 2026-09-26). Still hidden pending a
-    // live checkout-session dry run — see chat history.
-    available: false,
+    // Stripe Price is live and verified (fixed 2026-09-26).
+    available: true,
   },
   {
     id: "ebook-wardrobes-closets",
@@ -150,9 +148,8 @@ export const SHOP_PRODUCTS: ShopProduct[] = [
       "Lay out the inside properly — hanging heights, rail specs, and shelf spacing that actually fit clothes, not just look right on paper.",
       "Fit the hardware and finish the job — sliding door tracks, drawers, and accessories, through to a final install-day checklist.",
     ],
-    // Stripe Price is now live (fixed 2026-09-26). Still hidden pending a
-    // live checkout-session dry run — see chat history.
-    available: false,
+    // Stripe Price is live and verified (fixed 2026-09-26).
+    available: true,
   },
   {
     id: "plan-kids-bunk-bed",
@@ -176,9 +173,8 @@ export const SHOP_PRODUCTS: ShopProduct[] = [
       "Fit a fixed ladder and a full-height guard rail — built in from the start, not bolted on as an afterthought.",
       "Finish it safe for kids — the guard-rail spacing and age guidance to check against your local safety standard before it's used.",
     ],
-    // Stripe Price is now live (fixed 2026-09-26). Still hidden pending a
-    // live checkout-session dry run — see chat history.
-    available: false,
+    // Stripe Price is live and verified (fixed 2026-09-26).
+    available: true,
   },
 ];
 
