@@ -24,6 +24,11 @@ export type ShopProduct = {
   // (served from public/). Optional — falls back to the ImageSlot
   // placeholder when unset.
   imageUrl?: string;
+  // Outcome-focused bullets shown on the product page under the
+  // description — "what you'll know how to do" after reading, not a table
+  // of contents. Each string's lead-in phrase (before the em dash) is
+  // rendered bold. Optional — omit for products that don't have this yet.
+  whatYouLearn?: string[];
   // False hides the product from /shop and refuses checkout for it — for a
   // product whose Stripe Price exists but whose file isn't uploaded to
   // shop-files yet. Flip to true once storagePath is actually in the bucket.
@@ -85,9 +90,9 @@ export const SHOP_PRODUCTS: ShopProduct[] = [
   },
   {
     id: "ebook-kitchen-from-scratch",
-    title: "Kitchen from Scratch",
+    title: "My First Kitchen — Built Without a Workshop",
     description:
-      "A step-by-step guide to planning, building, and installing your own kitchen — without a professional workshop.",
+      "Everything I wish I knew before building my first kitchen — measuring, cutting, installing, and finishing, start to end, without a professional workshop.",
     type: "ebook",
     category: "ebooks",
     priceEur: 19,
@@ -95,6 +100,13 @@ export const SHOP_PRODUCTS: ShopProduct[] = [
     storagePath: "ebooks/kitchen-from-scratch-en.pdf",
     fileName: "kitchen-from-scratch.pdf",
     imageUrl: "/shop/kitchen-from-scratch-cover.png",
+    whatYouLearn: [
+      "Read any kitchen — measure a room, set a story pole, and lay out a work triangle that actually works before you cut a single board.",
+      "Turn a layout into a real order — merge cut lists, count boards, and order the hardware you need, with nothing guessed and nothing wasted.",
+      "Build and install cabinets that sit right — batch-build the boxes, then level, join, and scribe a run of base and wall cabinets so they sit solid and square.",
+      "Template and fit a worktop yourself — including sink and hob cutouts, joins, and sealing, without paying a fabricator to do it for you.",
+      "Finish it like a pro — doors hung straight in one pass, plinths fitted, lighting wired in, and a final checklist so nothing gets missed.",
+    ],
     available: true,
   },
   {

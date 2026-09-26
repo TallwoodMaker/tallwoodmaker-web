@@ -95,9 +95,37 @@ export default async function ShopProductPage({
             <h1 className="mb-3 text-[clamp(28px,4vw,40px)] font-extrabold leading-[1.1] tracking-[-0.01em]">
               {product.title}
             </h1>
-            <p className="mb-6 max-w-[480px] text-[17px] leading-[1.6] text-ink-muted">
+            <p className="mb-6 max-w-[560px] text-[17px] leading-[1.6] text-ink-muted">
               {product.description}
             </p>
+
+            {product.whatYouLearn && product.whatYouLearn.length > 0 && (
+              <div className="mb-7 max-w-[560px]">
+                <h2 className="mb-3 text-[13px] font-bold uppercase tracking-[0.05em] text-ink-muted">
+                  What you&apos;ll learn
+                </h2>
+                <ul className="grid gap-2.5">
+                  {product.whatYouLearn.map((line) => {
+                    const [lead, ...rest] = line.split(" — ");
+                    return (
+                      <li
+                        key={line}
+                        className="flex gap-2.5 text-[15px] leading-[1.6] text-ink-muted"
+                      >
+                        <span className="mt-2 h-1.5 w-1.5 flex-none rounded-full bg-brand" />
+                        <span>
+                          <strong className="font-bold text-ink">
+                            {lead}
+                          </strong>
+                          {rest.length > 0 ? ` — ${rest.join(" — ")}` : ""}
+                        </span>
+                      </li>
+                    );
+                  })}
+                </ul>
+              </div>
+            )}
+
             <div className="mb-6 text-2xl font-bold">€{product.priceEur}</div>
             <div className="max-w-[280px]">
               <AddToCartButton productId={product.id} />
