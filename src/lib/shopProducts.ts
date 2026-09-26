@@ -158,6 +158,31 @@ export const SHOP_PRODUCTS: ShopProduct[] = [
     // Stripe Price is live and verified (fixed 2026-09-26).
     available: true,
   },
+  // Stripe product prod_VKfZAp4Ld63vr9 (live)
+  {
+    id: "plan-wardrobe-cabinet-library",
+    title: "Wardrobe Cabinet Library",
+    description:
+      "Three wardrobe systems, one shared construction method — dimensioned plans and cut lists for built-in sliding-door, freestanding hinged-door, and walk-in open systems.",
+    type: "plan",
+    category: "plans",
+    priceEur: 24,
+    stripePriceId: "price_1UK0EYCa2aoiD18oKn7q7G2M",
+    storagePath: "plans/wardrobe-cabinet-library.pdf",
+    fileName: "tallwoodmaker-wardrobe-cabinet-library-plan.pdf",
+    imageUrl: "/shop/wardrobe-cabinet-library-cover.png",
+    whatYouLearn: [
+      "Choose the right wardrobe system for your space — built-in sliding-door, freestanding hinged-door, or walk-in open, compared by the depth, height, and clearance each one actually needs.",
+      "Build any of the three from one shared carcass and hardware system — the construction logic stays the same whichever format fits your room.",
+      "Follow a full cutting list and dimensioned drawing for each system — nothing guessed, nothing left to figure out on the workshop floor.",
+      "Get hanging heights, shelf spacing, and door hardware specs that apply across all three systems — sized correctly the first time.",
+      "Assemble step by step — from marking the first wall cleat or header rail through to the final trim and hardware fit.",
+    ],
+    // Live Stripe price created, PDF uploaded and byte-verified in
+    // shop-files. Hidden pending the checkout-session dry run and final
+    // sign-off — see chat history (2026-09-27).
+    available: false,
+  },
   {
     id: "plan-kids-bunk-bed",
     title: "Kids' Bunk Bed",
@@ -207,6 +232,41 @@ export const SHOP_PRODUCTS: ShopProduct[] = [
     // Verified end to end 2026-09-26: live price, zip contents confirmed
     // readable, checkout-session dry run passed.
     available: true,
+  },
+  // Stripe product prod_VKfhiO6LEWRbwX (live)
+  {
+    id: "bundle-complete-builder",
+    title: "The Complete Builder Bundle",
+    description:
+      "Business mindset + client-ready kitchen & wardrobe plans — everything to go from building for yourself to building for paying clients.",
+    type: "bundle",
+    category: "bundles",
+    priceEur: 63,
+    stripePriceId: "price_1UK0LhCa2aoiD18ooWt0PCgs",
+    storagePath: "bundles/complete-builder-bundle.zip",
+    fileName: "tallwoodmaker-complete-builder-bundle.zip",
+    imageUrl: "/shop/complete-builder-bundle-cover.png",
+    includes: [
+      "ebook-zero-to-first-client",
+      "ebook-kitchen-from-scratch",
+      "plan-kitchen-cabinet-library",
+      "ebook-wardrobes-closets",
+      "plan-wardrobe-cabinet-library",
+    ],
+    whatYouLearn: [
+      "Go from building for yourself to building for paying clients — the exact steps, tools, and budget it actually takes to land your first paid job.",
+      "Build a complete kitchen and both major wardrobe formats — plan the room, order material, and install cabinets and wardrobes to a professional standard.",
+      "Work from one shared cabinet-construction system across kitchens and wardrobes — base, wall, tall/pantry, and corner kitchen modules, plus built-in sliding, freestanding hinged, and walk-in open wardrobe systems.",
+      "Get every cutting list and dimensioned drawing across all four plans in one package — nothing guessed, nothing left to figure out on the workshop floor.",
+      "Save €42 versus buying all five separately — €63 instead of €105.",
+    ],
+    // Live Stripe price created, zip uploaded and byte-verified in
+    // shop-files (all 5 source PDFs confirmed current/readable by
+    // page-count spot-check before zipping). "What's included" rendering
+    // spot-checked with all 5 items — no code changes needed. Hidden
+    // pending the checkout-session dry run and final sign-off — see chat
+    // history (2026-09-27).
+    available: false,
   },
 ];
 
