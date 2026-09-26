@@ -11,14 +11,14 @@ const SOCIAL_LINKS = [
 export default function Footer() {
   return (
     <footer className="bg-brand section-px py-12">
-      <div className="container-page flex flex-wrap justify-between gap-8">
+      <div className="container-page grid grid-cols-2 gap-8 md:grid-cols-4">
         <div>
           <div className="mb-2 text-base font-extrabold tracking-[0.03em] text-ink">
             TallWoodMaker
           </div>
           <div className="text-sm text-ink-muted">Build. Share. Inspire.</div>
         </div>
-        <div className="flex flex-wrap gap-5 text-sm font-medium">
+        <div className="flex flex-col gap-3 text-sm font-medium">
           <Link href="/collaborate" className="text-ink hover:text-ink">
             Collaborate
           </Link>
@@ -26,7 +26,7 @@ export default function Footer() {
             Benefits
           </Link>
         </div>
-        <div className="flex flex-wrap gap-5 text-sm font-medium">
+        <div className="flex flex-col gap-3 text-sm font-medium">
           {SOCIAL_LINKS.map(({ label, href }) => (
             <a key={label} href={href} target="_blank" rel="noopener noreferrer">
               {label}
