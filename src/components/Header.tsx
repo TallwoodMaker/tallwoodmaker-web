@@ -65,7 +65,7 @@ export default function Header() {
         {/* Desktop navigation */}
         <nav
           aria-label={t("mainLabel")}
-          className="hidden flex-wrap items-center justify-end gap-x-[18px] gap-y-2 text-[15px] xl:flex"
+          className="hidden flex-wrap items-center justify-end gap-x-4 gap-y-2 text-[15px] xl:flex"
         >
           {NAV_LINKS.map((link) => {
             const active = isActive(pathname, link.href);
@@ -86,9 +86,11 @@ export default function Header() {
           })}
           <LanguageSwitcher />
           {cartLink}
+          {/* Only on wide screens: longer languages (de, pl…) would wrap the
+              row, and the top bar already carries the same link. */}
           <Link
             href="/#start"
-            className="inline-flex min-h-11 items-center whitespace-nowrap rounded-lg bg-ink px-[18px] font-semibold text-cream hover:text-cream"
+            className="hidden min-h-11 items-center whitespace-nowrap rounded-lg bg-ink px-[18px] font-semibold text-cream hover:text-cream 2xl:inline-flex"
           >
             {t("getFreeList")}
           </Link>

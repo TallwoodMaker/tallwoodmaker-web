@@ -59,7 +59,6 @@ export default async function ShopProductPage({
 
   const t = await getTranslations("product");
   const tp = await getTranslations("products");
-  const tc = await getTranslations("productCard");
   const description = tp(`${product.id}.description`);
   const whatYouLearn = tp.raw(`${product.id}.whatYouLearn`) as string[];
 
@@ -113,7 +112,7 @@ export default async function ShopProductPage({
                 <span aria-hidden="true" className="font-mono text-[12px]">
                   EN
                 </span>
-                {tc("pdfInEnglish")} · {t("pdfNote")}
+                {t("pdfNote")}
               </p>
             )}
             <p className="mb-6 max-w-[560px] text-[17px] leading-[1.6] text-ink-soft">
