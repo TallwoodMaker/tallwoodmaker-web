@@ -76,6 +76,9 @@
     },
     "notFound": {
       "title": "Nie znaleziono strony"
+    },
+    "unsubscribe": {
+      "title": "Wypisz się"
     }
   },
   "topBar": {
@@ -148,7 +151,8 @@
     "waitlistSuccess": "Dzięki. Jesteś na liście. Termin poznasz jako pierwszy.",
     "invalidEmail": "Wpisz poprawny adres e-mail.",
     "error": "Coś poszło nie tak. Spróbuj ponownie.",
-    "honeypot": "Zostaw to pole puste"
+    "honeypot": "Zostaw to pole puste",
+    "consent": "Wysyłaj mi też od czasu do czasu maile z poradami i nowymi planami. Możesz się wypisać w każdej chwili."
   },
   "home": {
     "hero": {
@@ -809,5 +813,31 @@
         "Oszczędzasz 42 € w porównaniu z zakupem wszystkich pięciu osobno — 63 € zamiast 105 €."
       ]
     }
+  },
+  "email": {
+    "subjectStarter": "Twoja lista 10 narzędzi",
+    "subjectStarterReady": "Oto twoja lista 10 narzędzi",
+    "subjectWaitlist": "Jesteś na liście: warsztat na żywo o wycenie zleceń",
+    "greeting": "Cześć,",
+    "starterReady": "Dzięki, że poprosiłeś o listę. Oto ona: 10 narzędzi, które kupiłbym dziś ponownie, gdybym zaczynał od zera.",
+    "starterReadyLater": "Tak jak obiecałem, oto lista 10 narzędzi: tych, które kupiłbym dziś ponownie, gdybym zaczynał od zera.",
+    "starterPending": "Dzięki, że poprosiłeś o listę. Właśnie ją dopracowuję, więc wyślę ci ją mailem w ciągu kilku dni.",
+    "starterButton": "Pobierz listę",
+    "waitlist": "Dzięki, że zapisałeś się na listę warsztatu na żywo o wycenie zleceń. Termin poznasz jako pierwszy.",
+    "consentYes": "Poprosiłeś też o okazjonalne maile z poradami i nowymi planami. Będzie ich niewiele i będą konkretne.",
+    "reply": "Pytania? Po prostu odpowiedz na tego maila. Czytam każdego.",
+    "signoff": "Tom",
+    "signoffRole": "TallWoodMaker · 15 lat pracy dla klientów",
+    "footer": "Dostajesz tego maila, bo zapisałeś się na tallwoodmaker.com.",
+    "unsubscribe": "Wypisz się"
+  },
+  "unsubscribe": {
+    "title": "Wypisz się",
+    "text": "Kliknij przycisk, a nie dostaniesz ode mnie więcej maili.",
+    "button": "Wypisz mnie",
+    "doneTitle": "Wypisałeś się",
+    "doneText": "Nie dostaniesz już maili od TallWoodMaker. Dzięki, że byłeś na liście.",
+    "invalid": "Ten link do wypisania się jest nieprawidłowy. Jeśli nadal dostajesz maile, odpowiedz na któregoś z nich, a usunę cię z listy.",
+    "error": "Coś poszło nie tak. Spróbuj ponownie."
   }
 }

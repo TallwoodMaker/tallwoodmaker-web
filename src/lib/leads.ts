@@ -1,11 +1,14 @@
 "use server";
 
+import { after } from "next/server";
 import { cookies } from "next/headers";
-import { createClient as createSupabaseClient } from "@supabase/supabase-js";
 import { hasLocale } from "next-intl";
+import { getTranslations } from "next-intl/server";
 import { routing } from "@/i18n/routing";
 import { REF_COOKIE, isRef } from "@/config/ref";
 import { CONSENT_COOKIE_NAME } from "@/lib/consent";
+import { createAdminClient } from "@/lib/supabase/admin";
+import { sendLeadEmail, syncResendContact } from "@/lib/email/leadEmails";
 
 export type LeadSource = "starter-list" | "workshop-pricing";
 export type LeadPath = "home" | "shop" | "general";
@@ -16,6 +19,9 @@ const PATHS: LeadPath[] = ["home", "shop", "general"];
 // Deliberately loose: one @, something on each side, a dot in the domain.
 // Anything stricter rejects real addresses; the inbox is the real test.
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+const LEAD_COLUMNS =
+  "id, email, source, locale, marketing_consent, unsubscribe_token";
 
 function hasAnalyticsConsent(raw: string | undefined): boolean {
   if (!raw) return false;
@@ -31,10 +37,13 @@ export type LeadState = {
 };
 
 /**
- * Saves an email to the `leads` table (see supabase/migrations). Uses the
- * plain anon key on purpose: RLS lets anon insert and nothing else, so this
- * action can never read the list back. A duplicate (email, source) counts
- * as success — the visitor is already on that list.
+ * Saves an email to the `leads` table and sends the welcome email via
+ * Resend. The starter list / waitlist confirmation goes to everyone; the
+ * optional marketing checkbox is recorded (with timestamp and the exact
+ * text shown) and only then is the address added to Resend contacts.
+ *
+ * Signing up again for the same list sends nothing new; ticking the
+ * checkbox on a repeat signup records the new consent.
  */
 export async function submitLead(
   _prevState: LeadState,
@@ -46,10 +55,14 @@ export async function submitLead(
     return { status: "success" };
   }
 
-  const email = String(formData.get("email") ?? "").trim().toLowerCase();
+  const email = String(formData.get("email") ?? "")
+    .trim()
+    .toLowerCase();
   const source = String(formData.get("source") ?? "") as LeadSource;
   const path = String(formData.get("path") ?? "") as LeadPath;
-  const locale = String(formData.get("locale") ?? "");
+  const rawLocale = String(formData.get("locale") ?? "");
+  const locale = hasLocale(routing.locales, rawLocale) ? rawLocale : null;
+  const marketingConsent = formData.get("marketingConsent") === "on";
   const cookieStore = await cookies();
   const ref = hasAnalyticsConsent(cookieStore.get(CONSENT_COOKIE_NAME)?.value)
     ? cookieStore.get(REF_COOKIE)?.value
@@ -62,25 +75,64 @@ export async function submitLead(
     return { status: "error" };
   }
 
-  const supabase = createSupabaseClient(
-    process.env.NEXT_PUBLIC_SUPABASE_URL!,
-    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
-    { auth: { autoRefreshToken: false, persistSession: false } }
-  );
+  const consentFields = marketingConsent
+    ? {
+        marketing_consent: true,
+        consent_at: new Date().toISOString(),
+        consent_text: (
+          await getTranslations({
+            locale: locale ?? routing.defaultLocale,
+            namespace: "leadForm",
+          })
+        )("consent"),
+      }
+    : {};
 
-  const { error } = await supabase.from("leads").insert({
-    email,
-    source,
-    path,
-    locale: hasLocale(routing.locales, locale) ? locale : null,
-    ref: isRef(ref) ? ref : null,
-  });
+  const supabase = createAdminClient();
+  const { data: lead, error } = await supabase
+    .from("leads")
+    .insert({
+      email,
+      source,
+      path,
+      locale,
+      ref: isRef(ref) ? ref : null,
+      ...consentFields,
+    })
+    .select(LEAD_COLUMNS)
+    .single();
 
-  // 23505 = unique_violation on (email, source): already signed up.
-  if (error && error.code !== "23505") {
-    console.error("Failed to save lead:", error);
-    return { status: "error" };
+  if (error) {
+    // 23505 = unique_violation on (email, source): already on this list.
+    if (error.code !== "23505") {
+      console.error("Failed to save lead:", error);
+      return { status: "error" };
+    }
+    if (marketingConsent) {
+      const { error: updateError } = await supabase
+        .from("leads")
+        .update({ ...consentFields, unsubscribed_at: null })
+        .eq("email", email)
+        .eq("source", source);
+      if (updateError) console.error("Failed to record consent:", updateError);
+      else after(() => syncResendContact(email, false));
+    }
+    return { status: "success" };
   }
+
+  // Email + contact sync run after the response, so the visitor isn't kept
+  // waiting on Resend; a failed send leaves starter_sent_at empty, and the
+  // admin "send to pending" button can retry later.
+  after(async () => {
+    const result = await sendLeadEmail(lead, "welcome");
+    if (result.sentStarterList) {
+      await supabase
+        .from("leads")
+        .update({ starter_sent_at: new Date().toISOString() })
+        .eq("id", lead.id);
+    }
+    if (marketingConsent) await syncResendContact(email, false);
+  });
 
   return { status: "success" };
 }

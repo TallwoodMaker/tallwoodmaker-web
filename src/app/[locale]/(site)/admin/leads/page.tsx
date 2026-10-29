@@ -3,6 +3,8 @@ import { createClient } from "@/lib/supabase/server";
 import { createAdminClient } from "@/lib/supabase/admin";
 import { isAdmin } from "@/lib/admin";
 import { Link } from "@/i18n/navigation";
+import { LEAD_MAGNET } from "@/config/leadMagnet";
+import SendPendingButton from "./SendPendingButton";
 
 export const metadata: Metadata = {
   title: "Leads",
@@ -16,6 +18,9 @@ type Lead = {
   path: string | null;
   locale: string | null;
   ref: string | null;
+  marketing_consent: boolean;
+  starter_sent_at: string | null;
+  unsubscribed_at: string | null;
   created_at: string;
 };
 
@@ -48,11 +53,19 @@ export default async function AdminLeadsPage() {
 
   const { data, error } = await createAdminClient()
     .from("leads")
-    .select("id, email, source, path, locale, ref, created_at")
+    .select(
+      "id, email, source, path, locale, ref, marketing_consent, starter_sent_at, unsubscribed_at, created_at"
+    )
     .order("created_at", { ascending: false })
     .limit(5000);
 
   const leads = (data ?? []) as Lead[];
+  const pendingStarter = leads.filter(
+    (l) => l.source === "starter-list" && !l.starter_sent_at && !l.unsubscribed_at
+  ).length;
+  const consenting = leads.filter(
+    (l) => l.marketing_consent && !l.unsubscribed_at
+  ).length;
 
   return (
     <section className="container-page section-px py-[clamp(24px,5vw,64px)]">
@@ -61,6 +74,20 @@ export default async function AdminLeadsPage() {
         <Link href="/admin/premium-content" className="text-sm text-link">
           Premium content →
         </Link>
+      </div>
+
+      <div className="mb-8 flex flex-col gap-2 rounded-xl border border-border bg-white p-5">
+        <p className="text-[14px] text-ink-muted">
+          Newsletter consent (not unsubscribed): <strong className="text-ink">{consenting}</strong>
+        </p>
+        <SendPendingButton
+          pendingCount={pendingStarter}
+          disabledReason={
+            LEAD_MAGNET.starterListUrl
+              ? undefined
+              : "Set starterListUrl in src/config/leadMagnet.ts to enable."
+          }
+        />
       </div>
 
       {error && (
@@ -94,6 +121,9 @@ export default async function AdminLeadsPage() {
               <th className="px-3 py-2">Path</th>
               <th className="px-3 py-2">Locale</th>
               <th className="px-3 py-2">Ref</th>
+              <th className="px-3 py-2">Newsletter</th>
+              <th className="px-3 py-2">List sent</th>
+              <th className="px-3 py-2">Unsubscribed</th>
               <th className="px-3 py-2">Date</th>
             </tr>
           </thead>
@@ -105,6 +135,9 @@ export default async function AdminLeadsPage() {
                 <td className="px-3 py-2">{lead.path ?? "—"}</td>
                 <td className="px-3 py-2">{lead.locale ?? "—"}</td>
                 <td className="px-3 py-2">{lead.ref ?? "—"}</td>
+                <td className="px-3 py-2">{lead.marketing_consent ? "yes" : "no"}</td>
+                <td className="whitespace-nowrap px-3 py-2">{lead.starter_sent_at ? new Date(lead.starter_sent_at).toISOString().slice(0, 10) : "—"}</td>
+                <td className="whitespace-nowrap px-3 py-2">{lead.unsubscribed_at ? new Date(lead.unsubscribed_at).toISOString().slice(0, 10) : "—"}</td>
                 <td className="whitespace-nowrap px-3 py-2">
                   {new Date(lead.created_at).toISOString().slice(0, 16).replace("T", " ")}
                 </td>

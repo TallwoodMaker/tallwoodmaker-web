@@ -76,6 +76,9 @@
     },
     "notFound": {
       "title": "Seite nicht gefunden"
+    },
+    "unsubscribe": {
+      "title": "Abmelden"
     }
   },
   "topBar": {
@@ -148,7 +151,8 @@
     "waitlistSuccess": "Danke. Du stehst auf der Liste und erfährst den Termin als Erster.",
     "invalidEmail": "Gib eine gültige E-Mail-Adresse ein.",
     "error": "Da ist etwas schiefgelaufen. Bitte versuch es noch einmal.",
-    "honeypot": "Dieses Feld leer lassen"
+    "honeypot": "Dieses Feld leer lassen",
+    "consent": "Schick mir ab und zu auch E-Mails mit Tipps und neuen Bauplänen. Abmelden jederzeit möglich."
   },
   "home": {
     "hero": {
@@ -809,5 +813,31 @@
         "42 € sparen gegenüber dem Einzelkauf aller fünf — 63 € statt 105 €."
       ]
     }
+  },
+  "email": {
+    "subjectStarter": "Deine Liste mit 10 Werkzeugen",
+    "subjectStarterReady": "Hier ist deine Liste mit 10 Werkzeugen",
+    "subjectWaitlist": "Du stehst auf der Liste: Live-Workshop zur Preiskalkulation",
+    "greeting": "Hallo,",
+    "starterReady": "Danke, dass du die Liste angefordert hast. Hier ist sie: die 10 Werkzeuge, die ich heute wieder kaufen würde, wenn ich neu anfangen müsste.",
+    "starterReadyLater": "Wie versprochen, hier ist die Liste mit 10 Werkzeugen: die, die ich heute wieder kaufen würde, wenn ich neu anfangen müsste.",
+    "starterPending": "Danke, dass du die Liste angefordert hast. Ich lege gerade letzte Hand an und schicke sie dir in den nächsten Tagen per E-Mail.",
+    "starterButton": "Liste herunterladen",
+    "waitlist": "Danke, dass du dich für den Live-Workshop zur Preiskalkulation eingetragen hast. Du erfährst den Termin als Erster.",
+    "consentYes": "Du hast auch gelegentliche E-Mails mit Tipps und neuen Bauplänen angefordert. Ich schicke sie selten und nur, wenn sie nützlich sind.",
+    "reply": "Fragen? Antworte einfach auf diese E-Mail. Ich lese jede.",
+    "signoff": "Tom",
+    "signoffRole": "TallWoodMaker · seit 15 Jahren im Kundenauftrag",
+    "footer": "Du bekommst diese E-Mail, weil du dich auf tallwoodmaker.com eingetragen hast.",
+    "unsubscribe": "Abmelden"
+  },
+  "unsubscribe": {
+    "title": "Abmelden",
+    "text": "Klick auf den Button, dann bekommst du keine E-Mails mehr von mir.",
+    "button": "Abmelden",
+    "doneTitle": "Du bist abgemeldet",
+    "doneText": "Du bekommst keine E-Mails mehr von TallWoodMaker. Danke, dass du dabei warst.",
+    "invalid": "Dieser Abmeldelink ist ungültig. Wenn du weiter E-Mails bekommst, antworte einfach auf eine davon und ich trage dich aus.",
+    "error": "Etwas ist schiefgelaufen. Bitte versuch es noch einmal."
   }
 }

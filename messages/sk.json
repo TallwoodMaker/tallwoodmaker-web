@@ -76,6 +76,9 @@
     },
     "notFound": {
       "title": "Stránka sa nenašla"
+    },
+    "unsubscribe": {
+      "title": "Odhlásiť sa"
     }
   },
   "topBar": {
@@ -148,7 +151,8 @@
     "waitlistSuccess": "Vďaka! Si na zozname. Termín sa dozvieš ako prvý.",
     "invalidEmail": "Zadaj platnú e-mailovú adresu.",
     "error": "Niečo sa pokazilo. Skús to znova.",
-    "honeypot": "Toto pole nechaj prázdne"
+    "honeypot": "Toto pole nechaj prázdne",
+    "consent": "Posielaj mi občas aj e-maily s tipmi a novými plánmi. Odhlásiť sa môžem kedykoľvek."
   },
   "home": {
     "hero": {
@@ -809,5 +813,31 @@
         "Ušetríš 42 € oproti kúpe všetkých piatich zvlášť — 63 € namiesto 105 €."
       ]
     }
+  },
+  "email": {
+    "subjectStarter": "Tvoj zoznam 10 nástrojov",
+    "subjectStarterReady": "Tu je tvoj zoznam 10 nástrojov",
+    "subjectWaitlist": "Si na zozname: živý workshop o nacenení zákaziek",
+    "greeting": "Ahoj,",
+    "starterReady": "Vďaka, že si si vypýtal zoznam. Tu je: 10 nástrojov, ktoré by som si dnes kúpil znova, keby som začínal od nuly.",
+    "starterReadyLater": "Ako som sľúbil, tu je zoznam 10 nástrojov: tých, ktoré by som si dnes kúpil znova, keby som začínal od nuly.",
+    "starterPending": "Vďaka, že si si vypýtal zoznam. Práve ho dokončujem, takže ti ho pošlem e-mailom do pár dní.",
+    "starterButton": "Stiahnuť zoznam",
+    "waitlist": "Vďaka, že si sa zapísal na zoznam k živému workshopu o nacenení zákaziek. Termín sa dozvieš ako prvý.",
+    "consentYes": "Vypýtal si si aj občasné e-maily s tipmi a novými plánmi. Budú zriedka a len užitočné.",
+    "reply": "Máš otázku? Stačí odpísať na tento e-mail. Čítam každý.",
+    "signoff": "Tom",
+    "signoffRole": "TallWoodMaker · 15 rokov výroby pre zákazníkov",
+    "footer": "Tento e-mail ti prišiel, pretože si sa zapísal na tallwoodmaker.com.",
+    "unsubscribe": "Odhlásiť sa"
+  },
+  "unsubscribe": {
+    "title": "Odhlásiť sa",
+    "text": "Klikni na tlačidlo a už ti odo mňa neprídu žiadne e-maily.",
+    "button": "Odhlásiť sa",
+    "doneTitle": "Si odhlásený",
+    "doneText": "Od TallWoodMaker ti už neprídu žiadne e-maily. Vďaka, že si bol na zozname.",
+    "invalid": "Tento odkaz na odhlásenie nie je platný. Ak ti e-maily stále chodia, odpíš na ktorýkoľvek z nich a zo zoznamu ťa vyradím.",
+    "error": "Niečo sa pokazilo. Skús to prosím znova."
   }
 }

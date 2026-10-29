@@ -17,7 +17,7 @@ export async function generateMetadata({
   });
 }
 
-const LAST_UPDATED = "September 25, 2026";
+const LAST_UPDATED = "October 29, 2026";
 
 const SECTIONS: { heading: string; paragraphs: string[] }[] = [
   {
@@ -33,14 +33,15 @@ const SECTIONS: { heading: string; paragraphs: string[] }[] = [
       "Account and sign-in data: your email address, used to send you a magic sign-in link and to identify your Premium membership.",
       "Order and billing data: when you buy a product or subscribe to Premium, our payment processor Stripe collects your name, email address, billing address, and payment card details on our behalf; we ourselves only see your email address, order details, and subscription status — never your full card number.",
       "Content you send us: if you use the contact form or email us, we collect the name, email address, and message you provide, to respond to you.",
+      "Email list data: if you sign up for a free download (such as the starter list) or a waitlist, we collect your email address, the site language, which form you used, and — only if you accepted analytics cookies — which social network you came from. If you also tick the optional newsletter box, we record that consent together with its date and the exact wording you agreed to.",
       "Technical and usage data: standard web-server logs (such as IP address and browser type), and, only if you have opted in via the cookie banner, analytics data about how you use the site (Section 5).",
     ],
   },
   {
     heading: "3. How We Use Your Data and Legal Bases",
     paragraphs: [
-      "We use your personal data to: create and manage your account and Premium access; process orders and payments and deliver digital products; send you transactional emails (such as your sign-in link, order confirmation, or a reply to your message); keep our systems secure and prevent fraud; and, only with your consent, measure site usage and show relevant marketing.",
-      "Our legal bases under the GDPR are: performance of a contract (Article 6(1)(b)) for account, order, and subscription data; legal obligation (Article 6(1)(c)) for data we must keep for accounting and tax purposes; legitimate interest (Article 6(1)(f)) for basic security logs and fraud prevention; and consent (Article 6(1)(a)) for analytics and marketing cookies, which you can withdraw at any time (Section 4).",
+      "We use your personal data to: create and manage your account and Premium access; process orders and payments and deliver digital products; send you transactional emails (such as your sign-in link, order confirmation, or a reply to your message); send you the free download or waitlist information you asked for; send you occasional emails with tips and new plans, only if you ticked the newsletter box; keep our systems secure and prevent fraud; and, only with your consent, measure site usage and show relevant marketing.",
+      "Our legal bases under the GDPR are: performance of a contract (Article 6(1)(b)) for account, order, and subscription data; legal obligation (Article 6(1)(c)) for data we must keep for accounting and tax purposes; legitimate interest (Article 6(1)(f)) for basic security logs and fraud prevention; consent (Article 6(1)(a)) for analytics and marketing cookies, which you can withdraw at any time (Section 4); your request (Article 6(1)(b)) for sending the free download or waitlist information you signed up for; and consent (Article 6(1)(a)) for newsletter emails, which you can withdraw at any time by unsubscribing.",
     ],
   },
   {
@@ -54,7 +55,8 @@ const SECTIONS: { heading: string; paragraphs: string[] }[] = [
     paragraphs: [
       "We share personal data only with service providers who need it to help us run tallwoodmaker.com, and never sell your personal data:",
       "Stripe, Inc. — processes your payment and billing details to complete purchases and subscriptions.",
-      "Supabase — hosts our user accounts/authentication and application database.",
+      "Supabase — hosts our user accounts/authentication and application database, including email list sign-ups.",
+      "Resend (Resend, Inc.) — sends our emails, including the free download, waitlist and newsletter emails, and keeps the list of newsletter subscribers and their subscription status.",
       "Google Analytics (Google LLC) — only if you opt in, processes usage data to help us understand how the site is used.",
       "Meta Pixel (Meta Platforms, Inc.) — only if you opt in, processes usage data for ad measurement and personalization.",
       "We may also disclose personal data where required by law, for example to tax or law-enforcement authorities.",
@@ -63,19 +65,20 @@ const SECTIONS: { heading: string; paragraphs: string[] }[] = [
   {
     heading: "6. International Data Transfers",
     paragraphs: [
-      "Some of our service providers (including Stripe and Google) are based in, or transfer data to, the United States. Where personal data is transferred outside the European Economic Area, we rely on the safeguards those providers offer to their customers, such as the EU Standard Contractual Clauses or an equivalent adequacy mechanism recognized under the GDPR.",
+      "Some of our service providers (including Stripe, Google and Resend) are based in, or transfer data to, the United States. Where personal data is transferred outside the European Economic Area, we rely on the safeguards those providers offer to their customers, such as the EU Standard Contractual Clauses or an equivalent adequacy mechanism recognized under the GDPR.",
     ],
   },
   {
     heading: "7. Data Retention",
     paragraphs: [
-      "We keep account data for as long as your account is active, and for a reasonable period afterward in case you return. Order, invoice, and payment records are kept for as long as required by Slovak accounting and tax law (generally up to 10 years). Contact-form messages and email correspondence are kept only as long as needed to handle your inquiry, unless a longer period is required by law. Analytics and marketing cookie data is kept for the periods shown on our Cookie Policy page, and is deleted or anonymized after that.",
+      "We keep account data for as long as your account is active, and for a reasonable period afterward in case you return. Order, invoice, and payment records are kept for as long as required by Slovak accounting and tax law (generally up to 10 years). Contact-form messages and email correspondence are kept only as long as needed to handle your inquiry, unless a longer period is required by law. Email list sign-ups without newsletter consent are kept until we have sent what you asked for and for up to 12 months afterward, then deleted. Newsletter subscribers are kept until they unsubscribe; after that we keep only your email address and the date you unsubscribed, so we never email you again by mistake. Analytics and marketing cookie data is kept for the periods shown on our Cookie Policy page, and is deleted or anonymized after that.",
     ],
   },
   {
     heading: "8. Your Rights Under GDPR",
     paragraphs: [
       "If you are located in the European Economic Area, you have the right to: request access to the personal data we hold about you; ask us to correct inaccurate data; ask us to delete your data (subject to what we must legally keep, such as invoices); ask us to restrict or object to certain processing; receive your data in a portable format; and withdraw consent at any time for analytics or marketing cookies, without affecting the lawfulness of processing before you withdrew it.",
+      "Unsubscribing from emails: every email we send has an unsubscribe link at the bottom, and most email apps also show an unsubscribe button. One click is enough. You can also reply to any of our emails or write to tom@tallwoodmaker.com and we will take you off the list.",
       "To exercise any of these rights, email us at tom@tallwoodmaker.com. If you are not satisfied with our response, you have the right to lodge a complaint with the Slovak Data Protection Authority (Urad na ochranu osobnych udajov Slovenskej republiky, www.dataprotection.gov.sk) or with the supervisory authority in your own EU country of residence.",
     ],
   },

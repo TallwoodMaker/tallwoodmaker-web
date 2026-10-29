@@ -142,3 +142,20 @@ alter table public.leads add column if not exists ref text;
 alter table public.leads drop constraint if exists leads_ref_check;
 alter table public.leads
   add constraint leads_ref_check check (ref is null or ref in ('ig', 'tt', 'yt'));
+
+-- Email delivery and marketing consent. Same SQL as
+-- supabase/migrations/20261029190000_leads_email_consent.sql.
+alter table public.leads
+  add column if not exists marketing_consent boolean not null default false,
+  -- when and with which (localized) checkbox text consent was given
+  add column if not exists consent_at timestamptz,
+  add column if not exists consent_text text,
+  add column if not exists starter_sent_at timestamptz,
+  add column if not exists unsubscribed_at timestamptz,
+  -- random secret used in /unsubscribe?token=… links (two v4 UUIDs, ~244
+  -- random bits; gen_random_uuid is core Postgres, no extension needed)
+  add column if not exists unsubscribe_token text not null
+    default replace(gen_random_uuid()::text || gen_random_uuid()::text, '-', '');
+
+create unique index if not exists leads_unsubscribe_token_key
+  on public.leads (unsubscribe_token);

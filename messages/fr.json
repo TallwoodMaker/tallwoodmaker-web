@@ -76,6 +76,9 @@
     },
     "notFound": {
       "title": "Page introuvable"
+    },
+    "unsubscribe": {
+      "title": "Se désinscrire"
     }
   },
   "topBar": {
@@ -148,7 +151,8 @@
     "waitlistSuccess": "Merci. Tu es sur la liste. Tu auras la date en premier.",
     "invalidEmail": "Saisis une adresse e-mail valide.",
     "error": "Une erreur s’est produite. Réessaie.",
-    "honeypot": "Laisse ce champ vide"
+    "honeypot": "Laisse ce champ vide",
+    "consent": "Envoie-moi aussi de temps en temps des e-mails avec des astuces et de nouveaux plans. Désinscription à tout moment."
   },
   "home": {
     "hero": {
@@ -809,5 +813,31 @@
         "Économise 42 € par rapport à l’achat séparé des cinq produits — 63 € au lieu de 105 €."
       ]
     }
+  },
+  "email": {
+    "subjectStarter": "Ta liste des 10 outils",
+    "subjectStarterReady": "Voici ta liste des 10 outils",
+    "subjectWaitlist": "Tu es sur la liste : atelier en direct sur les devis",
+    "greeting": "Salut,",
+    "starterReady": "Merci d’avoir demandé la liste. La voici : les 10 outils que je rachèterais aujourd’hui si je recommençais de zéro.",
+    "starterReadyLater": "Comme promis, voici la liste des 10 outils : ceux que je rachèterais aujourd’hui si je recommençais de zéro.",
+    "starterPending": "Merci d’avoir demandé la liste. J’y apporte les dernières retouches, je te l’envoie donc par e-mail d’ici quelques jours.",
+    "starterButton": "Télécharger la liste",
+    "waitlist": "Merci de t’être inscrit à la liste de l’atelier en direct sur les devis. Tu connaîtras la date avant tout le monde.",
+    "consentYes": "Tu as aussi demandé à recevoir de temps en temps des e-mails avec des astuces et de nouveaux plans. Ils seront rares et utiles.",
+    "reply": "Une question ? Réponds simplement à cet e-mail. Je les lis tous.",
+    "signoff": "Tom",
+    "signoffRole": "TallWoodMaker · 15 ans de chantiers pour des clients",
+    "footer": "Tu reçois cet e-mail parce que tu t’es inscrit sur tallwoodmaker.com.",
+    "unsubscribe": "Se désinscrire"
+  },
+  "unsubscribe": {
+    "title": "Se désinscrire",
+    "text": "Clique sur le bouton et tu ne recevras plus d’e-mails de ma part.",
+    "button": "Me désinscrire",
+    "doneTitle": "Tu es désinscrit",
+    "doneText": "Tu ne recevras plus d’e-mails de TallWoodMaker. Merci d’avoir été sur la liste.",
+    "invalid": "Ce lien de désinscription n’est pas valide. Si tu reçois encore des e-mails, réponds à l’un d’eux et je te retire de la liste.",
+    "error": "Une erreur s’est produite. Réessaie."
   }
 }

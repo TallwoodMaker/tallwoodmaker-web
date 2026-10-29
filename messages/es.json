@@ -76,6 +76,9 @@
     },
     "notFound": {
       "title": "Página no encontrada"
+    },
+    "unsubscribe": {
+      "title": "Darse de baja"
     }
   },
   "topBar": {
@@ -148,7 +151,8 @@
     "waitlistSuccess": "Gracias. Ya estás en la lista. Serás el primero en saber la fecha.",
     "invalidEmail": "Introduce un correo electrónico válido.",
     "error": "Algo ha fallado. Inténtalo de nuevo.",
-    "honeypot": "Deja este campo vacío"
+    "honeypot": "Deja este campo vacío",
+    "consent": "Envíame también de vez en cuando emails con consejos y planos nuevos. Puedes darte de baja cuando quieras."
   },
   "home": {
     "hero": {
@@ -809,5 +813,31 @@
         "Ahorra 42 € frente a comprar los cinco por separado — 63 € en lugar de 105 €."
       ]
     }
+  },
+  "email": {
+    "subjectStarter": "Tu lista de 10 herramientas",
+    "subjectStarterReady": "Aquí tienes tu lista de 10 herramientas",
+    "subjectWaitlist": "Estás en la lista: taller en directo sobre presupuestos",
+    "greeting": "Hola:",
+    "starterReady": "Gracias por pedir la lista. Aquí la tienes: las 10 herramientas que volvería a comprar hoy si empezara de cero.",
+    "starterReadyLater": "Como te prometí, aquí tienes la lista de 10 herramientas: las que volvería a comprar hoy si empezara de cero.",
+    "starterPending": "Gracias por pedir la lista. Le estoy dando los últimos retoques, así que te la enviaré por email en unos días.",
+    "starterButton": "Descargar la lista",
+    "waitlist": "Gracias por apuntarte a la lista del taller en directo sobre presupuestos. Sabrás la fecha antes que nadie.",
+    "consentYes": "También has pedido recibir de vez en cuando emails con consejos y planos nuevos. Serán pocos y útiles.",
+    "reply": "¿Dudas? Responde a este email. Los leo todos.",
+    "signoff": "Tom",
+    "signoffRole": "TallWoodMaker · 15 años trabajando para clientes",
+    "footer": "Recibes este email porque te apuntaste en tallwoodmaker.com.",
+    "unsubscribe": "Darme de baja"
+  },
+  "unsubscribe": {
+    "title": "Darse de baja",
+    "text": "Pulsa el botón y no recibirás más emails míos.",
+    "button": "Darme de baja",
+    "doneTitle": "Te has dado de baja",
+    "doneText": "No recibirás más emails de TallWoodMaker. Gracias por haber estado en la lista.",
+    "invalid": "Este enlace para darse de baja no es válido. Si sigues recibiendo emails, responde a cualquiera de ellos y te quito de la lista.",
+    "error": "Algo ha fallado. Inténtalo de nuevo."
   }
 }

@@ -76,6 +76,9 @@
     },
     "notFound": {
       "title": "Page not found"
+    },
+    "unsubscribe": {
+      "title": "Unsubscribe"
     }
   },
   "topBar": {
@@ -148,7 +151,8 @@
     "waitlistSuccess": "Thanks! You're on the list. You'll get the date first.",
     "invalidEmail": "Enter a valid email address.",
     "error": "Something went wrong. Please try again.",
-    "honeypot": "Leave this field empty"
+    "honeypot": "Leave this field empty",
+    "consent": "Also send me occasional emails with tips and new plans. Unsubscribe anytime."
   },
   "home": {
     "hero": {
@@ -809,5 +813,31 @@
         "Save €42 versus buying all five separately — €63 instead of €105."
       ]
     }
+  },
+  "email": {
+    "subjectStarter": "Your 10-tool starter list",
+    "subjectStarterReady": "Here's your 10-tool starter list",
+    "subjectWaitlist": "You're on the list: live pricing workshop",
+    "greeting": "Hi,",
+    "starterReady": "Thanks for asking for the list. Here it is: the 10 tools I'd buy again today if I were starting over.",
+    "starterReadyLater": "As promised, here's the 10-tool starter list: the tools I'd buy again today if I were starting over.",
+    "starterPending": "Thanks for asking for the list. I'm putting the finishing touches on it, so I'll send it to you by email within a few days.",
+    "starterButton": "Download the starter list",
+    "waitlist": "Thanks for joining the list for the live pricing workshop. You'll get the date before anyone else.",
+    "consentYes": "You also asked for occasional emails with tips and new plans. I'll keep them rare and useful.",
+    "reply": "Questions? Just reply to this email. I read every one.",
+    "signoff": "Tom",
+    "signoffRole": "TallWoodMaker · 15 years building for clients",
+    "footer": "You're getting this email because you signed up on tallwoodmaker.com.",
+    "unsubscribe": "Unsubscribe"
+  },
+  "unsubscribe": {
+    "title": "Unsubscribe",
+    "text": "Click the button and you won't get any more emails from me.",
+    "button": "Unsubscribe",
+    "doneTitle": "You're unsubscribed",
+    "doneText": "You won't get any more emails from TallWoodMaker. Thanks for having been on the list.",
+    "invalid": "This unsubscribe link isn't valid. If you keep getting emails, reply to one of them and I'll take you off the list.",
+    "error": "Something went wrong. Please try again."
   }
 }
