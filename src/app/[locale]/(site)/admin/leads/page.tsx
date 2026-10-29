@@ -15,10 +15,11 @@ type Lead = {
   source: string;
   path: string | null;
   locale: string | null;
+  ref: string | null;
   created_at: string;
 };
 
-function countBy(leads: Lead[], key: "source" | "locale") {
+function countBy(leads: Lead[], key: "source" | "locale" | "ref") {
   const counts = new Map<string, number>();
   for (const lead of leads) {
     const value = lead[key] ?? "—";
@@ -47,7 +48,7 @@ export default async function AdminLeadsPage() {
 
   const { data, error } = await createAdminClient()
     .from("leads")
-    .select("id, email, source, path, locale, created_at")
+    .select("id, email, source, path, locale, ref, created_at")
     .order("created_at", { ascending: false })
     .limit(5000);
 
@@ -66,8 +67,8 @@ export default async function AdminLeadsPage() {
         <p className="mb-6 text-link">Couldn&apos;t load leads: {error.message}</p>
       )}
 
-      <div className="mb-10 grid gap-6 sm:grid-cols-2">
-        {(["source", "locale"] as const).map((key) => (
+      <div className="mb-10 grid gap-6 sm:grid-cols-3">
+        {(["source", "locale", "ref"] as const).map((key) => (
           <div key={key} className="rounded-xl border border-border bg-white p-5">
             <h2 className="mb-3 font-semibold">By {key}</h2>
             <table className="w-full text-[14px]">
@@ -92,6 +93,7 @@ export default async function AdminLeadsPage() {
               <th className="px-3 py-2">Source</th>
               <th className="px-3 py-2">Path</th>
               <th className="px-3 py-2">Locale</th>
+              <th className="px-3 py-2">Ref</th>
               <th className="px-3 py-2">Date</th>
             </tr>
           </thead>
@@ -102,6 +104,7 @@ export default async function AdminLeadsPage() {
                 <td className="px-3 py-2">{lead.source}</td>
                 <td className="px-3 py-2">{lead.path ?? "—"}</td>
                 <td className="px-3 py-2">{lead.locale ?? "—"}</td>
+                <td className="px-3 py-2">{lead.ref ?? "—"}</td>
                 <td className="whitespace-nowrap px-3 py-2">
                   {new Date(lead.created_at).toISOString().slice(0, 16).replace("T", " ")}
                 </td>

@@ -144,7 +144,7 @@
     "emailLabel": "Email address",
     "placeholder": "your@email.com",
     "sending": "Sending…",
-    "success": "Thanks! Check your inbox.",
+    "success": "Thanks! I'll send you the list by email within a few days.",
     "waitlistSuccess": "Thanks! You're on the list. You'll get the date first.",
     "invalidEmail": "Enter a valid email address.",
     "error": "Something went wrong. Please try again.",
@@ -217,7 +217,7 @@
     "lead": {
       "eyebrow": "Start free",
       "title": "The 10-tool starter list I'd buy again today.",
-      "text": "No guesswork, no tools you'll never use. Straight to your inbox.",
+      "text": "Free. I'll email it to you.",
       "submit": "Send me the list"
     },
     "plans": {
@@ -340,8 +340,9 @@
   "start": {
     "title": "From your first cut to your <mark>own workshop.</mark>",
     "text": "Pick your path, or get the free 10-tool starter list first.",
+    "shopLink": "Or go straight to the shop →",
     "leadTitle": "The 10-tool starter list I'd buy again today.",
-    "leadText": "No guesswork, no tools you'll never use. Straight to your inbox.",
+    "leadText": "Free. I'll email it to you.",
     "submit": "Send me the list"
   },
   "videos": {

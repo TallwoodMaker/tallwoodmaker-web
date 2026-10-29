@@ -144,7 +144,7 @@
     "emailLabel": "Endereço de email",
     "placeholder": "o-teu@email.com",
     "sending": "A enviar…",
-    "success": "Obrigado! Vê a tua caixa de entrada.",
+    "success": "Obrigado! Envio-te a lista por email dentro de poucos dias.",
     "waitlistSuccess": "Obrigado! Já estás na lista. Vais ser o primeiro a saber a data.",
     "invalidEmail": "Introduz um endereço de email válido.",
     "error": "Algo correu mal. Tenta outra vez.",
@@ -217,7 +217,7 @@
     "lead": {
       "eyebrow": "Começa grátis",
       "title": "As 10 ferramentas para começar que eu voltaria a comprar hoje.",
-      "text": "Sem adivinhar, sem ferramentas que nunca vais usar. Direto para o teu email.",
+      "text": "Grátis. Envio-ta por email.",
       "submit": "Envia-me a lista"
     },
     "plans": {
@@ -340,8 +340,9 @@
   "start": {
     "title": "Do primeiro corte à tua <mark>própria oficina.</mark>",
     "text": "Escolhe o teu caminho, ou recebe primeiro a lista grátis das 10 ferramentas para começar.",
+    "shopLink": "Ou vai diretamente à loja →",
     "leadTitle": "As 10 ferramentas para começar que eu voltaria a comprar hoje.",
-    "leadText": "Sem adivinhar, sem ferramentas que nunca vais usar. Direto para o teu email.",
+    "leadText": "Grátis. Envio-ta por email.",
     "submit": "Envia-me a lista"
   },
   "videos": {

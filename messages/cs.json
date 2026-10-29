@@ -144,7 +144,7 @@
     "emailLabel": "E-mailová adresa",
     "placeholder": "tvuj@email.cz",
     "sending": "Odesílám…",
-    "success": "Díky. Mrkni do schránky.",
+    "success": "Díky! Seznam ti pošlu e-mailem během pár dní.",
     "waitlistSuccess": "Díky. Jsi na seznamu a termín se dozvíš jako první.",
     "invalidEmail": "Zadej platnou e-mailovou adresu.",
     "error": "Něco se pokazilo. Zkus to prosím znovu.",
@@ -217,7 +217,7 @@
     "lead": {
       "eyebrow": "Začni zdarma",
       "title": "10 základních nástrojů, které bych si dnes koupil znovu.",
-      "text": "Žádné hádání, žádné nástroje, které nikdy nepoužiješ. Přímo do tvé schránky.",
+      "text": "Zdarma. Pošlu ti ho e-mailem.",
       "submit": "Pošli mi seznam"
     },
     "plans": {
@@ -340,8 +340,9 @@
   "start": {
     "title": "Od prvního řezu po <mark>vlastní dílnu.</mark>",
     "text": "Vyber si svou cestu, nebo si nejdřív stáhni zdarma seznam 10 základních nástrojů.",
+    "shopLink": "Nebo rovnou do obchodu →",
     "leadTitle": "10 základních nástrojů, které bych si dnes koupil znovu.",
-    "leadText": "Žádné hádání, žádné nástroje, které nikdy nepoužiješ. Přímo do tvé schránky.",
+    "leadText": "Zdarma. Pošlu ti ho e-mailem.",
     "submit": "Pošli mi seznam"
   },
   "videos": {

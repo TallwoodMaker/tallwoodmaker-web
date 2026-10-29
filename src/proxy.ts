@@ -2,6 +2,7 @@ import { type NextRequest } from "next/server";
 import { createServerClient, type CookieOptions } from "@supabase/ssr";
 import createIntlMiddleware from "next-intl/middleware";
 import { routing } from "@/i18n/routing";
+import { REF_COOKIE, REF_MAX_AGE, isRef } from "@/config/ref";
 
 const intlMiddleware = createIntlMiddleware(routing);
 
@@ -66,6 +67,17 @@ export async function proxy(request: NextRequest) {
   Object.entries(refreshHeaders).forEach(([key, value]) =>
     response.headers.set(key, value)
   );
+
+  // ?ref=ig|tt|yt → remember the traffic source for 30 days so a later
+  // lead form signup can be attributed to it (src/config/ref.ts).
+  const ref = request.nextUrl.searchParams.get("ref");
+  if (isRef(ref)) {
+    response.cookies.set(REF_COOKIE, ref, {
+      path: "/",
+      maxAge: REF_MAX_AGE,
+      sameSite: "lax",
+    });
+  }
 
   return response;
 }

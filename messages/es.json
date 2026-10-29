@@ -144,7 +144,7 @@
     "emailLabel": "Correo electrónico",
     "placeholder": "tu@correo.com",
     "sending": "Enviando…",
-    "success": "Gracias. Revisa tu bandeja de entrada.",
+    "success": "¡Gracias! Te enviaré la lista por email en unos días.",
     "waitlistSuccess": "Gracias. Ya estás en la lista. Serás el primero en saber la fecha.",
     "invalidEmail": "Introduce un correo electrónico válido.",
     "error": "Algo ha fallado. Inténtalo de nuevo.",
@@ -217,7 +217,7 @@
     "lead": {
       "eyebrow": "Empieza gratis",
       "title": "La lista de 10 herramientas para empezar que volvería a comprar hoy.",
-      "text": "Sin adivinar, sin herramientas que nunca vas a usar. Directo a tu correo.",
+      "text": "Gratis. Te la envío por email.",
       "submit": "Envíame la lista"
     },
     "plans": {
@@ -340,8 +340,9 @@
   "start": {
     "title": "De tu primer corte a tu <mark>propio taller.</mark>",
     "text": "Elige tu camino o, primero, llévate gratis la lista de 10 herramientas para empezar.",
+    "shopLink": "O ve directamente a la tienda →",
     "leadTitle": "La lista de 10 herramientas para empezar que volvería a comprar hoy.",
-    "leadText": "Sin adivinar, sin herramientas que nunca vas a usar. Directo a tu correo.",
+    "leadText": "Gratis. Te la envío por email.",
     "submit": "Envíame la lista"
   },
   "videos": {

@@ -144,7 +144,7 @@
     "emailLabel": "E-Mail-Adresse",
     "placeholder": "deine@email.de",
     "sending": "Wird gesendet…",
-    "success": "Danke. Schau in dein Postfach.",
+    "success": "Danke! Ich schicke dir die Liste in den nächsten Tagen per E-Mail.",
     "waitlistSuccess": "Danke. Du stehst auf der Liste und erfährst den Termin als Erster.",
     "invalidEmail": "Gib eine gültige E-Mail-Adresse ein.",
     "error": "Da ist etwas schiefgelaufen. Bitte versuch es noch einmal.",
@@ -217,7 +217,7 @@
     "lead": {
       "eyebrow": "Kostenlos starten",
       "title": "Die 10 Werkzeuge, die ich heute wieder kaufen würde.",
-      "text": "Kein Rätselraten, keine Werkzeuge, die du nie benutzt. Direkt in dein Postfach.",
+      "text": "Kostenlos. Ich schicke sie dir per E-Mail.",
       "submit": "Schick mir die Liste"
     },
     "plans": {
@@ -340,8 +340,9 @@
   "start": {
     "title": "Vom ersten Schnitt zur <mark>eigenen Werkstatt.</mark>",
     "text": "Wähl deinen Weg oder hol dir zuerst die kostenlose Starterliste mit 10 Werkzeugen.",
+    "shopLink": "Oder direkt zum Shop →",
     "leadTitle": "Die 10 Werkzeuge, die ich heute wieder kaufen würde.",
-    "leadText": "Kein Rätselraten, keine Werkzeuge, die du nie benutzt. Direkt in dein Postfach.",
+    "leadText": "Kostenlos. Ich schicke sie dir per E-Mail.",
     "submit": "Schick mir die Liste"
   },
   "videos": {

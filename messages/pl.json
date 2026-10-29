@@ -144,7 +144,7 @@
     "emailLabel": "Adres e-mail",
     "placeholder": "twoj@email.com",
     "sending": "Wysyłanie…",
-    "success": "Dzięki. Sprawdź skrzynkę.",
+    "success": "Dzięki! Wyślę ci listę mailem w ciągu kilku dni.",
     "waitlistSuccess": "Dzięki. Jesteś na liście. Termin poznasz jako pierwszy.",
     "invalidEmail": "Wpisz poprawny adres e-mail.",
     "error": "Coś poszło nie tak. Spróbuj ponownie.",
@@ -217,7 +217,7 @@
     "lead": {
       "eyebrow": "Zacznij za darmo",
       "title": "Lista 10 narzędzi na start, które kupiłbym dziś jeszcze raz.",
-      "text": "Bez zgadywania i bez narzędzi, których nigdy nie użyjesz. Prosto na twoją skrzynkę.",
+      "text": "Za darmo. Wyślę ci ją mailem.",
       "submit": "Wyślij mi listę"
     },
     "plans": {
@@ -340,8 +340,9 @@
   "start": {
     "title": "Od pierwszego cięcia do <mark>własnego warsztatu.</mark>",
     "text": "Wybierz swoją ścieżkę albo najpierw pobierz darmową listę 10 narzędzi na start.",
+    "shopLink": "Albo przejdź prosto do sklepu →",
     "leadTitle": "Lista 10 narzędzi na start, które kupiłbym dziś jeszcze raz.",
-    "leadText": "Bez zgadywania i bez narzędzi, których nigdy nie użyjesz. Prosto na twoją skrzynkę.",
+    "leadText": "Za darmo. Wyślę ci ją mailem.",
     "submit": "Wyślij mi listę"
   },
   "videos": {

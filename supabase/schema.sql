@@ -134,3 +134,11 @@ create policy "Anyone can add a lead" on public.leads
 
 revoke select, update, delete on public.leads from anon, authenticated;
 grant insert on public.leads to anon, authenticated;
+
+-- Traffic source of a lead. Same SQL as
+-- supabase/migrations/20261029170000_add_leads_ref.sql.
+alter table public.leads add column if not exists ref text;
+
+alter table public.leads drop constraint if exists leads_ref_check;
+alter table public.leads
+  add constraint leads_ref_check check (ref is null or ref in ('ig', 'tt', 'yt'));

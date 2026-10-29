@@ -3,6 +3,7 @@ import { useTranslations } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { pageMetadata } from "@/i18n/metadata";
 import type { Locale } from "@/i18n/routing";
+import { Link } from "@/i18n/navigation";
 import Logo from "@/components/Logo";
 import PathCards from "@/components/site/PathCards";
 import LeadForm from "@/components/LeadForm";
@@ -51,6 +52,12 @@ function Start() {
           </h1>
           <p className="text-[18px] leading-[1.55] text-ink-soft">{t("text")}</p>
           <PathCards />
+          <Link
+            href="/shop"
+            className="inline-flex min-h-11 items-center self-start text-[15px] text-ink-muted underline-offset-4 hover:text-ink hover:underline"
+          >
+            {t("shopLink")}
+          </Link>
         </section>
         <section id="start" className="bg-brand">
           <div className="container-page section-px flex max-w-[860px] flex-col gap-4 py-[clamp(40px,6vw,64px)]">

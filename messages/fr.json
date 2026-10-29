@@ -144,7 +144,7 @@
     "emailLabel": "Adresse e-mail",
     "placeholder": "ton@email.com",
     "sending": "Envoi…",
-    "success": "Merci. Regarde ta boîte de réception.",
+    "success": "Merci ! Je t’enverrai la liste par e-mail d’ici quelques jours.",
     "waitlistSuccess": "Merci. Tu es sur la liste. Tu auras la date en premier.",
     "invalidEmail": "Saisis une adresse e-mail valide.",
     "error": "Une erreur s’est produite. Réessaie.",
@@ -217,7 +217,7 @@
     "lead": {
       "eyebrow": "Commence gratuitement",
       "title": "Les 10 outils pour débuter que je rachèterais aujourd’hui.",
-      "text": "Pas de devinettes, pas d’outils qui ne te serviront jamais. Directement dans ta boîte mail.",
+      "text": "Gratuite. Je te l’envoie par e-mail.",
       "submit": "Envoie-moi la liste"
     },
     "plans": {
@@ -340,8 +340,9 @@
   "start": {
     "title": "De ta première coupe à ton <mark>propre atelier.</mark>",
     "text": "Choisis ton parcours, ou reçois d’abord la liste gratuite des 10 outils pour débuter.",
+    "shopLink": "Ou va directement à la boutique →",
     "leadTitle": "Les 10 outils pour débuter que je rachèterais aujourd’hui.",
-    "leadText": "Pas de devinettes, pas d’outils qui ne te serviront jamais. Directement dans ta boîte mail.",
+    "leadText": "Gratuite. Je te l’envoie par e-mail.",
     "submit": "Envoie-moi la liste"
   },
   "videos": {

@@ -144,7 +144,7 @@
     "emailLabel": "E-mailová adresa",
     "placeholder": "tvoj@email.sk",
     "sending": "Odosielam…",
-    "success": "Vďaka! Pozri si schránku.",
+    "success": "Ďakujem! Zoznam ti pošlem e-mailom do pár dní.",
     "waitlistSuccess": "Vďaka! Si na zozname. Termín sa dozvieš ako prvý.",
     "invalidEmail": "Zadaj platnú e-mailovú adresu.",
     "error": "Niečo sa pokazilo. Skús to znova.",
@@ -217,7 +217,7 @@
     "lead": {
       "eyebrow": "Začni zadarmo",
       "title": "Zoznam 10 nástrojov, ktoré by som si dnes kúpil znova.",
-      "text": "Žiadne tipovanie, žiadne nástroje, ktoré nikdy nepoužiješ. Priamo do tvojej schránky.",
+      "text": "Zadarmo. Pošlem ti ho e-mailom.",
       "submit": "Pošli mi zoznam"
     },
     "plans": {
@@ -340,8 +340,9 @@
   "start": {
     "title": "Od prvého rezu po <mark>vlastnú dielňu.</mark>",
     "text": "Vyber si cestu, alebo si najprv stiahni zadarmo zoznam 10 nástrojov na začiatok.",
+    "shopLink": "Alebo rovno do obchodu →",
     "leadTitle": "Zoznam 10 nástrojov, ktoré by som si dnes kúpil znova.",
-    "leadText": "Žiadne tipovanie, žiadne nástroje, ktoré nikdy nepoužiješ. Priamo do tvojej schránky.",
+    "leadText": "Zadarmo. Pošlem ti ho e-mailom.",
     "submit": "Pošli mi zoznam"
   },
   "videos": {

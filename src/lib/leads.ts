@@ -1,8 +1,10 @@
 "use server";
 
+import { cookies } from "next/headers";
 import { createClient as createSupabaseClient } from "@supabase/supabase-js";
 import { hasLocale } from "next-intl";
 import { routing } from "@/i18n/routing";
+import { REF_COOKIE, isRef } from "@/config/ref";
 
 export type LeadSource = "starter-list" | "workshop-pricing";
 export type LeadPath = "home" | "shop" | "general";
@@ -38,6 +40,7 @@ export async function submitLead(
   const source = String(formData.get("source") ?? "") as LeadSource;
   const path = String(formData.get("path") ?? "") as LeadPath;
   const locale = String(formData.get("locale") ?? "");
+  const ref = (await cookies()).get(REF_COOKIE)?.value;
 
   if (!email || email.length > 254 || !EMAIL_RE.test(email)) {
     return { status: "invalid" };
@@ -57,6 +60,7 @@ export async function submitLead(
     source,
     path,
     locale: hasLocale(routing.locales, locale) ? locale : null,
+    ref: isRef(ref) ? ref : null,
   });
 
   // 23505 = unique_violation on (email, source): already signed up.
