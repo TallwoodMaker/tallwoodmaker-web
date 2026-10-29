@@ -37,6 +37,12 @@ const CATEGORIES = [
         purpose: "Remembers your cookie choice so we don't ask again.",
         duration: "1 year",
       },
+      {
+        name: "NEXT_LOCALE",
+        purpose:
+          "TallWoodMaker (first party) — remembers the language you picked so the site opens in it next time.",
+        duration: "1 year",
+      },
     ],
   },
   {
