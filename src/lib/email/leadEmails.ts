@@ -48,23 +48,29 @@ export async function sendLeadEmail(
   const token = encodeURIComponent(lead.unsubscribe_token);
   const unsubscribeUrl = `${localizedUrl(locale, "/unsubscribe")}?token=${token}`;
   const oneClickUrl = `${SITE_URL}/api/unsubscribe?token=${token}`;
-  const listUrl = LEAD_MAGNET.starterListUrl;
+  const listUrls = LEAD_MAGNET.starterListUrls;
 
   let subject: string;
   const paragraphs: string[] = [];
   let button: { label: string; url: string } | undefined;
+  let secondaryLink: { label: string; url: string } | undefined;
   let sentStarterList = false;
 
   if (lead.source === "workshop-pricing") {
     subject = t("subjectWaitlist");
     paragraphs.push(t("waitlist"));
-  } else if (listUrl) {
+  } else if (listUrls) {
     subject =
       kind === "starter-ready" ? t("subjectStarterReady") : t("subjectStarter");
     paragraphs.push(
       kind === "starter-ready" ? t("starterReadyLater") : t("starterReady")
     );
-    button = { label: t("starterButton"), url: listUrl };
+    // The list in the language the visitor picked (stored as leads.locale),
+    // plus the English original whenever that's a different language.
+    button = { label: t("starterButton"), url: listUrls[locale] };
+    if (locale !== "en") {
+      secondaryLink = { label: "English version", url: listUrls.en };
+    }
     sentStarterList = true;
   } else {
     subject = t("subjectStarter");
@@ -79,6 +85,7 @@ export async function sendLeadEmail(
     greeting: t("greeting"),
     paragraphs,
     button,
+    secondaryLink,
     reply: t("reply"),
     signoff: t("signoff"),
     signoffRole: t("signoffRole"),

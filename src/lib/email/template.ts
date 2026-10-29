@@ -20,6 +20,8 @@ export type EmailContent = {
   greeting: string;
   paragraphs: string[];
   button?: { label: string; url: string };
+  /** Small text link under the button (e.g. the English version). */
+  secondaryLink?: { label: string; url: string };
   reply: string;
   signoff: string;
   signoffRole: string;
@@ -42,6 +44,10 @@ export function renderEmailHtml(c: EmailContent): string {
       </td></tr></table>`
     : "";
 
+  const secondary = c.secondaryLink
+    ? `<p style="margin:-12px 0 24px;font-size:14px;line-height:1.5;"><a href="${escapeHtml(c.secondaryLink.url)}" style="color:${MUTED};text-decoration:underline;">${escapeHtml(c.secondaryLink.label)}</a></p>`
+    : "";
+
   return `<!doctype html>
 <html lang="${c.lang}">
 <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"></head>
@@ -57,6 +63,7 @@ export function renderEmailHtml(c: EmailContent): string {
           ${p(c.greeting)}
           ${c.paragraphs.map(p).join("\n          ")}
           ${button}
+          ${secondary}
           ${p(c.reply)}
           <p style="margin:24px 0 0;font-size:16px;line-height:1.4;color:${INK};font-weight:600;">${escapeHtml(c.signoff)}</p>
           <p style="margin:2px 0 0;font-size:14px;line-height:1.4;color:${MUTED};">${escapeHtml(c.signoffRole)}</p>
@@ -79,6 +86,9 @@ export function renderEmailText(c: EmailContent): string {
     "",
     ...c.paragraphs.flatMap((t) => [t, ""]),
     ...(c.button ? [`${c.button.label}: ${c.button.url}`, ""] : []),
+    ...(c.secondaryLink
+      ? [`${c.secondaryLink.label}: ${c.secondaryLink.url}`, ""]
+      : []),
     c.reply,
     "",
     c.signoff,

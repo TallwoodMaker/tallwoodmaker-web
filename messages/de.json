@@ -82,8 +82,8 @@
     }
   },
   "topBar": {
-    "text": "Kostenlos: die 10 Werkzeuge, die ich heute wieder kaufen würde",
-    "cta": "Her damit"
+    "text": "Kostenloser Download: die 10 Werkzeuge, die ich heute wieder kaufen würde",
+    "cta": "Holen"
   },
   "nav": {
     "mainLabel": "Hauptnavigation",
@@ -147,12 +147,13 @@
     "emailLabel": "E-Mail-Adresse",
     "placeholder": "deine@email.de",
     "sending": "Wird gesendet…",
-    "success": "Danke! Ich schicke dir die Liste in den nächsten Tagen per E-Mail.",
+    "success": "Danke. Schau in dein Postfach.",
     "waitlistSuccess": "Danke. Du stehst auf der Liste und erfährst den Termin als Erster.",
     "invalidEmail": "Gib eine gültige E-Mail-Adresse ein.",
     "error": "Da ist etwas schiefgelaufen. Bitte versuch es noch einmal.",
     "honeypot": "Dieses Feld leer lassen",
-    "consent": "Schick mir ab und zu auch E-Mails mit Tipps und neuen Bauplänen. Abmelden jederzeit möglich."
+    "consent": "Schick mir ab und zu auch E-Mails mit Tipps und neuen Bauplänen. Abmelden jederzeit möglich.",
+    "listLanguage": "Schick mir die Liste auf:"
   },
   "home": {
     "hero": {
@@ -221,7 +222,7 @@
     "lead": {
       "eyebrow": "Kostenlos starten",
       "title": "Die 10 Werkzeuge, die ich heute wieder kaufen würde.",
-      "text": "Kostenlos. Ich schicke sie dir per E-Mail.",
+      "text": "Kein Rätselraten, keine Werkzeuge, die du nie benutzt. Direkt in dein Postfach.",
       "submit": "Schick mir die Liste"
     },
     "plans": {
@@ -346,7 +347,7 @@
     "text": "Wähl deinen Weg oder hol dir zuerst die kostenlose Starterliste mit 10 Werkzeugen.",
     "shopLink": "Oder direkt zum Shop →",
     "leadTitle": "Die 10 Werkzeuge, die ich heute wieder kaufen würde.",
-    "leadText": "Kostenlos. Ich schicke sie dir per E-Mail.",
+    "leadText": "Kein Rätselraten, keine Werkzeuge, die du nie benutzt. Direkt in dein Postfach.",
     "submit": "Schick mir die Liste"
   },
   "videos": {

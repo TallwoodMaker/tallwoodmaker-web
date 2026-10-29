@@ -82,7 +82,7 @@
     }
   },
   "topBar": {
-    "text": "Zdarma: seznam 10 nástrojů, které bych si dnes koupil znovu",
+    "text": "Zdarma ke stažení: 10 nástrojů, které bych si dnes koupil znovu",
     "cta": "Chci ho"
   },
   "nav": {
@@ -147,12 +147,13 @@
     "emailLabel": "E-mailová adresa",
     "placeholder": "tvuj@email.cz",
     "sending": "Odesílám…",
-    "success": "Díky! Seznam ti pošlu e-mailem během pár dní.",
+    "success": "Díky. Mrkni do schránky.",
     "waitlistSuccess": "Díky. Jsi na seznamu a termín se dozvíš jako první.",
     "invalidEmail": "Zadej platnou e-mailovou adresu.",
     "error": "Něco se pokazilo. Zkus to prosím znovu.",
     "honeypot": "Toto pole nevyplňuj",
-    "consent": "Posílej mi občas i e-maily s tipy a novými plány. Odhlásit se můžu kdykoli."
+    "consent": "Posílej mi občas i e-maily s tipy a novými plány. Odhlásit se můžu kdykoli.",
+    "listLanguage": "Pošli mi seznam v jazyce:"
   },
   "home": {
     "hero": {
@@ -221,7 +222,7 @@
     "lead": {
       "eyebrow": "Začni zdarma",
       "title": "10 základních nástrojů, které bych si dnes koupil znovu.",
-      "text": "Zdarma. Pošlu ti ho e-mailem.",
+      "text": "Žádné hádání, žádné nástroje, které nikdy nepoužiješ. Přímo do tvé schránky.",
       "submit": "Pošli mi seznam"
     },
     "plans": {
@@ -346,7 +347,7 @@
     "text": "Vyber si svou cestu, nebo si nejdřív stáhni zdarma seznam 10 základních nástrojů.",
     "shopLink": "Nebo rovnou do obchodu →",
     "leadTitle": "10 základních nástrojů, které bych si dnes koupil znovu.",
-    "leadText": "Zdarma. Pošlu ti ho e-mailem.",
+    "leadText": "Žádné hádání, žádné nástroje, které nikdy nepoužiješ. Přímo do tvé schránky.",
     "submit": "Pošli mi seznam"
   },
   "videos": {

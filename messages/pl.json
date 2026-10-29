@@ -82,8 +82,8 @@
     }
   },
   "topBar": {
-    "text": "Za darmo: lista 10 narzędzi, które kupiłbym dziś ponownie",
-    "cta": "Chcę ją"
+    "text": "Do pobrania za darmo: lista 10 narzędzi na start, które kupiłbym dziś jeszcze raz",
+    "cta": "Pobierz"
   },
   "nav": {
     "mainLabel": "Główna",
@@ -147,12 +147,13 @@
     "emailLabel": "Adres e-mail",
     "placeholder": "twoj@email.com",
     "sending": "Wysyłanie…",
-    "success": "Dzięki! Wyślę ci listę mailem w ciągu kilku dni.",
+    "success": "Dzięki. Sprawdź skrzynkę.",
     "waitlistSuccess": "Dzięki. Jesteś na liście. Termin poznasz jako pierwszy.",
     "invalidEmail": "Wpisz poprawny adres e-mail.",
     "error": "Coś poszło nie tak. Spróbuj ponownie.",
     "honeypot": "Zostaw to pole puste",
-    "consent": "Wysyłaj mi też od czasu do czasu maile z poradami i nowymi planami. Możesz się wypisać w każdej chwili."
+    "consent": "Wysyłaj mi też od czasu do czasu maile z poradami i nowymi planami. Możesz się wypisać w każdej chwili.",
+    "listLanguage": "Wyślij mi listę po:"
   },
   "home": {
     "hero": {
@@ -221,7 +222,7 @@
     "lead": {
       "eyebrow": "Zacznij za darmo",
       "title": "Lista 10 narzędzi na start, które kupiłbym dziś jeszcze raz.",
-      "text": "Za darmo. Wyślę ci ją mailem.",
+      "text": "Bez zgadywania i bez narzędzi, których nigdy nie użyjesz. Prosto na twoją skrzynkę.",
       "submit": "Wyślij mi listę"
     },
     "plans": {
@@ -346,7 +347,7 @@
     "text": "Wybierz swoją ścieżkę albo najpierw pobierz darmową listę 10 narzędzi na start.",
     "shopLink": "Albo przejdź prosto do sklepu →",
     "leadTitle": "Lista 10 narzędzi na start, które kupiłbym dziś jeszcze raz.",
-    "leadText": "Za darmo. Wyślę ci ją mailem.",
+    "leadText": "Bez zgadywania i bez narzędzi, których nigdy nie użyjesz. Prosto na twoją skrzynkę.",
     "submit": "Wyślij mi listę"
   },
   "videos": {

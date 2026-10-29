@@ -82,8 +82,8 @@
     }
   },
   "topBar": {
-    "text": "Grátis: a lista das 10 ferramentas que voltaria a comprar hoje",
-    "cta": "Quero"
+    "text": "Download grátis: as 10 ferramentas para começar que eu voltaria a comprar hoje",
+    "cta": "Quero a lista"
   },
   "nav": {
     "mainLabel": "Principal",
@@ -147,12 +147,13 @@
     "emailLabel": "Endereço de email",
     "placeholder": "o-teu@email.com",
     "sending": "A enviar…",
-    "success": "Obrigado! Envio-te a lista por email dentro de poucos dias.",
+    "success": "Obrigado! Vê a tua caixa de entrada.",
     "waitlistSuccess": "Obrigado! Já estás na lista. Vais ser o primeiro a saber a data.",
     "invalidEmail": "Introduz um endereço de email válido.",
     "error": "Algo correu mal. Tenta outra vez.",
     "honeypot": "Deixa este campo vazio",
-    "consent": "Envia-me também, de vez em quando, emails com dicas e novos planos. Podes cancelar quando quiseres."
+    "consent": "Envia-me também, de vez em quando, emails com dicas e novos planos. Podes cancelar quando quiseres.",
+    "listLanguage": "Envia-me a lista em:"
   },
   "home": {
     "hero": {
@@ -221,7 +222,7 @@
     "lead": {
       "eyebrow": "Começa grátis",
       "title": "As 10 ferramentas para começar que eu voltaria a comprar hoje.",
-      "text": "Grátis. Envio-ta por email.",
+      "text": "Sem adivinhar, sem ferramentas que nunca vais usar. Direto para o teu email.",
       "submit": "Envia-me a lista"
     },
     "plans": {
@@ -346,7 +347,7 @@
     "text": "Escolhe o teu caminho, ou recebe primeiro a lista grátis das 10 ferramentas para começar.",
     "shopLink": "Ou vai diretamente à loja →",
     "leadTitle": "As 10 ferramentas para começar que eu voltaria a comprar hoje.",
-    "leadText": "Grátis. Envio-ta por email.",
+    "leadText": "Sem adivinhar, sem ferramentas que nunca vais usar. Direto para o teu email.",
     "submit": "Envia-me a lista"
   },
   "videos": {

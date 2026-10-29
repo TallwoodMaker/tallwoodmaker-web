@@ -83,9 +83,9 @@ export default async function AdminLeadsPage() {
         <SendPendingButton
           pendingCount={pendingStarter}
           disabledReason={
-            LEAD_MAGNET.starterListUrl
+            LEAD_MAGNET.starterListUrls
               ? undefined
-              : "Set starterListUrl in src/config/leadMagnet.ts to enable."
+              : "Set starterListUrls in src/config/leadMagnet.ts to enable."
           }
         />
       </div>

@@ -8,6 +8,7 @@ import {
   type LeadSource,
   type LeadState,
 } from "@/lib/leads";
+import { LOCALES, LOCALE_NAMES } from "@/i18n/routing";
 
 const initialState: LeadState = { status: "idle" };
 
@@ -93,6 +94,30 @@ export default function LeadForm({
             {pending ? t("sending") : submitLabel}
           </button>
         </div>
+        {source === "starter-list" && (
+          <div className="flex flex-wrap items-center gap-2.5 text-[14px]">
+            <label
+              htmlFor={`${id}-list-locale`}
+              className={tone === "dark" ? "text-on-dark" : "text-ink"}
+            >
+              {t("listLanguage")}
+            </label>
+            <select
+              id={`${id}-list-locale`}
+              name="listLocale"
+              defaultValue={locale}
+              className={`h-11 cursor-pointer rounded-[10px] border-[1.5px] bg-white px-3 text-[15px] text-ink ${
+                tone === "dark" ? "border-cream" : "border-ink"
+              }`}
+            >
+              {LOCALES.map((code) => (
+                <option key={code} value={code} lang={code}>
+                  {LOCALE_NAMES[code]}
+                </option>
+              ))}
+            </select>
+          </div>
+        )}
         {/* Optional newsletter consent: unticked by default, never required.
             The list itself is sent either way. */}
         <label

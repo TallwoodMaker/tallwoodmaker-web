@@ -82,7 +82,7 @@
     }
   },
   "topBar": {
-    "text": "Free: the 10-tool starter list I'd buy again today",
+    "text": "Free download: the 10-tool starter list I'd buy again today",
     "cta": "Get it"
   },
   "nav": {
@@ -147,12 +147,13 @@
     "emailLabel": "Email address",
     "placeholder": "your@email.com",
     "sending": "Sending…",
-    "success": "Thanks! I'll send you the list by email within a few days.",
+    "success": "Thanks! Check your inbox.",
     "waitlistSuccess": "Thanks! You're on the list. You'll get the date first.",
     "invalidEmail": "Enter a valid email address.",
     "error": "Something went wrong. Please try again.",
     "honeypot": "Leave this field empty",
-    "consent": "Also send me occasional emails with tips and new plans. Unsubscribe anytime."
+    "consent": "Also send me occasional emails with tips and new plans. Unsubscribe anytime.",
+    "listLanguage": "Send me the list in:"
   },
   "home": {
     "hero": {
@@ -221,7 +222,7 @@
     "lead": {
       "eyebrow": "Start free",
       "title": "The 10-tool starter list I'd buy again today.",
-      "text": "Free. I'll email it to you.",
+      "text": "No guesswork, no tools you'll never use. Straight to your inbox.",
       "submit": "Send me the list"
     },
     "plans": {
@@ -346,7 +347,7 @@
     "text": "Pick your path, or get the free 10-tool starter list first.",
     "shopLink": "Or go straight to the shop →",
     "leadTitle": "The 10-tool starter list I'd buy again today.",
-    "leadText": "Free. I'll email it to you.",
+    "leadText": "No guesswork, no tools you'll never use. Straight to your inbox.",
     "submit": "Send me the list"
   },
   "videos": {

@@ -28,10 +28,10 @@ export async function sendStarterToPending(): Promise<SendPendingState> {
   if (!isAdmin(user?.email)) {
     return { status: "error", message: "Not authorized." };
   }
-  if (!LEAD_MAGNET.starterListUrl) {
+  if (!LEAD_MAGNET.starterListUrls) {
     return {
       status: "error",
-      message: "Set starterListUrl in src/config/leadMagnet.ts first.",
+      message: "Set starterListUrls in src/config/leadMagnet.ts first.",
     };
   }
 

@@ -82,8 +82,8 @@
     }
   },
   "topBar": {
-    "text": "Gratis: la lista de 10 herramientas que volvería a comprar hoy",
-    "cta": "La quiero"
+    "text": "Descarga gratis: la lista de 10 herramientas para empezar que volvería a comprar hoy",
+    "cta": "Descargar"
   },
   "nav": {
     "mainLabel": "Principal",
@@ -147,12 +147,13 @@
     "emailLabel": "Correo electrónico",
     "placeholder": "tu@correo.com",
     "sending": "Enviando…",
-    "success": "¡Gracias! Te enviaré la lista por email en unos días.",
+    "success": "Gracias. Revisa tu bandeja de entrada.",
     "waitlistSuccess": "Gracias. Ya estás en la lista. Serás el primero en saber la fecha.",
     "invalidEmail": "Introduce un correo electrónico válido.",
     "error": "Algo ha fallado. Inténtalo de nuevo.",
     "honeypot": "Deja este campo vacío",
-    "consent": "Envíame también de vez en cuando emails con consejos y planos nuevos. Puedes darte de baja cuando quieras."
+    "consent": "Envíame también de vez en cuando emails con consejos y planos nuevos. Puedes darte de baja cuando quieras.",
+    "listLanguage": "Envíame la lista en:"
   },
   "home": {
     "hero": {
@@ -221,7 +222,7 @@
     "lead": {
       "eyebrow": "Empieza gratis",
       "title": "La lista de 10 herramientas para empezar que volvería a comprar hoy.",
-      "text": "Gratis. Te la envío por email.",
+      "text": "Sin adivinar, sin herramientas que nunca vas a usar. Directo a tu correo.",
       "submit": "Envíame la lista"
     },
     "plans": {
@@ -346,7 +347,7 @@
     "text": "Elige tu camino o, primero, llévate gratis la lista de 10 herramientas para empezar.",
     "shopLink": "O ve directamente a la tienda →",
     "leadTitle": "La lista de 10 herramientas para empezar que volvería a comprar hoy.",
-    "leadText": "Gratis. Te la envío por email.",
+    "leadText": "Sin adivinar, sin herramientas que nunca vas a usar. Directo a tu correo.",
     "submit": "Envíame la lista"
   },
   "videos": {

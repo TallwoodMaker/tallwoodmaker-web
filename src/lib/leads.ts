@@ -60,8 +60,17 @@ export async function submitLead(
     .toLowerCase();
   const source = String(formData.get("source") ?? "") as LeadSource;
   const path = String(formData.get("path") ?? "") as LeadPath;
-  const rawLocale = String(formData.get("locale") ?? "");
-  const locale = hasLocale(routing.locales, rawLocale) ? rawLocale : null;
+  const rawPageLocale = String(formData.get("locale") ?? "");
+  const pageLocale = hasLocale(routing.locales, rawPageLocale)
+    ? rawPageLocale
+    : routing.defaultLocale;
+  // leads.locale = the language the starter list was requested in (the
+  // form's language picker); other forms fall back to the page language.
+  // The welcome email goes out in this language too.
+  const rawListLocale = String(formData.get("listLocale") ?? "");
+  const locale = hasLocale(routing.locales, rawListLocale)
+    ? rawListLocale
+    : pageLocale;
   const marketingConsent = formData.get("marketingConsent") === "on";
   const cookieStore = await cookies();
   const ref = hasAnalyticsConsent(cookieStore.get(CONSENT_COOKIE_NAME)?.value)
@@ -79,11 +88,9 @@ export async function submitLead(
     ? {
         marketing_consent: true,
         consent_at: new Date().toISOString(),
+        // The checkbox text exactly as shown, i.e. in the page language.
         consent_text: (
-          await getTranslations({
-            locale: locale ?? routing.defaultLocale,
-            namespace: "leadForm",
-          })
+          await getTranslations({ locale: pageLocale, namespace: "leadForm" })
         )("consent"),
       }
     : {};
