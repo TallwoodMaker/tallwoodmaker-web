@@ -120,10 +120,52 @@ export async function syncResendContact(
   unsubscribed: boolean
 ): Promise<void> {
   const updated = await resend().contacts.update({ email, unsubscribed });
-  if (!updated.error) return;
+  if (!updated.error) {
+    // Existing contact (maybe from an earlier signup): make sure it's in
+    // the site's segment. Adding twice is harmless.
+    if (!unsubscribed) {
+      const segmentId = await siteSegmentId();
+      if (segmentId) {
+        await resend().contacts.segments.add({ email, segmentId });
+      }
+    }
+    return;
+  }
   if (unsubscribed) return; // nothing to mark if they were never a contact
-  const created = await resend().contacts.create({ email, unsubscribed });
+  const segmentId = await siteSegmentId();
+  const created = await resend().contacts.create({
+    email,
+    unsubscribed,
+    segments: segmentId ? [{ id: segmentId }] : undefined,
+  });
   if (created.error) {
     console.error("Resend contact sync failed:", created.error);
   }
+}
+
+/**
+ * Contacts from tallwoodmaker.com live in their own Resend segment, separate
+ * from "General" (used by MebCut on the same Resend account). Looked up by
+ * name and created if missing; cached per server instance.
+ */
+const SITE_SEGMENT_NAME = "TallWoodMaker";
+let segmentIdPromise: Promise<string | null> | null = null;
+
+function siteSegmentId(): Promise<string | null> {
+  segmentIdPromise ??= (async () => {
+    const list = await resend().segments.list();
+    const existing = list.data?.data.find((s) => s.name === SITE_SEGMENT_NAME);
+    if (existing) return existing.id;
+    const created = await resend().segments.create({ name: SITE_SEGMENT_NAME });
+    if (created.error) {
+      console.error("Resend segment create failed:", created.error);
+      return null;
+    }
+    return created.data.id;
+  })().catch((error) => {
+    console.error("Resend segment lookup failed:", error);
+    segmentIdPromise = null; // retry on the next call
+    return null;
+  });
+  return segmentIdPromise;
 }
