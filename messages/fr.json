@@ -1,0 +1,812 @@
+{
+  "meta": {
+    "siteDescription": "La menuiserie de ta première coupe à ton propre atelier. Plans, guides et vidéos tirés de vrais chantiers dans un atelier de 900 m².",
+    "home": {
+      "title": "TallWoodMaker : de ta première coupe à ton propre atelier",
+      "description": "La menuiserie de A à Z, filmée sur de vrais chantiers dans un atelier de 900 m². Chez toi ou dans ton propre atelier : chaque étape, chaque outil, chaque erreur."
+    },
+    "buildAtHome": {
+      "title": "Fabrique ta propre cuisine chez toi",
+      "description": "Pas besoin d’atelier pour fabriquer ta cuisine. Fais découper les panneaux par un service de découpe et assemble chez toi : le plan, la liste d’achats et chaque étape."
+    },
+    "ownShop": {
+      "title": "Monte ton propre atelier de menuiserie",
+      "description": "Monte un atelier rentable : quoi acheter en premier, combien facturer et comment préparer un chantier en quelques minutes. 15 ans de chantiers pour des clients."
+    },
+    "start": {
+      "title": "Commence ici",
+      "description": "De ta première coupe à ton propre atelier. Choisis ton parcours et reçois gratuitement la liste des 10 outils pour débuter."
+    },
+    "videos": {
+      "title": "Vidéos",
+      "description": "De vrais chantiers filmés à l’atelier : visites d’atelier, épisodes d’une journée à l’atelier et formats courts sur TikTok."
+    },
+    "forBrands": {
+      "title": "Travailler avec TallWoodMaker",
+      "description": "Partenariats de marque avec un menuisier professionnel. Contenu filmé sur de vrais chantiers clients, pour menuisiers et bricoleurs en Europe et aux États-Unis."
+    },
+    "about": {
+      "title": "À propos",
+      "description": "Je m’appelle Tom. Depuis 15 ans, je fabrique des cuisines, des dressings et des agencements complets pour des clients, et tout ce que je filme est un vrai chantier."
+    },
+    "shop": {
+      "title": "Plans et guides",
+      "description": "Plans de menuiserie, fiches de débit et ebooks tirés de vrais chantiers, pas dessinés derrière un bureau."
+    },
+    "contact": {
+      "title": "Contact",
+      "description": "Fabrication sur mesure, collaboration de contenu ou question sur un projet : écris-moi."
+    },
+    "cart": {
+      "title": "Panier"
+    },
+    "orderConfirmed": {
+      "title": "Commande confirmée"
+    },
+    "premium": {
+      "title": "Premium",
+      "description": "Fabrications complètes, versions longues et fichiers d’atelier pour les membres."
+    },
+    "subscribe": {
+      "title": "Premium",
+      "description": "Fabrications complètes, versions longues et fichiers d’atelier pour les membres TallWoodMaker Premium. 9 €/mois, résiliable à tout moment."
+    },
+    "collaborate": {
+      "title": "Collaborer",
+      "description": "Partenariats de marque avec un menuisier professionnel : quinze ans de métier, du vrai contenu d’atelier, aucune mise en scène."
+    },
+    "benefits": {
+      "title": "Avantages",
+      "description": "Codes promo et offres partenaires pour les outils et matériaux utilisés dans l’atelier TallWoodMaker."
+    },
+    "confirmSignIn": {
+      "title": "Confirmer la connexion"
+    },
+    "terms": {
+      "title": "Conditions générales"
+    },
+    "privacy": {
+      "title": "Politique de confidentialité"
+    },
+    "cookies": {
+      "title": "Politique relative aux cookies"
+    },
+    "course": {
+      "title": "Formation en ligne"
+    },
+    "notFound": {
+      "title": "Page introuvable"
+    }
+  },
+  "topBar": {
+    "text": "Téléchargement gratuit : les 10 outils pour débuter que je rachèterais aujourd’hui",
+    "cta": "La recevoir"
+  },
+  "nav": {
+    "mainLabel": "Principal",
+    "homeLink": "Accueil TallWoodMaker",
+    "start": "Commence ici",
+    "buildAtHome": "Fabriquer chez soi",
+    "ownShop": "Ton propre atelier",
+    "plans": "Plans et guides",
+    "videos": "Vidéos",
+    "premium": "Premium",
+    "about": "À propos",
+    "getFreeList": "Recevoir la liste gratuite",
+    "cart": "Panier",
+    "cartWithCount": "Panier ({count})",
+    "cartAria": "{count, plural, =0 {Panier} one {Panier, # article} other {Panier, # articles}}",
+    "signIn": "Se connecter",
+    "openMenu": "Ouvrir le menu",
+    "closeMenu": "Fermer le menu",
+    "changeLanguage": "Changer de langue",
+    "language": "Langue"
+  },
+  "footer": {
+    "forBrands": "Pour les marques",
+    "contact": "Contact",
+    "copyright": "© {year} TallWoodMaker s.r.o.",
+    "social": "Réseaux sociaux",
+    "legal": "Mentions légales",
+    "terms": "Conditions générales",
+    "privacy": "Politique de confidentialité",
+    "cookiePolicy": "Politique relative aux cookies",
+    "cookieSettings": "Paramètres des cookies"
+  },
+  "paths": {
+    "home": "Fabriquer chez soi",
+    "shop": "Ton propre atelier"
+  },
+  "productTypes": {
+    "plan": "Plan",
+    "ebook": "Ebook",
+    "bundle": "Pack"
+  },
+  "productCard": {
+    "save": "Économise {amount} €",
+    "bestStart": "Meilleur départ · Économise {amount} €",
+    "everything": "Tout inclus · Économise {amount} €",
+    "pdfInEnglish": "PDF en anglais",
+    "regularPrice": "Prix normal {price}"
+  },
+  "pathCards": {
+    "question": "Où en es-tu en ce moment ?",
+    "home": {
+      "title": "Je fabrique chez moi",
+      "text": "Garage, balcon ou un coin de la cave"
+    },
+    "shop": {
+      "title": "Je monte mon propre atelier",
+      "text": "Du loisir à un atelier rentable"
+    }
+  },
+  "leadForm": {
+    "emailLabel": "Adresse e-mail",
+    "placeholder": "ton@email.com",
+    "sending": "Envoi…",
+    "success": "Merci. Regarde ta boîte de réception.",
+    "waitlistSuccess": "Merci. Tu es sur la liste. Tu auras la date en premier.",
+    "invalidEmail": "Saisis une adresse e-mail valide.",
+    "error": "Une erreur s’est produite. Réessaie.",
+    "honeypot": "Laisse ce champ vide"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Pour bricoleurs et menuisiers · par un pro avec 15 ans de métier",
+      "title": "De ta première coupe à ton <mark>propre atelier.</mark>",
+      "text": "La menuiserie de A à Z, filmée sur de vrais chantiers dans un atelier de 900 m². Que tu fabriques chez toi ou que tu montes ton propre atelier, je te montre chaque étape, chaque outil et chaque erreur.",
+      "photoAlt": "Tom à la scie à panneaux dans l’atelier, sur un vrai chantier",
+      "nameTag": "Tom",
+      "nameTagRole": "Menuisier et créateur · 15 ans",
+      "badge": "De vrais chantiers, pas des décors"
+    },
+    "proof": {
+      "label": "En chiffres",
+      "followers": "passionnés qui me suivent sur IG, YouTube et TikTok",
+      "monthlyReach": "vues par mois",
+      "yearsValue": "{count} ans",
+      "years": "à fabriquer pour des clients",
+      "workshopValue": "{count} m²",
+      "workshop": "de vrai atelier",
+      "workedWith": "Ils m’ont fait confiance"
+    },
+    "why": {
+      "eyebrow": "Pourquoi apprendre avec moi",
+      "title": "La plupart des vidéos te montrent le résultat. Moi, je te montre les décisions.",
+      "text": "Ce qui prend des années à apprendre et coûte cher quand on se trompe.",
+      "items": {
+        "board": {
+          "title": "Quel panneau acheter",
+          "text": "Aggloméré, MDF ou contreplaqué, et là où ça compte vraiment."
+        },
+        "order": {
+          "title": "Combien commander",
+          "text": "Des fiches de débit qui laissent des chutes, pas des manques."
+        },
+        "walls": {
+          "title": "Murs de travers",
+          "text": "Poser des meubles de niveau quand rien dans la pièce ne l’est."
+        },
+        "charge": {
+          "title": "Combien facturer",
+          "text": "Chiffrer un chantier pour que la quincaillerie et tes heures soient payées."
+        }
+      }
+    },
+    "paths": {
+      "title": "Deux parcours. Choisis le tien.",
+      "home": {
+        "title": "Pas besoin d’atelier pour fabriquer ta propre cuisine.",
+        "points": [
+          "Un plan clair, de la prise de mesures à la dernière porte",
+          "La liste exacte des panneaux et de la quincaillerie à commander",
+          "Un résultat qui a l’air fait par un pro"
+        ],
+        "cta": "Commencer le parcours maison →"
+      },
+      "shop": {
+        "title": "Monte un atelier rentable, pas un atelier qui te mange tes soirées.",
+        "points": [
+          "Savoir exactement combien facturer",
+          "N’acheter que les machines qui se rentabilisent",
+          "Préparer un chantier en quelques minutes, pas en une soirée entière"
+        ],
+        "cta": "Commencer le parcours atelier →"
+      }
+    },
+    "lead": {
+      "eyebrow": "Commence gratuitement",
+      "title": "Les 10 outils pour débuter que je rachèterais aujourd’hui.",
+      "text": "Pas de devinettes, pas d’outils qui ne te serviront jamais. Directement dans ta boîte mail.",
+      "submit": "Envoie-moi la liste"
+    },
+    "plans": {
+      "eyebrow": "Plans et guides",
+      "title": "Des plans tirés de vrais chantiers, pas dessinés derrière un bureau.",
+      "seeAll": "Voir tous les plans →",
+      "note": "Tous les plans et ebooks sont des PDF en anglais. D’autres langues arrivent."
+    },
+    "realJobs": {
+      "eyebrow": "Vrais chantiers",
+      "title": "Fabriqué pour des clients. Maintenant entre tes mains sous forme de plans."
+    },
+    "about": {
+      "title": "Salut, moi c’est Tom.",
+      "p1": "Depuis 15 ans, je fabrique des cuisines, des dressings et des agencements complets pour des clients. Tout ce que je filme est un vrai chantier, pas un décor. Je partage ce qui m’a pris des années à apprendre, les plans, les chiffres et les erreurs, pour que tu puisses les éviter.",
+      "p2": "Que tu fabriques ta première cuisine chez toi ou que tu montes ton premier atelier, commence ici.",
+      "homeCta": "Je fabrique chez moi",
+      "shopCta": "Je monte mon atelier",
+      "portraitAlt": "Portrait de Tom dans l’atelier, une lame de scie à la main"
+    }
+  },
+  "gallery": {
+    "panelSaw": "Tom charge un panneau sur la scie à panneaux",
+    "edgeBander": "Tom passe un panneau dans la plaqueuse de chants",
+    "cnc": "Centre d’usinage CNC dans l’atelier",
+    "edgeBanderLine": "Plaqueuse de chants avec aspiration aérienne",
+    "workshopWide": "Vue large de l’atelier avec les racks à panneaux et une presse à chaud",
+    "shopFloor": "L’atelier avec une scie à format et une toupie"
+  },
+  "buildAtHome": {
+    "badge": "Fabriquer chez soi",
+    "title": "Pas besoin d’atelier pour fabriquer ta propre cuisine.",
+    "text": "Fais découper et plaquer les panneaux par un service de découpe, puis assemble chez toi avec des outils de base. Je te montre le plan exact, la liste d’achats et l’ordre de chaque étape.",
+    "ctaSteps": "Voir les 5 étapes",
+    "ctaPlans": "Plans pour ta cuisine",
+    "roadmapEyebrow": "La feuille de route",
+    "roadmapTitle": "De la pièce vide à la cuisine finie en 5 étapes.",
+    "steps": {
+      "measure": {
+        "title": "Mesurer et planifier",
+        "text": "Comment mesurer la pièce et implanter les meubles pour que rien ne gêne les tuyaux et les prises."
+      },
+      "order": {
+        "title": "Commander le matériel",
+        "text": "Combien de panneaux, où les faire découper, quelle quincaillerie commander."
+      },
+      "boxes": {
+        "title": "Monter les caissons",
+        "text": "Assembler chez toi des caissons d’équerre et solides, en série."
+      },
+      "install": {
+        "title": "Poser",
+        "text": "Murs de travers, accrochage des meubles hauts, pose du plan de travail."
+      },
+      "finish": {
+        "title": "Finir",
+        "text": "Les portes en une seule passe, les plinthes, l’éclairage et la check-list finale."
+      }
+    },
+    "freeVideo": "Vidéo gratuite",
+    "productsTitle": "Tout pour fabriquer chez toi",
+    "listTitle": "Tu ne sais pas par où commencer ?",
+    "listText": "Reçois la liste des 10 outils pour débuter que je rachèterais aujourd’hui. Gratuite.",
+    "listSubmit": "Envoie-moi la liste",
+    "switchPath": "Tu fabriques pour des clients ? Passe au parcours atelier →"
+  },
+  "ownShop": {
+    "badge": "Ton propre atelier",
+    "title": "Monte un atelier rentable, pas un atelier qui <mark>te mange tes soirées.</mark>",
+    "text": "15 ans de chantiers pour des clients : quoi acheter en premier, combien facturer et comment préparer un chantier en quelques minutes au lieu d’une soirée entière.",
+    "ctaSteps": "Voir les 6 étapes",
+    "ctaTools": "Outils et guides",
+    "photoAlt": "L’atelier avec une ponceuse à large bande et une aspiration aérienne",
+    "roadmapEyebrow": "La feuille de route",
+    "roadmapTitle": "Du garage vide à ton premier chantier rentable.",
+    "stepLabel": "Étape {number}",
+    "ownToolLabel": "Étape {number} · Mon propre outil",
+    "steps": {
+      "space": {
+        "title": "Un espace sans argent gaspillé",
+        "text": "Une implantation et un espace qui fonctionnent avant de dépenser un centime en machines."
+      },
+      "machines": {
+        "title": "Des machines qui se rentabilisent",
+        "text": "Quoi acheter en premier, et quoi laisser à un service de découpe."
+      },
+      "cutting": {
+        "title": "Des plans de découpe sans gaspillage",
+        "text": "J’ai créé MebCut pour ça. Prends en photo ta liste de débit et obtiens le plan de découpe en quelques secondes.",
+        "cta": "Essaie MebCut gratuitement →"
+      },
+      "pricing": {
+        "title": "Chiffrer avec du bénéfice",
+        "text": "Un prix qui couvre la quincaillerie, tes heures et la marge."
+      },
+      "clients": {
+        "title": "Tes premiers clients",
+        "text": "Où les trouver et comment ne pas te brader."
+      },
+      "evenings": {
+        "title": "Tes soirées à la maison",
+        "text": "Des process, pour que tout l’atelier ne repose pas sur toi."
+      }
+    },
+    "productsTitle": "Outils et guides pour ton atelier",
+    "mebcut": {
+      "label": "Appli · mebcut.com",
+      "text": "Des plans de découpe à partir d’une photo, un assistant de découpe sur ton téléphone.",
+      "price": "Gratuit pour commencer"
+    },
+    "waitlist": {
+      "eyebrow": "Atelier en ligne en direct · bientôt",
+      "title": "Chiffre un chantier avec du bénéfice, pas gratuitement.",
+      "text": "2 heures en direct, un calculateur que tu gardes, et tu n’oublieras plus jamais la quincaillerie. Inscris-toi sur la liste et reçois la date en premier.",
+      "submit": "M’inscrire sur la liste"
+    },
+    "switchPath": "Tu fabriques pour toi ? Passe au parcours maison →",
+    "freeVideo": "Vidéo gratuite"
+  },
+  "start": {
+    "title": "De ta première coupe à ton <mark>propre atelier.</mark>",
+    "text": "Choisis ton parcours, ou reçois d’abord la liste gratuite des 10 outils pour débuter.",
+    "leadTitle": "Les 10 outils pour débuter que je rachèterais aujourd’hui.",
+    "leadText": "Pas de devinettes, pas d’outils qui ne te serviront jamais. Directement dans ta boîte mail.",
+    "submit": "Envoie-moi la liste"
+  },
+  "videos": {
+    "title": "Vidéos",
+    "text": "De vrais chantiers, filmés à l’atelier. Une nouvelle vidéo chaque semaine sur YouTube, des formats courts presque tous les jours sur Instagram et TikTok.",
+    "longFormTitle": "Vidéos longues",
+    "tiktokTitle": "Derniers TikTok",
+    "channelsTitle": "Chaînes",
+    "youtube": "Une nouvelle vidéo chaque semaine, directement de l’atelier.",
+    "instagram": "Extraits quotidiens, reels et coulisses.",
+    "tiktok": "Des clips courts tirés de vrais chantiers.",
+    "facebook": "Récaps hebdomadaires de l’atelier."
+  },
+  "forBrands": {
+    "title": "Travailler avec TallWoodMaker",
+    "p1": "Mon audience, ce sont des menuisiers et des bricoleurs d’Europe et des États-Unis : des gens qui fabriquent vraiment quelque chose, d’une première cuisine chez eux jusqu’à leur propre atelier.",
+    "p2": "Tout ce que je filme est un vrai chantier client dans un atelier en activité, donc ton outil ou ton matériau est montré comme il est vraiment utilisé, pas mis en scène pour la caméra.",
+    "statsTitle": "En chiffres",
+    "contactTitle": "Parlons-en",
+    "contactText": "Parle-moi de ton produit et de ce que tu as en tête. Je te répondrai personnellement.",
+    "emailCta": "M’écrire"
+  },
+  "about": {
+    "title": "Salut, moi c’est Tom.",
+    "photoAlt": "Tom, TallWoodMaker, une lame de scie à la main dans l’atelier",
+    "storyP1": "Je suis arrivé à la menuiserie en réparant une vieille étagère qui partait à la déchetterie. La première pièce est sortie de travers, la deuxième était mieux, et la troisième a fini en ligne. De là, c’est devenu un travail quotidien à l’atelier.",
+    "storyP2": "Le contenu que je fais n’est pas qu’un best-of. Je montre les cotes qui n’ont pas marché, les outils qui méritent plus d’attention et les décisions prises directement à la scie.",
+    "process": {
+      "title": "Méthode",
+      "text": "De la conception à la finition : chaque étape documentée, erreurs comprises."
+    },
+    "tools": {
+      "title": "Outils",
+      "text": "Un mélange d’outils à main et de machines. J’explique quoi et pourquoi."
+    },
+    "community": {
+      "title": "Communauté",
+      "text": "Les questions des commentaires deviennent souvent le sujet de la vidéo suivante."
+    },
+    "wideAlt": "Vue large de l’atelier avec une ponceuse à large bande et une aspiration aérienne",
+    "galleryTitle": "Galerie",
+    "galleryText": "Un aperçu de l’atelier : les machines, la méthode et les gens derrière chaque fabrication.",
+    "galleryItems": {
+      "cnc": {
+        "title": "Machine CNC Biesse Rover",
+        "category": "Machine CNC",
+        "alt": "Centre d’usinage CNC Biesse Rover A Smart dans l’atelier"
+      },
+      "edgeBanding": {
+        "title": "Placage de chants en cours",
+        "category": "Placage de chants",
+        "alt": "Plaqueuse de chants appliquant un chant sur un panneau"
+      },
+      "feedingEdgeBander": {
+        "title": "Alimenter la plaqueuse de chants",
+        "category": "Placage de chants",
+        "alt": "Tom passe un panneau dans la plaqueuse de chants"
+      },
+      "onPanelSaw": {
+        "title": "À la scie à panneaux",
+        "category": "Scie à panneaux",
+        "alt": "Tom charge un panneau sur la scie à panneaux Biesse Selco"
+      },
+      "panelSaw": {
+        "title": "Scie à panneaux Biesse Selco",
+        "category": "Scie à panneaux",
+        "alt": "Scie à panneaux Biesse Selco WN2 et tables de sortie"
+      },
+      "break": {
+        "title": "Une pause à l’atelier",
+        "category": "Coulisses",
+        "alt": "Tom debout dans l’atelier à côté de chutes de panneaux empilées"
+      },
+      "controls": {
+        "title": "Commandes de la plaqueuse de chants",
+        "category": "Placage de chants",
+        "alt": "Pupitre de commande de la plaqueuse de chants Cehisa"
+      },
+      "storage": {
+        "title": "Stockage des panneaux et presse à chaud",
+        "category": "Vue de l’atelier",
+        "alt": "Vue large de l’atelier avec les racks à panneaux et une presse à chaud"
+      },
+      "dust": {
+        "title": "Aspiration et ligne de ponçage",
+        "category": "Vue de l’atelier",
+        "alt": "Vue de l’atelier avec une ponceuse à large bande et les gaines d’aspiration aériennes"
+      },
+      "slidingSaw": {
+        "title": "Scie à format",
+        "category": "Vue de l’atelier",
+        "alt": "Vue de l’atelier avec une scie à format et une toupie"
+      },
+      "fravol": {
+        "title": "Plaqueuse de chants Fravol",
+        "category": "Placage de chants",
+        "alt": "Plaqueuse de chants Fravol avec les conduits d’aspiration aériens"
+      },
+      "floor": {
+        "title": "L’atelier",
+        "category": "Vue de l’atelier",
+        "alt": "Plaqueuse de chants Fravol et le réseau de gaines aériennes de l’atelier"
+      }
+    },
+    "videoTitle": "Vidéo et réseaux",
+    "videoText": "Une nouvelle vidéo chaque semaine. Des formats courts tous les jours sur Instagram et TikTok.",
+    "youtubeCardTitle": "Regarder sur YouTube",
+    "youtubeCardText": "Une nouvelle vidéo chaque semaine, directement de l’atelier.",
+    "instagramCardTitle": "Suivre sur Instagram",
+    "instagramCardText": "Extraits quotidiens, reels et coulisses de l’atelier.",
+    "tiktokCardTitle": "Regarder sur TikTok",
+    "tiktokCardText": "Les derniers TikTok sont sur la page Vidéos.",
+    "tiktokCardCta": "Vidéos →",
+    "facebookText": "Récaps hebdomadaires et lives depuis l’atelier.",
+    "followBuild": "Suivre la fabrication"
+  },
+  "shop": {
+    "title": "Plans et guides",
+    "text": "Plans, fiches de débit et ebooks tirés de vrais chantiers, pas dessinés derrière un bureau.",
+    "note": "Tous les plans et ebooks sont des PDF en anglais. D’autres langues arrivent.",
+    "all": "Tout",
+    "categories": {
+      "ebooks": "Ebooks",
+      "plans": "Plans",
+      "bundles": "Packs"
+    },
+    "addToCart": "Ajouter au panier",
+    "inCartRemove": "Dans le panier · Retirer",
+    "placeholder": {
+      "plan": "aperçu du plan",
+      "ebook": "couverture de l’ebook",
+      "bundle": "couverture du pack"
+    }
+  },
+  "product": {
+    "back": "← Retour à la boutique",
+    "whatYouLearn": "Ce que tu vas apprendre",
+    "whatsIncluded": "Ce qui est inclus",
+    "onItsOwn": "{price} à l’unité",
+    "view": "Voir →",
+    "sampleEbook": "Une page d’exemple de l’ebook",
+    "samplePlan": "Une page d’exemple du plan",
+    "sampleAlt": "Page d’exemple de {title}",
+    "pdfNote": "Le PDF est en anglais."
+  },
+  "cart": {
+    "title": "Ton panier",
+    "empty": "Ton panier est vide.",
+    "back": "← Retour à la boutique",
+    "remove": "Retirer",
+    "subtotal": "Sous-total",
+    "consent": "Je souhaite accéder immédiatement à ce contenu numérique et je reconnais perdre mon droit de rétractation dès le début de la livraison. J’accepte les <terms>Conditions générales</terms>.",
+    "checkout": "Payer",
+    "redirecting": "Redirection…",
+    "errorEmpty": "Ton panier est vide, ou plus rien de ce qu’il contient n’est disponible.",
+    "errorConsent": "Confirme que tu souhaites accéder immédiatement à ton achat numérique pour continuer.",
+    "errorNoUrl": "Stripe n’a pas renvoyé d’URL de paiement. Réessaie."
+  },
+  "success": {
+    "notConfirmedTitle": "Paiement pas encore confirmé",
+    "notConfirmedText": "Si tu viens de finaliser le paiement, actualise cette page dans un instant. La confirmation peut prendre quelques secondes. Toujours bloqué ? Écris à <email>tom@tallwoodmaker.com</email> en mentionnant cette commande.",
+    "thanksTitle": "{count, plural, one {Merci, voici ton téléchargement} other {Merci, voici tes téléchargements}}",
+    "download": "Télécharger {file}",
+    "failure": "Ton paiement est passé, mais nous avons eu un problème pour générer le lien de téléchargement de {titles}. Écris à <email>tom@tallwoodmaker.com</email> avec ce numéro de commande et nous te l’enverrons :",
+    "expiry": "Ces liens sont valables 24 heures. Si l’un d’eux expire, ajoute cette page à tes favoris et reviens-y. La rouvrir génère de nouveaux liens."
+  },
+  "premium": {
+    "badge": "Premium",
+    "title": "Vidéos Premium",
+    "text": "Fabrications complètes et versions longues pour les membres. Nouveau contenu ajouté régulièrement.",
+    "empty": "Nouveau contenu bientôt. Repasse d’ici peu.",
+    "announcements": "Annonces",
+    "tabs": {
+      "all": "Tout",
+      "article": "Articles",
+      "video": "Vidéos",
+      "plan_download": "Téléchargements"
+    },
+    "types": {
+      "article": "Article",
+      "video": "Vidéo",
+      "plan_download": "Téléchargement",
+      "announcement": "Nouveauté"
+    },
+    "nothingYet": "Rien ici pour l’instant.",
+    "download": "Télécharger",
+    "videoPlaceholder": "miniature de la vidéo",
+    "preview": "aperçu"
+  },
+  "subscribe": {
+    "badge": "Premium",
+    "title": "TallWoodMaker Premium",
+    "waitlistText": "Fabrications complètes, versions longues et fichiers d’atelier pour les membres. L’accès Premium ouvre bientôt. Inscris-toi sur la liste d’attente pour être le premier.",
+    "launchOffer": "Offre de lancement",
+    "launchTitle": "Inscris-toi maintenant et profite de 50 % de réduction sur tes 3 premiers mois",
+    "launchText": "Les inscrits sur la liste d’attente ont accès en premier à l’ouverture, avec la réduction appliquée automatiquement au paiement.",
+    "heroText": "Fabrications complètes, versions longues et fichiers d’atelier : ce qui ne rentre pas sur YouTube. Rejoins-nous pour 9 €/mois et accède au contenu tout de suite.",
+    "included": "Ce qui est inclus",
+    "previewText": "Un aperçu de ce qui t’attend à l’intérieur. Nouveau contenu ajouté chaque mois.",
+    "membersOnly": "Réservé aux membres",
+    "fallbackBenefits": [
+      "Vidéos de fabrication complètes, du début à la fin : chaque étape, pas seulement les temps forts",
+      "Versions longues et visites d’atelier au-delà de ce qui est sur YouTube",
+      "Plans et listes de débit à télécharger pour une sélection de fabrications",
+      "Nouveau contenu ajouté chaque mois",
+      "Résiliable à tout moment, sans engagement"
+    ],
+    "offerBadge": "Offre de lancement : 50 % de réduction sur tes 3 premiers mois",
+    "price": "9 €",
+    "perMonth": "/mois",
+    "codeText": "Tu as un code de lancement ? Saisis-le au paiement pour 50 % de réduction sur tes 3 premiers mois.",
+    "consent": "Je souhaite accéder immédiatement à Premium et je reconnais perdre mon droit de rétractation dès le début de l’accès. J’accepte les <terms>Conditions générales</terms>.",
+    "consentError": "Coche la case pour continuer.",
+    "linkExpired": "Ce lien de connexion a expiré ou a déjà été utilisé. Demandes-en un nouveau ci-dessous.",
+    "subscribeCta": "S’abonner maintenant : 9 €/mois",
+    "signInPrompt": "Saisis ton e-mail pour te connecter et passer au paiement",
+    "faqTitle": "Bon à savoir",
+    "faq": [
+      {
+        "q": "Je peux résilier à tout moment ?",
+        "a": "Oui. Résilie depuis ton compte quand tu veux. Tu gardes l’accès jusqu’à la fin de la période de facturation déjà payée."
+      },
+      {
+        "q": "Comment fonctionne la facturation ?",
+        "a": "9 €/mois, prélevés automatiquement jusqu’à ce que tu résilies. Pas de contrat annuel."
+      },
+      {
+        "q": "Que se passe-t-il juste après mon inscription ?",
+        "a": "Tu reçois un lien de connexion par e-mail, puis tu arrives directement sur le paiement. L’accès est débloqué dès que le paiement est validé."
+      },
+      {
+        "q": "Qu’est-ce que j’obtiens concrètement ?",
+        "a": "Tout ce qui figure dans « Ce qui est inclus » ci-dessus, plus tout ce qui est ajouté à Premium pendant ton abonnement."
+      }
+    ],
+    "countdown": {
+      "days": "Jours",
+      "hours": "Heures",
+      "minutes": "Minutes",
+      "seconds": "Secondes"
+    },
+    "waitlist": {
+      "join": "Rejoindre la liste d’attente",
+      "joining": "Inscription…",
+      "joined": "Tu es sur la liste. Nous t’enverrons un e-mail à l’ouverture de Premium.",
+      "error": "Impossible de t’inscrire sur la liste d’attente. Réessaie."
+    },
+    "magicLink": {
+      "send": "M’envoyer un lien par e-mail",
+      "sending": "Envoi…",
+      "sent": "Regarde ta boîte {email} pour trouver le lien de connexion.",
+      "error": "Impossible d’envoyer le lien. Réessaie."
+    }
+  },
+  "confirmSignIn": {
+    "title": "Confirmer la connexion",
+    "text": "Pour ta sécurité, nous ne te connectons qu’une fois que tu as cliqué ci-dessous. Ça empêche les scanners de liens des messageries d’utiliser le lien avant toi.",
+    "button": "Confirmer la connexion"
+  },
+  "contact": {
+    "title": "Contact",
+    "text": "Fabrication sur mesure, collaboration de contenu ou simple question sur un projet : écris-moi.",
+    "name": "Nom",
+    "namePlaceholder": "Ton nom",
+    "email": "E-mail",
+    "emailPlaceholder": "toi@email.com",
+    "message": "Message",
+    "messagePlaceholder": "Décris ton projet ou ta question",
+    "send": "Envoyer",
+    "emailHeading": "E-mail",
+    "workshopHeading": "Atelier",
+    "workshopValue": "Slovaquie",
+    "socialHeading": "Réseaux sociaux"
+  },
+  "collaborate": {
+    "title": "Collaborer",
+    "intro": "Je fabrique pour les marques comme je fabrique pour la caméra : sans raccourcis, sans remplissage. Si tes outils ou tes matériaux ont leur place dans un vrai atelier, parlons-en.",
+    "heroAlt": "Centre d’usinage CNC Biesse Rover A Smart dans l’atelier",
+    "philosophyTitle": "Fabriquer. Partager. Inspirer.",
+    "philosophyText": "La philosophie derrière tout ce que je fabrique, devant la caméra ou non.",
+    "story": "Je m’appelle Tom : quinze ans à travailler le bois en professionnel, pas depuis que j’ai pris une caméra. TallWoodMaker documente de vrais chantiers clients : cuisines, meubles sur mesure et agencements intérieurs complets, réalisés tous les jours sur des machines CNC et des scies à panneaux, pas des projets du week-end. La chaîne existe pour transmettre le métier correctement, comme on me l’a appris. Le divertissement est un effet secondaire, pas le but.",
+    "numbersTitle": "En chiffres",
+    "numbersText": "Un aperçu rapide de l’audience derrière la chaîne.",
+    "stats": {
+      "followers": "Abonnés cumulés",
+      "reach": "Portée mensuelle",
+      "years": "Années de métier"
+    },
+    "gettingTitle": "Ce que tu obtiens vraiment",
+    "gettingText": "Voici ce qu’un partenariat met réellement devant de vrais menuisiers.",
+    "photoAlts": {
+      "panelSaw": "Tom charge un panneau sur la scie à panneaux Biesse Selco",
+      "edgeBanding": "Plaqueuse de chants appliquant un chant sur un panneau",
+      "workshop": "Vue large de l’atelier avec les racks à panneaux et une presse à chaud"
+    },
+    "benefits": {
+      "audience": {
+        "title": "Une audience qui travaille le bois",
+        "text": "Des passionnés de menuiserie et de futurs professionnels, pas des gens qui scrollent par hasard : ils regardent parce qu’ils fabriquent vraiment quelque chose."
+      },
+      "footage": {
+        "title": "De vraies images d’atelier",
+        "text": "Les outils et matériaux montrés exactement comme ils sont utilisés sur de vrais chantiers, dans un atelier en activité. Rien n’est mis en scène pour la caméra."
+      },
+      "voice": {
+        "title": "Une voix crédible",
+        "text": "Quinze ans d’expérience du métier derrière chaque recommandation, pas un créateur qui lit un script pour un contrat de marque."
+      }
+    },
+    "optionsTitle": "Formules de partenariat",
+    "optionsText": "Plusieurs façons de travailler ensemble. Chaque partenariat est taillé sur mesure.",
+    "options": {
+      "mention": {
+        "title": "Mention de produit",
+        "text": "Ton outil ou ton matériau montré et cité dans une vidéo de fabrication habituelle."
+      },
+      "feature": {
+        "title": "Vidéo dédiée",
+        "text": "Une vidéo entière construite autour de ton produit : test, essai ou tutoriel."
+      },
+      "ongoing": {
+        "title": "Partenariat suivi",
+        "text": "Plusieurs vidéos sur une saison, plus des mentions à l’atelier et sur les réseaux."
+      }
+    },
+    "quote": "Demander un devis",
+    "talkTitle": "Parlons-en",
+    "talkText": "Si tes outils ou tes matériaux tiennent le coup dans un atelier en activité, écris-moi et voyons ce qui a du sens.",
+    "talkCta": "Lancer la discussion"
+  },
+  "benefits": {
+    "title": "Avantages",
+    "intro": "Les outils et matériaux que j’utilise vraiment à l’atelier, avec des codes promo pour ma communauté.",
+    "text": "Ce sont les marques qu’on retrouve sur de vrais chantiers clients, pas des sponsors testés une fois pour une vidéo. Si une marque est ici, c’est qu’elle a d’abord gagné sa place à l’atelier. La réduction est un vrai avantage pour ceux qui me suivent, pas une pub de plus.",
+    "deals": {
+      "spetool": {
+        "category": "Outillage de menuiserie : fraises CNC, serre-joints à panneaux, gabarits de surfaçage à la défonceuse, accessoires d’aspiration",
+        "text": "Des fraises de précision et des accessoires d’atelier utilisés sur de vrais projets clients, pas juste testés, vraiment utilisés.",
+        "discount": "10 % de réduction sur ta commande"
+      }
+    },
+    "visit": "Voir le site →",
+    "noCode": "Pas besoin de code. La réduction s’applique automatiquement via le lien ci-dessus.",
+    "moreTitle": "D’autres offres bientôt",
+    "moreText": "J’ajoute d’autres codes promo pour les outils et matériaux que j’utilise vraiment à l’atelier. Repasse bientôt."
+  },
+  "legal": {
+    "englishOnly": "Ce document est disponible en anglais uniquement."
+  },
+  "cookies": {
+    "bannerText": "Nous utilisons des cookies pour faire fonctionner le site et, avec ton accord, pour comprendre comment il est utilisé. Consulte notre <link>Politique relative aux cookies</link> pour plus de détails.",
+    "manage": "Gérer les préférences",
+    "reject": "Refuser les non essentiels",
+    "accept": "Tout accepter",
+    "save": "Enregistrer les préférences",
+    "modalTitle": "Préférences des cookies",
+    "modalText": "Choisis les cookies que nous pouvons utiliser. Tu peux modifier ce choix à tout moment via le lien en bas de page.",
+    "necessary": {
+      "title": "Nécessaires",
+      "text": "Indispensables pour la connexion et le paiement. Toujours actifs.",
+      "label": "Cookies nécessaires"
+    },
+    "analytics": {
+      "title": "Statistiques",
+      "text": "Nous aident à comprendre comment les visiteurs utilisent le site, pour l’améliorer.",
+      "label": "Cookies statistiques"
+    },
+    "marketing": {
+      "title": "Marketing",
+      "text": "Servent à mesurer et personnaliser les publicités. Désactivés sauf si tu les actives.",
+      "label": "Cookies marketing"
+    }
+  },
+  "notFound": {
+    "title": "Page introuvable",
+    "text": "Cette page n’existe pas ou a été déplacée.",
+    "home": "Retour à l’accueil"
+  },
+  "products": {
+    "plan-kids-chair": {
+      "short": "Une chaise enfant simple et solide. Idéale pour débuter.",
+      "description": "Plan coté complet et fiche de débit pour une chaise enfant simple et solide. Idéale pour débuter, aucun gabarit nécessaire.",
+      "whatYouLearn": []
+    },
+    "ebook-zero-to-first-client": {
+      "short": "Concevoir, sous-traiter la découpe, assembler, être payé.",
+      "description": "Comment je suis passé de fabriquer pour moi à décrocher mon premier client payant en menuiserie : les étapes exactes, dans l’ordre.",
+      "whatYouLearn": []
+    },
+    "plan-kitchen-cabinet-library": {
+      "short": "Fiches de débit et plans pour 4 modules de meubles.",
+      "description": "Quatre types de meubles de cuisine, un seul système modulaire : plans cotés et fiches de débit pour meubles bas, hauts, colonnes et meubles d’angle qui s’assemblent tous.",
+      "whatYouLearn": [
+        "Fabrique les quatre types de meubles de base — meubles bas, hauts, colonnes et meubles d’angle, comme un seul système modulaire cohérent, pas quatre fabrications isolées.",
+        "Obtiens une fiche de débit complète et un plan coté pour chaque module — rien au hasard, rien à deviner à l’atelier.",
+        "Commande la bonne quincaillerie du premier coup — vis confirmat, excentriques, charnières et pieds réglables, dimensionnés pour chaque type de meuble.",
+        "Maîtrise le meuble d’angle — la partie de la plupart des cuisines qui pose problème, planifiée et dessinée comme tous les autres modules.",
+        "Finis des meubles qui résistent à l’usage quotidien — les étapes de finition et d’entretien qui gardent une cuisine impeccable pendant des années."
+      ]
+    },
+    "ebook-kitchen-from-scratch": {
+      "short": "De la prise de mesures de la pièce à la dernière porte.",
+      "description": "Tout ce que j’aurais aimé savoir avant ma première cuisine : mesurer, découper, poser et finir, du début à la fin, sans atelier professionnel.",
+      "whatYouLearn": [
+        "Lis n’importe quelle cuisine — mesure une pièce, prépare une pige et implante un triangle d’activité qui fonctionne vraiment avant de découper le moindre panneau.",
+        "Transforme une implantation en vraie commande — regroupe les fiches de débit, compte les panneaux et commande la quincaillerie nécessaire, sans rien deviner ni gaspiller.",
+        "Fabrique et pose des meubles bien en place — monte les caissons en série, puis mets de niveau, assemble et ajuste une rangée de meubles bas et hauts pour qu’ils soient stables et d’équerre.",
+        "Fais le gabarit et pose le plan de travail toi-même — découpes d’évier et de plaque de cuisson, jonctions et étanchéité comprises, sans payer un professionnel pour le faire.",
+        "Finis comme un pro — portes réglées droites en une seule passe, plinthes posées, éclairage branché et check-list finale pour ne rien oublier."
+      ]
+    },
+    "ebook-wardrobes-closets": {
+      "short": "Systèmes encastrés, indépendants et dressings ouverts.",
+      "description": "Trois systèmes de rangement, un seul guide : placard encastré à portes coulissantes, armoire indépendante à portes battantes et dressing ouvert, conçus, fabriqués et posés.",
+      "whatYouLearn": [
+        "Choisis le bon système pour ton espace — placard encastré à portes coulissantes, armoire indépendante à portes battantes ou dressing ouvert, comparés selon la profondeur et le dégagement réellement nécessaires.",
+        "Fabrique un placard coulissant encastré dans une niche — en utilisant les murs et le plafond comme structure, avec le bandeau et le rail bien dimensionnés.",
+        "Fabrique une armoire indépendante à portes battantes à partir d’un caisson complet à six faces — avec le bon nombre de charnières selon la hauteur de porte, pas au hasard.",
+        "Aménage correctement l’intérieur — hauteurs de penderie, caractéristiques des tringles et espacement des étagères adaptés aux vêtements, pas juste beaux sur le papier.",
+        "Pose la quincaillerie et termine le chantier — rails de portes coulissantes, tiroirs et accessoires, jusqu’à la check-list finale du jour de pose."
+      ]
+    },
+    "plan-wardrobe-cabinet-library": {
+      "short": "Plans techniques pour les trois systèmes de rangement.",
+      "description": "Trois systèmes de rangement, une méthode de construction commune : plans cotés et fiches de débit pour placard encastré coulissant, armoire indépendante à portes battantes et dressing ouvert.",
+      "whatYouLearn": [
+        "Choisis le bon système de rangement pour ton espace — placard encastré à portes coulissantes, armoire indépendante à portes battantes ou dressing ouvert, comparés selon la profondeur, la hauteur et le dégagement réellement nécessaires.",
+        "Fabrique n’importe lequel des trois avec un seul système de caisson et de quincaillerie — la logique de construction reste la même quel que soit le format adapté à ta pièce.",
+        "Suis une fiche de débit complète et un plan coté pour chaque système — rien au hasard, rien à deviner à l’atelier.",
+        "Obtiens les hauteurs de penderie, l’espacement des étagères et les caractéristiques de quincaillerie de portes valables pour les trois systèmes — bien dimensionnés du premier coup.",
+        "Assemble étape par étape — du traçage du premier tasseau mural ou du bandeau jusqu’à la pose des dernières finitions et de la quincaillerie."
+      ]
+    },
+    "plan-kids-bunk-bed": {
+      "short": "Pin massif, 90 cm en haut, 140 cm en bas.",
+      "description": "Un lit superposé en pin massif, simple en haut et double en bas, sûr dès la conception : échelle fixe, garde-corps pleine hauteur, fiche de débit complète et montage pas à pas.",
+      "whatYouLearn": [
+        "Fabrique un lit superposé complet — un lit simple plus étroit en haut, un lit plus large en bas, à partir d’une seule fiche de débit en pin massif.",
+        "Suis une fiche de débit complète et un plan coté — 13 lignes, 50 pièces, vues de face et de côté avec toutes les cotes indiquées.",
+        "Assemble-le dans le bon ordre — cadre du bas, lattes, cadre du haut, lattes, garde-corps et échelle, puis contrôle final, étape par étape.",
+        "Pose une échelle fixe et un garde-corps pleine hauteur — intégrés dès le départ, pas vissés après coup.",
+        "Finis-le en toute sécurité pour les enfants — l’espacement du garde-corps et les recommandations d’âge à vérifier selon la norme de sécurité locale avant utilisation."
+      ]
+    },
+    "bundle-kitchen-starter": {
+      "short": "L’ebook et tous les plans de meubles pour une cuisine complète.",
+      "description": "Tout ce qu’il faut pour fabriquer ta propre cuisine : l’ebook pratique complet et les plans de meubles assortis, ensemble pour moins cher qu’à l’unité.",
+      "whatYouLearn": [
+        "Conçois et fabrique une cuisine complète à partir de zéro — prise de mesures, triangle d’activité, commande des matériaux et pose des meubles, du début à la fin.",
+        "Fabrique tous les types de meubles nécessaires avec un seul système cohérent — meubles bas, hauts, colonnes et meubles d’angle, avec la même construction, le même matériau et la même quincaillerie.",
+        "Obtiens toutes les fiches de débit et tous les plans cotés dans un seul pack — rien au hasard, rien à deviner à l’atelier.",
+        "Pose et finis comme un pro — fais le gabarit et pose le plan de travail toi-même, règle les portes bien droites et finis des meubles qui résistent à l’usage quotidien.",
+        "Économise 10 € par rapport à l’achat séparé — 33 € au lieu de 43 €."
+      ]
+    },
+    "bundle-complete-builder": {
+      "short": "État d’esprit d’entrepreneur + plans de cuisine et de rangements prêts pour tes clients.",
+      "description": "État d’esprit d’entrepreneur + plans de cuisine et de rangements prêts pour tes clients : tout pour passer de fabriquer pour toi à fabriquer pour des clients payants.",
+      "whatYouLearn": [
+        "Passe de fabriquer pour toi à fabriquer pour des clients payants — les étapes, les outils et le budget qu’il faut vraiment pour décrocher ton premier chantier payé.",
+        "Fabrique une cuisine complète et les deux grands formats de rangement — conçois la pièce, commande le matériau et pose meubles et rangements selon un standard professionnel.",
+        "Travaille avec un seul système de construction de caissons pour cuisines et rangements — modules de cuisine bas, hauts, colonnes et d’angle, plus placard encastré coulissant, armoire indépendante à portes battantes et dressing ouvert.",
+        "Obtiens toutes les fiches de débit et tous les plans cotés des quatre plans dans un seul pack — rien au hasard, rien à deviner à l’atelier.",
+        "Économise 42 € par rapport à l’achat séparé des cinq produits — 63 € au lieu de 105 €."
+      ]
+    }
+  }
+}

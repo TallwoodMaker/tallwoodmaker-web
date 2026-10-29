@@ -1,0 +1,812 @@
+{
+  "meta": {
+    "siteDescription": "Carpintería desde tu primer corte hasta tu propio taller. Planos, guías y vídeos de trabajos reales en un taller de 900 m².",
+    "home": {
+      "title": "TallWoodMaker: de tu primer corte a tu propio taller",
+      "description": "Carpintería de la A a la Z, grabada en trabajos reales en un taller de 900 m². Construyas en casa o montes tu taller: cada paso, cada herramienta, cada error."
+    },
+    "buildAtHome": {
+      "title": "Hazte tu propia cocina en casa",
+      "description": "No necesitas taller para hacerte la cocina. Encarga el corte de los tableros a un servicio de corte y monta en casa: el plano, la lista de compra y cada paso en orden."
+    },
+    "ownShop": {
+      "title": "Monta tu propio taller de carpintería",
+      "description": "Monta un taller que sea rentable: qué comprar primero, cuánto cobrar y cómo preparar un trabajo en minutos. 15 años haciendo trabajos para clientes."
+    },
+    "start": {
+      "title": "Empieza aquí",
+      "description": "De tu primer corte a tu propio taller. Elige tu camino y llévate gratis la lista de 10 herramientas para empezar."
+    },
+    "videos": {
+      "title": "Vídeos",
+      "description": "Trabajos reales grabados en el taller: recorridos por el taller, episodios de un día en el taller y clips cortos en TikTok."
+    },
+    "forBrands": {
+      "title": "Colabora con TallWoodMaker",
+      "description": "Colaboraciones de marca con un carpintero profesional. Contenido grabado en trabajos reales para carpinteros y aficionados en Europa y EE. UU."
+    },
+    "about": {
+      "title": "Sobre mí",
+      "description": "Soy Tom. Llevo 15 años haciendo cocinas, armarios e interiores completos para clientes, y todo lo que grabo es un trabajo real."
+    },
+    "shop": {
+      "title": "Planos y guías",
+      "description": "Planos de carpintería, listas de corte y ebooks de trabajos reales, no dibujados en una oficina."
+    },
+    "contact": {
+      "title": "Contacto",
+      "description": "Trabajos a medida, colaboraciones de contenido o una duda sobre un proyecto: escríbeme."
+    },
+    "cart": {
+      "title": "Carrito"
+    },
+    "orderConfirmed": {
+      "title": "Pedido confirmado"
+    },
+    "premium": {
+      "title": "Premium",
+      "description": "Proyectos completos, versiones extendidas y archivos del taller para miembros."
+    },
+    "subscribe": {
+      "title": "Premium",
+      "description": "Proyectos completos, versiones extendidas y archivos del taller para miembros de TallWoodMaker Premium. 9 €/mes, cancela cuando quieras."
+    },
+    "collaborate": {
+      "title": "Colaboraciones",
+      "description": "Colaboraciones de marca con un carpintero profesional: quince años en el oficio, contenido real del taller, nada preparado."
+    },
+    "benefits": {
+      "title": "Ventajas",
+      "description": "Códigos de descuento y ofertas de afiliado para las herramientas y materiales que se usan en el taller de TallWoodMaker."
+    },
+    "confirmSignIn": {
+      "title": "Confirmar inicio de sesión"
+    },
+    "terms": {
+      "title": "Condiciones del servicio"
+    },
+    "privacy": {
+      "title": "Política de privacidad"
+    },
+    "cookies": {
+      "title": "Política de cookies"
+    },
+    "course": {
+      "title": "Curso online"
+    },
+    "notFound": {
+      "title": "Página no encontrada"
+    }
+  },
+  "topBar": {
+    "text": "Descarga gratis: la lista de 10 herramientas para empezar que volvería a comprar hoy",
+    "cta": "Descargar"
+  },
+  "nav": {
+    "mainLabel": "Principal",
+    "homeLink": "Inicio de TallWoodMaker",
+    "start": "Empieza aquí",
+    "buildAtHome": "Construir en casa",
+    "ownShop": "Tu propio taller",
+    "plans": "Planos y guías",
+    "videos": "Vídeos",
+    "premium": "Premium",
+    "about": "Sobre mí",
+    "getFreeList": "Consigue la lista gratis",
+    "cart": "Carrito",
+    "cartWithCount": "Carrito ({count})",
+    "cartAria": "{count, plural, =0 {Carrito} one {Carrito, # artículo} other {Carrito, # artículos}}",
+    "signIn": "Iniciar sesión",
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú",
+    "changeLanguage": "Cambiar idioma",
+    "language": "Idioma"
+  },
+  "footer": {
+    "forBrands": "Para marcas",
+    "contact": "Contacto",
+    "copyright": "© {year} TallWoodMaker s.r.o.",
+    "social": "Redes sociales",
+    "legal": "Legal",
+    "terms": "Condiciones del servicio",
+    "privacy": "Política de privacidad",
+    "cookiePolicy": "Política de cookies",
+    "cookieSettings": "Configuración de cookies"
+  },
+  "paths": {
+    "home": "Construir en casa",
+    "shop": "Tu propio taller"
+  },
+  "productTypes": {
+    "plan": "Plano",
+    "ebook": "Ebook",
+    "bundle": "Pack"
+  },
+  "productCard": {
+    "save": "Ahorra {amount} €",
+    "bestStart": "Mejor para empezar · Ahorra {amount} €",
+    "everything": "Todo incluido · Ahorra {amount} €",
+    "pdfInEnglish": "PDF en inglés",
+    "regularPrice": "Precio normal {price}"
+  },
+  "pathCards": {
+    "question": "¿En qué punto estás ahora?",
+    "home": {
+      "title": "Construyo en casa",
+      "text": "En el garaje, en el balcón o en un rincón del sótano"
+    },
+    "shop": {
+      "title": "Estoy montando mi propio taller",
+      "text": "De afición a un taller rentable"
+    }
+  },
+  "leadForm": {
+    "emailLabel": "Correo electrónico",
+    "placeholder": "tu@correo.com",
+    "sending": "Enviando…",
+    "success": "Gracias. Revisa tu bandeja de entrada.",
+    "waitlistSuccess": "Gracias. Ya estás en la lista. Serás el primero en saber la fecha.",
+    "invalidEmail": "Introduce un correo electrónico válido.",
+    "error": "Algo ha fallado. Inténtalo de nuevo.",
+    "honeypot": "Deja este campo vacío"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Para aficionados y carpinteros · de un profesional con 15 años en el oficio",
+      "title": "De tu primer corte a tu <mark>propio taller.</mark>",
+      "text": "Carpintería de la A a la Z, grabada en trabajos reales en un taller de 900 m². Tanto si construyes en casa como si estás montando tu propio taller, te enseño cada paso, cada herramienta y cada error.",
+      "photoAlt": "Tom en la seccionadora del taller, en un trabajo real",
+      "nameTag": "Tom",
+      "nameTagRole": "Carpintero y creador · 15 años",
+      "badge": "Trabajos reales, no decorados"
+    },
+    "proof": {
+      "label": "En cifras",
+      "followers": "carpinteros y aficionados me siguen en IG, YouTube y TikTok",
+      "monthlyReach": "visualizaciones al mes",
+      "yearsValue": "{count} años",
+      "years": "trabajando para clientes",
+      "workshopValue": "{count} m²",
+      "workshop": "de taller real",
+      "workedWith": "He trabajado con"
+    },
+    "why": {
+      "eyebrow": "Por qué aprender conmigo",
+      "title": "La mayoría de vídeos te enseñan el resultado. Yo te enseño las decisiones.",
+      "text": "Lo que cuesta años aprender y dinero equivocarse.",
+      "items": {
+        "board": {
+          "title": "Qué tablero comprar",
+          "text": "Aglomerado, MDF o contrachapado, y dónde importa de verdad."
+        },
+        "order": {
+          "title": "Cuánto material pedir",
+          "text": "Listas de corte que dejan retales, no huecos."
+        },
+        "walls": {
+          "title": "Paredes torcidas",
+          "text": "Colgar muebles a nivel cuando nada en la habitación lo está."
+        },
+        "charge": {
+          "title": "Cuánto cobrar",
+          "text": "Presupuestar un trabajo para que los herrajes y tus horas queden pagados."
+        }
+      }
+    },
+    "paths": {
+      "title": "Dos caminos. Elige el tuyo.",
+      "home": {
+        "title": "No necesitas taller para hacerte tu propia cocina.",
+        "points": [
+          "Un plan claro, desde tomar medidas hasta la última puerta",
+          "La lista exacta de tableros y herrajes que hay que pedir",
+          "Un resultado que parece hecho por un profesional"
+        ],
+        "cta": "Empieza el camino de casa →"
+      },
+      "shop": {
+        "title": "Monta un taller que sea rentable, no uno que se coma tus tardes.",
+        "points": [
+          "Sabe exactamente cuánto cobrar",
+          "Compra solo las máquinas que se pagan solas",
+          "Prepara un trabajo en minutos, no en una tarde entera"
+        ],
+        "cta": "Empieza el camino del taller →"
+      }
+    },
+    "lead": {
+      "eyebrow": "Empieza gratis",
+      "title": "La lista de 10 herramientas para empezar que volvería a comprar hoy.",
+      "text": "Sin adivinar, sin herramientas que nunca vas a usar. Directo a tu correo.",
+      "submit": "Envíame la lista"
+    },
+    "plans": {
+      "eyebrow": "Planos y guías",
+      "title": "Planos de trabajos reales, no dibujados en una oficina.",
+      "seeAll": "Ver todos los planos →",
+      "note": "Todos los planos y ebooks son PDF en inglés. Pronto habrá más idiomas."
+    },
+    "realJobs": {
+      "eyebrow": "Trabajos reales",
+      "title": "Hechos para clientes. Ahora en tus manos como planos."
+    },
+    "about": {
+      "title": "Hola, soy Tom.",
+      "p1": "Llevo 15 años haciendo cocinas, armarios e interiores completos para clientes. Todo lo que grabo es un trabajo real, no un decorado. Comparto lo que me costó años aprender, los planos, los números y los errores, para que tú te los ahorres.",
+      "p2": "Tanto si vas a hacer tu primera cocina en casa como tu primer taller, empieza aquí.",
+      "homeCta": "Construyo en casa",
+      "shopCta": "Estoy montando mi taller",
+      "portraitAlt": "Retrato de Tom en el taller, sujetando un disco de sierra"
+    }
+  },
+  "gallery": {
+    "panelSaw": "Tom cargando un tablero en la seccionadora",
+    "edgeBander": "Tom pasando un panel por la canteadora",
+    "cnc": "Centro de mecanizado CNC en el taller",
+    "edgeBanderLine": "Canteadora con aspiración de polvo aérea",
+    "workshopWide": "Vista general del taller con estanterías de tableros y una prensa de platos calientes",
+    "shopFloor": "La nave del taller con una escuadradora y una tupí"
+  },
+  "buildAtHome": {
+    "badge": "Construir en casa",
+    "title": "No necesitas taller para hacerte tu propia cocina.",
+    "text": "Encarga el corte y el canteado de los tableros a un servicio de corte y monta en casa con herramientas básicas. Te enseño el plano exacto, la lista de compra y el orden de cada paso.",
+    "ctaSteps": "Ver los 5 pasos",
+    "ctaPlans": "Planos para tu cocina",
+    "roadmapEyebrow": "La hoja de ruta",
+    "roadmapTitle": "De una habitación vacía a la cocina terminada en 5 pasos.",
+    "steps": {
+      "measure": {
+        "title": "Medir y planificar",
+        "text": "Cómo medir la habitación y distribuir los muebles para que nada choque con tuberías y enchufes."
+      },
+      "order": {
+        "title": "Pedir el material",
+        "text": "Cuántos tableros, dónde cortarlos y qué herrajes pedir."
+      },
+      "boxes": {
+        "title": "Montar los cascos",
+        "text": "Montar en casa cascos rectos y robustos, en serie."
+      },
+      "install": {
+        "title": "Instalar",
+        "text": "Paredes torcidas, colgar los muebles altos y ajustar la encimera."
+      },
+      "finish": {
+        "title": "Rematar",
+        "text": "Puertas de una sola pasada, zócalos, iluminación y la lista de comprobación final."
+      }
+    },
+    "freeVideo": "Vídeo gratis",
+    "productsTitle": "Todo para construir en casa",
+    "listTitle": "¿No sabes por dónde empezar?",
+    "listText": "Llévate la lista de 10 herramientas para empezar que volvería a comprar hoy. Gratis.",
+    "listSubmit": "Envíame la lista",
+    "switchPath": "¿Trabajas para clientes? Ve al camino del taller →"
+  },
+  "ownShop": {
+    "badge": "Tu propio taller",
+    "title": "Monta un taller que sea rentable, no uno que <mark>se coma tus tardes.</mark>",
+    "text": "15 años haciendo trabajos para clientes: qué comprar primero, cuánto cobrar y cómo preparar un trabajo en minutos en lugar de en una tarde entera.",
+    "ctaSteps": "Ver los 6 pasos",
+    "ctaTools": "Herramientas y guías",
+    "photoAlt": "El taller con una lijadora de banda ancha y aspiración de polvo aérea",
+    "roadmapEyebrow": "La hoja de ruta",
+    "roadmapTitle": "De un garaje vacío a tu primer trabajo con beneficio.",
+    "stepLabel": "Paso {number}",
+    "ownToolLabel": "Paso {number} · Mi propia herramienta",
+    "steps": {
+      "space": {
+        "title": "Espacio sin tirar el dinero",
+        "text": "Una distribución y un espacio que funcionen antes de gastar un céntimo en máquinas."
+      },
+      "machines": {
+        "title": "Máquinas que se pagan solas",
+        "text": "Qué comprar primero y qué dejar a un servicio de corte."
+      },
+      "cutting": {
+        "title": "Planes de corte sin desperdicio",
+        "text": "Para esto creé MebCut. Haz una foto de tu despiece y obtén el plan de corte en segundos.",
+        "cta": "Prueba MebCut gratis →"
+      },
+      "pricing": {
+        "title": "Presupuestar con beneficio",
+        "text": "Un precio que cubra los herrajes, tus horas y el margen."
+      },
+      "clients": {
+        "title": "Tus primeros clientes",
+        "text": "Dónde encontrarlos y cómo no venderte barato."
+      },
+      "evenings": {
+        "title": "Tardes en casa",
+        "text": "Procesos, para que todo el taller no dependa de ti."
+      }
+    },
+    "productsTitle": "Herramientas y guías para tu taller",
+    "mebcut": {
+      "label": "App · mebcut.com",
+      "text": "Planes de corte a partir de una foto y asistente de corte en el móvil.",
+      "price": "Gratis para empezar"
+    },
+    "waitlist": {
+      "eyebrow": "Taller online en directo · próximamente",
+      "title": "Presupuesta un trabajo con beneficio, no gratis.",
+      "text": "2 horas en directo, una calculadora que te quedas y no volverás a olvidarte de los herrajes. Apúntate a la lista y sé el primero en saber la fecha.",
+      "submit": "Apuntarme a la lista"
+    },
+    "switchPath": "¿Construyes para ti? Ve al camino de casa →",
+    "freeVideo": "Vídeo gratis"
+  },
+  "start": {
+    "title": "De tu primer corte a tu <mark>propio taller.</mark>",
+    "text": "Elige tu camino o, primero, llévate gratis la lista de 10 herramientas para empezar.",
+    "leadTitle": "La lista de 10 herramientas para empezar que volvería a comprar hoy.",
+    "leadText": "Sin adivinar, sin herramientas que nunca vas a usar. Directo a tu correo.",
+    "submit": "Envíame la lista"
+  },
+  "videos": {
+    "title": "Vídeos",
+    "text": "Trabajos reales, grabados en el taller. Un vídeo nuevo cada semana en YouTube y clips más cortos casi a diario en Instagram y TikTok.",
+    "longFormTitle": "Vídeos largos",
+    "tiktokTitle": "Lo último en TikTok",
+    "channelsTitle": "Canales",
+    "youtube": "Un vídeo nuevo cada semana, directo del taller.",
+    "instagram": "Clips diarios, reels y lo que no se ve.",
+    "tiktok": "Clips cortos de trabajos reales.",
+    "facebook": "Resúmenes semanales del taller."
+  },
+  "forBrands": {
+    "title": "Colabora con TallWoodMaker",
+    "p1": "Mi público son carpinteros y aficionados de Europa y EE. UU.: gente que de verdad está construyendo algo, desde su primera cocina en casa hasta su propio taller.",
+    "p2": "Todo lo que grabo es un trabajo real para un cliente en un taller en funcionamiento, así que tu herramienta o material se muestra tal y como se usa de verdad, no preparado para la cámara.",
+    "statsTitle": "En cifras",
+    "contactTitle": "Hablemos",
+    "contactText": "Cuéntame sobre tu producto y lo que tienes en mente. Te responderé personalmente.",
+    "emailCta": "Escríbeme"
+  },
+  "about": {
+    "title": "Hola, soy Tom.",
+    "photoAlt": "Tom, TallWoodMaker, sujetando un disco de sierra en el taller",
+    "storyP1": "Empecé en la carpintería arreglando una estantería vieja que iba camino del vertedero. La primera pieza salió torcida, la segunda mejor y la tercera acabó en internet. A partir de ahí se convirtió en trabajo diario en el taller.",
+    "storyP2": "El contenido que hago no es solo una selección de los mejores momentos. Enseño las medidas que no salieron, las herramientas que merecen más atención y las decisiones que se toman en la misma sierra.",
+    "process": {
+      "title": "Proceso",
+      "text": "Del diseño al acabado: cada paso documentado, errores incluidos."
+    },
+    "tools": {
+      "title": "Herramientas",
+      "text": "Una mezcla de herramientas manuales y máquinas. Explico qué uso y por qué."
+    },
+    "community": {
+      "title": "Comunidad",
+      "text": "Las preguntas de los comentarios suelen convertirse en el tema del siguiente vídeo."
+    },
+    "wideAlt": "Vista general del taller con una lijadora de banda ancha y aspiración de polvo aérea",
+    "galleryTitle": "Galería",
+    "galleryText": "Un vistazo al interior del taller: las máquinas, el proceso y las personas detrás de cada trabajo.",
+    "galleryItems": {
+      "cnc": {
+        "title": "Máquina CNC Biesse Rover",
+        "category": "Máquina CNC",
+        "alt": "Centro de mecanizado CNC Biesse Rover A Smart en el taller"
+      },
+      "edgeBanding": {
+        "title": "Canteado en marcha",
+        "category": "Canteado",
+        "alt": "Canteadora aplicando canto a un panel"
+      },
+      "feedingEdgeBander": {
+        "title": "Alimentando la canteadora",
+        "category": "Canteado",
+        "alt": "Tom pasando un panel por la canteadora"
+      },
+      "onPanelSaw": {
+        "title": "En la seccionadora",
+        "category": "Seccionadora",
+        "alt": "Tom cargando un tablero en la seccionadora Biesse Selco"
+      },
+      "panelSaw": {
+        "title": "Seccionadora Biesse Selco",
+        "category": "Seccionadora",
+        "alt": "Seccionadora Biesse Selco WN2 y mesas de salida"
+      },
+      "break": {
+        "title": "Un descanso en el taller",
+        "category": "Entre bastidores",
+        "alt": "Tom de pie en el taller junto a retales de tablero apilados"
+      },
+      "controls": {
+        "title": "Mandos de la canteadora",
+        "category": "Canteado",
+        "alt": "Panel de control de la canteadora Cehisa"
+      },
+      "storage": {
+        "title": "Almacén de tableros y prensa de platos calientes",
+        "category": "Vista del taller",
+        "alt": "Vista general del taller con estanterías de tableros y una prensa de platos calientes"
+      },
+      "dust": {
+        "title": "Aspiración y línea de lijado",
+        "category": "Vista del taller",
+        "alt": "Vista del taller con una lijadora de banda ancha y conductos de aspiración aéreos"
+      },
+      "slidingSaw": {
+        "title": "Escuadradora",
+        "category": "Vista del taller",
+        "alt": "Vista del taller con una escuadradora y una tupí"
+      },
+      "fravol": {
+        "title": "Canteadora Fravol",
+        "category": "Canteado",
+        "alt": "Canteadora Fravol con tubos de aspiración aéreos"
+      },
+      "floor": {
+        "title": "La nave del taller",
+        "category": "Vista del taller",
+        "alt": "Canteadora Fravol y la red de conductos aéreos del taller"
+      }
+    },
+    "videoTitle": "Vídeo y redes",
+    "videoText": "Un vídeo nuevo cada semana. Los clips más cortos salen a diario en Instagram y TikTok.",
+    "youtubeCardTitle": "Ver en YouTube",
+    "youtubeCardText": "Un vídeo nuevo cada semana, directo del taller.",
+    "instagramCardTitle": "Sígueme en Instagram",
+    "instagramCardText": "Clips diarios, reels y lo que no se ve del taller.",
+    "tiktokCardTitle": "Ver en TikTok",
+    "tiktokCardText": "Los últimos TikToks están en la página de Vídeos.",
+    "tiktokCardCta": "Vídeos →",
+    "facebookText": "Resúmenes semanales y directos desde el taller.",
+    "followBuild": "Sigue el proyecto"
+  },
+  "shop": {
+    "title": "Planos y guías",
+    "text": "Planos, listas de corte y ebooks de trabajos reales, no dibujados en una oficina.",
+    "note": "Todos los planos y ebooks son PDF en inglés. Pronto habrá más idiomas.",
+    "all": "Todo",
+    "categories": {
+      "ebooks": "Ebooks",
+      "plans": "Planos",
+      "bundles": "Packs"
+    },
+    "addToCart": "Añadir al carrito",
+    "inCartRemove": "En el carrito · Quitar",
+    "placeholder": {
+      "plan": "vista previa del plano",
+      "ebook": "portada del ebook",
+      "bundle": "portada del pack"
+    }
+  },
+  "product": {
+    "back": "← Volver a la tienda",
+    "whatYouLearn": "Lo que aprenderás",
+    "whatsIncluded": "Qué incluye",
+    "onItsOwn": "{price} por separado",
+    "view": "Ver →",
+    "sampleEbook": "Una página de muestra del ebook",
+    "samplePlan": "Una página de muestra del plano",
+    "sampleAlt": "Página de muestra de {title}",
+    "pdfNote": "El PDF está en inglés."
+  },
+  "cart": {
+    "title": "Tu carrito",
+    "empty": "Tu carrito está vacío.",
+    "back": "← Volver a la tienda",
+    "remove": "Quitar",
+    "subtotal": "Subtotal",
+    "consent": "Quiero acceder de inmediato a este contenido digital y reconozco que pierdo mi derecho de desistimiento una vez comenzada la entrega. Acepto las <terms>Condiciones del servicio</terms>.",
+    "checkout": "Pagar",
+    "redirecting": "Redirigiendo…",
+    "errorEmpty": "Tu carrito está vacío o ninguno de sus productos sigue disponible.",
+    "errorConsent": "Confirma que quieres acceder de inmediato a tu compra digital para continuar.",
+    "errorNoUrl": "Stripe no ha devuelto una URL de pago. Inténtalo de nuevo."
+  },
+  "success": {
+    "notConfirmedTitle": "Pago aún no confirmado",
+    "notConfirmedText": "Si acabas de completar el pago, actualiza esta página en un momento. La confirmación puede tardar unos segundos. ¿Sigue sin funcionar? Escribe a <email>tom@tallwoodmaker.com</email> e indica este pedido.",
+    "thanksTitle": "{count, plural, one {Gracias, aquí tienes tu descarga} many {Gracias, aquí tienes tus descargas} other {Gracias, aquí tienes tus descargas}}",
+    "download": "Descargar {file}",
+    "failure": "Tu pago se ha realizado, pero hemos tenido un problema al generar el enlace de descarga de {titles}. Escribe a <email>tom@tallwoodmaker.com</email> con este número de pedido y te lo enviaremos:",
+    "expiry": "Estos enlaces funcionan durante 24 horas. Si alguno caduca, guarda esta página en marcadores y vuelve a abrirla. Al volver a abrirla se generan enlaces nuevos."
+  },
+  "premium": {
+    "badge": "Premium",
+    "title": "Vídeo Premium",
+    "text": "Proyectos completos y versiones extendidas para miembros. Contenido nuevo con regularidad.",
+    "empty": "Pronto habrá contenido nuevo. Vuelve en breve.",
+    "announcements": "Anuncios",
+    "tabs": {
+      "all": "Todo",
+      "article": "Artículos",
+      "video": "Vídeos",
+      "plan_download": "Descargas"
+    },
+    "types": {
+      "article": "Artículo",
+      "video": "Vídeo",
+      "plan_download": "Descarga",
+      "announcement": "Novedad"
+    },
+    "nothingYet": "Aquí todavía no hay nada.",
+    "download": "Descargar",
+    "videoPlaceholder": "miniatura del vídeo",
+    "preview": "vista previa"
+  },
+  "subscribe": {
+    "badge": "Premium",
+    "title": "TallWoodMaker Premium",
+    "waitlistText": "Proyectos completos, versiones extendidas y archivos del taller para miembros. El acceso Premium abre pronto. Apúntate a la lista de espera para ser de los primeros.",
+    "launchOffer": "Oferta de lanzamiento",
+    "launchTitle": "Apúntate ahora y llévate un 50 % de descuento en tus 3 primeros meses",
+    "launchText": "Los miembros de la lista de espera tienen acceso antes que nadie cuando abramos, y el descuento se aplica automáticamente al pagar.",
+    "heroText": "Proyectos completos, versiones extendidas y archivos del taller: lo que no cabe en YouTube. Únete por 9 €/mes y accede al momento.",
+    "included": "Qué incluye",
+    "previewText": "Un adelanto de lo que te espera dentro. Contenido nuevo cada mes.",
+    "membersOnly": "Solo para miembros",
+    "fallbackBenefits": [
+      "Vídeos de proyectos completos, de principio a fin: cada paso, no solo lo más destacado",
+      "Versiones extendidas y recorridos por el taller que no están en YouTube",
+      "Planos y listas de corte descargables de algunos proyectos",
+      "Contenido nuevo cada mes",
+      "Cancela cuando quieras, sin permanencia"
+    ],
+    "offerBadge": "Oferta de lanzamiento: 50 % de descuento en tus 3 primeros meses",
+    "price": "9 €",
+    "perMonth": "/mes",
+    "codeText": "¿Tienes un código de lanzamiento? Introdúcelo al pagar y obtén un 50 % de descuento en tus 3 primeros meses.",
+    "consent": "Quiero acceder de inmediato a Premium y reconozco que pierdo mi derecho de desistimiento una vez comenzado el acceso. Acepto las <terms>Condiciones del servicio</terms>.",
+    "consentError": "Marca la casilla para continuar.",
+    "linkExpired": "Ese enlace de inicio de sesión ha caducado o ya se ha usado. Solicita uno nuevo abajo.",
+    "subscribeCta": "Suscríbete ahora: 9 €/mes",
+    "signInPrompt": "Introduce tu correo para iniciar sesión y continuar con el pago",
+    "faqTitle": "Conviene saber",
+    "faq": [
+      {
+        "q": "¿Puedo cancelar cuando quiera?",
+        "a": "Sí. Cancela desde tu cuenta cuando quieras. Mantendrás el acceso hasta el final del periodo de facturación que ya has pagado."
+      },
+      {
+        "q": "¿Cómo funciona la facturación?",
+        "a": "9 €/mes, con cobro automático hasta que canceles. Sin contrato anual."
+      },
+      {
+        "q": "¿Qué pasa justo después de apuntarme?",
+        "a": "Recibirás un enlace de inicio de sesión por correo y llegarás directamente al pago. El acceso se activa en cuanto se completa el pago."
+      },
+      {
+        "q": "¿Qué recibo exactamente?",
+        "a": "Todo lo que aparece en \"Qué incluye\" más arriba, además de todo lo nuevo que se añada a Premium mientras seas miembro."
+      }
+    ],
+    "countdown": {
+      "days": "Días",
+      "hours": "Horas",
+      "minutes": "Minutos",
+      "seconds": "Segundos"
+    },
+    "waitlist": {
+      "join": "Apuntarme a la lista de espera",
+      "joining": "Apuntándote…",
+      "joined": "Ya estás en la lista. Te escribiremos cuando abra Premium.",
+      "error": "No se ha podido completar el registro en la lista de espera. Inténtalo de nuevo."
+    },
+    "magicLink": {
+      "send": "Envíame un enlace",
+      "sending": "Enviando…",
+      "sent": "Revisa {email}: te hemos enviado un enlace de inicio de sesión.",
+      "error": "No se ha podido enviar el enlace. Inténtalo de nuevo."
+    }
+  },
+  "confirmSignIn": {
+    "title": "Confirmar inicio de sesión",
+    "text": "Por tu seguridad, solo iniciamos tu sesión cuando haces clic abajo. Así evitamos que los escáneres de enlaces del correo gasten el enlace antes que tú.",
+    "button": "Confirmar inicio de sesión"
+  },
+  "contact": {
+    "title": "Contacto",
+    "text": "Trabajos a medida, colaboraciones de contenido o simplemente una duda sobre un proyecto: escríbeme.",
+    "name": "Nombre",
+    "namePlaceholder": "Tu nombre",
+    "email": "Correo electrónico",
+    "emailPlaceholder": "tu@correo.com",
+    "message": "Mensaje",
+    "messagePlaceholder": "Describe tu proyecto o tu duda",
+    "send": "Enviar",
+    "emailHeading": "Correo electrónico",
+    "workshopHeading": "Taller",
+    "workshopValue": "Eslovaquia",
+    "socialHeading": "Redes sociales"
+  },
+  "collaborate": {
+    "title": "Colaboraciones",
+    "intro": "Trabajo para las marcas igual que para la cámara: sin atajos y sin relleno. Si tus herramientas o materiales tienen sitio en un taller de verdad, hablemos.",
+    "heroAlt": "Centro de mecanizado CNC Biesse Rover A Smart en el taller",
+    "philosophyTitle": "Construir. Compartir. Inspirar.",
+    "philosophyText": "La filosofía detrás de todo lo que construyo, delante o detrás de la cámara.",
+    "story": "Soy Tom: quince años trabajando la madera de forma profesional, no desde que cogí una cámara. TallWoodMaker documenta trabajos reales para clientes: cocinas, muebles a medida e interiores completos, hechos a diario con máquinas CNC y seccionadoras, no proyectos de fin de semana. El canal existe para transmitir el oficio como es debido, tal y como me lo enseñaron a mí. El entretenimiento es un efecto secundario, no el objetivo.",
+    "numbersTitle": "En cifras",
+    "numbersText": "Un vistazo rápido al público que hay detrás del canal.",
+    "stats": {
+      "followers": "Seguidores en total",
+      "reach": "Alcance mensual",
+      "years": "Años en el oficio"
+    },
+    "gettingTitle": "Lo que obtienes de verdad",
+    "gettingText": "Esto es lo que una colaboración pone de verdad delante de carpinteros reales.",
+    "photoAlts": {
+      "panelSaw": "Tom cargando un tablero en la seccionadora Biesse Selco",
+      "edgeBanding": "Canteadora aplicando canto a un panel",
+      "workshop": "Vista general del taller con estanterías de tableros y una prensa de platos calientes"
+    },
+    "benefits": {
+      "audience": {
+        "title": "Un público que trabaja la madera",
+        "text": "Apasionados de la carpintería y futuros profesionales, no gente que solo pasa el dedo por la pantalla: personas que ven los vídeos porque de verdad están construyendo algo."
+      },
+      "footage": {
+        "title": "Imágenes reales del taller",
+        "text": "Herramientas y materiales mostrados tal y como se usan en trabajos reales, en un taller en funcionamiento. Nada preparado para la cámara."
+      },
+      "voice": {
+        "title": "Una voz creíble",
+        "text": "Quince años de experiencia en el oficio detrás de cada recomendación, no un creador leyendo un guion para un acuerdo con una marca."
+      }
+    },
+    "optionsTitle": "Opciones de colaboración",
+    "optionsText": "Varias formas de trabajar juntos. Cada colaboración se ajusta a lo que necesitas.",
+    "options": {
+      "mention": {
+        "title": "Mención de producto",
+        "text": "Tu herramienta o material, mostrado y nombrado en un vídeo de proyecto habitual."
+      },
+      "feature": {
+        "title": "Vídeo dedicado",
+        "text": "Un vídeo completo centrado en tu producto: análisis, prueba o tutorial."
+      },
+      "ongoing": {
+        "title": "Colaboración continua",
+        "text": "Varios vídeos a lo largo de una temporada, además de menciones en el taller y en redes."
+      }
+    },
+    "quote": "Pide presupuesto",
+    "talkTitle": "Hablemos",
+    "talkText": "Si tus herramientas o materiales aguantarían en un taller en funcionamiento, escríbeme y veamos qué tiene sentido.",
+    "talkCta": "Empezar una conversación"
+  },
+  "benefits": {
+    "title": "Ventajas",
+    "intro": "Herramientas y materiales que uso de verdad en el taller, con códigos de descuento para mi comunidad.",
+    "text": "Son las marcas que aparecen en trabajos reales para clientes, no patrocinadores que probé una vez para un vídeo. Si está aquí, es porque antes se ganó un sitio en el taller. El descuento es una ventaja real para quienes me siguen, no otro anuncio.",
+    "deals": {
+      "spetool": {
+        "category": "Herramientas de carpintería: fresas CNC, sargentos para paneles, guías de fresado para aplanar y accesorios de aspiración",
+        "text": "Fresas de precisión y accesorios de taller usados en proyectos reales para clientes: no solo analizados, usados de verdad.",
+        "discount": "10 % de descuento en tu pedido"
+      }
+    },
+    "visit": "Visitar web →",
+    "noCode": "No hace falta código. El descuento se aplica automáticamente a través del enlace de arriba.",
+    "moreTitle": "Pronto habrá más ofertas",
+    "moreText": "Estoy añadiendo más códigos de descuento para las herramientas y materiales que uso de verdad en el taller. Vuelve pronto."
+  },
+  "legal": {
+    "englishOnly": "Este documento solo está disponible en inglés."
+  },
+  "cookies": {
+    "bannerText": "Usamos cookies para que el sitio funcione y, con tu consentimiento, para entender cómo se usa. Consulta nuestra <link>Política de cookies</link> para más detalles.",
+    "manage": "Gestionar preferencias",
+    "reject": "Rechazar las no esenciales",
+    "accept": "Aceptar todas",
+    "save": "Guardar preferencias",
+    "modalTitle": "Preferencias de cookies",
+    "modalText": "Elige qué cookies podemos usar. Puedes cambiarlo cuando quieras desde el enlace del pie de página.",
+    "necessary": {
+      "title": "Necesarias",
+      "text": "Imprescindibles para que funcionen el inicio de sesión y el pago. Siempre activas.",
+      "label": "Cookies necesarias"
+    },
+    "analytics": {
+      "title": "Analíticas",
+      "text": "Nos ayudan a entender cómo usan el sitio los visitantes para poder mejorarlo.",
+      "label": "Cookies analíticas"
+    },
+    "marketing": {
+      "title": "Marketing",
+      "text": "Se usan para medir y personalizar anuncios. Desactivadas salvo que las actives.",
+      "label": "Cookies de marketing"
+    }
+  },
+  "notFound": {
+    "title": "Página no encontrada",
+    "text": "Esta página no existe o se ha movido.",
+    "home": "Volver a la página de inicio"
+  },
+  "products": {
+    "plan-kids-chair": {
+      "short": "Una silla infantil sencilla y robusta. Ideal para principiantes.",
+      "description": "Plano completo acotado y lista de corte de una silla infantil sencilla y robusta. Ideal para principiantes, sin plantillas.",
+      "whatYouLearn": []
+    },
+    "ebook-zero-to-first-client": {
+      "short": "Diseña, encarga el corte, monta y cobra.",
+      "description": "Cómo pasé de hacer cosas para mí a conseguir mi primer cliente de carpintería que pagaba: los pasos exactos, en orden.",
+      "whatYouLearn": []
+    },
+    "plan-kitchen-cabinet-library": {
+      "short": "Listas de corte y planos de 4 módulos de cocina.",
+      "description": "Cuatro tipos de mueble de cocina, un único sistema modular: planos acotados y listas de corte de muebles bajos, altos, columnas/despensero y rinconeros que encajan entre sí.",
+      "whatYouLearn": [
+        "Construye los cuatro tipos básicos de mueble — bajos, altos, columnas/despensero y rinconeros como un único sistema modular coordinado, no cuatro muebles sueltos y distintos.",
+        "Ten una lista de corte completa y un plano acotado de cada módulo — nada a ojo, nada que tengas que resolver en el taller sobre la marcha.",
+        "Pide los herrajes correctos a la primera — tornillos confirmat, excéntricas, bisagras y patas regulables, con la medida adecuada para cada tipo de mueble.",
+        "Resuelve el rinconero con seguridad — la parte de casi cualquier cocina que más complica a la gente, planificada y dibujada como cualquier otro módulo.",
+        "Acaba muebles que aguanten el uso diario — los pasos de acabado y mantenimiento que mantienen una cocina en buen estado durante años."
+      ]
+    },
+    "ebook-kitchen-from-scratch": {
+      "short": "Desde medir la habitación hasta la última puerta.",
+      "description": "Todo lo que me habría gustado saber antes de hacer mi primera cocina: medir, cortar, instalar y rematar, de principio a fin, sin un taller profesional.",
+      "whatYouLearn": [
+        "Interpreta cualquier cocina — mide la habitación, marca una regla de alturas y distribuye un triángulo de trabajo que funcione de verdad antes de cortar un solo tablero.",
+        "Convierte una distribución en un pedido real — une las listas de corte, calcula los tableros y pide los herrajes que necesitas, sin nada a ojo y sin desperdiciar nada.",
+        "Monta e instala muebles que asienten bien — monta los cascos en serie y luego nivela, une y ajusta a la pared una línea de muebles bajos y altos para que queden firmes y a escuadra.",
+        "Haz la plantilla y ajusta la encimera tú mismo — incluidos los huecos del fregadero y la placa, las uniones y el sellado, sin pagar a un marmolista para que lo haga por ti.",
+        "Remátala como un profesional — puertas colgadas rectas en una sola pasada, zócalos colocados, iluminación conectada y una lista de comprobación final para que no se te escape nada."
+      ]
+    },
+    "ebook-wardrobes-closets": {
+      "short": "Sistemas empotrados, independientes y vestidores.",
+      "description": "Tres sistemas de armario, una sola guía: empotrado de puertas correderas, independiente de puertas abatibles y vestidor de estantes abiertos, planificados, construidos e instalados.",
+      "whatYouLearn": [
+        "Elige el sistema adecuado para tu espacio — empotrado de puertas correderas, independiente de puertas abatibles o vestidor abierto, comparados por el fondo y el espacio libre que necesita realmente cada uno.",
+        "Construye un armario empotrado de correderas en un hueco — usando las paredes y el techo como estructura, con el carril superior y la guía bien dimensionados.",
+        "Construye un armario independiente de puertas abatibles a partir de un casco completo de seis caras — con el número correcto de bisagras según la altura de la puerta, no a ojo.",
+        "Distribuye bien el interior — alturas de colgado, especificaciones de las barras y separación entre estantes que de verdad sirvan para la ropa, no que solo queden bien en el papel.",
+        "Coloca los herrajes y remata el trabajo — guías de puertas correderas, cajones y accesorios, hasta la lista de comprobación final del día de montaje."
+      ]
+    },
+    "plan-wardrobe-cabinet-library": {
+      "short": "Planos técnicos de los tres sistemas de armario.",
+      "description": "Tres sistemas de armario, un mismo método constructivo: planos acotados y listas de corte para armario empotrado de correderas, independiente de abatibles y vestidor abierto.",
+      "whatYouLearn": [
+        "Elige el sistema de armario adecuado para tu espacio — empotrado de puertas correderas, independiente de puertas abatibles o vestidor abierto, comparados por el fondo, la altura y el espacio libre que necesita realmente cada uno.",
+        "Construye cualquiera de los tres con un mismo sistema de casco y herrajes — la lógica constructiva es la misma sea cual sea el formato que encaje en tu habitación.",
+        "Sigue una lista de corte completa y un plano acotado de cada sistema — nada a ojo, nada que tengas que resolver en el taller sobre la marcha.",
+        "Ten alturas de colgado, separación entre estantes y especificaciones de herrajes de puertas válidas para los tres sistemas — con la medida correcta a la primera.",
+        "Monta paso a paso — desde marcar el primer listón de pared o el carril superior hasta el último remate y el ajuste de los herrajes."
+      ]
+    },
+    "plan-kids-bunk-bed": {
+      "short": "Pino macizo, 90 cm arriba y 140 cm abajo.",
+      "description": "Una litera de pino macizo con cama individual arriba y doble abajo, segura desde el principio: escalera fija, barandilla de altura completa, lista de corte completa y montaje paso a paso.",
+      "whatYouLearn": [
+        "Construye una litera completa con cama individual arriba y doble abajo — una cama más estrecha arriba y otra más ancha abajo, a partir de una sola lista de corte de pino macizo.",
+        "Sigue una lista de corte completa y un plano acotado — 13 filas, 50 piezas, vistas frontal y lateral con todas las medidas indicadas.",
+        "Móntala en el orden correcto — bastidor inferior, somier de lamas, bastidor superior, somier de lamas, barandilla y escalera, y una revisión final, paso a paso.",
+        "Coloca una escalera fija y una barandilla de altura completa — integradas desde el principio, no atornilladas después como un añadido.",
+        "Termínala segura para niños — la separación de la barandilla y las recomendaciones de edad que debes comprobar con la normativa de seguridad de tu país antes de usarla."
+      ]
+    },
+    "bundle-kitchen-starter": {
+      "short": "El ebook y todos los planos de muebles para una cocina completa.",
+      "description": "Todo lo que necesitas para hacerte tu propia cocina: el ebook completo paso a paso más los planos de muebles a juego, juntos por menos que comprándolos por separado.",
+      "whatYouLearn": [
+        "Planifica y construye una cocina completa desde cero — medir la habitación, definir el triángulo de trabajo, pedir el material e instalar los muebles, de principio a fin.",
+        "Construye todos los tipos de mueble que necesitas con un único sistema coordinado — bajos, altos, columnas/despensero y rinconeros, con la misma construcción, material y herrajes.",
+        "Ten todas las listas de corte y los planos acotados en un solo paquete — nada a ojo, nada que tengas que resolver en el taller sobre la marcha.",
+        "Ajústala y remátala como un profesional — haz la plantilla y coloca la encimera tú mismo, cuelga las puertas rectas y acaba muebles que aguanten el uso diario.",
+        "Ahorra 10 € frente a comprar ambos por separado — 33 € en lugar de 43 €."
+      ]
+    },
+    "bundle-complete-builder": {
+      "short": "Mentalidad de negocio + planos de cocina y armarios listos para clientes.",
+      "description": "Mentalidad de negocio + planos de cocina y armarios listos para clientes: todo para pasar de construir para ti a trabajar para clientes que pagan.",
+      "whatYouLearn": [
+        "Pasa de construir para ti a trabajar para clientes que pagan — los pasos, las herramientas y el presupuesto exactos que hacen falta para conseguir tu primer trabajo pagado.",
+        "Construye una cocina completa y los dos formatos principales de armario — planifica la habitación, pide el material e instala muebles y armarios con un acabado profesional.",
+        "Trabaja con un mismo sistema constructivo para cocinas y armarios — módulos de cocina bajos, altos, columnas/despensero y rinconeros, además de armarios empotrados de correderas, independientes de abatibles y vestidores abiertos.",
+        "Ten todas las listas de corte y los planos acotados de los cuatro planos en un solo paquete — nada a ojo, nada que tengas que resolver en el taller sobre la marcha.",
+        "Ahorra 42 € frente a comprar los cinco por separado — 63 € en lugar de 105 €."
+      ]
+    }
+  }
+}

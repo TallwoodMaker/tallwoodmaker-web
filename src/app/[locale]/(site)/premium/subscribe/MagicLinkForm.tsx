@@ -1,0 +1,77 @@
+"use client";
+
+import { useActionState, useEffect, useState } from "react";
+import { useTranslations } from "next-intl";
+import { sendMagicLink, type MagicLinkState } from "./actions";
+
+const initialState: MagicLinkState = { status: "idle" };
+const LAST_EMAIL_KEY = "tallwoodmaker:last-email";
+
+export default function MagicLinkForm() {
+  const t = useTranslations();
+  const [state, formAction, pending] = useActionState(
+    sendMagicLink,
+    initialState
+  );
+  // Starts empty so server and first client render match, then fills in
+  // from localStorage after mount — same hydration-safety approach as
+  // CountdownTimer. Convenience only, never auto-submitted.
+  const [email, setEmail] = useState("");
+
+  useEffect(() => {
+    // Deferred via queueMicrotask rather than calling setState synchronously
+    // in the effect body — same pattern as CountdownTimer, satisfies
+    // react-hooks/set-state-in-effect.
+    queueMicrotask(() => {
+      try {
+        const saved = localStorage.getItem(LAST_EMAIL_KEY);
+        if (saved) setEmail(saved);
+      } catch {
+        // Storage unavailable (private browsing, etc.) — prefill just skipped.
+      }
+    });
+  }, []);
+
+  return (
+    <div>
+      <form
+        action={formAction}
+        onSubmit={() => {
+          try {
+            localStorage.setItem(LAST_EMAIL_KEY, email);
+          } catch {
+            // Ignore — not essential to the sign-in itself.
+          }
+        }}
+        className="flex flex-wrap justify-center gap-3"
+      >
+        <input
+          type="email"
+          name="email"
+          required
+          placeholder={t("leadForm.placeholder")}
+          aria-label={t("leadForm.emailLabel")}
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          className="min-h-11 w-[280px] max-w-full rounded border border-border bg-cream px-4 py-3 text-[15px] text-ink"
+        />
+        <button
+          type="submit"
+          disabled={pending}
+          className="cursor-pointer rounded bg-brand px-6 py-3 text-[15px] font-bold text-ink disabled:cursor-default disabled:opacity-60"
+        >
+          {pending ? t("subscribe.magicLink.sending") : t("subscribe.magicLink.send")}
+        </button>
+      </form>
+      {state.status !== "idle" && (
+        <p
+          className={`mt-4 text-[15px] ${
+            state.status === "error" ? "text-link" : "text-ink-muted"
+          }`}
+        >
+          {state.message}
+        </p>
+      )}
+    </div>
+  );
+}

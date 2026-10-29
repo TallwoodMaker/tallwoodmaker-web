@@ -1,0 +1,89 @@
+"use server";
+
+import { headers } from "next/headers";
+import { redirect } from "next/navigation";
+import { hasLocale } from "next-intl";
+import { getTranslations } from "next-intl/server";
+import { stripe } from "@/lib/stripe";
+import { getShopProduct, type ShopProduct } from "@/lib/shopProducts";
+import { getPathname } from "@/i18n/navigation";
+import { routing } from "@/i18n/routing";
+
+async function getOrigin() {
+  const h = await headers();
+  const host = h.get("x-forwarded-host") ?? h.get("host");
+  const protocol = h.get("x-forwarded-proto") ?? "http";
+  return `${protocol}://${host}`;
+}
+
+export type CartCheckoutState = {
+  status: "idle" | "error";
+  message?: string;
+};
+
+export async function createCartCheckoutSession(
+  _prevState: CartCheckoutState,
+  formData: FormData
+): Promise<CartCheckoutState> {
+  const rawLocale = String(formData.get("locale") ?? "");
+  const locale = hasLocale(routing.locales, rawLocale)
+    ? rawLocale
+    : routing.defaultLocale;
+  const t = await getTranslations({ locale, namespace: "cart" });
+
+  // Never trust the client-side cart array blindly — re-validate every id
+  // against the real catalog (and its availability) server-side. Unknown
+  // or unavailable ids are silently dropped rather than failing the whole
+  // checkout; only an empty result after filtering is an error.
+  const rawIds = formData.getAll("productId").map(String);
+  const uniqueIds = Array.from(new Set(rawIds));
+  const products = uniqueIds
+    .map((id) => getShopProduct(id))
+    .filter((p): p is ShopProduct => !!p && p.available);
+
+  if (products.length === 0) {
+    return {
+      status: "error",
+      message: t("errorEmpty"),
+    };
+  }
+
+  // Digital content is delivered instantly on payment, which under EU
+  // consumer law (Terms of Service, Section 4) requires the buyer's prior
+  // express consent to immediate delivery and acknowledgment that they
+  // lose their 14-day right of withdrawal. The checkbox in the checkout
+  // form is `required` client-side; this re-checks it server-side since a
+  // server action can be invoked directly, bypassing HTML validation.
+  if (formData.get("withdrawalConsent") !== "true") {
+    return {
+      status: "error",
+      message: t("errorConsent"),
+    };
+  }
+
+  const origin = await getOrigin();
+
+  const session = await stripe.checkout.sessions.create({
+    mode: "payment",
+    line_items: products.map((product) => ({
+      price: product.stripePriceId,
+      quantity: 1,
+    })),
+    success_url: `${origin}${getPathname({ locale, href: "/shop/success" })}?session_id={CHECKOUT_SESSION_ID}`,
+    cancel_url: `${origin}${getPathname({ locale, href: "/cart" })}`,
+    metadata: { product_ids: JSON.stringify(products.map((p) => p.id)) },
+    allow_promotion_codes: true,
+    // Checkout UI in the visitor's language; every site locale is a
+    // supported Stripe Checkout locale.
+    locale,
+  });
+
+  if (!session.url) {
+    return {
+      status: "error",
+      message: t("errorNoUrl"),
+    };
+  }
+
+  redirect(session.url);
+}

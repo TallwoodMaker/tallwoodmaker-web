@@ -1,6 +1,7 @@
 "use client";
 
-import Link from "next/link";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import { useConsent } from "./ConsentContext";
 
 export default function CookieBanner() {
@@ -11,6 +12,7 @@ export default function CookieBanner() {
     rejectNonEssential,
     openPreferences,
   } = useConsent();
+  const t = useTranslations("cookies");
 
   // Hide behind the preferences modal rather than stacking both — showBanner
   // itself stays derived purely from ready/hasDecision in ConsentContext.
@@ -21,37 +23,38 @@ export default function CookieBanner() {
       <div className="container-page section-px">
         <div className="flex flex-col gap-4 rounded-2xl bg-ink px-6 py-6 text-cream shadow-xl sm:flex-row sm:items-center sm:justify-between">
           <p className="text-[14px] leading-[1.6] text-cream/85">
-            We use cookies to keep the site running and, with your consent,
-            to understand how it&apos;s used. See our{" "}
-            <Link
-              href="/cookies"
-              className="text-cream underline underline-offset-2 hover:text-brand"
-            >
-              Cookie Policy
-            </Link>{" "}
-            for details.
+            {t.rich("bannerText", {
+              link: (chunks) => (
+                <Link
+                  href="/cookies"
+                  className="text-cream underline underline-offset-2 hover:text-brand"
+                >
+                  {chunks}
+                </Link>
+              ),
+            })}
           </p>
           <div className="flex flex-wrap items-center gap-3">
             <button
               type="button"
               onClick={openPreferences}
-              className="cursor-pointer text-[14px] font-semibold text-cream underline underline-offset-2 hover:text-brand"
+              className="min-h-11 cursor-pointer text-[14px] font-semibold text-cream underline underline-offset-2 hover:text-brand"
             >
-              Manage preferences
+              {t("manage")}
             </button>
             <button
               type="button"
               onClick={rejectNonEssential}
-              className="cursor-pointer rounded-full border border-cream/30 px-5 py-2.5 text-[14px] font-semibold text-cream hover:border-cream"
+              className="cursor-pointer min-h-11 rounded-full border border-cream/30 px-5 py-2.5 text-[14px] font-semibold text-cream hover:border-cream"
             >
-              Reject non-essential
+              {t("reject")}
             </button>
             <button
               type="button"
               onClick={acceptAll}
-              className="cursor-pointer rounded-full bg-brand px-5 py-2.5 text-[14px] font-bold text-ink"
+              className="cursor-pointer min-h-11 rounded-full bg-brand px-5 py-2.5 text-[14px] font-bold text-ink"
             >
-              Accept all
+              {t("accept")}
             </button>
           </div>
         </div>

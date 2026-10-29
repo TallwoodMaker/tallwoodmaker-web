@@ -1,0 +1,812 @@
+{
+  "meta": {
+    "siteDescription": "Holzbearbeitung vom ersten Schnitt bis zur eigenen Werkstatt. Baupläne, Anleitungen und Videos von echten Aufträgen aus einer 900-m²-Werkstatt.",
+    "home": {
+      "title": "TallWoodMaker: vom ersten Schnitt zur eigenen Werkstatt",
+      "description": "Holzbearbeitung von A bis Z, gefilmt bei echten Aufträgen in 900 m² Werkstatt. Ob du zu Hause baust oder deine Werkstatt aufbaust: jeder Schritt, jeder Fehler."
+    },
+    "buildAtHome": {
+      "title": "Die eigene Küche zu Hause bauen",
+      "description": "Für die eigene Küche brauchst du keine Werkstatt. Platten beim Zuschnittservice schneiden lassen, zu Hause montieren: Plan, Einkaufsliste, alle Schritte."
+    },
+    "ownShop": {
+      "title": "Die eigene Schreinerei aufbauen",
+      "description": "Eine Werkstatt, die sich rechnet: was du zuerst kaufst, was du verlangst und wie du einen Auftrag in Minuten planst. 15 Jahre Aufträge für Kunden."
+    },
+    "start": {
+      "title": "Hier starten",
+      "description": "Vom ersten Schnitt zur eigenen Werkstatt. Wähl deinen Weg und hol dir die kostenlose Starterliste mit 10 Werkzeugen."
+    },
+    "videos": {
+      "title": "Videos",
+      "description": "Echte Aufträge, in der Werkstatt gefilmt: Werkstatt-Touren, Folgen aus dem Werkstattalltag und kurze Clips auf TikTok."
+    },
+    "forBrands": {
+      "title": "Zusammenarbeit mit TallWoodMaker",
+      "description": "Markenkooperationen mit einem Profi-Schreiner. Inhalte von echten Kundenaufträgen für Holzwerker und Heimwerker in Europa und den USA."
+    },
+    "about": {
+      "title": "Über mich",
+      "description": "Ich bin Tom. Seit 15 Jahren baue ich Küchen, Schränke und komplette Innenausbauten für Kunden, und alles, was ich filme, ist ein echter Auftrag."
+    },
+    "shop": {
+      "title": "Baupläne & Anleitungen",
+      "description": "Baupläne, Zuschnittlisten und E-Books aus echten Aufträgen, nicht am Schreibtisch gezeichnet."
+    },
+    "contact": {
+      "title": "Kontakt",
+      "description": "Maßanfertigungen, Content-Kooperationen oder eine Frage zu einem Projekt: Schreib mir."
+    },
+    "cart": {
+      "title": "Warenkorb"
+    },
+    "orderConfirmed": {
+      "title": "Bestellung bestätigt"
+    },
+    "premium": {
+      "title": "Premium",
+      "description": "Komplette Projekte, längere Schnittfassungen und Werkstattdateien für Mitglieder."
+    },
+    "subscribe": {
+      "title": "Premium",
+      "description": "Komplette Projekte, längere Schnittfassungen und Werkstattdateien für TallWoodMaker-Premium-Mitglieder. 9 €/Monat, jederzeit kündbar."
+    },
+    "collaborate": {
+      "title": "Zusammenarbeit",
+      "description": "Markenkooperationen mit einem Profi-Schreiner: fünfzehn Jahre im Handwerk, echte Werkstattinhalte, nichts gestellt."
+    },
+    "benefits": {
+      "title": "Vorteile",
+      "description": "Rabattcodes und Partnerangebote für die Werkzeuge und Materialien, die in der TallWoodMaker-Werkstatt im Einsatz sind."
+    },
+    "confirmSignIn": {
+      "title": "Anmeldung bestätigen"
+    },
+    "terms": {
+      "title": "Allgemeine Geschäftsbedingungen"
+    },
+    "privacy": {
+      "title": "Datenschutzerklärung"
+    },
+    "cookies": {
+      "title": "Cookie-Richtlinie"
+    },
+    "course": {
+      "title": "Onlinekurs"
+    },
+    "notFound": {
+      "title": "Seite nicht gefunden"
+    }
+  },
+  "topBar": {
+    "text": "Kostenloser Download: die 10 Werkzeuge, die ich heute wieder kaufen würde",
+    "cta": "Holen"
+  },
+  "nav": {
+    "mainLabel": "Hauptnavigation",
+    "homeLink": "TallWoodMaker Startseite",
+    "start": "Hier starten",
+    "buildAtHome": "Zu Hause bauen",
+    "ownShop": "Eigene Werkstatt",
+    "plans": "Baupläne & Anleitungen",
+    "videos": "Videos",
+    "premium": "Premium",
+    "about": "Über mich",
+    "getFreeList": "Kostenlose Liste holen",
+    "cart": "Warenkorb",
+    "cartWithCount": "Warenkorb ({count})",
+    "cartAria": "{count, plural, =0 {Warenkorb} one {Warenkorb, # Artikel} other {Warenkorb, # Artikel}}",
+    "signIn": "Anmelden",
+    "openMenu": "Menü öffnen",
+    "closeMenu": "Menü schließen",
+    "changeLanguage": "Sprache ändern",
+    "language": "Sprache"
+  },
+  "footer": {
+    "forBrands": "Für Marken",
+    "contact": "Kontakt",
+    "copyright": "© {year} TallWoodMaker s.r.o.",
+    "social": "Social Media",
+    "legal": "Rechtliches",
+    "terms": "AGB",
+    "privacy": "Datenschutzerklärung",
+    "cookiePolicy": "Cookie-Richtlinie",
+    "cookieSettings": "Cookie-Einstellungen"
+  },
+  "paths": {
+    "home": "Zu Hause bauen",
+    "shop": "Eigene Werkstatt"
+  },
+  "productTypes": {
+    "plan": "Bauplan",
+    "ebook": "E-Book",
+    "bundle": "Paket"
+  },
+  "productCard": {
+    "save": "{amount} € sparen",
+    "bestStart": "Bester Einstieg · {amount} € sparen",
+    "everything": "Alles · {amount} € sparen",
+    "pdfInEnglish": "PDF auf Englisch",
+    "regularPrice": "Regulärer Preis {price}"
+  },
+  "pathCards": {
+    "question": "Wo stehst du gerade?",
+    "home": {
+      "title": "Ich baue zu Hause",
+      "text": "Garage, Balkon oder eine Ecke im Keller"
+    },
+    "shop": {
+      "title": "Ich baue meine eigene Werkstatt auf",
+      "text": "Vom Hobby zur Werkstatt, die sich rechnet"
+    }
+  },
+  "leadForm": {
+    "emailLabel": "E-Mail-Adresse",
+    "placeholder": "deine@email.de",
+    "sending": "Wird gesendet…",
+    "success": "Danke. Schau in dein Postfach.",
+    "waitlistSuccess": "Danke. Du stehst auf der Liste und erfährst den Termin als Erster.",
+    "invalidEmail": "Gib eine gültige E-Mail-Adresse ein.",
+    "error": "Da ist etwas schiefgelaufen. Bitte versuch es noch einmal.",
+    "honeypot": "Dieses Feld leer lassen"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Für Heimwerker & Holzwerker · von einem Profi mit 15 Jahren im Handwerk",
+      "title": "Vom ersten Schnitt zur <mark>eigenen Werkstatt.</mark>",
+      "text": "Holzbearbeitung von A bis Z, gefilmt bei echten Aufträgen in einer 900-m²-Werkstatt. Ob du zu Hause baust oder gerade deine eigene Werkstatt aufbaust: Ich zeige dir jeden Schritt, jedes Werkzeug und jeden Fehler.",
+      "photoAlt": "Tom an der Plattensäge in der Werkstatt, bei einem echten Auftrag",
+      "nameTag": "Tom",
+      "nameTagRole": "Schreiner & Creator · 15 J.",
+      "badge": "Echte Aufträge, keine Kulissen"
+    },
+    "proof": {
+      "label": "In Zahlen",
+      "followers": "Holzwerker folgen auf IG, YouTube & TikTok",
+      "monthlyReach": "Aufrufe pro Monat",
+      "yearsValue": "{count} J.",
+      "years": "Arbeit für zahlende Kunden",
+      "workshopValue": "{count} m²",
+      "workshop": "echte Werkstatt",
+      "workedWith": "Zusammengearbeitet mit"
+    },
+    "why": {
+      "eyebrow": "Warum von mir lernen",
+      "title": "Die meisten Videos zeigen dir das Ergebnis. Ich zeige dir die Entscheidungen.",
+      "text": "Das, was man erst nach Jahren lernt und was Geld kostet, wenn man es falsch macht.",
+      "items": {
+        "board": {
+          "title": "Welche Platte kaufen",
+          "text": "Spanplatte, MDF oder Sperrholz, und wo es wirklich darauf ankommt."
+        },
+        "order": {
+          "title": "Wie viel bestellen",
+          "text": "Zuschnittlisten, bei denen Reststücke übrig bleiben, keine Lücken."
+        },
+        "walls": {
+          "title": "Schiefe Wände",
+          "text": "Schränke gerade aufhängen, wenn im Raum nichts gerade ist."
+        },
+        "charge": {
+          "title": "Was verlangen",
+          "text": "Einen Auftrag so kalkulieren, dass Beschläge und deine Stunden bezahlt sind."
+        }
+      }
+    },
+    "paths": {
+      "title": "Zwei Wege. Wähl deinen.",
+      "home": {
+        "title": "Für die eigene Küche brauchst du keine Werkstatt.",
+        "points": [
+          "Ein klarer Plan, vom Aufmaß bis zur letzten Tür",
+          "Die genaue Platten- und Beschlagliste zum Bestellen",
+          "Ein Ergebnis, das aussieht wie vom Profi"
+        ],
+        "cta": "Zum Weg für zu Hause →"
+      },
+      "shop": {
+        "title": "Eine Werkstatt, die sich rechnet, statt dir die Abende zu fressen.",
+        "points": [
+          "Genau wissen, was du verlangen musst",
+          "Nur die Maschinen kaufen, die sich selbst bezahlen",
+          "Einen Auftrag in Minuten planen statt einen ganzen Abend"
+        ],
+        "cta": "Zum Weg für die Werkstatt →"
+      }
+    },
+    "lead": {
+      "eyebrow": "Kostenlos starten",
+      "title": "Die 10 Werkzeuge, die ich heute wieder kaufen würde.",
+      "text": "Kein Rätselraten, keine Werkzeuge, die du nie benutzt. Direkt in dein Postfach.",
+      "submit": "Schick mir die Liste"
+    },
+    "plans": {
+      "eyebrow": "Baupläne & Anleitungen",
+      "title": "Baupläne aus echten Aufträgen, nicht am Schreibtisch gezeichnet.",
+      "seeAll": "Alle Baupläne ansehen →",
+      "note": "Alle Baupläne und E-Books sind PDFs auf Englisch. Weitere Sprachen folgen."
+    },
+    "realJobs": {
+      "eyebrow": "Echte Aufträge",
+      "title": "Für Kunden gebaut. Jetzt als Bauplan in deinen Händen."
+    },
+    "about": {
+      "title": "Hallo, ich bin Tom.",
+      "p1": "Seit 15 Jahren baue ich Küchen, Schränke und komplette Innenausbauten für Kunden. Alles, was ich filme, ist ein echter Auftrag, keine Kulisse. Ich teile, wofür ich Jahre gebraucht habe, die Pläne, die Zahlen und die Fehler, damit du sie dir sparen kannst.",
+      "p2": "Ob du deine erste Küche zu Hause baust oder deine erste Werkstatt einrichtest: Fang hier an.",
+      "homeCta": "Ich baue zu Hause",
+      "shopCta": "Ich baue meine Werkstatt auf",
+      "portraitAlt": "Porträt von Tom in der Werkstatt mit einem Sägeblatt in der Hand"
+    }
+  },
+  "gallery": {
+    "panelSaw": "Tom legt eine Platte auf die Plattensäge",
+    "edgeBander": "Tom führt ein Werkstück in die Kantenanleimmaschine ein",
+    "cnc": "CNC-Bearbeitungszentrum in der Werkstatt",
+    "edgeBanderLine": "Kantenanleimmaschine mit Absaugung von oben",
+    "workshopWide": "Weitwinkelansicht der Werkstatt mit Plattenregalen und einer Heißpresse",
+    "shopFloor": "Die Werkstatt mit Formatkreissäge und Tischfräse"
+  },
+  "buildAtHome": {
+    "badge": "Zu Hause bauen",
+    "title": "Für die eigene Küche brauchst du keine Werkstatt.",
+    "text": "Lass die Platten beim Zuschnittservice zuschneiden und bekanten, montiere zu Hause mit einfachem Werkzeug. Ich zeige dir den genauen Plan, die Einkaufsliste und die Reihenfolge aller Schritte.",
+    "ctaSteps": "Die 5 Schritte ansehen",
+    "ctaPlans": "Baupläne für deine Küche",
+    "roadmapEyebrow": "Der Fahrplan",
+    "roadmapTitle": "Vom leeren Raum zur fertigen Küche in 5 Schritten.",
+    "steps": {
+      "measure": {
+        "title": "Aufmaß & Planung",
+        "text": "Wie du den Raum aufmisst und die Schränke so planst, dass nichts mit Leitungen und Steckdosen kollidiert."
+      },
+      "order": {
+        "title": "Material bestellen",
+        "text": "Wie viele Platten, wo du sie zuschneiden lässt, welche Beschläge du bestellst."
+      },
+      "boxes": {
+        "title": "Korpusse bauen",
+        "text": "Rechtwinklige, stabile Korpusse zu Hause montieren, in Serie."
+      },
+      "install": {
+        "title": "Montieren",
+        "text": "Schiefe Wände, Hängeschränke aufhängen, Arbeitsplatte einpassen."
+      },
+      "finish": {
+        "title": "Fertigstellen",
+        "text": "Türen in einem Durchgang, Sockelblenden, Beleuchtung und die abschließende Checkliste."
+      }
+    },
+    "freeVideo": "Kostenloses Video",
+    "productsTitle": "Alles, um zu Hause zu bauen",
+    "listTitle": "Du weißt nicht, wo du anfangen sollst?",
+    "listText": "Hol dir die Liste mit den 10 Werkzeugen, die ich heute wieder kaufen würde. Kostenlos.",
+    "listSubmit": "Schick mir die Liste",
+    "switchPath": "Du baust für Kunden? Zum Weg für die Werkstatt →"
+  },
+  "ownShop": {
+    "badge": "Eigene Werkstatt",
+    "title": "Eine Werkstatt, die sich rechnet, statt dir <mark>die Abende zu fressen.</mark>",
+    "text": "15 Jahre Aufträge für Kunden: was du zuerst kaufst, was du verlangst und wie du einen Auftrag in Minuten planst statt an einem ganzen Abend.",
+    "ctaSteps": "Die 6 Schritte ansehen",
+    "ctaTools": "Werkzeuge & Anleitungen",
+    "photoAlt": "Die Werkstatt mit Breitbandschleifmaschine und Absaugung von oben",
+    "roadmapEyebrow": "Der Fahrplan",
+    "roadmapTitle": "Von der leeren Garage zum ersten Auftrag mit Gewinn.",
+    "stepLabel": "Schritt {number}",
+    "ownToolLabel": "Schritt {number} · Mein eigenes Tool",
+    "steps": {
+      "space": {
+        "title": "Platz ohne verschwendetes Geld",
+        "text": "Aufteilung und Platz, die funktionieren, bevor du einen Cent in Maschinen steckst."
+      },
+      "machines": {
+        "title": "Maschinen, die sich selbst bezahlen",
+        "text": "Was du zuerst kaufst und was du dem Zuschnittservice überlässt."
+      },
+      "cutting": {
+        "title": "Zuschnittpläne ohne Verschnitt",
+        "text": "Genau dafür habe ich MebCut gebaut. Fotografier deine Zuschnittliste und du hast den Zuschnittplan in Sekunden.",
+        "cta": "MebCut kostenlos testen →"
+      },
+      "pricing": {
+        "title": "Mit Gewinn kalkulieren",
+        "text": "Ein Preis, der Beschläge, deine Stunden und die Marge abdeckt."
+      },
+      "clients": {
+        "title": "Deine ersten Kunden",
+        "text": "Wo du sie findest und wie du dich nicht unter Wert verkaufst."
+      },
+      "evenings": {
+        "title": "Abende zu Hause",
+        "text": "Abläufe, damit nicht die ganze Werkstatt an dir hängt."
+      }
+    },
+    "productsTitle": "Werkzeuge & Anleitungen für deine Werkstatt",
+    "mebcut": {
+      "label": "App · mebcut.com",
+      "text": "Zuschnittpläne aus einem Foto, Zuschnittassistent auf dem Handy.",
+      "price": "Kostenlos starten"
+    },
+    "waitlist": {
+      "eyebrow": "Live-Online-Workshop · demnächst",
+      "title": "Einen Auftrag mit Gewinn kalkulieren, nicht umsonst.",
+      "text": "2 Stunden live, ein Kalkulator, den du behältst, und du vergisst nie wieder die Beschläge. Trag dich in die Liste ein und erfahre den Termin als Erster.",
+      "submit": "Auf die Liste setzen"
+    },
+    "switchPath": "Du baust für dich selbst? Zum Weg für zu Hause →",
+    "freeVideo": "Gratis-Video"
+  },
+  "start": {
+    "title": "Vom ersten Schnitt zur <mark>eigenen Werkstatt.</mark>",
+    "text": "Wähl deinen Weg oder hol dir zuerst die kostenlose Starterliste mit 10 Werkzeugen.",
+    "leadTitle": "Die 10 Werkzeuge, die ich heute wieder kaufen würde.",
+    "leadText": "Kein Rätselraten, keine Werkzeuge, die du nie benutzt. Direkt in dein Postfach.",
+    "submit": "Schick mir die Liste"
+  },
+  "videos": {
+    "title": "Videos",
+    "text": "Echte Aufträge, in der Werkstatt gefilmt. Jede Woche ein neues Video auf YouTube, kürzere Clips fast täglich auf Instagram und TikTok.",
+    "longFormTitle": "Lange Videos",
+    "tiktokTitle": "Neu auf TikTok",
+    "channelsTitle": "Kanäle",
+    "youtube": "Jede Woche ein neues Video, direkt aus der Werkstatt.",
+    "instagram": "Tägliche Clips, Reels und Blicke hinter die Kulissen.",
+    "tiktok": "Kurze Clips von echten Aufträgen.",
+    "facebook": "Wöchentliche Rückblicke aus der Werkstatt."
+  },
+  "forBrands": {
+    "title": "Zusammenarbeit mit TallWoodMaker",
+    "p1": "Mein Publikum sind Holzwerker und Heimwerker aus Europa und den USA: Leute, die wirklich etwas bauen, von der ersten Küche zu Hause bis zur eigenen Werkstatt.",
+    "p2": "Alles, was ich filme, ist ein echter Kundenauftrag in einer laufenden Werkstatt. Dein Werkzeug oder Material wird so gezeigt, wie es wirklich eingesetzt wird, nicht für die Kamera inszeniert.",
+    "statsTitle": "In Zahlen",
+    "contactTitle": "Lass uns reden",
+    "contactText": "Erzähl mir von deinem Produkt und was du dir vorstellst. Ich melde mich persönlich bei dir.",
+    "emailCta": "Schreib mir eine E-Mail"
+  },
+  "about": {
+    "title": "Hallo, ich bin Tom.",
+    "photoAlt": "Tom, TallWoodMaker, mit einem Sägeblatt in der Werkstatt",
+    "storyP1": "Zum Holz bin ich gekommen, weil ich ein altes Regal repariert habe, das auf dem Sperrmüll landen sollte. Das erste Stück wurde schief, das zweite besser, und das dritte landete im Internet. Daraus wurde nach und nach die tägliche Arbeit in der Werkstatt.",
+    "storyP2": "Meine Inhalte sind nicht nur ein Zusammenschnitt der besten Momente. Ich zeige die Maße, die nicht gepasst haben, die Werkzeuge, die mehr Aufmerksamkeit verdienen, und die Entscheidungen, die direkt an der Säge fallen.",
+    "process": {
+      "title": "Ablauf",
+      "text": "Vom Entwurf bis zur Oberfläche: jeder Schritt dokumentiert, auch die Fehler."
+    },
+    "tools": {
+      "title": "Werkzeuge",
+      "text": "Eine Mischung aus Handwerkzeug und Maschinen. Ich erkläre, was und warum."
+    },
+    "community": {
+      "title": "Community",
+      "text": "Fragen aus den Kommentaren werden oft zum Thema des nächsten Videos."
+    },
+    "wideAlt": "Weitwinkelansicht der Werkstatt mit Breitbandschleifmaschine und Absaugung von oben",
+    "galleryTitle": "Galerie",
+    "galleryText": "Ein Blick in die Werkstatt: die Maschinen, der Ablauf und die Menschen hinter jedem Projekt.",
+    "galleryItems": {
+      "cnc": {
+        "title": "Biesse Rover CNC-Maschine",
+        "category": "CNC-Maschine",
+        "alt": "Biesse Rover A Smart CNC-Bearbeitungszentrum in der Werkstatt"
+      },
+      "edgeBanding": {
+        "title": "Beim Bekanten",
+        "category": "Bekanten",
+        "alt": "Kantenanleimmaschine bringt die Kante auf ein Werkstück auf"
+      },
+      "feedingEdgeBander": {
+        "title": "An der Kantenanleimmaschine",
+        "category": "Bekanten",
+        "alt": "Tom führt ein Werkstück in die Kantenanleimmaschine ein"
+      },
+      "onPanelSaw": {
+        "title": "An der Plattenaufteilsäge",
+        "category": "Plattenaufteilsäge",
+        "alt": "Tom legt eine Platte auf die Biesse Selco Plattenaufteilsäge"
+      },
+      "panelSaw": {
+        "title": "Biesse Selco Plattenaufteilsäge",
+        "category": "Plattenaufteilsäge",
+        "alt": "Biesse Selco WN2 Plattenaufteilsäge mit Abnahmetischen"
+      },
+      "break": {
+        "title": "Pause in der Werkstatt",
+        "category": "Hinter den Kulissen",
+        "alt": "Tom steht in der Werkstatt neben gestapelten Plattenresten"
+      },
+      "controls": {
+        "title": "Steuerung der Kantenanleimmaschine",
+        "category": "Bekanten",
+        "alt": "Bedienfeld der Cehisa Kantenanleimmaschine"
+      },
+      "storage": {
+        "title": "Plattenlager & Heißpresse",
+        "category": "Werkstattübersicht",
+        "alt": "Weitwinkelansicht der Werkstatt mit Plattenregalen und einer Heißpresse"
+      },
+      "dust": {
+        "title": "Absaugung & Schleifstraße",
+        "category": "Werkstattübersicht",
+        "alt": "Werkstattübersicht mit Breitbandschleifmaschine und Absaugrohren unter der Decke"
+      },
+      "slidingSaw": {
+        "title": "Formatkreissäge",
+        "category": "Werkstattübersicht",
+        "alt": "Werkstattübersicht mit Formatkreissäge und Tischfräse"
+      },
+      "fravol": {
+        "title": "Fravol Kantenanleimmaschine",
+        "category": "Bekanten",
+        "alt": "Fravol Kantenanleimmaschine mit Absaugrohren von oben"
+      },
+      "floor": {
+        "title": "Die Werkstatt",
+        "category": "Werkstattübersicht",
+        "alt": "Fravol Kantenanleimmaschine und das Absaugrohrnetz unter der Werkstattdecke"
+      }
+    },
+    "videoTitle": "Video & Social Media",
+    "videoText": "Jede Woche ein neues Video. Kürzere Clips kommen täglich auf Instagram und TikTok.",
+    "youtubeCardTitle": "Auf YouTube ansehen",
+    "youtubeCardText": "Jede Woche ein neues Video, direkt aus der Werkstatt.",
+    "instagramCardTitle": "Auf Instagram folgen",
+    "instagramCardText": "Tägliche Clips, Reels und Blicke hinter die Kulissen der Werkstatt.",
+    "tiktokCardTitle": "Auf TikTok ansehen",
+    "tiktokCardText": "Die neuesten TikToks findest du auf der Videoseite.",
+    "tiktokCardCta": "Videos →",
+    "facebookText": "Wöchentliche Rückblicke und Livestreams aus der Werkstatt.",
+    "followBuild": "Dem Projekt folgen"
+  },
+  "shop": {
+    "title": "Baupläne & Anleitungen",
+    "text": "Baupläne, Zuschnittlisten und E-Books aus echten Aufträgen, nicht am Schreibtisch gezeichnet.",
+    "note": "Alle Baupläne und E-Books sind PDFs auf Englisch. Weitere Sprachen folgen.",
+    "all": "Alle",
+    "categories": {
+      "ebooks": "E-Books",
+      "plans": "Baupläne",
+      "bundles": "Pakete"
+    },
+    "addToCart": "In den Warenkorb",
+    "inCartRemove": "Im Warenkorb · Entfernen",
+    "placeholder": {
+      "plan": "Vorschau des Bauplans",
+      "ebook": "E-Book-Cover",
+      "bundle": "Paket-Cover"
+    }
+  },
+  "product": {
+    "back": "← Zurück zum Shop",
+    "whatYouLearn": "Was du lernst",
+    "whatsIncluded": "Was enthalten ist",
+    "onItsOwn": "{price} einzeln",
+    "view": "Ansehen →",
+    "sampleEbook": "Eine Beispielseite aus dem E-Book",
+    "samplePlan": "Eine Beispielseite aus dem Bauplan",
+    "sampleAlt": "Beispielseite aus {title}",
+    "pdfNote": "Das PDF ist auf Englisch."
+  },
+  "cart": {
+    "title": "Dein Warenkorb",
+    "empty": "Dein Warenkorb ist leer.",
+    "back": "← Zurück zum Shop",
+    "remove": "Entfernen",
+    "subtotal": "Zwischensumme",
+    "consent": "Ich möchte sofortigen Zugriff auf diese digitalen Inhalte und nehme zur Kenntnis, dass ich mit Beginn der Lieferung mein Widerrufsrecht verliere. Ich stimme den <terms>AGB</terms> zu.",
+    "checkout": "Zur Kasse",
+    "redirecting": "Weiterleitung…",
+    "errorEmpty": "Dein Warenkorb ist leer, oder nichts darin ist mehr verfügbar.",
+    "errorConsent": "Bitte bestätige, dass du sofortigen Zugriff auf deinen digitalen Kauf möchtest, um fortzufahren.",
+    "errorNoUrl": "Stripe hat keine Checkout-URL zurückgegeben. Bitte versuch es noch einmal."
+  },
+  "success": {
+    "notConfirmedTitle": "Zahlung noch nicht bestätigt",
+    "notConfirmedText": "Wenn du gerade bezahlt hast, lade diese Seite gleich neu. Die Bestätigung kann ein paar Sekunden dauern. Klappt es immer noch nicht? Schreib an <email>tom@tallwoodmaker.com</email> und nenne diese Bestellung.",
+    "thanksTitle": "{count, plural, one {Danke, hier ist dein Download} other {Danke, hier sind deine Downloads}}",
+    "download": "{file} herunterladen",
+    "failure": "Deine Zahlung ist durchgegangen, aber beim Erstellen des Download-Links für {titles} gab es ein Problem. Schreib an <email>tom@tallwoodmaker.com</email> mit dieser Bestellnummer und wir schicken ihn dir:",
+    "expiry": "Diese Links sind 24 Stunden gültig. Wenn einer abläuft, setz ein Lesezeichen auf diese Seite und ruf sie erneut auf. Beim erneuten Öffnen werden neue Links erstellt."
+  },
+  "premium": {
+    "badge": "Premium",
+    "title": "Premium-Videos",
+    "text": "Komplette Projekte und längere Schnittfassungen für Mitglieder. Regelmäßig neue Inhalte.",
+    "empty": "Neue Inhalte kommen bald. Schau bald wieder vorbei.",
+    "announcements": "Ankündigungen",
+    "tabs": {
+      "all": "Alle",
+      "article": "Artikel",
+      "video": "Videos",
+      "plan_download": "Downloads"
+    },
+    "types": {
+      "article": "Artikel",
+      "video": "Video",
+      "plan_download": "Download",
+      "announcement": "Update"
+    },
+    "nothingYet": "Hier gibt es noch nichts.",
+    "download": "Herunterladen",
+    "videoPlaceholder": "Video-Vorschaubild",
+    "preview": "Vorschau"
+  },
+  "subscribe": {
+    "badge": "Premium",
+    "title": "TallWoodMaker Premium",
+    "waitlistText": "Komplette Projekte, längere Schnittfassungen und Werkstattdateien für Mitglieder. Premium startet bald. Trag dich in die Warteliste ein, um als Erster dabei zu sein.",
+    "launchOffer": "Startangebot",
+    "launchTitle": "Jetzt anmelden und 50 % Rabatt auf die ersten 3 Monate bekommen",
+    "launchText": "Wer auf der Warteliste steht, bekommt als Erster Zugang, wenn es losgeht, und der Rabatt wird an der Kasse automatisch abgezogen.",
+    "heroText": "Komplette Projekte, längere Schnittfassungen und Werkstattdateien: alles, was nicht auf YouTube passt. Für 9 €/Monat dabei sein und sofort Zugang bekommen.",
+    "included": "Was enthalten ist",
+    "previewText": "Ein Vorgeschmack auf das, was dich erwartet. Jeden Monat neue Inhalte.",
+    "membersOnly": "Nur für Mitglieder",
+    "fallbackBenefits": [
+      "Komplette Projektvideos von Anfang bis Ende: jeder Schritt, nicht nur die Höhepunkte",
+      "Längere Schnittfassungen und Werkstatt-Touren, die es auf YouTube nicht gibt",
+      "Baupläne und Zuschnittlisten zum Herunterladen für ausgewählte Projekte",
+      "Jeden Monat neue Inhalte",
+      "Jederzeit kündbar, keine lange Bindung"
+    ],
+    "offerBadge": "Startangebot: 50 % Rabatt auf die ersten 3 Monate",
+    "price": "9 €",
+    "perMonth": "/Monat",
+    "codeText": "Du hast einen Startcode? Gib ihn an der Kasse ein und bekomm 50 % Rabatt auf die ersten 3 Monate.",
+    "consent": "Ich möchte sofortigen Zugriff auf Premium und nehme zur Kenntnis, dass ich mit Beginn des Zugriffs mein Widerrufsrecht verliere. Ich stimme den <terms>AGB</terms> zu.",
+    "consentError": "Bitte bestätige das Kontrollkästchen, um fortzufahren.",
+    "linkExpired": "Dieser Anmeldelink ist abgelaufen oder wurde schon verwendet. Fordere unten einen neuen an.",
+    "subscribeCta": "Jetzt abonnieren: 9 €/Monat",
+    "signInPrompt": "Gib deine E-Mail-Adresse ein, um dich anzumelden und zur Kasse zu gehen",
+    "faqTitle": "Gut zu wissen",
+    "faq": [
+      {
+        "q": "Kann ich jederzeit kündigen?",
+        "a": "Ja. Kündige in deinem Konto, wann immer du willst. Du behältst den Zugang bis zum Ende des bereits bezahlten Abrechnungszeitraums."
+      },
+      {
+        "q": "Wie funktioniert die Abrechnung?",
+        "a": "9 €/Monat, automatisch abgebucht, bis du kündigst. Kein Jahresvertrag."
+      },
+      {
+        "q": "Was passiert direkt nach der Anmeldung?",
+        "a": "Du bekommst einen Anmeldelink per E-Mail und landest dann direkt an der Kasse. Der Zugang wird freigeschaltet, sobald die Zahlung abgeschlossen ist."
+      },
+      {
+        "q": "Was bekomme ich genau?",
+        "a": "Alles unter „Was enthalten ist“ oben, plus alles, was während deiner Mitgliedschaft neu zu Premium dazukommt."
+      }
+    ],
+    "countdown": {
+      "days": "Tage",
+      "hours": "Stunden",
+      "minutes": "Minuten",
+      "seconds": "Sekunden"
+    },
+    "waitlist": {
+      "join": "Auf die Warteliste",
+      "joining": "Wird eingetragen…",
+      "joined": "Du stehst auf der Liste. Wir schicken dir eine E-Mail, wenn Premium startet.",
+      "error": "Eintragen in die Warteliste hat nicht geklappt. Bitte versuch es noch einmal."
+    },
+    "magicLink": {
+      "send": "Link per E-Mail schicken",
+      "sending": "Wird gesendet…",
+      "sent": "Schau in {email} nach dem Anmeldelink.",
+      "error": "Der Link konnte nicht gesendet werden. Bitte versuch es noch einmal."
+    }
+  },
+  "confirmSignIn": {
+    "title": "Anmeldung bestätigen",
+    "text": "Zu deiner Sicherheit melden wir dich erst an, wenn du unten klickst. So können E-Mail-Linkscanner den Link nicht verbrauchen, bevor du es tust.",
+    "button": "Anmeldung bestätigen"
+  },
+  "contact": {
+    "title": "Kontakt",
+    "text": "Maßanfertigungen, Content-Kooperationen oder einfach eine Frage zu einem Projekt: Schreib mir.",
+    "name": "Name",
+    "namePlaceholder": "Dein Name",
+    "email": "E-Mail",
+    "emailPlaceholder": "du@email.de",
+    "message": "Nachricht",
+    "messagePlaceholder": "Beschreib dein Projekt oder deine Frage",
+    "send": "Senden",
+    "emailHeading": "E-Mail",
+    "workshopHeading": "Werkstatt",
+    "workshopValue": "Slowakei",
+    "socialHeading": "Social Media"
+  },
+  "collaborate": {
+    "title": "Zusammenarbeit",
+    "intro": "Für Marken arbeite ich genauso wie für die Kamera: keine Abkürzungen, kein Füllmaterial. Wenn deine Werkzeuge oder Materialien in eine echte Werkstatt gehören, lass uns reden.",
+    "heroAlt": "Biesse Rover A Smart CNC-Bearbeitungszentrum in der Werkstatt",
+    "philosophyTitle": "Bauen. Teilen. Inspirieren.",
+    "philosophyText": "Die Haltung hinter allem, was ich baue, vor der Kamera und abseits davon.",
+    "story": "Ich bin Tom: seit fünfzehn Jahren arbeite ich beruflich mit Holz, nicht erst, seit ich eine Kamera in die Hand genommen habe. TallWoodMaker dokumentiert echte Kundenaufträge: Küchen, Möbel nach Maß und komplette Innenausbauten, jeden Tag auf CNC-Maschinen und Plattensägen gefertigt, keine Wochenendprojekte. Den Kanal gibt es, um das Handwerk richtig weiterzugeben, so wie es mir beigebracht wurde. Unterhaltung ist ein Nebeneffekt, nicht der Zweck.",
+    "numbersTitle": "In Zahlen",
+    "numbersText": "Ein kurzer Blick auf das Publikum hinter dem Kanal.",
+    "stats": {
+      "followers": "Follower insgesamt",
+      "reach": "Monatliche Reichweite",
+      "years": "Jahre im Handwerk"
+    },
+    "gettingTitle": "Was du wirklich bekommst",
+    "gettingText": "Das bringt eine Kooperation tatsächlich vor echte Holzwerker.",
+    "photoAlts": {
+      "panelSaw": "Tom legt eine Platte auf die Biesse Selco Plattenaufteilsäge",
+      "edgeBanding": "Kantenanleimmaschine bringt die Kante auf ein Werkstück auf",
+      "workshop": "Weitwinkelansicht der Werkstatt mit Plattenregalen und einer Heißpresse"
+    },
+    "benefits": {
+      "audience": {
+        "title": "Ein Publikum, das mit Holz arbeitet",
+        "text": "Holzbegeisterte und angehende Profis, keine Gelegenheits-Scroller: Leute, die zuschauen, weil sie wirklich etwas bauen."
+      },
+      "footage": {
+        "title": "Echte Werkstattaufnahmen",
+        "text": "Werkzeuge und Materialien so gezeigt, wie sie bei echten Aufträgen in einer laufenden Werkstatt eingesetzt werden. Nichts für die Kamera inszeniert."
+      },
+      "voice": {
+        "title": "Eine glaubwürdige Stimme",
+        "text": "Fünfzehn Jahre Berufserfahrung hinter jeder Empfehlung, kein Creator, der für einen Werbedeal ein Skript abliest."
+      }
+    },
+    "optionsTitle": "Kooperationsmöglichkeiten",
+    "optionsText": "Ein paar Wege der Zusammenarbeit. Jede Kooperation wird passend zugeschnitten.",
+    "options": {
+      "mention": {
+        "title": "Produkterwähnung",
+        "text": "Dein Werkzeug oder Material wird in einem regulären Projektvideo gezeigt und genannt."
+      },
+      "feature": {
+        "title": "Eigenes Video",
+        "text": "Ein komplettes Video rund um dein Produkt: Review, Test oder Tutorial."
+      },
+      "ongoing": {
+        "title": "Langfristige Partnerschaft",
+        "text": "Mehrere Videos über eine Saison, plus Erwähnungen in der Werkstatt und auf Social Media."
+      }
+    },
+    "quote": "Angebot anfragen",
+    "talkTitle": "Lass uns reden",
+    "talkText": "Wenn deine Werkzeuge oder Materialien in einer laufenden Werkstatt bestehen würden, melde dich, und wir finden heraus, was sinnvoll ist.",
+    "talkCta": "Gespräch starten"
+  },
+  "benefits": {
+    "title": "Vorteile",
+    "intro": "Werkzeuge und Materialien, die ich in der Werkstatt wirklich benutze, mit Rabattcodes für meine Community.",
+    "text": "Das sind die Marken, die bei echten Kundenaufträgen zum Einsatz kommen, keine Sponsoren, die ich einmal für ein Video ausprobiert habe. Wenn etwas hier steht, dann weil es sich zuerst einen Platz in der Werkstatt verdient hat. Der Rabatt ist ein echter Vorteil für alle, die mitverfolgen, keine weitere Werbung.",
+    "deals": {
+      "spetool": {
+        "category": "Holzbearbeitungswerkzeuge: CNC-Fräser, Plattenzwingen, Frässchlitten, Zubehör für die Absaugung",
+        "text": "Präzisionsfräser und Werkstattzubehör, eingesetzt bei echten Kundenprojekten, nicht nur getestet, sondern wirklich benutzt.",
+        "discount": "10 % Rabatt auf deine Bestellung"
+      }
+    },
+    "visit": "Zur Website →",
+    "noCode": "Kein Code nötig. Der Rabatt wird über den Link oben automatisch angewendet.",
+    "moreTitle": "Weitere Angebote folgen",
+    "moreText": "Ich füge weitere Rabattcodes für die Werkzeuge und Materialien hinzu, die ich in der Werkstatt wirklich benutze. Schau bald wieder vorbei."
+  },
+  "legal": {
+    "englishOnly": "Dieses Dokument ist nur auf Englisch verfügbar."
+  },
+  "cookies": {
+    "bannerText": "Wir verwenden Cookies, damit die Website funktioniert, und mit deiner Einwilligung, um zu verstehen, wie sie genutzt wird. Details findest du in unserer <link>Cookie-Richtlinie</link>.",
+    "manage": "Einstellungen verwalten",
+    "reject": "Nicht notwendige ablehnen",
+    "accept": "Alle akzeptieren",
+    "save": "Einstellungen speichern",
+    "modalTitle": "Cookie-Einstellungen",
+    "modalText": "Wähle, welche Cookies wir verwenden dürfen. Du kannst das jederzeit über den Link im Footer ändern.",
+    "necessary": {
+      "title": "Notwendig",
+      "text": "Erforderlich, damit Anmeldung und Kasse funktionieren. Immer aktiv.",
+      "label": "Notwendige Cookies"
+    },
+    "analytics": {
+      "title": "Statistik",
+      "text": "Hilft uns zu verstehen, wie Besucher die Website nutzen, damit wir sie verbessern können.",
+      "label": "Statistik-Cookies"
+    },
+    "marketing": {
+      "title": "Marketing",
+      "text": "Werden verwendet, um Werbung zu messen und zu personalisieren. Aus, solange du sie nicht einschaltest.",
+      "label": "Marketing-Cookies"
+    }
+  },
+  "notFound": {
+    "title": "Seite nicht gefunden",
+    "text": "Diese Seite gibt es nicht oder sie wurde verschoben.",
+    "home": "Zurück zur Startseite"
+  },
+  "products": {
+    "plan-kids-chair": {
+      "short": "Ein einfacher, stabiler Kinderstuhl. Auch für Einsteiger.",
+      "description": "Vollständig bemaßter Bauplan und Zuschnittliste für einen einfachen, stabilen Kinderstuhl. Auch für Einsteiger, keine Vorrichtungen nötig.",
+      "whatYouLearn": []
+    },
+    "ebook-zero-to-first-client": {
+      "short": "Planen, Zuschnitt auslagern, montieren, bezahlt werden.",
+      "description": "Wie ich vom Bauen für mich selbst zu meinem ersten zahlenden Kunden gekommen bin: die genauen Schritte, in der richtigen Reihenfolge.",
+      "whatYouLearn": []
+    },
+    "plan-kitchen-cabinet-library": {
+      "short": "Zuschnittlisten und Zeichnungen für 4 Schrankmodule.",
+      "description": "Vier Küchenschranktypen, ein Modulsystem: bemaßte Baupläne und Zuschnittlisten für Unter-, Hänge-, Hoch-/Vorrats- und Eckschränke, die alle zusammenpassen.",
+      "whatYouLearn": [
+        "Alle vier Grundtypen von Schränken bauen — Unter-, Hänge-, Hoch-/Vorrats- und Eckschränke als ein abgestimmtes Modulsystem, nicht als vier einzelne Einzelanfertigungen.",
+        "Eine komplette Zuschnittliste und bemaßte Zeichnung für jedes Modul — nichts geraten, nichts, was du erst in der Werkstatt herausfinden musst.",
+        "Gleich beim ersten Mal die richtigen Beschläge bestellen — Konfirmatschrauben, Exzenterverbinder, Scharniere und Stellfüße, passend für jeden Schranktyp.",
+        "Den Eckschrank sicher lösen — der Teil, an dem die meisten bei einer Küche hängen bleiben, geplant und gezeichnet wie jedes andere Modul.",
+        "Schränke so fertigstellen, dass sie den Alltag aushalten — die Schritte zu Oberfläche und Pflege, damit eine Küche jahrelang gut aussieht."
+      ]
+    },
+    "ebook-kitchen-from-scratch": {
+      "short": "Vom Aufmaß des Raums bis zur letzten Tür.",
+      "description": "Alles, was ich gern gewusst hätte, bevor ich meine erste Küche gebaut habe: Aufmaß, Zuschnitt, Montage und Fertigstellung, von Anfang bis Ende, ohne Profiwerkstatt.",
+      "whatYouLearn": [
+        "Jede Küche lesen — einen Raum aufmessen, eine Höhenlatte anlegen und ein Arbeitsdreieck planen, das wirklich funktioniert, bevor du die erste Platte schneidest.",
+        "Aus einem Grundriss eine echte Bestellung machen — Zuschnittlisten zusammenführen, Platten zählen und die nötigen Beschläge bestellen, nichts geraten und nichts verschwendet.",
+        "Schränke bauen und montieren, die richtig sitzen — Korpusse in Serie bauen, dann eine Reihe Unter- und Hängeschränke ausrichten, verbinden und anpassen, damit sie fest und rechtwinklig sitzen.",
+        "Eine Arbeitsplatte selbst anschablonieren und einpassen — inklusive Spülen- und Kochfeldausschnitten, Verbindungen und Abdichtung, ohne dafür einen Fachbetrieb zu bezahlen.",
+        "Fertigstellen wie ein Profi — Türen in einem Durchgang gerade eingestellt, Sockelblenden montiert, Beleuchtung angeschlossen und eine Abschluss-Checkliste, damit nichts vergessen wird."
+      ]
+    },
+    "ebook-wardrobes-closets": {
+      "short": "Einbau-, freistehende und begehbare Systeme.",
+      "description": "Drei Kleiderschranksysteme, ein Ratgeber: Einbauschrank mit Schiebetüren, freistehender Drehtürenschrank und begehbarer Schrank mit offenen Regalen, geplant, gebaut und eingebaut.",
+      "whatYouLearn": [
+        "Das richtige System für deinen Raum wählen — Einbauschrank mit Schiebetüren, freistehender Drehtürenschrank oder begehbarer Schrank mit offenen Regalen, verglichen nach der Tiefe und dem Platz, den jedes System wirklich braucht.",
+        "Einen Einbauschrank mit Schiebetüren in eine Nische bauen — Wände und Decke als Konstruktion nutzen, mit richtig bemessener Blende und Laufschiene.",
+        "Einen freistehenden Drehtürenschrank aus einem kompletten sechsseitigen Korpus bauen — mit der richtigen Anzahl Scharniere für die Türhöhe, nicht geraten.",
+        "Die Inneneinteilung richtig planen — Hängehöhen, Kleiderstangen und Fachabstände, in die Kleidung wirklich passt, nicht nur auf dem Papier.",
+        "Beschläge montieren und den Auftrag abschließen — Schiebetürschienen, Schubkästen und Zubehör, bis zur Checkliste für den Montagetag."
+      ]
+    },
+    "plan-wardrobe-cabinet-library": {
+      "short": "Technische Zeichnungen für alle drei Kleiderschranksysteme.",
+      "description": "Drei Kleiderschranksysteme, eine gemeinsame Bauweise: bemaßte Baupläne und Zuschnittlisten für Einbauschrank mit Schiebetüren, freistehenden Drehtürenschrank und begehbaren offenen Schrank.",
+      "whatYouLearn": [
+        "Das richtige Kleiderschranksystem für deinen Raum wählen — Einbauschrank mit Schiebetüren, freistehender Drehtürenschrank oder begehbarer offener Schrank, verglichen nach Tiefe, Höhe und dem Platz, den jedes System wirklich braucht.",
+        "Jedes der drei Systeme aus einem gemeinsamen Korpus- und Beschlagsystem bauen — die Konstruktion bleibt gleich, egal welches Format in deinen Raum passt.",
+        "Mit einer kompletten Zuschnittliste und bemaßten Zeichnung für jedes System arbeiten — nichts geraten, nichts, was du erst in der Werkstatt herausfinden musst.",
+        "Hängehöhen, Fachabstände und Angaben zu Türbeschlägen, die für alle drei Systeme gelten — gleich beim ersten Mal richtig bemessen.",
+        "Schritt für Schritt montieren — vom Anreißen der ersten Wandleiste oder Blende bis zur letzten Abdeckleiste und Beschlagmontage."
+      ]
+    },
+    "plan-kids-bunk-bed": {
+      "short": "Massive Kiefer, oben 90 cm, unten 140 cm.",
+      "description": "Ein Etagenbett aus massiver Kiefer mit schmalem Bett oben und breitem Bett unten, von Anfang an sicher gebaut: feste Leiter, durchgehende Absturzsicherung, komplette Zuschnittliste und Montage Schritt für Schritt.",
+      "whatYouLearn": [
+        "Ein komplettes Etagenbett bauen — oben ein schmaleres Einzelbett, unten ein breiteres Bett, aus einer einzigen Zuschnittliste in massiver Kiefer.",
+        "Mit einer kompletten Zuschnittliste und bemaßten Zeichnung arbeiten — 13 Positionen, 50 Teile, Vorder- und Seitenansicht mit allen Maßen.",
+        "In der richtigen Reihenfolge montieren — Unterrahmen, Lattenrost, oberer Rahmen, Lattenrost, Absturzsicherung und Leiter, dann eine abschließende Kontrolle, Schritt für Schritt.",
+        "Eine feste Leiter und eine durchgehende Absturzsicherung anbringen — von Anfang an eingeplant, nicht nachträglich angeschraubt.",
+        "Kindersicher fertigstellen — die Abstände der Absturzsicherung und die Altersempfehlung, die du vor der Nutzung mit deiner örtlichen Sicherheitsnorm abgleichst."
+      ]
+    },
+    "bundle-kitchen-starter": {
+      "short": "Das E-Book und alle Schrankpläne für eine ganze Küche.",
+      "description": "Alles, was du brauchst, um deine eigene Küche zu bauen: das komplette E-Book plus die passenden Schrankpläne, zusammen günstiger als einzeln.",
+      "whatYouLearn": [
+        "Eine komplette Küche von Grund auf planen und bauen — Raum aufmessen, Arbeitsdreieck festlegen, Material bestellen und Schränke montieren, von Anfang bis Ende.",
+        "Jeden Schranktyp, den du brauchst, aus einem abgestimmten System bauen — Unter-, Hänge-, Hoch-/Vorrats- und Eckschränke, alle mit gleicher Konstruktion, gleichem Material und gleichen Beschlägen.",
+        "Alle Zuschnittlisten und bemaßten Zeichnungen in einem Paket — nichts geraten, nichts, was du erst in der Werkstatt herausfinden musst.",
+        "Einbauen und fertigstellen wie ein Profi — die Arbeitsplatte selbst anschablonieren und einpassen, Türen gerade einstellen und Schränke fertigstellen, die den Alltag aushalten.",
+        "10 € sparen gegenüber dem Einzelkauf — 33 € statt 43 €."
+      ]
+    },
+    "bundle-complete-builder": {
+      "short": "Unternehmerisches Denken + kundentaugliche Küchen- und Kleiderschrankpläne.",
+      "description": "Unternehmerisches Denken + kundentaugliche Küchen- und Kleiderschrankpläne: alles, um vom Bauen für dich selbst zum Bauen für zahlende Kunden zu kommen.",
+      "whatYouLearn": [
+        "Vom Bauen für dich selbst zum Bauen für zahlende Kunden — die genauen Schritte, Werkzeuge und das Budget, die es wirklich braucht, um deinen ersten bezahlten Auftrag zu bekommen.",
+        "Eine komplette Küche und beide wichtigen Kleiderschrankformate bauen — Raum planen, Material bestellen und Schränke und Kleiderschränke auf professionellem Niveau montieren.",
+        "Mit einem gemeinsamen Korpussystem für Küchen und Kleiderschränke arbeiten — Unter-, Hänge-, Hoch-/Vorrats- und Eckmodule für die Küche, dazu Einbauschrank mit Schiebetüren, freistehender Drehtürenschrank und begehbarer offener Schrank.",
+        "Alle Zuschnittlisten und bemaßten Zeichnungen aus allen vier Bauplänen in einem Paket — nichts geraten, nichts, was du erst in der Werkstatt herausfinden musst.",
+        "42 € sparen gegenüber dem Einzelkauf aller fünf — 63 € statt 105 €."
+      ]
+    }
+  }
+}

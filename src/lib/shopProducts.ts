@@ -3,17 +3,15 @@
 // Add more as the catalog grows (e.g. a future "kitchen-plans").
 export type ShopProductCategory = "ebooks" | "plans" | "bundles";
 
-export type ShopCategoryDef = { id: ShopProductCategory; label: string };
-
-export const SHOP_CATEGORIES: ShopCategoryDef[] = [
-  { id: "ebooks", label: "Ebooks" },
-  { id: "plans", label: "Plans" },
-  { id: "bundles", label: "Bundles" },
-];
+// Labels live in messages/<locale>.json under shop.categories.
+export const SHOP_CATEGORIES: ShopProductCategory[] = ["ebooks", "plans", "bundles"];
 
 export type ShopProduct = {
   id: string;
+  // The product name is a brand and stays English in every language.
   title: string;
+  // English source copy. Localized copy (incl. a short card line and
+  // whatYouLearn) lives in messages/<locale>.json under products.<id>.
   description: string;
   type: "plan" | "ebook" | "bundle";
   category: ShopProductCategory;
@@ -272,4 +270,16 @@ export function getShopProduct(id: string): ShopProduct | undefined {
 
 export function getAvailableShopProducts(): ShopProduct[] {
   return SHOP_PRODUCTS.filter((product) => product.available);
+}
+
+/**
+ * What a bundle's contents cost bought one by one (shown struck through
+ * next to the bundle price). Null for non-bundles.
+ */
+export function bundleRegularPrice(product: ShopProduct): number | null {
+  if (!product.includes?.length) return null;
+  return product.includes.reduce(
+    (sum, id) => sum + (getShopProduct(id)?.priceEur ?? 0),
+    0
+  );
 }

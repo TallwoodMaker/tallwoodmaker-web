@@ -1,15 +1,21 @@
 @import "tailwindcss";
 
 @theme inline {
-  --font-sans: var(--font-inter), "Inter", sans-serif;
+  --font-sans: var(--font-plex), "IBM Plex Sans", system-ui, sans-serif;
+  --font-display: var(--font-grotesk), "Space Grotesk", sans-serif;
+  --font-mono: var(--font-jetbrains), "JetBrains Mono", monospace;
 
-  --color-cream: oklch(0.98 0.006 60);
-  --color-ink: oklch(0.22 0.012 60);
-  --color-ink-muted: oklch(0.48 0.012 60);
-  --color-ink-muted-2: oklch(0.4 0.02 60);
-  --color-ink-soft: oklch(0.32 0.012 60);
-  --color-border: oklch(0.87 0.01 60);
-  --color-brand: #f5d142;
+  --color-cream: #faf9f5;
+  --color-ink: #141413;
+  /* Secondary text — don't go lighter than this, it's the contrast floor. */
+  --color-ink-muted: #66635c;
+  --color-ink-muted-2: #66635c;
+  --color-ink-soft: #3a3833;
+  --color-on-dark: #cfcbc0;
+  --color-line-dark: #3a3833;
+  --color-sand: #ece7da;
+  --color-border: #e4dfd0;
+  --color-brand: #f2b705;
   --color-link: oklch(0.53 0.1 25);
   --color-link-hover: oklch(0.46 0.1 25);
 }
@@ -17,13 +23,28 @@
 /* Site grid: shared max-width + fluid horizontal gutters used by every section. */
 @utility container-page {
   margin-inline: auto;
-  max-width: 1400px;
+  max-width: 1280px;
 }
 @utility section-px {
-  padding-inline: clamp(24px, 5vw, 64px);
+  padding-inline: clamp(16px, 4vw, 24px);
 }
 @utility section-py {
-  padding-block: clamp(24px, 5vw, 64px);
+  padding-block: clamp(56px, 8vw, 96px);
+}
+
+/* Small technical label above headings — JetBrains Mono, caps, 13px. */
+@utility eyebrow {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+/* Yellow highlighter underline used on hero headlines. */
+@utility highlight {
+  background: linear-gradient(transparent 62%, var(--color-brand) 62%);
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
 }
 
 /*
@@ -38,11 +59,17 @@
     color: var(--color-ink);
   }
 
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-display);
+  }
+
   a {
-    color: var(--color-link);
+    color: var(--color-ink);
     text-decoration: none;
   }
   a:hover {
-    color: var(--color-link-hover);
+    color: #5a4300;
   }
 }

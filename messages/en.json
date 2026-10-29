@@ -1,0 +1,812 @@
+{
+  "meta": {
+    "siteDescription": "Woodworking from your first cut to your own workshop. Plans, guides and videos from real jobs in a 900 m² shop.",
+    "home": {
+      "title": "TallWoodMaker: from your first cut to your own workshop",
+      "description": "Woodworking from A to Z, filmed on real jobs in a 900 m² shop. Whether you build at home or set up your own workshop: every step, every tool, every mistake."
+    },
+    "buildAtHome": {
+      "title": "Build your own kitchen at home",
+      "description": "You don't need a workshop to build your own kitchen. Get the panels cut at a cutting service and assemble at home: the plan, the shopping list and every step in order."
+    },
+    "ownShop": {
+      "title": "Set up your own woodworking shop",
+      "description": "Build a workshop that pays: what to buy first, what to charge, and how to plan a job in minutes. 15 years of running jobs for clients."
+    },
+    "start": {
+      "title": "Start here",
+      "description": "From your first cut to your own workshop. Pick your path and get the free 10-tool starter list."
+    },
+    "videos": {
+      "title": "Videos",
+      "description": "Real jobs filmed in the shop: workshop tours, day-in-the-shop episodes and short cuts on TikTok."
+    },
+    "forBrands": {
+      "title": "Work with TallWoodMaker",
+      "description": "Brand partnerships with a professional woodworker. Content filmed on real client jobs for woodworkers and DIYers in Europe and the USA."
+    },
+    "about": {
+      "title": "About",
+      "description": "I'm Tom. I've built kitchens, wardrobes and full interiors for clients for 15 years, and everything I film is a real job."
+    },
+    "shop": {
+      "title": "Plans & guides",
+      "description": "Woodworking plans, cutting lists and ebooks from real jobs, not drawn at a desk."
+    },
+    "contact": {
+      "title": "Contact",
+      "description": "Custom builds, content collaborations or a question about a project: get in touch."
+    },
+    "cart": {
+      "title": "Cart"
+    },
+    "orderConfirmed": {
+      "title": "Order confirmed"
+    },
+    "premium": {
+      "title": "Premium",
+      "description": "Full builds, extended cuts and shop files for members."
+    },
+    "subscribe": {
+      "title": "Premium",
+      "description": "Full builds, extended cuts and shop files for TallWoodMaker Premium members. €9/month, cancel anytime."
+    },
+    "collaborate": {
+      "title": "Collaborate",
+      "description": "Brand partnerships with a professional woodworker: fifteen years in the trade, real shop content, no staging."
+    },
+    "benefits": {
+      "title": "Benefits",
+      "description": "Discount codes and affiliate deals for the tools and materials used in the TallWoodMaker workshop."
+    },
+    "confirmSignIn": {
+      "title": "Confirm sign-in"
+    },
+    "terms": {
+      "title": "Terms of Service"
+    },
+    "privacy": {
+      "title": "Privacy Policy"
+    },
+    "cookies": {
+      "title": "Cookie Policy"
+    },
+    "course": {
+      "title": "Online Course"
+    },
+    "notFound": {
+      "title": "Page not found"
+    }
+  },
+  "topBar": {
+    "text": "Free download: the 10-tool starter list I'd buy again today",
+    "cta": "Get it"
+  },
+  "nav": {
+    "mainLabel": "Main",
+    "homeLink": "TallWoodMaker home",
+    "start": "Start here",
+    "buildAtHome": "Build at home",
+    "ownShop": "Your own shop",
+    "plans": "Plans & guides",
+    "videos": "Videos",
+    "premium": "Premium",
+    "about": "About",
+    "getFreeList": "Get the free list",
+    "cart": "Cart",
+    "cartWithCount": "Cart ({count})",
+    "cartAria": "{count, plural, =0 {Cart} one {Cart, # item} other {Cart, # items}}",
+    "signIn": "Sign in",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "changeLanguage": "Change language",
+    "language": "Language"
+  },
+  "footer": {
+    "forBrands": "For brands",
+    "contact": "Contact",
+    "copyright": "© {year} TallWoodMaker s.r.o.",
+    "social": "Social",
+    "legal": "Legal",
+    "terms": "Terms of Service",
+    "privacy": "Privacy Policy",
+    "cookiePolicy": "Cookie Policy",
+    "cookieSettings": "Cookie settings"
+  },
+  "paths": {
+    "home": "Build at home",
+    "shop": "Your own shop"
+  },
+  "productTypes": {
+    "plan": "Plan",
+    "ebook": "Ebook",
+    "bundle": "Bundle"
+  },
+  "productCard": {
+    "save": "Save €{amount}",
+    "bestStart": "Best start · Save €{amount}",
+    "everything": "Everything · Save €{amount}",
+    "pdfInEnglish": "PDF in English",
+    "regularPrice": "Regular price {price}"
+  },
+  "pathCards": {
+    "question": "Where are you right now?",
+    "home": {
+      "title": "I build at home",
+      "text": "Garage, balcony or a corner of the cellar"
+    },
+    "shop": {
+      "title": "I'm setting up my own shop",
+      "text": "From hobby to a workshop that pays"
+    }
+  },
+  "leadForm": {
+    "emailLabel": "Email address",
+    "placeholder": "your@email.com",
+    "sending": "Sending…",
+    "success": "Thanks! Check your inbox.",
+    "waitlistSuccess": "Thanks! You're on the list. You'll get the date first.",
+    "invalidEmail": "Enter a valid email address.",
+    "error": "Something went wrong. Please try again.",
+    "honeypot": "Leave this field empty"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "For DIYers & woodworkers · by a pro with 15 years in the trade",
+      "title": "From your first cut to your <mark>own workshop.</mark>",
+      "text": "Woodworking from A to Z, filmed on real jobs in a 900 m² shop. Whether you build at home or you're setting up your own workshop, I show you every step, every tool and every mistake.",
+      "photoAlt": "Tom at the panel saw in the workshop, on a real job",
+      "nameTag": "Tom",
+      "nameTagRole": "Woodworker & creator · 15 yrs",
+      "badge": "Real jobs, not sets"
+    },
+    "proof": {
+      "label": "In numbers",
+      "followers": "makers following on IG, YouTube & TikTok",
+      "monthlyReach": "monthly views",
+      "yearsValue": "{count} yrs",
+      "years": "building for paying clients",
+      "workshopValue": "{count} m²",
+      "workshop": "real workshop",
+      "workedWith": "Worked with"
+    },
+    "why": {
+      "eyebrow": "Why learn from me",
+      "title": "Most videos show you the result. I show you the decisions.",
+      "text": "The stuff that takes years to learn and costs money to get wrong.",
+      "items": {
+        "board": {
+          "title": "Which board to buy",
+          "text": "Chipboard, MDF or plywood, and where it actually matters."
+        },
+        "order": {
+          "title": "How much to order",
+          "text": "Cutting lists that leave offcuts, not gaps."
+        },
+        "walls": {
+          "title": "Crooked walls",
+          "text": "Hanging cabinets level when nothing in the room is."
+        },
+        "charge": {
+          "title": "What to charge",
+          "text": "Pricing a job so the hardware and your hours are paid."
+        }
+      }
+    },
+    "paths": {
+      "title": "Two paths. Pick yours.",
+      "home": {
+        "title": "You don't need a workshop to build your own kitchen.",
+        "points": [
+          "A clear plan, from measuring to the last door",
+          "The exact board and hardware list to order",
+          "A result that looks like a pro built it"
+        ],
+        "cta": "Start the home path →"
+      },
+      "shop": {
+        "title": "Build a workshop that pays, not one that eats your evenings.",
+        "points": [
+          "Know exactly what to charge",
+          "Buy only the machines that pay for themselves",
+          "Plan a job in minutes, not a whole evening"
+        ],
+        "cta": "Start the shop path →"
+      }
+    },
+    "lead": {
+      "eyebrow": "Start free",
+      "title": "The 10-tool starter list I'd buy again today.",
+      "text": "No guesswork, no tools you'll never use. Straight to your inbox.",
+      "submit": "Send me the list"
+    },
+    "plans": {
+      "eyebrow": "Plans & guides",
+      "title": "Plans from real jobs, not drawn at a desk.",
+      "seeAll": "See all plans →",
+      "note": "All plans and ebooks are PDFs in English. More languages are coming."
+    },
+    "realJobs": {
+      "eyebrow": "Real jobs",
+      "title": "Built for clients. Now in your hands as plans."
+    },
+    "about": {
+      "title": "Hi, I'm Tom.",
+      "p1": "I've built kitchens, wardrobes and full interiors for clients for 15 years. Everything I film is a real job, not a set. I share what took me years to learn, the plans, the numbers and the mistakes, so you can skip them.",
+      "p2": "Whether you're building your first kitchen at home or your first workshop, start here.",
+      "homeCta": "I build at home",
+      "shopCta": "I'm setting up my shop",
+      "portraitAlt": "Portrait of Tom in the workshop, holding a saw blade"
+    }
+  },
+  "gallery": {
+    "panelSaw": "Tom loading a board onto the panel saw",
+    "edgeBander": "Tom feeding a panel into the edge bander",
+    "cnc": "CNC machining center in the workshop",
+    "edgeBanderLine": "Edge banding machine with overhead dust extraction",
+    "workshopWide": "Wide view of the workshop with board racks and a hot press",
+    "shopFloor": "The shop floor with a sliding table saw and spindle moulder"
+  },
+  "buildAtHome": {
+    "badge": "Build at home",
+    "title": "You don't need a workshop to build your own kitchen.",
+    "text": "Get the panels cut and edged at a cutting service, assemble at home with basic tools. I'll show you the exact plan, the shopping list and the order of every step.",
+    "ctaSteps": "See the 5 steps",
+    "ctaPlans": "Plans for your kitchen",
+    "roadmapEyebrow": "The roadmap",
+    "roadmapTitle": "From empty room to finished kitchen in 5 steps.",
+    "steps": {
+      "measure": {
+        "title": "Measure & plan",
+        "text": "How to measure the room and lay out the cabinets so nothing clashes with pipes and sockets."
+      },
+      "order": {
+        "title": "Order the material",
+        "text": "How many boards, where to get them cut, which hardware to order."
+      },
+      "boxes": {
+        "title": "Build the boxes",
+        "text": "Assembling square, sturdy carcasses at home, in batches."
+      },
+      "install": {
+        "title": "Install",
+        "text": "Crooked walls, hanging wall cabinets, fitting the worktop."
+      },
+      "finish": {
+        "title": "Finish",
+        "text": "Doors in one pass, plinths, lighting and the final checklist."
+      }
+    },
+    "freeVideo": "Free video",
+    "productsTitle": "Everything for building at home",
+    "listTitle": "Not sure where to start?",
+    "listText": "Get the 10-tool starter list I'd buy again today. Free.",
+    "listSubmit": "Send me the list",
+    "switchPath": "Building for clients? Go to the shop path →"
+  },
+  "ownShop": {
+    "badge": "Your own shop",
+    "title": "Build a workshop that pays, not one that <mark>eats your evenings.</mark>",
+    "text": "15 years of running jobs for clients: what to buy first, what to charge, and how to plan a job in minutes instead of a whole evening.",
+    "ctaSteps": "See the 6 steps",
+    "ctaTools": "Tools & guides",
+    "photoAlt": "The workshop with a wide-belt sander and overhead dust extraction",
+    "roadmapEyebrow": "The roadmap",
+    "roadmapTitle": "From empty garage to your first job with profit.",
+    "stepLabel": "Step {number}",
+    "ownToolLabel": "Step {number} · My own tool",
+    "steps": {
+      "space": {
+        "title": "Space without wasted money",
+        "text": "Layout and space that work before you spend a cent on machines."
+      },
+      "machines": {
+        "title": "Machines that pay for themselves",
+        "text": "What to buy first, and what to leave to a cutting service."
+      },
+      "cutting": {
+        "title": "Cutting plans without waste",
+        "text": "I built MebCut for this. Snap a photo of your cut list and get the cutting plan in seconds.",
+        "cta": "Try MebCut free →"
+      },
+      "pricing": {
+        "title": "Price with profit",
+        "text": "A price that covers the hardware, your hours and the margin."
+      },
+      "clients": {
+        "title": "Your first clients",
+        "text": "Where to find them and how not to sell yourself cheap."
+      },
+      "evenings": {
+        "title": "Evenings at home",
+        "text": "Processes, so the whole shop doesn't stand on you."
+      }
+    },
+    "productsTitle": "Tools & guides for your shop",
+    "mebcut": {
+      "label": "App · mebcut.com",
+      "text": "Cutting plans from a photo, cutting assistant on your phone.",
+      "price": "Free to start"
+    },
+    "waitlist": {
+      "eyebrow": "Live online workshop · coming soon",
+      "title": "Price a job with profit, not for free.",
+      "text": "2 hours live, a calculator you keep, and you'll never forget the hardware again. Join the list and get the date first.",
+      "submit": "Join the list"
+    },
+    "switchPath": "Building for yourself? Go to the home path →",
+    "freeVideo": "Free video"
+  },
+  "start": {
+    "title": "From your first cut to your <mark>own workshop.</mark>",
+    "text": "Pick your path, or get the free 10-tool starter list first.",
+    "leadTitle": "The 10-tool starter list I'd buy again today.",
+    "leadText": "No guesswork, no tools you'll never use. Straight to your inbox.",
+    "submit": "Send me the list"
+  },
+  "videos": {
+    "title": "Videos",
+    "text": "Real jobs, filmed in the shop. A new video every week on YouTube, shorter cuts almost daily on Instagram and TikTok.",
+    "longFormTitle": "Long-form videos",
+    "tiktokTitle": "Latest on TikTok",
+    "channelsTitle": "Channels",
+    "youtube": "New video every week, straight from the shop.",
+    "instagram": "Daily cuts, reels and behind-the-scenes.",
+    "tiktok": "Short clips from real jobs.",
+    "facebook": "Weekly recaps from the shop."
+  },
+  "forBrands": {
+    "title": "Work with TallWoodMaker",
+    "p1": "My audience is woodworkers and DIYers from Europe and the USA: people who are actually building something, from a first kitchen at home to their own workshop.",
+    "p2": "Everything I film is a real client job in a working shop, so your tool or material is shown the way it's really used, not staged for the camera.",
+    "statsTitle": "In numbers",
+    "contactTitle": "Let's talk",
+    "contactText": "Tell me about your product and what you have in mind. I'll get back to you personally.",
+    "emailCta": "Email me"
+  },
+  "about": {
+    "title": "Hi, I'm Tom.",
+    "photoAlt": "Tom, TallWoodMaker, holding a saw blade in the workshop",
+    "storyP1": "I got into woodworking by fixing an old shelf that was headed for the dump. The first piece came out crooked, the second was better, and the third ended up online. From there it grew into daily shop work.",
+    "storyP2": "The content I make isn't just a highlight reel. I show the measurements that didn't work, the tools that deserve more attention, and the calls made right at the saw.",
+    "process": {
+      "title": "Process",
+      "text": "From design to finish: every step documented, including the mistakes."
+    },
+    "tools": {
+      "title": "Tools",
+      "text": "A mix of hand tools and machines. I explain what and why."
+    },
+    "community": {
+      "title": "Community",
+      "text": "Questions from the comments often become the next video's topic."
+    },
+    "wideAlt": "Wide view of the workshop with a wide-belt sander and overhead dust extraction",
+    "galleryTitle": "Gallery",
+    "galleryText": "A look inside the shop: the machines, the process and the people behind every build.",
+    "galleryItems": {
+      "cnc": {
+        "title": "Biesse Rover CNC machine",
+        "category": "CNC machine",
+        "alt": "Biesse Rover A Smart CNC machining center in the workshop"
+      },
+      "edgeBanding": {
+        "title": "Edge banding in progress",
+        "category": "Edge banding",
+        "alt": "Edge banding machine applying banding to a panel"
+      },
+      "feedingEdgeBander": {
+        "title": "Feeding the edge bander",
+        "category": "Edge banding",
+        "alt": "Tom feeding a panel into the edge banding machine"
+      },
+      "onPanelSaw": {
+        "title": "On the panel saw",
+        "category": "Panel saw",
+        "alt": "Tom loading a board onto the Biesse Selco panel saw"
+      },
+      "panelSaw": {
+        "title": "Biesse Selco panel saw",
+        "category": "Panel saw",
+        "alt": "Biesse Selco WN2 panel saw and outfeed tables"
+      },
+      "break": {
+        "title": "A break in the shop",
+        "category": "Behind the scenes",
+        "alt": "Tom standing in the workshop next to stacked panel offcuts"
+      },
+      "controls": {
+        "title": "Edge bander controls",
+        "category": "Edge banding",
+        "alt": "Cehisa edge banding machine control panel"
+      },
+      "storage": {
+        "title": "Board storage & hot press",
+        "category": "Workshop overview",
+        "alt": "Wide view of the workshop with board racks and a hot press"
+      },
+      "dust": {
+        "title": "Dust extraction & sanding line",
+        "category": "Workshop overview",
+        "alt": "Workshop overview with a wide-belt sander and overhead dust extraction ducting"
+      },
+      "slidingSaw": {
+        "title": "Sliding table saw",
+        "category": "Workshop overview",
+        "alt": "Workshop overview with a sliding table saw and spindle moulder"
+      },
+      "fravol": {
+        "title": "Fravol edge bander",
+        "category": "Edge banding",
+        "alt": "Fravol edge banding machine with overhead dust extraction piping"
+      },
+      "floor": {
+        "title": "The shop floor",
+        "category": "Workshop overview",
+        "alt": "Fravol edge bander and the shop's overhead ducting network"
+      }
+    },
+    "videoTitle": "Video & social",
+    "videoText": "New video every week. Shorter cuts land daily on Instagram and TikTok.",
+    "youtubeCardTitle": "Watch on YouTube",
+    "youtubeCardText": "New video every week, straight from the shop.",
+    "instagramCardTitle": "Follow on Instagram",
+    "instagramCardText": "Daily cuts, reels and behind-the-scenes from the shop.",
+    "tiktokCardTitle": "Watch on TikTok",
+    "tiktokCardText": "The latest TikToks are on the Videos page.",
+    "tiktokCardCta": "Videos →",
+    "facebookText": "Weekly recaps and live streams from the shop.",
+    "followBuild": "Follow the build"
+  },
+  "shop": {
+    "title": "Plans & guides",
+    "text": "Plans, cutting lists and ebooks from real jobs, not drawn at a desk.",
+    "note": "All plans and ebooks are PDFs in English. More languages are coming.",
+    "all": "All",
+    "categories": {
+      "ebooks": "Ebooks",
+      "plans": "Plans",
+      "bundles": "Bundles"
+    },
+    "addToCart": "Add to cart",
+    "inCartRemove": "In cart · Remove",
+    "placeholder": {
+      "plan": "plan preview",
+      "ebook": "ebook cover",
+      "bundle": "bundle cover"
+    }
+  },
+  "product": {
+    "back": "← Back to shop",
+    "whatYouLearn": "What you'll learn",
+    "whatsIncluded": "What's included",
+    "onItsOwn": "{price} on its own",
+    "view": "View →",
+    "sampleEbook": "A sample page from the ebook",
+    "samplePlan": "A sample page from the plan",
+    "sampleAlt": "Sample page from {title}",
+    "pdfNote": "The PDF is in English."
+  },
+  "cart": {
+    "title": "Your cart",
+    "empty": "Your cart is empty.",
+    "back": "← Back to shop",
+    "remove": "Remove",
+    "subtotal": "Subtotal",
+    "consent": "I want immediate access to this digital content and I acknowledge that I lose my right of withdrawal once delivery begins. I agree to the <terms>Terms of Service</terms>.",
+    "checkout": "Checkout",
+    "redirecting": "Redirecting…",
+    "errorEmpty": "Your cart is empty, or everything in it is no longer available.",
+    "errorConsent": "Please confirm you want immediate access to your digital purchase to continue.",
+    "errorNoUrl": "Stripe did not return a checkout URL. Please try again."
+  },
+  "success": {
+    "notConfirmedTitle": "Payment not confirmed yet",
+    "notConfirmedText": "If you just completed checkout, refresh this page in a moment. It can take a few seconds to confirm. Still stuck? Email <email>tom@tallwoodmaker.com</email> and mention this order.",
+    "thanksTitle": "{count, plural, one {Thanks, here's your download} other {Thanks, here are your downloads}}",
+    "download": "Download {file}",
+    "failure": "Your payment went through, but we hit a snag generating the download link for {titles}. Email <email>tom@tallwoodmaker.com</email> with this order ID and we'll send it over:",
+    "expiry": "These links work for 24 hours. If one expires, bookmark this page and revisit it. Reopening it generates fresh links."
+  },
+  "premium": {
+    "badge": "Premium",
+    "title": "Premium Video",
+    "text": "Full builds and extended cuts for members. New content added regularly.",
+    "empty": "New content coming soon. Check back shortly.",
+    "announcements": "Announcements",
+    "tabs": {
+      "all": "All",
+      "article": "Articles",
+      "video": "Videos",
+      "plan_download": "Downloads"
+    },
+    "types": {
+      "article": "Article",
+      "video": "Video",
+      "plan_download": "Download",
+      "announcement": "Update"
+    },
+    "nothingYet": "Nothing here yet.",
+    "download": "Download",
+    "videoPlaceholder": "video thumbnail",
+    "preview": "preview"
+  },
+  "subscribe": {
+    "badge": "Premium",
+    "title": "TallWoodMaker Premium",
+    "waitlistText": "Full builds, extended cuts and shop files for members. Premium access opens soon. Join the waitlist to be first in line.",
+    "launchOffer": "Launch offer",
+    "launchTitle": "Sign up now and get 50% off your first 3 months",
+    "launchText": "Waitlist members get first access when doors open, plus the discount applied automatically at checkout.",
+    "heroText": "Full builds, extended cuts and shop files: the stuff that doesn't fit on YouTube. Join for €9/month and get access right away.",
+    "included": "What's included",
+    "previewText": "A preview of what's waiting inside. New content added every month.",
+    "membersOnly": "Members only",
+    "fallbackBenefits": [
+      "Full build videos, start to finish: every step, not just the highlights",
+      "Extended cuts and shop tours beyond what's on YouTube",
+      "Downloadable plans and cut lists for select builds",
+      "New content added every month",
+      "Cancel anytime, no long-term commitment"
+    ],
+    "offerBadge": "Launch offer: 50% off your first 3 months",
+    "price": "€9",
+    "perMonth": "/month",
+    "codeText": "Have a launch code? Enter it at checkout for 50% off your first 3 months.",
+    "consent": "I want immediate access to Premium and I acknowledge that I lose my right of withdrawal once access begins. I agree to the <terms>Terms of Service</terms>.",
+    "consentError": "Please confirm the checkbox to continue.",
+    "linkExpired": "That sign-in link expired or was already used. Request a new one below.",
+    "subscribeCta": "Subscribe now: €9/month",
+    "signInPrompt": "Enter your email to sign in and continue to checkout",
+    "faqTitle": "Good to know",
+    "faq": [
+      {
+        "q": "Can I cancel anytime?",
+        "a": "Yes. Cancel from your account whenever you like. You'll keep access until the end of the billing period you already paid for."
+      },
+      {
+        "q": "How does billing work?",
+        "a": "€9/month, billed automatically until you cancel. No annual contract."
+      },
+      {
+        "q": "What happens right after I sign up?",
+        "a": "You'll get a sign-in link by email, then land straight on checkout. Access unlocks as soon as payment completes."
+      },
+      {
+        "q": "What do I actually get?",
+        "a": "Everything in \"What's included\" above, plus anything new added to Premium during your membership."
+      }
+    ],
+    "countdown": {
+      "days": "Days",
+      "hours": "Hours",
+      "minutes": "Minutes",
+      "seconds": "Seconds"
+    },
+    "waitlist": {
+      "join": "Join the waitlist",
+      "joining": "Joining…",
+      "joined": "You're on the list. We'll email you when Premium opens.",
+      "error": "Couldn't join the waitlist. Please try again."
+    },
+    "magicLink": {
+      "send": "Email me a link",
+      "sending": "Sending…",
+      "sent": "Check {email} for a sign-in link.",
+      "error": "Couldn't send the link. Please try again."
+    }
+  },
+  "confirmSignIn": {
+    "title": "Confirm sign-in",
+    "text": "For your security, we only sign you in once you click below. This stops email link scanners from using up the link before you do.",
+    "button": "Confirm sign-in"
+  },
+  "contact": {
+    "title": "Contact",
+    "text": "Custom builds, content collaborations or just a question about a project: get in touch.",
+    "name": "Name",
+    "namePlaceholder": "Your name",
+    "email": "Email",
+    "emailPlaceholder": "you@email.com",
+    "message": "Message",
+    "messagePlaceholder": "Describe your project or question",
+    "send": "Send",
+    "emailHeading": "Email",
+    "workshopHeading": "Workshop",
+    "workshopValue": "Slovakia",
+    "socialHeading": "Social"
+  },
+  "collaborate": {
+    "title": "Collaborate",
+    "intro": "I build for brands the same way I build for the camera: no shortcuts, no filler. If your tools or materials belong in a real shop, let's talk.",
+    "heroAlt": "Biesse Rover A Smart CNC machining center in the workshop",
+    "philosophyTitle": "Build. Share. Inspire.",
+    "philosophyText": "The philosophy behind everything I build, on camera or off.",
+    "story": "I'm Tom: fifteen years working wood professionally, not since I picked up a camera. TallWoodMaker documents real client work: kitchens, custom furniture and full interior fit-outs, run on CNC machinery and panel saws every day, not weekend projects. The channel exists to pass the trade on properly, the way it was taught to me. Entertainment is a side effect, not the point.",
+    "numbersTitle": "By the numbers",
+    "numbersText": "A quick look at the audience behind the channel.",
+    "stats": {
+      "followers": "Combined followers",
+      "reach": "Monthly reach",
+      "years": "Years in the trade"
+    },
+    "gettingTitle": "What you're actually getting",
+    "gettingText": "Here's what a partnership actually puts in front of real woodworkers.",
+    "photoAlts": {
+      "panelSaw": "Tom loading a board onto the Biesse Selco panel saw",
+      "edgeBanding": "Edge banding machine applying banding to a panel",
+      "workshop": "Wide view of the workshop with board racks and a hot press"
+    },
+    "benefits": {
+      "audience": {
+        "title": "An audience that works with wood",
+        "text": "Woodworking enthusiasts and aspiring professionals, not casual scrollers: people who watch because they're actually building something."
+      },
+      "footage": {
+        "title": "Real shop footage",
+        "text": "Tools and materials shown exactly as they're used on real jobs, in a working shop. Nothing staged for the camera."
+      },
+      "voice": {
+        "title": "A credible voice",
+        "text": "Fifteen years of trade experience behind every recommendation, not a creator reading a script for a brand deal."
+      }
+    },
+    "optionsTitle": "Partnership options",
+    "optionsText": "A few ways to work together. Every partnership is scoped to fit.",
+    "options": {
+      "mention": {
+        "title": "Product mention",
+        "text": "Your tool or material shown and named in a regular build video."
+      },
+      "feature": {
+        "title": "Dedicated feature",
+        "text": "A full video built around your product: review, test or tutorial."
+      },
+      "ongoing": {
+        "title": "Ongoing partnership",
+        "text": "Multiple videos over a season, plus shop and social mentions."
+      }
+    },
+    "quote": "Get a quote",
+    "talkTitle": "Let's talk",
+    "talkText": "If your tools or materials would hold up in a working shop, get in touch and let's figure out what makes sense.",
+    "talkCta": "Start a conversation"
+  },
+  "benefits": {
+    "title": "Benefits",
+    "intro": "Tools and materials I actually use in the workshop, with discount codes for my community.",
+    "text": "These are the brands that show up in real client work, not sponsors I tried once for a video. If it's listed here, it's because it earned a place in the shop first. The discount is a real perk for the people who follow along, not another ad.",
+    "deals": {
+      "spetool": {
+        "category": "Woodworking tools: CNC router bits, panel clamps, router sleds, dust collection accessories",
+        "text": "Precision router bits and workshop accessories used in real client projects, not just reviewed, actually used.",
+        "discount": "10% off your order"
+      }
+    },
+    "visit": "Visit site →",
+    "noCode": "No code needed. The discount applies automatically through the link above.",
+    "moreTitle": "More deals coming soon",
+    "moreText": "I'm adding more discount codes for the tools and materials I actually use in the shop. Check back soon."
+  },
+  "legal": {
+    "englishOnly": "This document is available in English only."
+  },
+  "cookies": {
+    "bannerText": "We use cookies to keep the site running and, with your consent, to understand how it's used. See our <link>Cookie Policy</link> for details.",
+    "manage": "Manage preferences",
+    "reject": "Reject non-essential",
+    "accept": "Accept all",
+    "save": "Save preferences",
+    "modalTitle": "Cookie preferences",
+    "modalText": "Choose which cookies we can use. You can change this anytime from the footer link.",
+    "necessary": {
+      "title": "Necessary",
+      "text": "Required for sign-in and checkout to work. Always on.",
+      "label": "Necessary cookies"
+    },
+    "analytics": {
+      "title": "Analytics",
+      "text": "Helps us understand how visitors use the site, so we can improve it.",
+      "label": "Analytics cookies"
+    },
+    "marketing": {
+      "title": "Marketing",
+      "text": "Used to measure and personalize ads. Off unless you turn it on.",
+      "label": "Marketing cookies"
+    }
+  },
+  "notFound": {
+    "title": "Page not found",
+    "text": "This page doesn't exist or has moved.",
+    "home": "Back to the homepage"
+  },
+  "products": {
+    "plan-kids-chair": {
+      "short": "A simple, sturdy kids' chair. Beginner-friendly.",
+      "description": "Full dimensioned plan and cut list for a simple, sturdy kids' chair. Beginner-friendly, no jigs required.",
+      "whatYouLearn": []
+    },
+    "ebook-zero-to-first-client": {
+      "short": "Design, outsource the cutting, assemble, get paid.",
+      "description": "How I went from making things for myself to landing my first paying woodworking client: the exact steps, in order.",
+      "whatYouLearn": []
+    },
+    "plan-kitchen-cabinet-library": {
+      "short": "Cutting lists and drawings for 4 cabinet modules.",
+      "description": "Four kitchen cabinet types, one module system: dimensioned plans and cutting lists for base, wall, tall/pantry and corner cabinets that all fit together.",
+      "whatYouLearn": [
+        "Build all four core cabinet types — base, wall, tall/pantry and corner cabinets as one matched module system, not four separate one-off builds.",
+        "Get a full cutting list and dimensioned drawing for every module — nothing guessed, nothing left to figure out on the workshop floor.",
+        "Order the right hardware the first time — confirmat screws, cam locks, hinges and adjustable feet, sized correctly for each cabinet type.",
+        "Handle the corner cabinet with confidence — the one part of most kitchens that trips people up, planned and drawn like every other module.",
+        "Finish cabinets that hold up to daily use — the surface and maintenance steps that keep a kitchen looking right for years."
+      ]
+    },
+    "ebook-kitchen-from-scratch": {
+      "short": "From measuring the room to the last door.",
+      "description": "Everything I wish I knew before building my first kitchen: measuring, cutting, installing and finishing, start to end, without a professional workshop.",
+      "whatYouLearn": [
+        "Read any kitchen — measure a room, set a story pole and lay out a work triangle that actually works before you cut a single board.",
+        "Turn a layout into a real order — merge cutting lists, count boards and order the hardware you need, with nothing guessed and nothing wasted.",
+        "Build and install cabinets that sit right — batch-build the boxes, then level, join and scribe a run of base and wall cabinets so they sit solid and square.",
+        "Template and fit a worktop yourself — including sink and hob cutouts, joins and sealing, without paying a fabricator to do it for you.",
+        "Finish it like a pro — doors hung straight in one pass, plinths fitted, lighting wired in and a final checklist so nothing gets missed."
+      ]
+    },
+    "ebook-wardrobes-closets": {
+      "short": "Built-in, freestanding and walk-in systems.",
+      "description": "Three wardrobe systems, one guide: built-in sliding-door, freestanding hinged and walk-in open shelving, planned, built and fitted.",
+      "whatYouLearn": [
+        "Choose the right system for your space — built-in sliding-door, freestanding hinged-door or walk-in open shelving, compared by the depth and clearance each one actually needs.",
+        "Build a built-in sliding wardrobe into an alcove — using the walls and ceiling as structure, with the header rail and track sized right.",
+        "Build a freestanding hinged wardrobe from a full six-sided carcass — with the correct hinge count for the door height, not guessed.",
+        "Lay out the inside properly — hanging heights, rail specs and shelf spacing that actually fit clothes, not just look right on paper.",
+        "Fit the hardware and finish the job — sliding door tracks, drawers and accessories, through to a final install-day checklist."
+      ]
+    },
+    "plan-wardrobe-cabinet-library": {
+      "short": "Technical drawings for all three wardrobe systems.",
+      "description": "Three wardrobe systems, one shared construction method: dimensioned plans and cutting lists for built-in sliding-door, freestanding hinged-door and walk-in open systems.",
+      "whatYouLearn": [
+        "Choose the right wardrobe system for your space — built-in sliding-door, freestanding hinged-door or walk-in open, compared by the depth, height and clearance each one actually needs.",
+        "Build any of the three from one shared carcass and hardware system — the construction logic stays the same whichever format fits your room.",
+        "Follow a full cutting list and dimensioned drawing for each system — nothing guessed, nothing left to figure out on the workshop floor.",
+        "Get hanging heights, shelf spacing and door hardware specs that apply across all three systems — sized correctly the first time.",
+        "Assemble step by step — from marking the first wall cleat or header rail through to the final trim and hardware fit."
+      ]
+    },
+    "plan-kids-bunk-bed": {
+      "short": "Solid pine, 90 cm on top, 140 cm below.",
+      "description": "A twin-over-full solid pine bunk bed, built safe from the start: fixed ladder, full-height guard rail, complete cutting list and step-by-step assembly.",
+      "whatYouLearn": [
+        "Build a complete twin-over-full bunk bed — a narrower single bed up top, a wider bed below, from one solid pine cutting list.",
+        "Follow a full cutting list and dimensioned drawing — 13 rows, 50 parts, front and side views with every measurement called out.",
+        "Assemble it in the right order — base frame, slats, upper frame, slats, guard rail and ladder, then a final check, step by step.",
+        "Fit a fixed ladder and a full-height guard rail — built in from the start, not bolted on as an afterthought.",
+        "Finish it safe for kids — the guard-rail spacing and age guidance to check against your local safety standard before it's used."
+      ]
+    },
+    "bundle-kitchen-starter": {
+      "short": "The ebook and all cabinet plans for a whole kitchen.",
+      "description": "Everything you need to build your own kitchen: the complete how-to ebook plus the matching cabinet plans, together for less than buying them separately.",
+      "whatYouLearn": [
+        "Plan and build a complete kitchen from scratch — measuring the room, setting a work triangle, ordering materials and installing cabinets, start to finish.",
+        "Build every cabinet type you need from one matched system — base, wall, tall/pantry and corner cabinets, all sharing the same construction, material and hardware.",
+        "Get every cutting list and dimensioned drawing in one package — nothing guessed, nothing left to figure out on the workshop floor.",
+        "Fit and finish it like a pro — template and fit the worktop yourself, hang doors straight and finish cabinets that hold up to daily use.",
+        "Save €10 versus buying both separately — €33 instead of €43."
+      ]
+    },
+    "bundle-complete-builder": {
+      "short": "Business mindset + client-ready kitchen and wardrobe plans.",
+      "description": "Business mindset + client-ready kitchen and wardrobe plans: everything to go from building for yourself to building for paying clients.",
+      "whatYouLearn": [
+        "Go from building for yourself to building for paying clients — the exact steps, tools and budget it actually takes to land your first paid job.",
+        "Build a complete kitchen and both major wardrobe formats — plan the room, order material and install cabinets and wardrobes to a professional standard.",
+        "Work from one shared cabinet-construction system across kitchens and wardrobes — base, wall, tall/pantry and corner kitchen modules, plus built-in sliding, freestanding hinged and walk-in open wardrobe systems.",
+        "Get every cutting list and dimensioned drawing across all four plans in one package — nothing guessed, nothing left to figure out on the workshop floor.",
+        "Save €42 versus buying all five separately — €63 instead of €105."
+      ]
+    }
+  }
+}

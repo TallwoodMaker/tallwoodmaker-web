@@ -1,5 +1,6 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import { useConsent } from "./ConsentContext";
 
 export default function CookieSettingsLink({
@@ -8,10 +9,11 @@ export default function CookieSettingsLink({
   className?: string;
 }) {
   const { openPreferences } = useConsent();
+  const t = useTranslations("footer");
 
   return (
     <button type="button" onClick={openPreferences} className={className}>
-      Cookie settings
+      {t("cookieSettings")}
     </button>
   );
 }
