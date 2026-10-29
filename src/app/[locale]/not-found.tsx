@@ -12,7 +12,7 @@ export default function LocaleNotFound() {
       <TopBar />
       <Header />
       <main className="container-page section-px flex flex-1 flex-col items-start justify-center gap-4 py-24">
-        <h1 className="text-[clamp(32px,5vw,48px)] font-bold tracking-[-0.02em]">
+        <h1 className="text-[clamp(32px,5vw,48px)] font-bold tracking-[-0.03em]">
           {t("title")}
         </h1>
         <p className="text-[17px] text-ink-muted">{t("text")}</p>

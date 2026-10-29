@@ -72,7 +72,7 @@ export default async function ShopSuccessPage({
     return (
       <>
         <section className="container-page section-px py-[clamp(24px,5vw,64px)]">
-          <h1 className="mb-4 text-[clamp(32px,5vw,44px)] font-bold leading-[1.1] tracking-[-0.02em]">
+          <h1 className="mb-4 text-[clamp(32px,5vw,44px)] font-bold leading-[1.1] tracking-[-0.03em]">
             {t("notConfirmedTitle")}
           </h1>
           <p className="max-w-[560px] text-[17px] leading-[1.6] text-ink-muted">
@@ -118,7 +118,7 @@ export default async function ShopSuccessPage({
     <>
       <ClearCartOnSuccess />
       <section className="container-page section-px py-[clamp(24px,5vw,64px)]">
-        <h1 className="mb-4 text-[clamp(32px,5vw,44px)] font-bold leading-[1.1] tracking-[-0.02em]">
+        <h1 className="mb-4 text-[clamp(32px,5vw,44px)] font-bold leading-[1.1] tracking-[-0.03em]">
           {t("thanksTitle", { count: Math.max(1, downloads.length) })}
         </h1>
 

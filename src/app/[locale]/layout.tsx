@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { Space_Grotesk, IBM_Plex_Sans, JetBrains_Mono } from "next/font/google";
+import { Schibsted_Grotesk, JetBrains_Mono } from "next/font/google";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import "../globals.css";
@@ -13,16 +13,11 @@ import RefTracker from "@/components/cookies/RefTracker";
 import { routing } from "@/i18n/routing";
 import { SITE_URL } from "@/i18n/metadata";
 
-const grotesk = Space_Grotesk({
-  variable: "--font-grotesk",
+// One family for headings and body text; latin-ext covers pl/cs/sk.
+const schibsted = Schibsted_Grotesk({
+  variable: "--font-schibsted",
   subsets: ["latin", "latin-ext"],
-  weight: ["500", "700"],
-});
-
-const plex = IBM_Plex_Sans({
-  variable: "--font-plex",
-  subsets: ["latin", "latin-ext"],
-  weight: ["400", "500", "600", "700"],
+  weight: ["400", "500", "700", "800", "900"],
 });
 
 const jetbrains = JetBrains_Mono({
@@ -80,7 +75,7 @@ export default async function LocaleLayout({
   return (
     <html
       lang={locale}
-      className={`${grotesk.variable} ${plex.variable} ${jetbrains.variable}`}
+      className={`${schibsted.variable} ${jetbrains.variable}`}
     >
       <body className="flex min-h-screen flex-col bg-cream font-sans text-ink antialiased">
         <NextIntlClientProvider>

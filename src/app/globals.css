@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 @theme inline {
-  --font-sans: var(--font-plex), "IBM Plex Sans", system-ui, sans-serif;
-  --font-display: var(--font-grotesk), "Space Grotesk", sans-serif;
+  --font-sans: var(--font-schibsted), "Schibsted Grotesk", system-ui, sans-serif;
+  --font-display: var(--font-schibsted), "Schibsted Grotesk", sans-serif;
   --font-mono: var(--font-jetbrains), "JetBrains Mono", monospace;
 
   --color-cream: #faf9f5;
@@ -45,6 +45,18 @@
   background: linear-gradient(transparent 62%, var(--color-brand) 62%);
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
+}
+
+/*
+ * Headings (and display-font titles like card names and stats) are weight
+ * 800. Deliberately unlayered so it wins over the font-bold utilities those
+ * elements already carry.
+ */
+h1,
+h2,
+h3,
+.font-display {
+  font-weight: 800;
 }
 
 /*

@@ -29,7 +29,7 @@ export default function CartPageClient() {
 
   return (
     <section className="container-page section-px py-[clamp(40px,7vw,72px)]">
-      <h1 className="mb-8 text-[clamp(30px,4vw,44px)] font-bold leading-[1.1] tracking-[-0.02em]">
+      <h1 className="mb-8 text-[clamp(30px,4vw,44px)] font-bold leading-[1.1] tracking-[-0.03em]">
         {t("title")}
       </h1>
 

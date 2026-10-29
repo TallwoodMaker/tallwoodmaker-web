@@ -53,7 +53,7 @@ function BuildAtHome() {
           <span className="self-start rounded-full bg-brand px-3.5 py-1.5 text-[13px] font-semibold">
             {t("badge")}
           </span>
-          <h1 className="text-[clamp(38px,5vw,68px)] font-bold leading-[1.03] tracking-[-0.02em]">
+          <h1 className="text-[clamp(38px,5vw,68px)] font-bold leading-[1.03] tracking-[-0.03em]">
             {t("title")}
           </h1>
           <p className="max-w-[600px] text-[19px] leading-[1.55] text-ink-soft">
@@ -83,7 +83,7 @@ function BuildAtHome() {
         <div className="container-page section-px flex flex-col gap-9 py-[clamp(56px,8vw,88px)]">
           <div className="flex flex-col gap-2.5">
             <div className="eyebrow text-ink-muted">{t("roadmapEyebrow")}</div>
-            <h2 className="text-[clamp(30px,3.4vw,46px)] font-bold tracking-[-0.02em]">
+            <h2 className="text-[clamp(30px,3.4vw,46px)] font-bold tracking-[-0.03em]">
               {t("roadmapTitle")}
             </h2>
           </div>
@@ -147,7 +147,7 @@ function BuildAtHome() {
           id="products"
           className="container-page section-px flex scroll-mt-4 flex-col gap-8 py-[clamp(56px,8vw,88px)]"
         >
-          <h2 className="text-[clamp(30px,3.4vw,46px)] font-bold tracking-[-0.02em]">
+          <h2 className="text-[clamp(30px,3.4vw,46px)] font-bold tracking-[-0.03em]">
             {t("productsTitle")}
           </h2>
           <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
@@ -174,7 +174,7 @@ function BuildAtHome() {
       <section id="list" className="bg-brand">
         <div className="container-page section-px flex flex-wrap items-center justify-between gap-8 py-16">
           <div className="flex min-w-0 flex-[1_1_460px] flex-col gap-2.5">
-            <h2 className="text-[clamp(28px,3vw,40px)] font-bold tracking-[-0.02em]">
+            <h2 className="text-[clamp(28px,3vw,40px)] font-bold tracking-[-0.03em]">
               {t("listTitle")}
             </h2>
             <p className="text-[18px]">{t("listText")}</p>

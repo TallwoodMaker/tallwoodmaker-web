@@ -36,7 +36,7 @@ export default async function UnsubscribePage({
 
   return (
     <section className="container-page section-px flex max-w-[640px] flex-col gap-5 py-[clamp(48px,8vw,96px)]">
-      <h1 className="text-[clamp(32px,4.5vw,48px)] font-bold tracking-[-0.02em]">
+      <h1 className="text-[clamp(32px,4.5vw,48px)] font-bold tracking-[-0.03em]">
         {t("title")}
       </h1>
       {valid ? (

@@ -51,7 +51,7 @@ export default async function AboutPage({ params }: PageProps<"/[locale]/about">
     <>
       <section className="container-page section-px section-py grid grid-cols-[repeat(auto-fit,minmax(min(340px,100%),1fr))] items-center gap-14">
         <div className="flex flex-col gap-5">
-          <h1 className="text-[clamp(36px,5vw,64px)] font-bold leading-[1.05] tracking-[-0.02em]">
+          <h1 className="text-[clamp(36px,5vw,64px)] font-bold leading-[1.05] tracking-[-0.03em]">
             {t("title")}
           </h1>
           <p className="max-w-[560px] text-[18px] leading-[1.6] text-ink-soft">
@@ -114,7 +114,7 @@ export default async function AboutPage({ params }: PageProps<"/[locale]/about">
       </section>
 
       <section className="container-page section-px section-py border-t border-border">
-        <h2 className="mb-4 text-[clamp(28px,4vw,40px)] font-bold leading-[1.1] tracking-[-0.02em]">
+        <h2 className="mb-4 text-[clamp(28px,4vw,40px)] font-bold leading-[1.1] tracking-[-0.03em]">
           {t("galleryTitle")}
         </h2>
         <p className="mb-10 max-w-[560px] text-[17px] leading-[1.6] text-ink-muted">
@@ -144,7 +144,7 @@ export default async function AboutPage({ params }: PageProps<"/[locale]/about">
       </section>
 
       <section id="video" className="container-page section-px section-py border-t border-border">
-        <h2 className="mb-4 text-[clamp(28px,4vw,40px)] font-bold leading-[1.1] tracking-[-0.02em]">
+        <h2 className="mb-4 text-[clamp(28px,4vw,40px)] font-bold leading-[1.1] tracking-[-0.03em]">
           {t("videoTitle")}
         </h2>
         <p className="mb-10 max-w-[560px] text-[17px] leading-[1.6] text-ink-muted">

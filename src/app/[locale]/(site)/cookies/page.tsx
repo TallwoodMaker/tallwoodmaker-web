@@ -90,7 +90,7 @@ export default async function CookiesPage({
     <>
 
       <section className="container-page section-px pb-10 pt-[clamp(24px,5vw,64px)]">
-        <h1 className="mb-4 text-[clamp(36px,5vw,56px)] font-bold leading-[1.05] tracking-[-0.02em]">
+        <h1 className="mb-4 text-[clamp(36px,5vw,56px)] font-bold leading-[1.05] tracking-[-0.03em]">
           {t("meta.cookies.title")}
         </h1>
         {locale !== "en" && (

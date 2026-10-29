@@ -53,7 +53,7 @@ function OwnShop() {
             <span className="self-start rounded-full bg-cream px-3.5 py-1.5 text-[13px] font-semibold text-ink">
               {t("badge")}
             </span>
-            <h1 className="text-[clamp(38px,5vw,68px)] font-bold leading-[1.03] tracking-[-0.02em]">
+            <h1 className="text-[clamp(38px,5vw,68px)] font-bold leading-[1.03] tracking-[-0.03em]">
               {t.rich("title", {
                 mark: (chunks) => <span className="text-brand">{chunks}</span>,
               })}
@@ -95,7 +95,7 @@ function OwnShop() {
       >
         <div className="flex flex-col gap-2.5">
           <div className="eyebrow text-ink-muted">{t("roadmapEyebrow")}</div>
-          <h2 className="text-[clamp(30px,3.4vw,46px)] font-bold tracking-[-0.02em]">
+          <h2 className="text-[clamp(30px,3.4vw,46px)] font-bold tracking-[-0.03em]">
             {t("roadmapTitle")}
           </h2>
         </div>
@@ -164,7 +164,7 @@ function OwnShop() {
 
       <section id="products" className="scroll-mt-4 border-y border-border bg-white">
         <div className="container-page section-px flex flex-col gap-8 py-[clamp(56px,8vw,88px)]">
-          <h2 className="text-[clamp(30px,3.4vw,46px)] font-bold tracking-[-0.02em]">
+          <h2 className="text-[clamp(30px,3.4vw,46px)] font-bold tracking-[-0.03em]">
             {t("productsTitle")}
           </h2>
           <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
@@ -209,7 +209,7 @@ function OwnShop() {
         <div className="flex flex-wrap items-center gap-9 rounded-[20px] bg-ink p-[clamp(24px,5vw,48px)] text-cream">
           <div className="flex min-w-0 flex-[1_1_480px] flex-col gap-3.5">
             <div className="eyebrow text-brand">{t("waitlist.eyebrow")}</div>
-            <h2 className="text-[clamp(28px,3.2vw,42px)] font-bold leading-[1.08] tracking-[-0.02em]">
+            <h2 className="text-[clamp(28px,3.2vw,42px)] font-bold leading-[1.08] tracking-[-0.03em]">
               {t("waitlist.title")}
             </h2>
             <p className="text-[17px] leading-[1.55] text-on-dark">

@@ -33,7 +33,7 @@ export default async function ShopPage({ params }: PageProps<"/[locale]/shop">) 
   return (
     <>
       <section className="container-page section-px flex flex-col gap-4 pb-10 pt-[clamp(40px,7vw,72px)]">
-        <h1 className="text-[clamp(36px,5vw,56px)] font-bold leading-[1.05] tracking-[-0.02em]">
+        <h1 className="text-[clamp(36px,5vw,56px)] font-bold leading-[1.05] tracking-[-0.03em]">
           {t("title")}
         </h1>
         <p className="max-w-[560px] text-[17px] leading-[1.6] text-ink-soft">

@@ -90,7 +90,7 @@ function Videos() {
   return (
     <>
       <section className="container-page section-px flex flex-col gap-5 pb-10 pt-[clamp(40px,7vw,72px)]">
-        <h1 className="text-[clamp(38px,5vw,64px)] font-bold leading-[1.03] tracking-[-0.02em]">
+        <h1 className="text-[clamp(38px,5vw,64px)] font-bold leading-[1.03] tracking-[-0.03em]">
           {t("title")}
         </h1>
         <p className="max-w-[620px] text-[19px] leading-[1.55] text-ink-soft">

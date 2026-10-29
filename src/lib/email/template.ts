@@ -51,13 +51,12 @@ export function renderEmailHtml(c: EmailContent): string {
   return `<!doctype html>
 <html lang="${c.lang}">
 <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"></head>
-<body style="margin:0;padding:0;background:${CREAM};font-family:'IBM Plex Sans',Helvetica,Arial,sans-serif;">
+<body style="margin:0;padding:0;background:${CREAM};font-family:'Schibsted Grotesk',Helvetica,Arial,sans-serif;">
   <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:${CREAM};">
     <tr><td align="center" style="padding:32px 16px;">
       <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:560px;">
         <tr><td style="padding:0 0 20px;">
-          <span style="display:inline-block;width:36px;height:36px;line-height:36px;border-radius:8px;background:${INK};color:${BRAND};font-weight:700;font-size:15px;text-align:center;vertical-align:middle;">TW</span>
-          <span style="margin-left:10px;font-weight:700;font-size:18px;color:${INK};vertical-align:middle;">TallWoodMaker</span>
+          <span style="display:inline-block;background:${BRAND};color:${INK};padding:7px 13px;font-weight:900;font-size:22px;line-height:1;letter-spacing:-0.02em;">TallWoodMaker</span>
         </td></tr>
         <tr><td style="background:#FFFFFF;border:1px solid ${LINE};border-radius:14px;padding:28px;">
           ${p(c.greeting)}

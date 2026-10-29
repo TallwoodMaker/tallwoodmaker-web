@@ -1,5 +1,6 @@
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
+import { LogoMark } from "@/components/Logo";
 import CookieSettingsLink from "@/components/cookies/CookieSettingsLink";
 
 const SOCIAL_LINKS = [
@@ -18,9 +19,7 @@ export default function Footer() {
   return (
     <footer className="bg-ink text-on-dark">
       <div className="container-page section-px flex flex-wrap items-center justify-between gap-x-6 gap-y-4 pb-6 pt-12 text-[14px]">
-        <span className="font-display text-[18px] font-bold text-cream">
-          TallWoodMaker
-        </span>
+        <LogoMark />
         <nav className="flex flex-wrap gap-x-5">
           {SOCIAL_LINKS.map(({ label, href }) => (
             <a

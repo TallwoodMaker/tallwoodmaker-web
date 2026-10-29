@@ -56,7 +56,7 @@ function ForBrands() {
   return (
     <>
       <section className="container-page section-px flex flex-col gap-5 pb-12 pt-[clamp(40px,7vw,72px)]">
-        <h1 className="max-w-[860px] text-[clamp(38px,5vw,64px)] font-bold leading-[1.03] tracking-[-0.02em]">
+        <h1 className="max-w-[860px] text-[clamp(38px,5vw,64px)] font-bold leading-[1.03] tracking-[-0.03em]">
           {t("title")}
         </h1>
         <p className="max-w-[680px] text-[19px] leading-[1.55] text-ink-soft">
@@ -84,7 +84,7 @@ function ForBrands() {
 
       <section className="container-page section-px py-[clamp(48px,7vw,80px)]">
         <div className="flex flex-col gap-4 rounded-[20px] bg-ink p-[clamp(24px,5vw,48px)] text-cream">
-          <h2 className="text-[clamp(28px,3.2vw,42px)] font-bold tracking-[-0.02em]">
+          <h2 className="text-[clamp(28px,3.2vw,42px)] font-bold tracking-[-0.03em]">
             {t("contactTitle")}
           </h2>
           <p className="max-w-[560px] text-[17px] leading-[1.55] text-on-dark">

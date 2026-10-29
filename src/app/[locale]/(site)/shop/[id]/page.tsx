@@ -104,7 +104,7 @@ export default async function ShopProductPage({
           </div>
 
           <div>
-            <h1 className="mb-3 text-[clamp(28px,4vw,44px)] font-bold leading-[1.1] tracking-[-0.02em]">
+            <h1 className="mb-3 text-[clamp(28px,4vw,44px)] font-bold leading-[1.1] tracking-[-0.03em]">
               {product.title}
             </h1>
             {locale !== "en" && (

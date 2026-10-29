@@ -73,7 +73,7 @@ export default async function PremiumPage({ params }: PageProps<"/[locale]/premi
         <span className="mb-5 inline-block rounded-full bg-ink px-4 py-1.5 text-[13px] font-bold uppercase tracking-[0.03em] text-brand">
           {t("badge")}
         </span>
-        <h1 className="mb-4 text-[clamp(36px,5vw,56px)] font-bold leading-[1.05] tracking-[-0.02em]">
+        <h1 className="mb-4 text-[clamp(36px,5vw,56px)] font-bold leading-[1.05] tracking-[-0.03em]">
           {t("title")}
         </h1>
         <p className="max-w-[560px] text-[17px] leading-[1.6] text-ink-muted">

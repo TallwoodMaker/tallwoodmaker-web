@@ -70,7 +70,7 @@ function Hero() {
     <section className="container-page section-px flex flex-wrap items-center gap-14 pb-14 pt-[clamp(40px,7vw,72px)]">
       <div className="flex min-w-0 flex-[1_1_520px] flex-col gap-6">
         <div className="eyebrow text-ink-muted">{t("eyebrow")}</div>
-        <h1 className="text-[clamp(40px,5.6vw,76px)] font-bold leading-[1.02] tracking-[-0.02em]">
+        <h1 className="text-[clamp(40px,5.6vw,76px)] font-bold leading-[1.02] tracking-[-0.03em]">
           {t.rich("title", {
             mark: (chunks) => <span className="highlight">{chunks}</span>,
           })}
@@ -189,7 +189,7 @@ function WhySection() {
       <div className="container-page section-px section-py flex flex-col gap-12">
         <div className="flex max-w-[820px] flex-col gap-[18px]">
           <div className="eyebrow text-brand">{t("eyebrow")}</div>
-          <h2 className="text-[clamp(32px,4vw,56px)] font-bold leading-[1.05] tracking-[-0.02em]">
+          <h2 className="text-[clamp(32px,4vw,56px)] font-bold leading-[1.05] tracking-[-0.03em]">
             {t("title")}
           </h2>
           <p className="text-[18px] leading-[1.6] text-on-dark">{t("text")}</p>
@@ -234,7 +234,7 @@ function TwoPaths() {
 
   return (
     <section className="container-page section-px section-py flex flex-col gap-10">
-      <h2 className="text-[clamp(30px,3.6vw,48px)] font-bold tracking-[-0.02em]">
+      <h2 className="text-[clamp(30px,3.6vw,48px)] font-bold tracking-[-0.03em]">
         {t("title")}
       </h2>
       <div className="flex flex-wrap gap-6">
@@ -280,7 +280,7 @@ function LeadMagnet() {
     <section id="start" className="scroll-mt-4 bg-brand">
       <div className="container-page section-px flex flex-col gap-4 py-[clamp(48px,7vw,72px)]">
         <div className="eyebrow">{t("eyebrow")}</div>
-        <h2 className="max-w-[820px] text-[clamp(30px,3.4vw,46px)] font-bold leading-[1.05] tracking-[-0.02em]">
+        <h2 className="max-w-[820px] text-[clamp(30px,3.4vw,46px)] font-bold leading-[1.05] tracking-[-0.03em]">
           {t("title")}
         </h2>
         <p className="text-[18px] leading-[1.5]">{t("text")}</p>
@@ -300,7 +300,7 @@ function Plans({ products }: { products: ShopProduct[] }) {
       <div className="flex flex-wrap items-end justify-between gap-4">
         <div className="flex flex-col gap-2.5">
           <div className="eyebrow text-ink-muted">{t("eyebrow")}</div>
-          <h2 className="text-[clamp(30px,3.4vw,46px)] font-bold tracking-[-0.02em]">
+          <h2 className="text-[clamp(30px,3.4vw,46px)] font-bold tracking-[-0.03em]">
             {t("title")}
           </h2>
         </div>
@@ -330,7 +330,7 @@ function RealJobs() {
       <div className="container-page section-px section-py flex flex-col gap-9">
         <div className="flex flex-col gap-2.5">
           <div className="eyebrow text-ink-muted">{t("eyebrow")}</div>
-          <h2 className="text-[clamp(30px,3.4vw,46px)] font-bold tracking-[-0.02em]">
+          <h2 className="text-[clamp(30px,3.4vw,46px)] font-bold tracking-[-0.03em]">
             {t("title")}
           </h2>
         </div>
@@ -373,7 +373,7 @@ function AboutTeaser() {
         />
       </div>
       <div className="flex min-w-0 flex-[1_1_480px] flex-col gap-[18px]">
-        <h2 className="text-[clamp(30px,3.4vw,46px)] font-bold tracking-[-0.02em]">
+        <h2 className="text-[clamp(30px,3.4vw,46px)] font-bold tracking-[-0.03em]">
           {t("title")}
         </h2>
         <p className="text-[18px] leading-[1.6] text-ink-soft">{t("p1")}</p>

@@ -45,7 +45,7 @@ function Start() {
       </header>
       <main className="flex-1">
         <section className="container-page section-px flex max-w-[860px] flex-col gap-6 py-[clamp(40px,7vw,72px)]">
-          <h1 className="text-[clamp(38px,5.6vw,64px)] font-bold leading-[1.03] tracking-[-0.02em]">
+          <h1 className="text-[clamp(38px,5.6vw,64px)] font-bold leading-[1.03] tracking-[-0.03em]">
             {t.rich("title", {
               mark: (chunks) => <span className="highlight">{chunks}</span>,
             })}
@@ -61,7 +61,7 @@ function Start() {
         </section>
         <section id="start" className="bg-brand">
           <div className="container-page section-px flex max-w-[860px] flex-col gap-4 py-[clamp(40px,6vw,64px)]">
-            <h2 className="text-[clamp(28px,3.4vw,40px)] font-bold leading-[1.05] tracking-[-0.02em]">
+            <h2 className="text-[clamp(28px,3.4vw,40px)] font-bold leading-[1.05] tracking-[-0.03em]">
               {t("leadTitle")}
             </h2>
             <p className="text-[18px] leading-[1.5]">{t("leadText")}</p>
