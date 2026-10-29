@@ -10,8 +10,8 @@ export const PROOF: {
 } = {
   // Instagram 12 600 + TikTok 10 500 + YouTube 1 217 (2026-10-29)
   followers: 24317,
-  // Instagram views, last 30 days (2026-10-29)
-  monthlyReach: 100000,
+  // Monthly views, as given by Tom on 2026-10-29
+  monthlyReach: 3000000,
   years: 15,
   workshopM2: 900,
 };
