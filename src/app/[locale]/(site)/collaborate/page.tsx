@@ -6,7 +6,7 @@ import { pageMetadata } from "@/i18n/metadata";
 import type { Locale } from "@/i18n/routing";
 import PromoBanner from "@/components/PromoBanner";
 import { PROOF } from "@/config/proof";
-import { formatCompact } from "@/lib/format";
+import { formatProofCount } from "@/lib/format";
 
 const WHAT_BRANDS_GET = ["audience", "footage", "voice"] as const;
 
@@ -44,11 +44,11 @@ export default async function CollaboratePage({
   const stats = [
     PROOF.followers !== null && {
       key: "followers",
-      value: `${formatCompact(locale, PROOF.followers)}+`,
+      value: formatProofCount(PROOF.followers),
     },
     PROOF.monthlyReach !== null && {
       key: "reach",
-      value: `${formatCompact(locale, PROOF.monthlyReach)}+`,
+      value: formatProofCount(PROOF.monthlyReach),
     },
     PROOF.years !== null && { key: "years", value: String(PROOF.years) },
   ].filter((s): s is { key: string; value: string } => !!s);

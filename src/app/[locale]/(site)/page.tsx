@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import { useLocale, useTranslations } from "next-intl";
+import { useTranslations } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { pageMetadata } from "@/i18n/metadata";
@@ -9,7 +9,7 @@ import { SHOP_ENABLED } from "@/lib/config";
 import { getShopProduct, type ShopProduct } from "@/lib/shopProducts";
 import { HOME_FEATURED_PRODUCT_IDS } from "@/config/paths";
 import { PROOF, BRAND_LOGOS } from "@/config/proof";
-import { formatCompact } from "@/lib/format";
+import { formatProofCount } from "@/lib/format";
 import PathCards from "@/components/site/PathCards";
 import { FeaturedProductCard } from "@/components/site/ProductCards";
 import LeadForm from "@/components/LeadForm";
@@ -117,17 +117,16 @@ function Hero() {
 
 function ProofStrip() {
   const t = useTranslations("home.proof");
-  const locale = useLocale();
 
   const stats = [
     PROOF.followers !== null && {
       key: "followers",
-      value: formatCompact(locale, PROOF.followers),
+      value: formatProofCount(PROOF.followers),
       label: t("followers"),
     },
     PROOF.monthlyReach !== null && {
       key: "monthlyReach",
-      value: formatCompact(locale, PROOF.monthlyReach),
+      value: formatProofCount(PROOF.monthlyReach),
       label: t("monthlyReach"),
     },
     PROOF.years !== null && {

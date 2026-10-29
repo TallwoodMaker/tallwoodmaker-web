@@ -12,10 +12,13 @@ export function formatPrice(locale: string, amount: number): string {
   }).format(amount);
 }
 
-/** Compact stat number, e.g. 32000 → "32K" (en) / "32 Tsd." (de). */
-export function formatCompact(locale: string, value: number): string {
-  return new Intl.NumberFormat(locale, {
-    notation: "compact",
-    maximumFractionDigits: 1,
-  }).format(value);
+/**
+ * Proof stat rounded *down* with a "+", same in every language:
+ * 24317 → "24K+", 2_400_000 → "2M+". Never rounds up, so the number on
+ * the site is never higher than the real one.
+ */
+export function formatProofCount(value: number): string {
+  if (value >= 1_000_000) return `${Math.floor(value / 1_000_000)}M+`;
+  if (value >= 1_000) return `${Math.floor(value / 1_000)}K+`;
+  return `${value}+`;
 }

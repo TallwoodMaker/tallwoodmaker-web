@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { useLocale, useTranslations } from "next-intl";
+import { useTranslations } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { pageMetadata } from "@/i18n/metadata";
 import type { Locale } from "@/i18n/routing";
 import { PROOF } from "@/config/proof";
-import { formatCompact } from "@/lib/format";
+import { formatProofCount } from "@/lib/format";
 
 const CONTACT_EMAIL = "tom@tallwoodmaker.com";
 
@@ -32,16 +32,15 @@ export default async function ForBrandsPage({
 function ForBrands() {
   const t = useTranslations("forBrands");
   const tp = useTranslations("home.proof");
-  const locale = useLocale();
 
   // Same source as the homepage proof strip; unset (null) stats are skipped.
   const stats = [
     PROOF.followers !== null && {
-      value: formatCompact(locale, PROOF.followers),
+      value: formatProofCount(PROOF.followers),
       label: tp("followers"),
     },
     PROOF.monthlyReach !== null && {
-      value: formatCompact(locale, PROOF.monthlyReach),
+      value: formatProofCount(PROOF.monthlyReach),
       label: tp("monthlyReach"),
     },
     PROOF.years !== null && {

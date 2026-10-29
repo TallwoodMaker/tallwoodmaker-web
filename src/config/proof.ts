@@ -8,7 +8,8 @@ export const PROOF: {
   years: number | null;
   workshopM2: number | null;
 } = {
-  followers: null,
+  // Instagram 12 600 + TikTok 10 500 + YouTube 1 217 (2026-10-29)
+  followers: 24317,
   monthlyReach: null,
   years: 15,
   workshopM2: 900,
