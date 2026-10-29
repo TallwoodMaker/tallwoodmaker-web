@@ -53,6 +53,12 @@ const CATEGORIES = [
         purpose: "Google Analytics — persists session state.",
         duration: "2 years",
       },
+      {
+        name: "twm_ref",
+        purpose:
+          "TallWoodMaker (first party) — records which social network you came from (Instagram, TikTok or YouTube), to measure where visitors come from.",
+        duration: "30 days",
+      },
     ],
   },
   {

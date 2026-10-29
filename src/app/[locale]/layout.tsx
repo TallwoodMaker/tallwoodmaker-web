@@ -9,6 +9,7 @@ import { ConsentProvider } from "@/components/cookies/ConsentContext";
 import { CartProvider } from "@/lib/cart/CartContext";
 import CookieBanner from "@/components/cookies/CookieBanner";
 import CookiePreferencesModal from "@/components/cookies/CookiePreferencesModal";
+import RefTracker from "@/components/cookies/RefTracker";
 import { routing } from "@/i18n/routing";
 import { SITE_URL } from "@/i18n/metadata";
 
@@ -86,6 +87,7 @@ export default async function LocaleLayout({
           <ConsentProvider>
             <CartProvider>
               <Analytics />
+              <RefTracker />
               {children}
               <CookieBanner />
               <CookiePreferencesModal />

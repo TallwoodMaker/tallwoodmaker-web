@@ -5,6 +5,7 @@ import { createClient as createSupabaseClient } from "@supabase/supabase-js";
 import { hasLocale } from "next-intl";
 import { routing } from "@/i18n/routing";
 import { REF_COOKIE, isRef } from "@/config/ref";
+import { CONSENT_COOKIE_NAME } from "@/lib/consent";
 
 export type LeadSource = "starter-list" | "workshop-pricing";
 export type LeadPath = "home" | "shop" | "general";
@@ -15,6 +16,15 @@ const PATHS: LeadPath[] = ["home", "shop", "general"];
 // Deliberately loose: one @, something on each side, a dot in the domain.
 // Anything stricter rejects real addresses; the inbox is the real test.
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+function hasAnalyticsConsent(raw: string | undefined): boolean {
+  if (!raw) return false;
+  try {
+    return JSON.parse(decodeURIComponent(raw))?.analytics === true;
+  } catch {
+    return false;
+  }
+}
 
 export type LeadState = {
   status: "idle" | "success" | "invalid" | "error";
@@ -40,7 +50,10 @@ export async function submitLead(
   const source = String(formData.get("source") ?? "") as LeadSource;
   const path = String(formData.get("path") ?? "") as LeadPath;
   const locale = String(formData.get("locale") ?? "");
-  const ref = (await cookies()).get(REF_COOKIE)?.value;
+  const cookieStore = await cookies();
+  const ref = hasAnalyticsConsent(cookieStore.get(CONSENT_COOKIE_NAME)?.value)
+    ? cookieStore.get(REF_COOKIE)?.value
+    : undefined;
 
   if (!email || email.length > 254 || !EMAIL_RE.test(email)) {
     return { status: "invalid" };
