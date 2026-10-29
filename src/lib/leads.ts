@@ -124,6 +124,7 @@ export async function submitLead(
       if (updateError) console.error("Failed to record consent:", updateError);
       else after(() => syncResendContact(email, false));
     }
+    if (source === "starter-list") await resendStarterList(email, locale);
     return { status: "success" };
   }
 
@@ -142,4 +143,51 @@ export async function submitLead(
   });
 
   return { status: "success" };
+}
+
+/** A repeat starter-list request re-sends the list at most this often. */
+const RESEND_INTERVAL_MS = 60 * 60 * 1000;
+
+/**
+ * Someone already on the starter list asked again (lost the email, or wants
+ * another language): send it again, in the newly picked language, but at
+ * most once an hour per address so the form can't be used to spam someone.
+ * The hour is claimed with a conditional update before sending, so two
+ * parallel submits can't both get through.
+ */
+async function resendStarterList(email: string, locale: string) {
+  const supabase = createAdminClient();
+  const cutoff = new Date(Date.now() - RESEND_INTERVAL_MS).toISOString();
+  const { data: previous } = await supabase
+    .from("leads")
+    .select("starter_sent_at")
+    .eq("email", email)
+    .eq("source", "starter-list")
+    .maybeSingle();
+  if (!previous) return;
+
+  const { data: claimed, error } = await supabase
+    .from("leads")
+    .update({ starter_sent_at: new Date().toISOString(), locale })
+    .eq("email", email)
+    .eq("source", "starter-list")
+    .or(`starter_sent_at.is.null,starter_sent_at.lt.${cutoff}`)
+    .select(LEAD_COLUMNS)
+    .maybeSingle();
+  if (error) {
+    console.error("Failed to claim starter list resend:", error);
+    return;
+  }
+  if (!claimed) return; // sent within the last hour
+
+  after(async () => {
+    const result = await sendLeadEmail(claimed, "welcome");
+    if (!result.sentStarterList) {
+      // Give the slot back so a retry (or the admin button) can send it.
+      await supabase
+        .from("leads")
+        .update({ starter_sent_at: previous.starter_sent_at })
+        .eq("id", claimed.id);
+    }
+  });
 }
