@@ -13,6 +13,7 @@ const LINK_CLASS =
 
 export default function Footer() {
   const t = useTranslations("footer");
+  const tn = useTranslations("nav");
 
   return (
     <footer className="bg-ink text-on-dark">
@@ -32,6 +33,12 @@ export default function Footer() {
               {label}
             </a>
           ))}
+          <Link href="/shop" className={LINK_CLASS}>
+            {tn("plans")}
+          </Link>
+          <Link href="/premium" className={LINK_CLASS}>
+            {tn("premium")}
+          </Link>
           <Link href="/for-brands" className={LINK_CLASS}>
             {t("forBrands")}
           </Link>

@@ -7,7 +7,7 @@
     },
     "buildAtHome": {
       "title": "Postav si vlastnú kuchyňu doma",
-      "description": "Na vlastnú kuchyňu nepotrebuješ dielňu. Dosky si daj naformátovať na zákazku a poskladaj doma: plán, nákupný zoznam a všetky kroky v poradí."
+      "description": "Na vlastnú kuchyňu nepotrebuješ dielňu. Porez a olepovanie si objednaj na mieru a poskladaj doma: plán, nákupný zoznam a všetky kroky v poradí."
     },
     "ownShop": {
       "title": "Zariaď si vlastnú stolársku dielňu",
@@ -86,7 +86,7 @@
     "mainLabel": "Hlavné menu",
     "homeLink": "TallWoodMaker, domovská stránka",
     "start": "Začni tu",
-    "buildAtHome": "Výroba doma",
+    "buildAtHome": "Robím doma",
     "ownShop": "Vlastná dielňa",
     "plans": "Plány a návody",
     "videos": "Videá",
@@ -114,7 +114,7 @@
     "cookieSettings": "Nastavenia cookies"
   },
   "paths": {
-    "home": "Výroba doma",
+    "home": "Robím doma",
     "shop": "Vlastná dielňa"
   },
   "productTypes": {
@@ -155,7 +155,7 @@
       "eyebrow": "Pre domácich majstrov a stolárov · od profíka s 15 rokmi v remesle",
       "title": "Od prvého rezu po <mark>vlastnú dielňu.</mark>",
       "text": "Stolárčina od A po Z, natáčaná na skutočných zákazkách v 900 m² dielni. Či robíš doma, alebo si zariaďuješ vlastnú dielňu, ukážem ti každý krok, každý nástroj a každú chybu.",
-      "photoAlt": "Tom pri veľkoplošnej píle v dielni, na skutočnej zákazke",
+      "photoAlt": "Tom pri deliacej píle v dielni, na skutočnej zákazke",
       "nameTag": "Tom",
       "nameTagRole": "Stolár a tvorca · 15 rokov",
       "badge": "Skutočné zákazky, žiadne kulisy"
@@ -176,16 +176,16 @@
       "text": "To, čo sa človek učí roky a čo stojí peniaze, keď to urobí zle.",
       "items": {
         "board": {
-          "title": "Akú dosku kúpiť",
-          "text": "Drevotrieska, MDF alebo preglejka, a kde na tom naozaj záleží."
+          "title": "Akú platňu kúpiť",
+          "text": "Laminovaná drevotrieska, MDF alebo preglejka, a kde na tom naozaj záleží."
         },
         "order": {
           "title": "Koľko objednať",
-          "text": "Kusovníky, po ktorých ti zostanú odrezky, nie chýbajúce diely."
+          "text": "Rozpis, po ktorom ti ostanú odrezky, nie chýbajúce diely."
         },
         "walls": {
           "title": "Krivé steny",
-          "text": "Ako zavesiť skrinky do roviny, keď nič v miestnosti nie je rovné."
+          "text": "Ako zavesiť skrinky rovno, keď v miestnosti nie je rovné nič."
         },
         "charge": {
           "title": "Koľko si pýtať",
@@ -200,9 +200,9 @@
         "points": [
           "Jasný plán od zamerania až po posledné dvierka",
           "Presný zoznam dosiek a kovania na objednanie",
-          "Výsledok, ktorý vyzerá ako od profíka"
+          "Výsledok ako od stolára"
         ],
-        "cta": "Začni s výrobou doma →"
+        "cta": "Začni cestu Robím doma →"
       },
       "shop": {
         "title": "Postav si dielňu, ktorá zarába, nie takú, ktorá ti zožerie večery.",
@@ -217,7 +217,7 @@
     "lead": {
       "eyebrow": "Začni zadarmo",
       "title": "Zoznam 10 nástrojov, ktoré by som si dnes kúpil znova.",
-      "text": "Žiadne hádanie, žiadne nástroje, ktoré nikdy nepoužiješ. Priamo do tvojej schránky.",
+      "text": "Žiadne tipovanie, žiadne nástroje, ktoré nikdy nepoužiješ. Priamo do tvojej schránky.",
       "submit": "Pošli mi zoznam"
     },
     "plans": {
@@ -240,7 +240,7 @@
     }
   },
   "gallery": {
-    "panelSaw": "Tom nakladá dosku na veľkoplošnú pílu",
+    "panelSaw": "Tom nakladá dosku na deliacu pílu",
     "edgeBander": "Tom zakladá dielec do olepovačky",
     "cnc": "CNC obrábacie centrum v dielni",
     "edgeBanderLine": "Olepovačka s odsávaním zhora",
@@ -248,9 +248,9 @@
     "shopFloor": "Dielňa s formátovacou pílou a spodnou frézou"
   },
   "buildAtHome": {
-    "badge": "Výroba doma",
+    "badge": "Robím doma",
     "title": "Na vlastnú kuchyňu nepotrebuješ dielňu.",
-    "text": "Dosky si daj naformátovať a olepiť na zákazku a doma ich poskladáš so základným náradím. Ukážem ti presný plán, nákupný zoznam a poradie všetkých krokov.",
+    "text": "Porez a olepovanie dosiek si objednaj na mieru a doma ich poskladáš so základným náradím. Ukážem ti presný plán, nákupný zoznam a poradie všetkých krokov.",
     "ctaSteps": "Pozri si 5 krokov",
     "ctaPlans": "Plány pre tvoju kuchyňu",
     "roadmapEyebrow": "Postup",
@@ -262,7 +262,7 @@
       },
       "order": {
         "title": "Objednávka materiálu",
-        "text": "Koľko dosiek, kde ich dať naformátovať a aké kovanie objednať."
+        "text": "Koľko dosiek, kde si objednať porez a olepovanie na mieru a aké kovanie kúpiť."
       },
       "boxes": {
         "title": "Výroba korpusov",
@@ -302,7 +302,7 @@
       },
       "machines": {
         "title": "Stroje, ktoré sa zaplatia",
-        "text": "Čo kúpiť ako prvé a čo nechať na formátovanie na zákazku."
+        "text": "Čo kúpiť ako prvé a čo nechať na porez a olepovanie na mieru."
       },
       "cutting": {
         "title": "Rezné plány bez odpadu",
@@ -334,14 +334,14 @@
       "text": "2 hodiny naživo, kalkulačka, ktorá ti ostane, a na kovanie už nikdy nezabudneš. Pridaj sa na zoznam a termín sa dozvieš ako prvý.",
       "submit": "Pridať sa na zoznam"
     },
-    "switchPath": "Robíš pre seba? Prejdi na cestu výroby doma →",
+    "switchPath": "Robíš pre seba? Prejdi na cestu Robím doma →",
     "freeVideo": "Video zadarmo"
   },
   "start": {
     "title": "Od prvého rezu po <mark>vlastnú dielňu.</mark>",
     "text": "Vyber si cestu, alebo si najprv stiahni zadarmo zoznam 10 nástrojov na začiatok.",
     "leadTitle": "Zoznam 10 nástrojov, ktoré by som si dnes kúpil znova.",
-    "leadText": "Žiadne hádanie, žiadne nástroje, ktoré nikdy nepoužiješ. Priamo do tvojej schránky.",
+    "leadText": "Žiadne tipovanie, žiadne nástroje, ktoré nikdy nepoužiješ. Priamo do tvojej schránky.",
     "submit": "Pošli mi zoznam"
   },
   "videos": {
@@ -401,14 +401,14 @@
         "alt": "Tom zakladá dielec do olepovačky"
       },
       "onPanelSaw": {
-        "title": "Pri veľkoplošnej píle",
-        "category": "Veľkoplošná píla",
-        "alt": "Tom nakladá dosku na veľkoplošnú pílu Biesse Selco"
+        "title": "Pri deliacej píle",
+        "category": "Deliaca píla",
+        "alt": "Tom nakladá dosku na deliacu pílu Biesse Selco"
       },
       "panelSaw": {
-        "title": "Veľkoplošná píla Biesse Selco",
-        "category": "Veľkoplošná píla",
-        "alt": "Veľkoplošná píla Biesse Selco WN2 s odkladacími stolmi"
+        "title": "Deliaca píla Biesse Selco",
+        "category": "Deliaca píla",
+        "alt": "Deliaca píla Biesse Selco WN2 s odkladacími stolmi"
       },
       "break": {
         "title": "Prestávka v dielni",
@@ -622,7 +622,7 @@
     "heroAlt": "CNC obrábacie centrum Biesse Rover A Smart v dielni",
     "philosophyTitle": "Vyrob. Zdieľaj. Inšpiruj.",
     "philosophyText": "Filozofia za všetkým, čo vyrábam, pred kamerou aj mimo nej.",
-    "story": "Som Tom: drevu sa profesionálne venujem pätnásť rokov, nie odvtedy, čo som vzal do ruky kameru. TallWoodMaker dokumentuje skutočnú prácu pre zákazníkov: kuchyne, nábytok na mieru a kompletné interiéry, vyrábané každý deň na CNC strojoch a veľkoplošných pílach, žiadne víkendové projekty. Kanál existuje preto, aby sa remeslo odovzdávalo poriadne, tak, ako ma ho naučili. Zábava je vedľajší efekt, nie cieľ.",
+    "story": "Som Tom: drevu sa profesionálne venujem pätnásť rokov, nie odvtedy, čo som vzal do ruky kameru. TallWoodMaker dokumentuje skutočnú prácu pre zákazníkov: kuchyne, nábytok na mieru a kompletné interiéry, vyrábané každý deň na CNC strojoch a deliacich pílach, žiadne víkendové projekty. Kanál existuje preto, aby sa remeslo odovzdávalo poriadne, tak, ako ma ho naučili. Zábava je vedľajší efekt, nie cieľ.",
     "numbersTitle": "V číslach",
     "numbersText": "Rýchly pohľad na publikum za kanálom.",
     "stats": {
@@ -633,7 +633,7 @@
     "gettingTitle": "Čo naozaj dostaneš",
     "gettingText": "Toto spolupráca reálne dostane pred oči skutočných stolárov.",
     "photoAlts": {
-      "panelSaw": "Tom nakladá dosku na veľkoplošnú pílu Biesse Selco",
+      "panelSaw": "Tom nakladá dosku na deliacu pílu Biesse Selco",
       "edgeBanding": "Olepovačka nanáša hranu na dielec",
       "workshop": "Celkový pohľad na dielňu s regálmi na dosky a horúcim lisom"
     },
@@ -727,7 +727,7 @@
       "whatYouLearn": []
     },
     "ebook-zero-to-first-client": {
-      "short": "Navrhni, daj naformátovať, poskladaj, nechaj si zaplatiť.",
+      "short": "Navrhni, objednaj porez na mieru, poskladaj, nechaj si zaplatiť.",
       "description": "Ako som sa dostal od výroby pre seba k prvému platiacemu zákazníkovi: presné kroky v správnom poradí.",
       "whatYouLearn": []
     },

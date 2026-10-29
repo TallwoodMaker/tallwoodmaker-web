@@ -5,14 +5,11 @@ import { Link } from "@/i18n/navigation";
 import { pageMetadata } from "@/i18n/metadata";
 import type { Locale } from "@/i18n/routing";
 import PromoBanner from "@/components/PromoBanner";
+import { PROOF } from "@/config/proof";
+import { formatCompact } from "@/lib/format";
 
 const WHAT_BRANDS_GET = ["audience", "footage", "voice"] as const;
 
-const MEDIA_KIT_STATS = [
-  { key: "followers", value: "30,000+" },
-  { key: "reach", value: "20M+" },
-  { key: "years", value: "15" },
-] as const;
 
 const PARTNERSHIP_OPTIONS = ["mention", "feature", "ongoing"] as const;
 
@@ -41,6 +38,20 @@ export default async function CollaboratePage({
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations("collaborate");
+
+  // Same source as the homepage proof strip (src/config/proof.ts); a null
+  // value hides that stat.
+  const stats = [
+    PROOF.followers !== null && {
+      key: "followers",
+      value: `${formatCompact(locale, PROOF.followers)}+`,
+    },
+    PROOF.monthlyReach !== null && {
+      key: "reach",
+      value: `${formatCompact(locale, PROOF.monthlyReach)}+`,
+    },
+    PROOF.years !== null && { key: "years", value: String(PROOF.years) },
+  ].filter((s): s is { key: string; value: string } => !!s);
 
   return (
     <>
@@ -72,24 +83,28 @@ export default async function CollaboratePage({
         </p>
       </section>
 
-      <PromoBanner title={t("numbersTitle")} description={t("numbersText")} />
-      <section className="container-page section-px pb-[clamp(24px,5vw,64px)] pt-12">
-        <div className="grid grid-cols-[repeat(auto-fit,minmax(180px,1fr))] gap-6">
-          {MEDIA_KIT_STATS.map((stat) => (
-            <div
-              key={stat.key}
-              className="rounded-xl border border-border p-6 text-center"
-            >
-              <div className="mb-1 font-display text-[clamp(28px,4vw,36px)] font-bold leading-none">
-                {stat.value}
-              </div>
-              <div className="text-[13px] font-semibold uppercase tracking-[0.03em] text-ink-muted">
-                {t(`stats.${stat.key}`)}
-              </div>
+      {stats.length > 0 && (
+        <>
+          <PromoBanner title={t("numbersTitle")} description={t("numbersText")} />
+          <section className="container-page section-px pb-[clamp(24px,5vw,64px)] pt-12">
+            <div className="grid grid-cols-[repeat(auto-fit,minmax(180px,1fr))] gap-6">
+              {stats.map((stat) => (
+                <div
+                  key={stat.key}
+                  className="rounded-xl border border-border p-6 text-center"
+                >
+                  <div className="mb-1 font-display text-[clamp(28px,4vw,36px)] font-bold leading-none">
+                    {stat.value}
+                  </div>
+                  <div className="text-[13px] font-semibold uppercase tracking-[0.03em] text-ink-muted">
+                    {t(`stats.${stat.key}`)}
+                  </div>
+                </div>
+              ))}
             </div>
-          ))}
-        </div>
-      </section>
+          </section>
+        </>
+      )}
 
       <PromoBanner title={t("gettingTitle")} description={t("gettingText")} />
       <section className="container-page section-px pb-[clamp(24px,5vw,64px)] pt-12">
