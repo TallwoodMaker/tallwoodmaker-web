@@ -38,21 +38,21 @@ export default function CookieBanner() {
             <button
               type="button"
               onClick={openPreferences}
-              className="cursor-pointer text-[14px] font-semibold text-cream underline underline-offset-2 hover:text-brand"
+              className="min-h-11 cursor-pointer text-[14px] font-semibold text-cream underline underline-offset-2 hover:text-brand"
             >
               {t("manage")}
             </button>
             <button
               type="button"
               onClick={rejectNonEssential}
-              className="cursor-pointer rounded-full border border-cream/30 px-5 py-2.5 text-[14px] font-semibold text-cream hover:border-cream"
+              className="cursor-pointer min-h-11 rounded-full border border-cream/30 px-5 py-2.5 text-[14px] font-semibold text-cream hover:border-cream"
             >
               {t("reject")}
             </button>
             <button
               type="button"
               onClick={acceptAll}
-              className="cursor-pointer rounded-full bg-brand px-5 py-2.5 text-[14px] font-bold text-ink"
+              className="cursor-pointer min-h-11 rounded-full bg-brand px-5 py-2.5 text-[14px] font-bold text-ink"
             >
               {t("accept")}
             </button>

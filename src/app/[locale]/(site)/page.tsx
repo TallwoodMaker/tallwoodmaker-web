@@ -107,7 +107,7 @@ function Hero() {
           <span className="text-[15px] font-semibold">{t("nameTag")}</span>
           <span className="text-[13px] text-ink-muted">{t("nameTagRole")}</span>
         </div>
-        <div className="absolute bottom-4 right-4 rounded-full bg-ink px-3.5 py-2 text-[13px] font-medium text-cream">
+        <div className="absolute right-4 top-4 rounded-full bg-ink px-3.5 py-2 text-[13px] font-medium text-cream sm:bottom-4 sm:top-auto">
           {t("badge")}
         </div>
       </div>

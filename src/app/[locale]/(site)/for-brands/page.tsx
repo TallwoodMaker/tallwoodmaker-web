@@ -100,7 +100,7 @@ function ForBrands() {
             </a>
             <a
               href={`mailto:${CONTACT_EMAIL}`}
-              className="text-[17px] font-medium text-cream underline-offset-4 hover:text-cream hover:underline"
+              className="inline-flex min-h-11 items-center text-[17px] font-medium text-cream underline-offset-4 hover:text-cream hover:underline"
             >
               {CONTACT_EMAIL}
             </a>
