@@ -1,13 +1,35 @@
-import { NextResponse, type NextRequest } from "next/server";
-import { createServerClient } from "@supabase/ssr";
+import { type NextRequest } from "next/server";
+import { createServerClient, type CookieOptions } from "@supabase/ssr";
+import createIntlMiddleware from "next-intl/middleware";
+import { routing } from "@/i18n/routing";
+
+const intlMiddleware = createIntlMiddleware(routing);
+
+// Search engines get the URL they asked for: no Accept-Language/cookie
+// redirects, so /shop is always indexed as English and /de/shop as German.
+const crawlerMiddleware = createIntlMiddleware({
+  ...routing,
+  localeDetection: false,
+});
+
+const CRAWLER_UA =
+  /bot|crawl|spider|slurp|bingpreview|facebookexternalhit|embedly|pinterest|whatsapp|telegram|linkedin|google-inspectiontool|lighthouse/i;
 
 /**
- * Refreshes the Supabase auth session cookie on every request. Server
- * Components can only read cookies, not write them, so without this the
- * session would silently expire instead of refreshing.
+ * Two jobs on every page request:
+ * 1. Refreshes the Supabase auth session cookie. Server Components can only
+ *    read cookies, not write them, so without this the session would
+ *    silently expire instead of refreshing.
+ * 2. Resolves the locale (next-intl): rewrites unprefixed English URLs to
+ *    /en/..., and redirects first-time visitors to their browser language.
  */
 export async function proxy(request: NextRequest) {
-  let response = NextResponse.next({ request });
+  let refreshedCookies: {
+    name: string;
+    value: string;
+    options: CookieOptions;
+  }[] = [];
+  let refreshHeaders: Record<string, string> = {};
 
   const supabase = createServerClient(
     process.env.NEXT_PUBLIC_SUPABASE_URL!,
@@ -18,16 +40,14 @@ export async function proxy(request: NextRequest) {
           return request.cookies.getAll();
         },
         setAll(cookiesToSet, headers) {
+          // Updating request.cookies also rewrites the request's Cookie
+          // header, which next-intl forwards to the page — so Server
+          // Components see the refreshed token on this same request.
           cookiesToSet.forEach(({ name, value }) =>
             request.cookies.set(name, value)
           );
-          response = NextResponse.next({ request });
-          cookiesToSet.forEach(({ name, value, options }) =>
-            response.cookies.set(name, value, options)
-          );
-          Object.entries(headers).forEach(([key, value]) =>
-            response.headers.set(key, value)
-          );
+          refreshedCookies = cookiesToSet;
+          refreshHeaders = headers;
         },
       },
     }
@@ -37,11 +57,21 @@ export async function proxy(request: NextRequest) {
   // valid session.
   await supabase.auth.getUser();
 
+  const isCrawler = CRAWLER_UA.test(request.headers.get("user-agent") ?? "");
+  const response = (isCrawler ? crawlerMiddleware : intlMiddleware)(request);
+
+  refreshedCookies.forEach(({ name, value, options }) =>
+    response.cookies.set(name, value, options)
+  );
+  Object.entries(refreshHeaders).forEach(([key, value]) =>
+    response.headers.set(key, value)
+  );
+
   return response;
 }
 
 export const config = {
-  matcher: [
-    "/((?!_next/static|_next/image|favicon.ico|.*\\.(?:svg|png|jpg|jpeg|gif|webp)$).*)",
-  ],
+  // Everything except API routes (the Stripe webhook must never be
+  // locale-rewritten), Next internals, Vercel internals and static files.
+  matcher: ["/((?!api|_next|_vercel|.*\\..*).*)"],
 };

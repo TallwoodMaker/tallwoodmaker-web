@@ -1,0 +1,812 @@
+{
+  "meta": {
+    "siteDescription": "Marcenaria do primeiro corte até à tua própria oficina. Planos, guias e vídeos de trabalhos reais numa oficina de 900 m².",
+    "home": {
+      "title": "TallWoodMaker: do primeiro corte à tua própria oficina",
+      "description": "Marcenaria de A a Z, filmada em trabalhos reais numa oficina de 900 m². Quer construas em casa, quer montes a tua oficina: cada passo, cada ferramenta, cada erro."
+    },
+    "buildAtHome": {
+      "title": "Constrói a tua cozinha em casa",
+      "description": "Não precisas de oficina para construir a tua cozinha. Manda cortar os painéis num serviço de corte e monta em casa: o plano, a lista de compras e cada passo por ordem."
+    },
+    "ownShop": {
+      "title": "Monta a tua própria oficina de marcenaria",
+      "description": "Monta uma oficina que dá lucro: o que comprar primeiro, quanto cobrar e como planear um trabalho em minutos. 15 anos a fazer trabalhos para clientes."
+    },
+    "start": {
+      "title": "Começa aqui",
+      "description": "Do primeiro corte à tua própria oficina. Escolhe o teu caminho e recebe grátis a lista das 10 ferramentas para começar."
+    },
+    "videos": {
+      "title": "Vídeos",
+      "description": "Trabalhos reais filmados na oficina: visitas à oficina, episódios de um dia de trabalho e cortes curtos no TikTok."
+    },
+    "forBrands": {
+      "title": "Trabalha com a TallWoodMaker",
+      "description": "Parcerias de marca com um marceneiro profissional. Conteúdo filmado em trabalhos reais para marceneiros e amadores na Europa e nos EUA."
+    },
+    "about": {
+      "title": "Sobre mim",
+      "description": "Sou o Tom. Há 15 anos que faço cozinhas, roupeiros e interiores completos para clientes, e tudo o que filmo é um trabalho real."
+    },
+    "shop": {
+      "title": "Planos e guias",
+      "description": "Planos de marcenaria, listas de corte e ebooks de trabalhos reais, não desenhados numa secretária."
+    },
+    "contact": {
+      "title": "Contacto",
+      "description": "Móveis por medida, colaborações de conteúdo ou uma dúvida sobre um projeto: entra em contacto."
+    },
+    "cart": {
+      "title": "Carrinho"
+    },
+    "orderConfirmed": {
+      "title": "Encomenda confirmada"
+    },
+    "premium": {
+      "title": "Premium",
+      "description": "Construções completas, versões alargadas e ficheiros da oficina para membros."
+    },
+    "subscribe": {
+      "title": "Premium",
+      "description": "Construções completas, versões alargadas e ficheiros da oficina para membros TallWoodMaker Premium. 9 €/mês, cancela quando quiseres."
+    },
+    "collaborate": {
+      "title": "Colaborar",
+      "description": "Parcerias de marca com um marceneiro profissional: quinze anos no ofício, conteúdo real da oficina, nada encenado."
+    },
+    "benefits": {
+      "title": "Vantagens",
+      "description": "Códigos de desconto e ofertas de afiliados para as ferramentas e materiais usados na oficina TallWoodMaker."
+    },
+    "confirmSignIn": {
+      "title": "Confirmar início de sessão"
+    },
+    "terms": {
+      "title": "Termos de Serviço"
+    },
+    "privacy": {
+      "title": "Política de Privacidade"
+    },
+    "cookies": {
+      "title": "Política de Cookies"
+    },
+    "course": {
+      "title": "Curso online"
+    },
+    "notFound": {
+      "title": "Página não encontrada"
+    }
+  },
+  "topBar": {
+    "text": "Download grátis: as 10 ferramentas para começar que eu voltaria a comprar hoje",
+    "cta": "Quero a lista"
+  },
+  "nav": {
+    "mainLabel": "Principal",
+    "homeLink": "Página inicial TallWoodMaker",
+    "start": "Começa aqui",
+    "buildAtHome": "Construir em casa",
+    "ownShop": "A tua oficina",
+    "plans": "Planos e guias",
+    "videos": "Vídeos",
+    "premium": "Premium",
+    "about": "Sobre mim",
+    "getFreeList": "Recebe a lista grátis",
+    "cart": "Carrinho",
+    "cartWithCount": "Carrinho ({count})",
+    "cartAria": "{count, plural, =0 {Carrinho} one {Carrinho, # artigo} other {Carrinho, # artigos}}",
+    "signIn": "Entrar",
+    "openMenu": "Abrir menu",
+    "closeMenu": "Fechar menu",
+    "changeLanguage": "Mudar idioma",
+    "language": "Idioma"
+  },
+  "footer": {
+    "forBrands": "Para marcas",
+    "contact": "Contacto",
+    "copyright": "© {year} TallWoodMaker s.r.o.",
+    "social": "Redes sociais",
+    "legal": "Legal",
+    "terms": "Termos de Serviço",
+    "privacy": "Política de Privacidade",
+    "cookiePolicy": "Política de Cookies",
+    "cookieSettings": "Definições de cookies"
+  },
+  "paths": {
+    "home": "Construir em casa",
+    "shop": "A tua oficina"
+  },
+  "productTypes": {
+    "plan": "Plano",
+    "ebook": "Ebook",
+    "bundle": "Pack"
+  },
+  "productCard": {
+    "save": "Poupa {amount} €",
+    "bestStart": "Melhor para começar · Poupa {amount} €",
+    "everything": "Tudo · Poupa {amount} €",
+    "pdfInEnglish": "PDF em inglês",
+    "regularPrice": "Preço normal {price}"
+  },
+  "pathCards": {
+    "question": "Em que ponto estás agora?",
+    "home": {
+      "title": "Construo em casa",
+      "text": "Garagem, varanda ou um canto da cave"
+    },
+    "shop": {
+      "title": "Estou a montar a minha oficina",
+      "text": "De passatempo a uma oficina que dá lucro"
+    }
+  },
+  "leadForm": {
+    "emailLabel": "Endereço de email",
+    "placeholder": "o-teu@email.com",
+    "sending": "A enviar…",
+    "success": "Obrigado! Vê a tua caixa de entrada.",
+    "waitlistSuccess": "Obrigado! Já estás na lista. Vais ser o primeiro a saber a data.",
+    "invalidEmail": "Introduz um endereço de email válido.",
+    "error": "Algo correu mal. Tenta outra vez.",
+    "honeypot": "Deixa este campo vazio"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Para amadores e marceneiros · por um profissional com 15 anos no ofício",
+      "title": "Do primeiro corte à tua <mark>própria oficina.</mark>",
+      "text": "Marcenaria de A a Z, filmada em trabalhos reais numa oficina de 900 m². Quer construas em casa, quer estejas a montar a tua oficina, mostro-te cada passo, cada ferramenta e cada erro.",
+      "photoAlt": "Tom na seccionadora da oficina, num trabalho real",
+      "nameTag": "Tom",
+      "nameTagRole": "Marceneiro e criador · 15 anos",
+      "badge": "Trabalhos reais, não cenários"
+    },
+    "proof": {
+      "label": "Em números",
+      "followers": "pessoas que me seguem no IG, YouTube e TikTok",
+      "monthlyReach": "visualizações por mês",
+      "yearsValue": "{count} anos",
+      "years": "a construir para clientes",
+      "workshopValue": "{count} m²",
+      "workshop": "de oficina real",
+      "workedWith": "Trabalhei com"
+    },
+    "why": {
+      "eyebrow": "Porquê aprender comigo",
+      "title": "A maioria dos vídeos mostra o resultado. Eu mostro as decisões.",
+      "text": "Aquilo que leva anos a aprender e custa dinheiro quando corre mal.",
+      "items": {
+        "board": {
+          "title": "Que placa comprar",
+          "text": "Aglomerado, MDF ou contraplacado, e onde isso faz mesmo diferença."
+        },
+        "order": {
+          "title": "Quanto encomendar",
+          "text": "Listas de corte que deixam sobras, não faltas."
+        },
+        "walls": {
+          "title": "Paredes tortas",
+          "text": "Pendurar armários nivelados quando nada na divisão está direito."
+        },
+        "charge": {
+          "title": "Quanto cobrar",
+          "text": "Orçamentar um trabalho para que as ferragens e as tuas horas fiquem pagas."
+        }
+      }
+    },
+    "paths": {
+      "title": "Dois caminhos. Escolhe o teu.",
+      "home": {
+        "title": "Não precisas de oficina para construir a tua cozinha.",
+        "points": [
+          "Um plano claro, da medição à última porta",
+          "A lista exata de placas e ferragens para encomendar",
+          "Um resultado que parece feito por um profissional"
+        ],
+        "cta": "Começar o caminho em casa →"
+      },
+      "shop": {
+        "title": "Monta uma oficina que dá lucro, não uma que te come as noites.",
+        "points": [
+          "Saber exatamente quanto cobrar",
+          "Comprar só as máquinas que se pagam a si próprias",
+          "Planear um trabalho em minutos, não numa noite inteira"
+        ],
+        "cta": "Começar o caminho da oficina →"
+      }
+    },
+    "lead": {
+      "eyebrow": "Começa grátis",
+      "title": "As 10 ferramentas para começar que eu voltaria a comprar hoje.",
+      "text": "Sem adivinhar, sem ferramentas que nunca vais usar. Direto para o teu email.",
+      "submit": "Envia-me a lista"
+    },
+    "plans": {
+      "eyebrow": "Planos e guias",
+      "title": "Planos de trabalhos reais, não desenhados numa secretária.",
+      "seeAll": "Ver todos os planos →",
+      "note": "Todos os planos e ebooks são PDF em inglês. Mais idiomas a caminho."
+    },
+    "realJobs": {
+      "eyebrow": "Trabalhos reais",
+      "title": "Feitos para clientes. Agora nas tuas mãos como planos."
+    },
+    "about": {
+      "title": "Olá, sou o Tom.",
+      "p1": "Há 15 anos que faço cozinhas, roupeiros e interiores completos para clientes. Tudo o que filmo é um trabalho real, não um cenário. Partilho o que levei anos a aprender, os planos, os números e os erros, para que os possas evitar.",
+      "p2": "Quer estejas a construir a tua primeira cozinha em casa ou a tua primeira oficina, começa aqui.",
+      "homeCta": "Construo em casa",
+      "shopCta": "Estou a montar a minha oficina",
+      "portraitAlt": "Retrato do Tom na oficina, a segurar uma lâmina de serra"
+    }
+  },
+  "gallery": {
+    "panelSaw": "Tom a carregar uma placa na seccionadora",
+    "edgeBander": "Tom a passar um painel na orladora",
+    "cnc": "Centro de maquinação CNC na oficina",
+    "edgeBanderLine": "Orladora com aspiração por cima",
+    "workshopWide": "Vista geral da oficina com estantes de placas e uma prensa a quente",
+    "shopFloor": "O chão da oficina com uma esquadrejadora e uma tupia"
+  },
+  "buildAtHome": {
+    "badge": "Construir em casa",
+    "title": "Não precisas de oficina para construir a tua cozinha.",
+    "text": "Manda cortar e orlar os painéis num serviço de corte e monta em casa com ferramentas básicas. Mostro-te o plano exato, a lista de compras e a ordem de cada passo.",
+    "ctaSteps": "Ver os 5 passos",
+    "ctaPlans": "Planos para a tua cozinha",
+    "roadmapEyebrow": "O roteiro",
+    "roadmapTitle": "De uma divisão vazia a uma cozinha acabada em 5 passos.",
+    "steps": {
+      "measure": {
+        "title": "Medir e planear",
+        "text": "Como medir a divisão e distribuir os armários para que nada choque com canos e tomadas."
+      },
+      "order": {
+        "title": "Encomendar o material",
+        "text": "Quantas placas, onde as mandar cortar, que ferragens encomendar."
+      },
+      "boxes": {
+        "title": "Montar as caixas",
+        "text": "Montar em casa caixas esquadriadas e robustas, em série."
+      },
+      "install": {
+        "title": "Instalar",
+        "text": "Paredes tortas, pendurar os armários de parede, ajustar a bancada."
+      },
+      "finish": {
+        "title": "Acabar",
+        "text": "Portas de uma só vez, rodapés, iluminação e a lista de verificação final."
+      }
+    },
+    "freeVideo": "Vídeo grátis",
+    "productsTitle": "Tudo para construir em casa",
+    "listTitle": "Não sabes por onde começar?",
+    "listText": "Recebe a lista das 10 ferramentas para começar que eu voltaria a comprar hoje. Grátis.",
+    "listSubmit": "Envia-me a lista",
+    "switchPath": "Constróis para clientes? Vai para o caminho da oficina →"
+  },
+  "ownShop": {
+    "badge": "A tua oficina",
+    "title": "Monta uma oficina que dá lucro, não uma que <mark>te come as noites.</mark>",
+    "text": "15 anos a fazer trabalhos para clientes: o que comprar primeiro, quanto cobrar e como planear um trabalho em minutos em vez de uma noite inteira.",
+    "ctaSteps": "Ver os 6 passos",
+    "ctaTools": "Ferramentas e guias",
+    "photoAlt": "A oficina com uma lixadora de banda larga e aspiração por cima",
+    "roadmapEyebrow": "O roteiro",
+    "roadmapTitle": "De uma garagem vazia ao primeiro trabalho com lucro.",
+    "stepLabel": "Passo {number}",
+    "ownToolLabel": "Passo {number} · A minha própria ferramenta",
+    "steps": {
+      "space": {
+        "title": "Espaço sem desperdiçar dinheiro",
+        "text": "Uma disposição e um espaço que funcionam antes de gastares um cêntimo em máquinas."
+      },
+      "machines": {
+        "title": "Máquinas que se pagam a si próprias",
+        "text": "O que comprar primeiro e o que deixar para um serviço de corte."
+      },
+      "cutting": {
+        "title": "Planos de corte sem desperdício",
+        "text": "Criei o MebCut para isto. Tira uma foto à tua lista de corte e recebe o plano de corte em segundos.",
+        "cta": "Experimenta o MebCut grátis →"
+      },
+      "pricing": {
+        "title": "Orçamentar com lucro",
+        "text": "Um preço que cobre as ferragens, as tuas horas e a margem."
+      },
+      "clients": {
+        "title": "Os primeiros clientes",
+        "text": "Onde os encontrar e como não te vender barato."
+      },
+      "evenings": {
+        "title": "Noites em casa",
+        "text": "Processos, para que a oficina toda não dependa só de ti."
+      }
+    },
+    "productsTitle": "Ferramentas e guias para a tua oficina",
+    "mebcut": {
+      "label": "App · mebcut.com",
+      "text": "Planos de corte a partir de uma foto, assistente de corte no smartphone.",
+      "price": "Grátis para começar"
+    },
+    "waitlist": {
+      "eyebrow": "Workshop online ao vivo · em breve",
+      "title": "Orçamenta um trabalho com lucro, não de graça.",
+      "text": "2 horas ao vivo, uma calculadora para ficares com ela, e nunca mais te esqueces das ferragens. Entra na lista e sabe a data em primeiro lugar.",
+      "submit": "Entrar na lista"
+    },
+    "switchPath": "Constróis para ti? Vai para o caminho em casa →",
+    "freeVideo": "Vídeo grátis"
+  },
+  "start": {
+    "title": "Do primeiro corte à tua <mark>própria oficina.</mark>",
+    "text": "Escolhe o teu caminho, ou recebe primeiro a lista grátis das 10 ferramentas para começar.",
+    "leadTitle": "As 10 ferramentas para começar que eu voltaria a comprar hoje.",
+    "leadText": "Sem adivinhar, sem ferramentas que nunca vais usar. Direto para o teu email.",
+    "submit": "Envia-me a lista"
+  },
+  "videos": {
+    "title": "Vídeos",
+    "text": "Trabalhos reais, filmados na oficina. Um vídeo novo por semana no YouTube, cortes mais curtos quase todos os dias no Instagram e no TikTok.",
+    "longFormTitle": "Vídeos longos",
+    "tiktokTitle": "Novidades no TikTok",
+    "channelsTitle": "Canais",
+    "youtube": "Vídeo novo todas as semanas, direto da oficina.",
+    "instagram": "Cortes diários, reels e bastidores.",
+    "tiktok": "Clipes curtos de trabalhos reais.",
+    "facebook": "Resumos semanais da oficina."
+  },
+  "forBrands": {
+    "title": "Trabalha com a TallWoodMaker",
+    "p1": "O meu público são marceneiros e amadores da Europa e dos EUA: pessoas que estão mesmo a construir alguma coisa, da primeira cozinha em casa à sua própria oficina.",
+    "p2": "Tudo o que filmo é um trabalho real para um cliente numa oficina em funcionamento, por isso a tua ferramenta ou material aparece como é realmente usado, não encenado para a câmara.",
+    "statsTitle": "Em números",
+    "contactTitle": "Vamos falar",
+    "contactText": "Fala-me do teu produto e do que tens em mente. Respondo-te pessoalmente.",
+    "emailCta": "Envia-me um email"
+  },
+  "about": {
+    "title": "Olá, sou o Tom.",
+    "photoAlt": "Tom, TallWoodMaker, a segurar uma lâmina de serra na oficina",
+    "storyP1": "Comecei na marcenaria a arranjar uma estante velha que ia para o lixo. A primeira peça saiu torta, a segunda saiu melhor e a terceira acabou na internet. A partir daí, cresceu até ao trabalho diário na oficina.",
+    "storyP2": "O conteúdo que faço não é só os melhores momentos. Mostro as medidas que não resultaram, as ferramentas que merecem mais atenção e as decisões tomadas mesmo ali, na serra.",
+    "process": {
+      "title": "Processo",
+      "text": "Do projeto ao acabamento: cada passo documentado, incluindo os erros."
+    },
+    "tools": {
+      "title": "Ferramentas",
+      "text": "Uma mistura de ferramentas manuais e máquinas. Explico o quê e porquê."
+    },
+    "community": {
+      "title": "Comunidade",
+      "text": "As perguntas nos comentários tornam-se muitas vezes o tema do próximo vídeo."
+    },
+    "wideAlt": "Vista geral da oficina com uma lixadora de banda larga e aspiração por cima",
+    "galleryTitle": "Galeria",
+    "galleryText": "Um olhar por dentro da oficina: as máquinas, o processo e as pessoas por trás de cada trabalho.",
+    "galleryItems": {
+      "cnc": {
+        "title": "CNC Biesse Rover",
+        "category": "Máquina CNC",
+        "alt": "Centro de maquinação CNC Biesse Rover A Smart na oficina"
+      },
+      "edgeBanding": {
+        "title": "Orlagem em curso",
+        "category": "Orlagem",
+        "alt": "Orladora a aplicar orla num painel"
+      },
+      "feedingEdgeBander": {
+        "title": "A alimentar a orladora",
+        "category": "Orlagem",
+        "alt": "Tom a passar um painel na orladora"
+      },
+      "onPanelSaw": {
+        "title": "Na seccionadora",
+        "category": "Seccionadora",
+        "alt": "Tom a carregar uma placa na seccionadora Biesse Selco"
+      },
+      "panelSaw": {
+        "title": "Seccionadora Biesse Selco",
+        "category": "Seccionadora",
+        "alt": "Seccionadora Biesse Selco WN2 e mesas de saída"
+      },
+      "break": {
+        "title": "Uma pausa na oficina",
+        "category": "Bastidores",
+        "alt": "Tom de pé na oficina ao lado de sobras de painéis empilhadas"
+      },
+      "controls": {
+        "title": "Comandos da orladora",
+        "category": "Orlagem",
+        "alt": "Painel de comando da orladora Cehisa"
+      },
+      "storage": {
+        "title": "Armazenamento de placas e prensa a quente",
+        "category": "Vista da oficina",
+        "alt": "Vista geral da oficina com estantes de placas e uma prensa a quente"
+      },
+      "dust": {
+        "title": "Aspiração e linha de lixagem",
+        "category": "Vista da oficina",
+        "alt": "Vista da oficina com uma lixadora de banda larga e condutas de aspiração por cima"
+      },
+      "slidingSaw": {
+        "title": "Esquadrejadora",
+        "category": "Vista da oficina",
+        "alt": "Vista da oficina com uma esquadrejadora e uma tupia"
+      },
+      "fravol": {
+        "title": "Orladora Fravol",
+        "category": "Orlagem",
+        "alt": "Orladora Fravol com tubagem de aspiração por cima"
+      },
+      "floor": {
+        "title": "O chão da oficina",
+        "category": "Vista da oficina",
+        "alt": "Orladora Fravol e a rede de condutas por cima da oficina"
+      }
+    },
+    "videoTitle": "Vídeo e redes sociais",
+    "videoText": "Vídeo novo todas as semanas. Cortes mais curtos todos os dias no Instagram e no TikTok.",
+    "youtubeCardTitle": "Ver no YouTube",
+    "youtubeCardText": "Vídeo novo todas as semanas, direto da oficina.",
+    "instagramCardTitle": "Seguir no Instagram",
+    "instagramCardText": "Cortes diários, reels e bastidores da oficina.",
+    "tiktokCardTitle": "Ver no TikTok",
+    "tiktokCardText": "Os TikToks mais recentes estão na página Vídeos.",
+    "tiktokCardCta": "Vídeos →",
+    "facebookText": "Resumos semanais e diretos da oficina.",
+    "followBuild": "Acompanha a construção"
+  },
+  "shop": {
+    "title": "Planos e guias",
+    "text": "Planos, listas de corte e ebooks de trabalhos reais, não desenhados numa secretária.",
+    "note": "Todos os planos e ebooks são PDF em inglês. Mais idiomas a caminho.",
+    "all": "Todos",
+    "categories": {
+      "ebooks": "Ebooks",
+      "plans": "Planos",
+      "bundles": "Packs"
+    },
+    "addToCart": "Adicionar ao carrinho",
+    "inCartRemove": "No carrinho · Remover",
+    "placeholder": {
+      "plan": "pré-visualização do plano",
+      "ebook": "capa do ebook",
+      "bundle": "capa do pack"
+    }
+  },
+  "product": {
+    "back": "← Voltar à loja",
+    "whatYouLearn": "O que vais aprender",
+    "whatsIncluded": "O que está incluído",
+    "onItsOwn": "{price} em separado",
+    "view": "Ver →",
+    "sampleEbook": "Uma página de exemplo do ebook",
+    "samplePlan": "Uma página de exemplo do plano",
+    "sampleAlt": "Página de exemplo de {title}",
+    "pdfNote": "O PDF está em inglês."
+  },
+  "cart": {
+    "title": "O teu carrinho",
+    "empty": "O teu carrinho está vazio.",
+    "back": "← Voltar à loja",
+    "remove": "Remover",
+    "subtotal": "Subtotal",
+    "consent": "Quero acesso imediato a este conteúdo digital e reconheço que perco o meu direito de livre resolução assim que a entrega começa. Aceito os <terms>Termos de Serviço</terms>.",
+    "checkout": "Finalizar compra",
+    "redirecting": "A redirecionar…",
+    "errorEmpty": "O teu carrinho está vazio, ou nada do que lá está continua disponível.",
+    "errorConsent": "Confirma que queres acesso imediato à tua compra digital para continuar.",
+    "errorNoUrl": "O Stripe não devolveu um URL de pagamento. Tenta outra vez."
+  },
+  "success": {
+    "notConfirmedTitle": "Pagamento ainda não confirmado",
+    "notConfirmedText": "Se acabaste de pagar, atualiza esta página daqui a pouco. A confirmação pode demorar alguns segundos. Continua sem funcionar? Envia um email para <email>tom@tallwoodmaker.com</email> e menciona esta encomenda.",
+    "thanksTitle": "{count, plural, one {Obrigado, aqui está o teu download} other {Obrigado, aqui estão os teus downloads}}",
+    "download": "Descarregar {file}",
+    "failure": "O teu pagamento foi aceite, mas tivemos um problema a gerar o link de download para {titles}. Envia um email para <email>tom@tallwoodmaker.com</email> com o ID desta encomenda e nós enviamos-to:",
+    "expiry": "Estes links funcionam durante 24 horas. Se algum expirar, guarda esta página nos favoritos e volta a abri-la. Ao reabri-la são gerados links novos."
+  },
+  "premium": {
+    "badge": "Premium",
+    "title": "Vídeo Premium",
+    "text": "Construções completas e versões alargadas para membros. Conteúdo novo adicionado regularmente.",
+    "empty": "Conteúdo novo em breve. Volta daqui a pouco.",
+    "announcements": "Anúncios",
+    "tabs": {
+      "all": "Todos",
+      "article": "Artigos",
+      "video": "Vídeos",
+      "plan_download": "Downloads"
+    },
+    "types": {
+      "article": "Artigo",
+      "video": "Vídeo",
+      "plan_download": "Download",
+      "announcement": "Novidade"
+    },
+    "nothingYet": "Ainda não há nada aqui.",
+    "download": "Descarregar",
+    "videoPlaceholder": "miniatura do vídeo",
+    "preview": "pré-visualização"
+  },
+  "subscribe": {
+    "badge": "Premium",
+    "title": "TallWoodMaker Premium",
+    "waitlistText": "Construções completas, versões alargadas e ficheiros da oficina para membros. O acesso Premium abre em breve. Entra na lista de espera para seres dos primeiros.",
+    "launchOffer": "Oferta de lançamento",
+    "launchTitle": "Inscreve-te agora e tem 50% de desconto nos primeiros 3 meses",
+    "launchText": "Quem está na lista de espera tem acesso primeiro quando abrirmos, e o desconto é aplicado automaticamente no pagamento.",
+    "heroText": "Construções completas, versões alargadas e ficheiros da oficina: o que não cabe no YouTube. Adere por 9 €/mês e tem acesso de imediato.",
+    "included": "O que está incluído",
+    "previewText": "Uma amostra do que te espera lá dentro. Conteúdo novo todos os meses.",
+    "membersOnly": "Só para membros",
+    "fallbackBenefits": [
+      "Vídeos de construções completas, do início ao fim: cada passo, não só os melhores momentos",
+      "Versões alargadas e visitas à oficina para além do que está no YouTube",
+      "Planos e listas de corte para descarregar de algumas construções",
+      "Conteúdo novo adicionado todos os meses",
+      "Cancela quando quiseres, sem compromisso de longo prazo"
+    ],
+    "offerBadge": "Oferta de lançamento: 50% de desconto nos primeiros 3 meses",
+    "price": "9 €",
+    "perMonth": "/mês",
+    "codeText": "Tens um código de lançamento? Introduz no pagamento para ter 50% de desconto nos primeiros 3 meses.",
+    "consent": "Quero acesso imediato ao Premium e reconheço que perco o meu direito de livre resolução assim que o acesso começa. Aceito os <terms>Termos de Serviço</terms>.",
+    "consentError": "Marca a caixa de confirmação para continuar.",
+    "linkExpired": "Esse link de início de sessão expirou ou já foi usado. Pede um novo abaixo.",
+    "subscribeCta": "Subscrever agora: 9 €/mês",
+    "signInPrompt": "Introduz o teu email para iniciar sessão e continuar para o pagamento",
+    "faqTitle": "Bom saber",
+    "faq": [
+      {
+        "q": "Posso cancelar quando quiser?",
+        "a": "Sim. Cancela na tua conta quando quiseres. Manténs o acesso até ao fim do período de faturação que já pagaste."
+      },
+      {
+        "q": "Como funciona a faturação?",
+        "a": "9 €/mês, cobrados automaticamente até cancelares. Sem contrato anual."
+      },
+      {
+        "q": "O que acontece logo depois de me inscrever?",
+        "a": "Recebes um link de início de sessão por email e vais diretamente para o pagamento. O acesso fica disponível assim que o pagamento estiver concluído."
+      },
+      {
+        "q": "O que é que recebo, concretamente?",
+        "a": "Tudo o que está em \"O que está incluído\" acima, mais tudo o que for adicionado ao Premium durante a tua subscrição."
+      }
+    ],
+    "countdown": {
+      "days": "Dias",
+      "hours": "Horas",
+      "minutes": "Minutos",
+      "seconds": "Segundos"
+    },
+    "waitlist": {
+      "join": "Entrar na lista de espera",
+      "joining": "A entrar…",
+      "joined": "Já estás na lista. Enviamos-te um email quando o Premium abrir.",
+      "error": "Não foi possível entrar na lista de espera. Tenta outra vez."
+    },
+    "magicLink": {
+      "send": "Envia-me um link por email",
+      "sending": "A enviar…",
+      "sent": "Procura em {email} um link para iniciar sessão.",
+      "error": "Não foi possível enviar o link. Tenta outra vez."
+    }
+  },
+  "confirmSignIn": {
+    "title": "Confirmar início de sessão",
+    "text": "Por segurança, só iniciamos a tua sessão quando clicares abaixo. Assim, os programas que analisam links nos emails não gastam o link antes de ti.",
+    "button": "Confirmar início de sessão"
+  },
+  "contact": {
+    "title": "Contacto",
+    "text": "Móveis por medida, colaborações de conteúdo ou só uma dúvida sobre um projeto: entra em contacto.",
+    "name": "Nome",
+    "namePlaceholder": "O teu nome",
+    "email": "Email",
+    "emailPlaceholder": "tu@email.com",
+    "message": "Mensagem",
+    "messagePlaceholder": "Descreve o teu projeto ou a tua dúvida",
+    "send": "Enviar",
+    "emailHeading": "Email",
+    "workshopHeading": "Oficina",
+    "workshopValue": "Eslováquia",
+    "socialHeading": "Redes sociais"
+  },
+  "collaborate": {
+    "title": "Colaborar",
+    "intro": "Construo para marcas da mesma forma que construo para a câmara: sem atalhos, sem enchimento. Se as tuas ferramentas ou materiais têm lugar numa oficina a sério, vamos falar.",
+    "heroAlt": "Centro de maquinação CNC Biesse Rover A Smart na oficina",
+    "philosophyTitle": "Construir. Partilhar. Inspirar.",
+    "philosophyText": "A filosofia por trás de tudo o que construo, com ou sem câmara.",
+    "story": "Sou o Tom: quinze anos a trabalhar a madeira como profissional, não desde que peguei numa câmara. A TallWoodMaker documenta trabalho real para clientes: cozinhas, mobiliário por medida e interiores completos, feitos todos os dias com máquinas CNC e seccionadoras, não projetos de fim de semana. O canal existe para passar o ofício como deve ser, da forma como mo ensinaram. O entretenimento é uma consequência, não o objetivo.",
+    "numbersTitle": "Em números",
+    "numbersText": "Um olhar rápido sobre o público por trás do canal.",
+    "stats": {
+      "followers": "Seguidores no total",
+      "reach": "Alcance mensal",
+      "years": "Anos no ofício"
+    },
+    "gettingTitle": "O que recebes realmente",
+    "gettingText": "Isto é o que uma parceria põe, de facto, à frente de marceneiros reais.",
+    "photoAlts": {
+      "panelSaw": "Tom a carregar uma placa na seccionadora Biesse Selco",
+      "edgeBanding": "Orladora a aplicar orla num painel",
+      "workshop": "Vista geral da oficina com estantes de placas e uma prensa a quente"
+    },
+    "benefits": {
+      "audience": {
+        "title": "Um público que trabalha a madeira",
+        "text": "Entusiastas da marcenaria e futuros profissionais, não gente a fazer scroll por fazer: pessoas que veem porque estão mesmo a construir alguma coisa."
+      },
+      "footage": {
+        "title": "Imagens reais da oficina",
+        "text": "Ferramentas e materiais mostrados exatamente como são usados em trabalhos reais, numa oficina em funcionamento. Nada encenado para a câmara."
+      },
+      "voice": {
+        "title": "Uma voz credível",
+        "text": "Quinze anos de experiência no ofício por trás de cada recomendação, não um criador a ler um guião para um acordo com uma marca."
+      }
+    },
+    "optionsTitle": "Opções de parceria",
+    "optionsText": "Algumas formas de trabalharmos juntos. Cada parceria é ajustada à medida.",
+    "options": {
+      "mention": {
+        "title": "Menção do produto",
+        "text": "A tua ferramenta ou material mostrado e referido num vídeo normal de construção."
+      },
+      "feature": {
+        "title": "Vídeo dedicado",
+        "text": "Um vídeo inteiro à volta do teu produto: análise, teste ou tutorial."
+      },
+      "ongoing": {
+        "title": "Parceria contínua",
+        "text": "Vários vídeos ao longo de uma temporada, mais menções na oficina e nas redes sociais."
+      }
+    },
+    "quote": "Pedir orçamento",
+    "talkTitle": "Vamos falar",
+    "talkText": "Se as tuas ferramentas ou materiais aguentam uma oficina em funcionamento, entra em contacto e vemos o que faz sentido.",
+    "talkCta": "Iniciar conversa"
+  },
+  "benefits": {
+    "title": "Vantagens",
+    "intro": "Ferramentas e materiais que uso mesmo na oficina, com códigos de desconto para a minha comunidade.",
+    "text": "Estas são as marcas que aparecem em trabalho real para clientes, não patrocinadores que experimentei uma vez para um vídeo. Se está aqui, é porque primeiro ganhou um lugar na oficina. O desconto é uma vantagem real para quem me acompanha, não mais um anúncio.",
+    "deals": {
+      "spetool": {
+        "category": "Ferramentas de marcenaria: fresas para CNC, grampos para painéis, trenós para tupia, acessórios de aspiração",
+        "text": "Fresas de precisão e acessórios de oficina usados em projetos reais para clientes, não só analisados, mas usados a sério.",
+        "discount": "10% de desconto na tua encomenda"
+      }
+    },
+    "visit": "Visitar site →",
+    "noCode": "Não precisas de código. O desconto é aplicado automaticamente através do link acima.",
+    "moreTitle": "Mais ofertas em breve",
+    "moreText": "Estou a adicionar mais códigos de desconto para as ferramentas e materiais que uso mesmo na oficina. Volta em breve."
+  },
+  "legal": {
+    "englishOnly": "Este documento só está disponível em inglês."
+  },
+  "cookies": {
+    "bannerText": "Usamos cookies para manter o site a funcionar e, com o teu consentimento, para perceber como é usado. Consulta a nossa <link>Política de Cookies</link> para mais detalhes.",
+    "manage": "Gerir preferências",
+    "reject": "Rejeitar não essenciais",
+    "accept": "Aceitar todos",
+    "save": "Guardar preferências",
+    "modalTitle": "Preferências de cookies",
+    "modalText": "Escolhe que cookies podemos usar. Podes mudar isto quando quiseres no link do rodapé.",
+    "necessary": {
+      "title": "Necessários",
+      "text": "Necessários para o início de sessão e o pagamento funcionarem. Sempre ativos.",
+      "label": "Cookies necessários"
+    },
+    "analytics": {
+      "title": "Análise",
+      "text": "Ajudam-nos a perceber como os visitantes usam o site, para o podermos melhorar.",
+      "label": "Cookies de análise"
+    },
+    "marketing": {
+      "title": "Marketing",
+      "text": "Usados para medir e personalizar anúncios. Desativados, a não ser que os atives.",
+      "label": "Cookies de marketing"
+    }
+  },
+  "notFound": {
+    "title": "Página não encontrada",
+    "text": "Esta página não existe ou mudou de sítio.",
+    "home": "Voltar à página inicial"
+  },
+  "products": {
+    "plan-kids-chair": {
+      "short": "Uma cadeira de criança simples e robusta. Ideal para principiantes.",
+      "description": "Plano completo com medidas e lista de corte para uma cadeira de criança simples e robusta. Ideal para principiantes, sem gabaritos.",
+      "whatYouLearn": []
+    },
+    "ebook-zero-to-first-client": {
+      "short": "Projetar, mandar cortar fora, montar, receber.",
+      "description": "Como passei de fazer coisas para mim a conseguir o meu primeiro cliente pagante em marcenaria: os passos exatos, por ordem.",
+      "whatYouLearn": []
+    },
+    "plan-kitchen-cabinet-library": {
+      "short": "Listas de corte e desenhos para 4 módulos de armário.",
+      "description": "Quatro tipos de armário de cozinha, um só sistema de módulos: planos com medidas e listas de corte para armários de base, de parede, colunas/despensa e de canto que encaixam todos entre si.",
+      "whatYouLearn": [
+        "Construir os quatro tipos principais de armário — de base, de parede, colunas/despensa e de canto como um só sistema de módulos compatíveis, não quatro peças avulsas.",
+        "Ter uma lista de corte completa e um desenho com medidas para cada módulo — nada adivinhado, nada para resolver no chão da oficina.",
+        "Encomendar as ferragens certas à primeira — parafusos confirmat, excêntricos, dobradiças e pés reguláveis, nas medidas certas para cada tipo de armário.",
+        "Resolver o armário de canto com confiança — a parte da maioria das cozinhas que mais dá problemas, planeada e desenhada como qualquer outro módulo.",
+        "Fazer acabamentos que aguentam o uso diário — os passos de acabamento e manutenção que mantêm uma cozinha com bom aspeto durante anos."
+      ]
+    },
+    "ebook-kitchen-from-scratch": {
+      "short": "Da medição da divisão à última porta.",
+      "description": "Tudo o que gostava de ter sabido antes de construir a minha primeira cozinha: medir, cortar, instalar e acabar, do início ao fim, sem oficina profissional.",
+      "whatYouLearn": [
+        "Ler qualquer cozinha — medir uma divisão, fazer uma régua de alturas e definir um triângulo de trabalho que funcione mesmo, antes de cortares uma única placa.",
+        "Transformar uma disposição numa encomenda real — juntar listas de corte, contar placas e encomendar as ferragens de que precisas, sem nada adivinhado nem desperdiçado.",
+        "Construir e instalar armários bem assentes — montar as caixas em série e depois nivelar, unir e ajustar à parede uma linha de armários de base e de parede para ficarem firmes e esquadriados.",
+        "Fazer o molde e ajustar a bancada tu próprio — incluindo os recortes para o lava-loiça e a placa, as uniões e a vedação, sem pagares a alguém para o fazer.",
+        "Acabar como um profissional — portas penduradas direitas de uma só vez, rodapés colocados, iluminação ligada e uma lista de verificação final para nada ficar esquecido."
+      ]
+    },
+    "ebook-wardrobes-closets": {
+      "short": "Sistemas embutidos, independentes e closets.",
+      "description": "Três sistemas de roupeiro, um só guia: embutido com portas de correr, independente com portas de abrir e closet com prateleiras abertas, planeados, construídos e montados.",
+      "whatYouLearn": [
+        "Escolher o sistema certo para o teu espaço — embutido com portas de correr, independente com portas de abrir ou closet com prateleiras abertas, comparados pela profundidade e pelo espaço livre que cada um realmente precisa.",
+        "Construir um roupeiro embutido de correr num vão — usando as paredes e o teto como estrutura, com a calha superior e o trilho bem dimensionados.",
+        "Construir um roupeiro independente de abrir com uma caixa completa de seis lados — com o número certo de dobradiças para a altura da porta, não adivinhado.",
+        "Organizar bem o interior — alturas de pendurar, especificações dos varões e espaçamento das prateleiras que servem mesmo para roupa, não só no papel.",
+        "Montar as ferragens e terminar o trabalho — trilhos das portas de correr, gavetas e acessórios, até à lista de verificação final do dia da montagem."
+      ]
+    },
+    "plan-wardrobe-cabinet-library": {
+      "short": "Desenhos técnicos para os três sistemas de roupeiro.",
+      "description": "Três sistemas de roupeiro, um só método de construção: planos com medidas e listas de corte para roupeiro embutido de correr, independente de abrir e closet aberto.",
+      "whatYouLearn": [
+        "Escolher o sistema de roupeiro certo para o teu espaço — embutido de correr, independente de abrir ou closet aberto, comparados pela profundidade, altura e espaço livre que cada um realmente precisa.",
+        "Construir qualquer um dos três com o mesmo sistema de caixa e ferragens — a lógica de construção é a mesma, seja qual for o formato que serve à tua divisão.",
+        "Seguir uma lista de corte completa e um desenho com medidas para cada sistema — nada adivinhado, nada para resolver no chão da oficina.",
+        "Ter alturas de pendurar, espaçamento de prateleiras e especificações das ferragens das portas válidas para os três sistemas — nas medidas certas à primeira.",
+        "Montar passo a passo — desde marcar a primeira ripa de fixação à parede ou a calha superior até aos remates finais e à montagem das ferragens."
+      ]
+    },
+    "plan-kids-bunk-bed": {
+      "short": "Pinho maciço, 90 cm em cima, 140 cm em baixo.",
+      "description": "Um beliche em pinho maciço com cama de solteiro em cima e de casal em baixo, seguro desde o início: escada fixa, guarda em toda a altura, lista de corte completa e montagem passo a passo.",
+      "whatYouLearn": [
+        "Construir um beliche completo com solteiro em cima e casal em baixo — uma cama mais estreita em cima e uma mais larga em baixo, a partir de uma só lista de corte em pinho maciço.",
+        "Seguir uma lista de corte completa e um desenho com medidas — 13 linhas, 50 peças, vistas de frente e de lado com todas as medidas indicadas.",
+        "Montar pela ordem certa — estrutura de baixo, ripas, estrutura de cima, ripas, guarda e escada, e depois uma verificação final, passo a passo.",
+        "Colocar uma escada fixa e uma guarda em toda a altura — integradas desde o início, não aparafusadas à última hora.",
+        "Deixá-lo seguro para crianças — o espaçamento da guarda e as indicações de idade a confirmar com a norma de segurança do teu país antes de ser usado."
+      ]
+    },
+    "bundle-kitchen-starter": {
+      "short": "O ebook e todos os planos de armários para uma cozinha inteira.",
+      "description": "Tudo o que precisas para construir a tua cozinha: o ebook completo com o passo a passo e os planos de armários correspondentes, juntos por menos do que em separado.",
+      "whatYouLearn": [
+        "Planear e construir uma cozinha completa de raiz — medir a divisão, definir o triângulo de trabalho, encomendar o material e instalar os armários, do início ao fim.",
+        "Construir todos os tipos de armário de que precisas com um só sistema compatível — de base, de parede, colunas/despensa e de canto, todos com a mesma construção, material e ferragens.",
+        "Ter todas as listas de corte e desenhos com medidas num só pacote — nada adivinhado, nada para resolver no chão da oficina.",
+        "Montar e acabar como um profissional — fazer o molde e ajustar a bancada tu próprio, pendurar as portas direitas e fazer acabamentos que aguentam o uso diário.",
+        "Poupar 10 € em relação a comprar os dois em separado — 33 € em vez de 43 €."
+      ]
+    },
+    "bundle-complete-builder": {
+      "short": "Mentalidade de negócio + planos de cozinha e roupeiro prontos para clientes.",
+      "description": "Mentalidade de negócio + planos de cozinha e roupeiro prontos para clientes: tudo para passar de construir para ti a construir para clientes que pagam.",
+      "whatYouLearn": [
+        "Passar de construir para ti a construir para clientes que pagam — os passos, as ferramentas e o orçamento exatos que são precisos para conseguir o primeiro trabalho pago.",
+        "Construir uma cozinha completa e os dois principais formatos de roupeiro — planear a divisão, encomendar o material e instalar armários e roupeiros com qualidade profissional.",
+        "Trabalhar com um só sistema de construção de armários para cozinhas e roupeiros — módulos de cozinha de base, de parede, colunas/despensa e de canto, mais roupeiros embutidos de correr, independentes de abrir e closets abertos.",
+        "Ter todas as listas de corte e desenhos com medidas dos quatro planos num só pacote — nada adivinhado, nada para resolver no chão da oficina.",
+        "Poupar 42 € em relação a comprar os cinco em separado — 63 € em vez de 105 €."
+      ]
+    }
+  }
+}

@@ -1,4 +1,7 @@
 import type { NextConfig } from "next";
+import createNextIntlPlugin from "next-intl/plugin";
+
+const withNextIntl = createNextIntlPlugin("./src/i18n/request.ts");
 
 const nextConfig: NextConfig = {
   experimental: {
@@ -11,9 +14,9 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       { source: "/gallery", destination: "/about", permanent: true },
-      { source: "/video", destination: "/about", permanent: true },
+      { source: "/video", destination: "/videos", permanent: true },
     ];
   },
 };
 
-export default nextConfig;
+export default withNextIntl(nextConfig);

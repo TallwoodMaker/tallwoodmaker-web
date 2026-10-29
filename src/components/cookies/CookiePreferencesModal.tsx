@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { useTranslations } from "next-intl";
 import { useConsent } from "./ConsentContext";
 
 function ToggleSwitch({
@@ -44,6 +45,7 @@ export default function CookiePreferencesModal() {
     rejectNonEssential,
     savePreferences,
   } = useConsent();
+  const t = useTranslations("cookies");
 
   const [analytics, setAnalytics] = useState(consent.analytics);
   const [marketing, setMarketing] = useState(consent.marketing);
@@ -92,49 +94,46 @@ export default function CookiePreferencesModal() {
         className="w-full max-w-[480px] rounded-md bg-cream p-6 shadow-xl"
       >
         <h2 id="cookie-preferences-title" className="mb-1 text-xl font-bold">
-          Cookie preferences
+          {t("modalTitle")}
         </h2>
         <p className="mb-6 text-[14px] text-ink-muted">
-          Choose which cookies we can use. You can change this anytime from
-          the footer link.
+          {t("modalText")}
         </p>
 
         <div className="mb-6 grid gap-5">
           <div className="flex items-start justify-between gap-4">
             <div>
-              <div className="font-semibold">Necessary</div>
+              <div className="font-semibold">{t("necessary.title")}</div>
               <p className="text-[13px] text-ink-muted">
-                Required for sign-in and checkout to work. Always on.
+                {t("necessary.text")}
               </p>
             </div>
-            <ToggleSwitch checked disabled label="Necessary cookies" />
+            <ToggleSwitch checked disabled label={t("necessary.label")} />
           </div>
           <div className="flex items-start justify-between gap-4">
             <div>
-              <div className="font-semibold">Analytics</div>
+              <div className="font-semibold">{t("analytics.title")}</div>
               <p className="text-[13px] text-ink-muted">
-                Helps us understand how visitors use the site, so we can
-                improve it.
+                {t("analytics.text")}
               </p>
             </div>
             <ToggleSwitch
               checked={analytics}
               onChange={setAnalytics}
-              label="Analytics cookies"
+              label={t("analytics.label")}
             />
           </div>
           <div className="flex items-start justify-between gap-4">
             <div>
-              <div className="font-semibold">Marketing</div>
+              <div className="font-semibold">{t("marketing.title")}</div>
               <p className="text-[13px] text-ink-muted">
-                Used to measure and personalize ads. Off unless you turn it
-                on.
+                {t("marketing.text")}
               </p>
             </div>
             <ToggleSwitch
               checked={marketing}
               onChange={setMarketing}
-              label="Marketing cookies"
+              label={t("marketing.label")}
             />
           </div>
         </div>
@@ -145,21 +144,21 @@ export default function CookiePreferencesModal() {
             onClick={rejectNonEssential}
             className="cursor-pointer rounded-full border border-border px-5 py-2.5 text-[14px] font-semibold text-ink"
           >
-            Reject non-essential
+            {t("reject")}
           </button>
           <button
             type="button"
             onClick={() => savePreferences({ analytics, marketing })}
             className="cursor-pointer rounded-full border border-ink px-5 py-2.5 text-[14px] font-semibold text-ink"
           >
-            Save preferences
+            {t("save")}
           </button>
           <button
             type="button"
             onClick={acceptAll}
             className="cursor-pointer rounded-full bg-brand px-5 py-2.5 text-[14px] font-bold text-ink"
           >
-            Accept all
+            {t("accept")}
           </button>
         </div>
       </div>

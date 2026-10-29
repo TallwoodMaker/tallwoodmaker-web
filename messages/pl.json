@@ -1,0 +1,812 @@
+{
+  "meta": {
+    "siteDescription": "Stolarstwo od pierwszego cięcia do własnego warsztatu. Plany, poradniki i filmy z prawdziwych zleceń w warsztacie 900 m².",
+    "home": {
+      "title": "TallWoodMaker: od pierwszego cięcia do własnego warsztatu",
+      "description": "Stolarstwo od A do Z, nagrywane przy prawdziwych zleceniach w warsztacie 900 m². W domu czy we własnym warsztacie: każdy krok, narzędzie i błąd."
+    },
+    "buildAtHome": {
+      "title": "Zbuduj własną kuchnię w domu",
+      "description": "Do kuchni nie potrzebujesz warsztatu. Zamów rozkrój płyt w usłudze cięcia i złóż wszystko w domu: plan, lista zakupów i każdy krok po kolei."
+    },
+    "ownShop": {
+      "title": "Załóż własny warsztat stolarski",
+      "description": "Warsztat, który na siebie zarabia: co kupić najpierw, ile liczyć za robotę i jak zaplanować zlecenie w kilka minut. 15 lat pracy dla klientów."
+    },
+    "start": {
+      "title": "Zacznij tutaj",
+      "description": "Od pierwszego cięcia do własnego warsztatu. Wybierz swoją ścieżkę i pobierz darmową listę 10 narzędzi na start."
+    },
+    "videos": {
+      "title": "Filmy",
+      "description": "Prawdziwe zlecenia nagrywane w warsztacie: oprowadzanie po warsztacie, dzień w warsztacie i krótkie klipy na TikToku."
+    },
+    "forBrands": {
+      "title": "Współpraca z TallWoodMaker",
+      "description": "Współpraca marek z zawodowym stolarzem. Treści nagrywane przy prawdziwych zleceniach dla stolarzy i majsterkowiczów z Europy i USA."
+    },
+    "about": {
+      "title": "O mnie",
+      "description": "Jestem Tom. Od 15 lat robię dla klientów kuchnie, szafy i całe wnętrza, a wszystko, co nagrywam, to prawdziwe zlecenia."
+    },
+    "shop": {
+      "title": "Plany i poradniki",
+      "description": "Plany meblowe, listy formatek i ebooki z prawdziwych zleceń, a nie rysowane zza biurka."
+    },
+    "contact": {
+      "title": "Kontakt",
+      "description": "Meble na wymiar, współpraca przy treściach albo pytanie o projekt: napisz do mnie."
+    },
+    "cart": {
+      "title": "Koszyk"
+    },
+    "orderConfirmed": {
+      "title": "Zamówienie potwierdzone"
+    },
+    "premium": {
+      "title": "Premium",
+      "description": "Pełne realizacje, dłuższe wersje filmów i pliki warsztatowe dla członków."
+    },
+    "subscribe": {
+      "title": "Premium",
+      "description": "Pełne realizacje, dłuższe wersje filmów i pliki warsztatowe dla członków TallWoodMaker Premium. 9 €/miesiąc, rezygnujesz w każdej chwili."
+    },
+    "collaborate": {
+      "title": "Współpraca",
+      "description": "Współpraca marek z zawodowym stolarzem: piętnaście lat w zawodzie, prawdziwe treści z warsztatu, nic ustawionego pod kamerę."
+    },
+    "benefits": {
+      "title": "Zniżki",
+      "description": "Kody rabatowe i oferty partnerskie na narzędzia i materiały, których używam w warsztacie TallWoodMaker."
+    },
+    "confirmSignIn": {
+      "title": "Potwierdź logowanie"
+    },
+    "terms": {
+      "title": "Regulamin"
+    },
+    "privacy": {
+      "title": "Polityka prywatności"
+    },
+    "cookies": {
+      "title": "Polityka cookies"
+    },
+    "course": {
+      "title": "Kurs online"
+    },
+    "notFound": {
+      "title": "Nie znaleziono strony"
+    }
+  },
+  "topBar": {
+    "text": "Do pobrania za darmo: lista 10 narzędzi na start, które kupiłbym dziś jeszcze raz",
+    "cta": "Pobierz"
+  },
+  "nav": {
+    "mainLabel": "Główna",
+    "homeLink": "TallWoodMaker – strona główna",
+    "start": "Zacznij tutaj",
+    "buildAtHome": "Buduję w domu",
+    "ownShop": "Własny warsztat",
+    "plans": "Plany i poradniki",
+    "videos": "Filmy",
+    "premium": "Premium",
+    "about": "O mnie",
+    "getFreeList": "Pobierz darmową listę",
+    "cart": "Koszyk",
+    "cartWithCount": "Koszyk ({count})",
+    "cartAria": "{count, plural, =0 {Koszyk} one {Koszyk, # produkt} few {Koszyk, # produkty} many {Koszyk, # produktów} other {Koszyk, # produktu}}",
+    "signIn": "Zaloguj się",
+    "openMenu": "Otwórz menu",
+    "closeMenu": "Zamknij menu",
+    "changeLanguage": "Zmień język",
+    "language": "Język"
+  },
+  "footer": {
+    "forBrands": "Dla marek",
+    "contact": "Kontakt",
+    "copyright": "© {year} TallWoodMaker s.r.o.",
+    "social": "Social media",
+    "legal": "Informacje prawne",
+    "terms": "Regulamin",
+    "privacy": "Polityka prywatności",
+    "cookiePolicy": "Polityka cookies",
+    "cookieSettings": "Ustawienia cookies"
+  },
+  "paths": {
+    "home": "Buduję w domu",
+    "shop": "Własny warsztat"
+  },
+  "productTypes": {
+    "plan": "Plan",
+    "ebook": "Ebook",
+    "bundle": "Pakiet"
+  },
+  "productCard": {
+    "save": "Oszczędzasz {amount} €",
+    "bestStart": "Najlepszy start · Oszczędzasz {amount} €",
+    "everything": "Wszystko · Oszczędzasz {amount} €",
+    "pdfInEnglish": "PDF po angielsku",
+    "regularPrice": "Cena regularna {price}"
+  },
+  "pathCards": {
+    "question": "Gdzie jesteś teraz?",
+    "home": {
+      "title": "Buduję w domu",
+      "text": "Garaż, balkon albo kąt w piwnicy"
+    },
+    "shop": {
+      "title": "Zakładam własny warsztat",
+      "text": "Od hobby do warsztatu, który na siebie zarabia"
+    }
+  },
+  "leadForm": {
+    "emailLabel": "Adres e-mail",
+    "placeholder": "twoj@email.com",
+    "sending": "Wysyłanie…",
+    "success": "Dzięki. Sprawdź skrzynkę.",
+    "waitlistSuccess": "Dzięki. Jesteś na liście. Termin poznasz jako pierwszy.",
+    "invalidEmail": "Wpisz poprawny adres e-mail.",
+    "error": "Coś poszło nie tak. Spróbuj ponownie.",
+    "honeypot": "Zostaw to pole puste"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Dla majsterkowiczów i stolarzy · od fachowca z 15-letnim stażem",
+      "title": "Od pierwszego cięcia do <mark>własnego warsztatu.</mark>",
+      "text": "Stolarstwo od A do Z, nagrywane przy prawdziwych zleceniach w warsztacie 900 m². Czy budujesz w domu, czy zakładasz własny warsztat, pokazuję ci każdy krok, każde narzędzie i każdy błąd.",
+      "photoAlt": "Tom przy pile panelowej w warsztacie, przy prawdziwym zleceniu",
+      "nameTag": "Tom",
+      "nameTagRole": "Stolarz i twórca · 15 lat",
+      "badge": "Prawdziwe zlecenia, nie scenografia"
+    },
+    "proof": {
+      "label": "W liczbach",
+      "followers": "osób obserwuje na IG, YouTube i TikToku",
+      "monthlyReach": "wyświetleń miesięcznie",
+      "yearsValue": "{count} lat",
+      "years": "pracy dla płacących klientów",
+      "workshopValue": "{count} m²",
+      "workshop": "prawdziwego warsztatu",
+      "workedWith": "Współpracowałem z"
+    },
+    "why": {
+      "eyebrow": "Dlaczego warto uczyć się ode mnie",
+      "title": "Większość filmów pokazuje efekt. Ja pokazuję decyzje.",
+      "text": "To, czego uczysz się latami i co kosztuje, kiedy zrobisz to źle.",
+      "items": {
+        "board": {
+          "title": "Jaką płytę kupić",
+          "text": "Płyta wiórowa, MDF czy sklejka, i gdzie to naprawdę ma znaczenie."
+        },
+        "order": {
+          "title": "Ile zamówić",
+          "text": "Listy formatek, po których zostają odpady, a nie braki."
+        },
+        "walls": {
+          "title": "Krzywe ściany",
+          "text": "Szafki wiszą w poziomie, nawet gdy nic w pomieszczeniu nie jest proste."
+        },
+        "charge": {
+          "title": "Ile liczyć za robotę",
+          "text": "Wycena zlecenia, w której okucia i twoje godziny są opłacone."
+        }
+      }
+    },
+    "paths": {
+      "title": "Dwie ścieżki. Wybierz swoją.",
+      "home": {
+        "title": "Do zbudowania własnej kuchni nie potrzebujesz warsztatu.",
+        "points": [
+          "Jasny plan, od pomiarów do ostatnich drzwiczek",
+          "Dokładna lista płyt i okuć do zamówienia",
+          "Efekt, jakby zrobił to fachowiec"
+        ],
+        "cta": "Zacznij ścieżkę domową →"
+      },
+      "shop": {
+        "title": "Zbuduj warsztat, który zarabia, a nie taki, który zjada ci wieczory.",
+        "points": [
+          "Wiesz dokładnie, ile liczyć za robotę",
+          "Kupujesz tylko maszyny, które się zwracają",
+          "Planujesz zlecenie w kilka minut, a nie cały wieczór"
+        ],
+        "cta": "Zacznij ścieżkę warsztatową →"
+      }
+    },
+    "lead": {
+      "eyebrow": "Zacznij za darmo",
+      "title": "Lista 10 narzędzi na start, które kupiłbym dziś jeszcze raz.",
+      "text": "Bez zgadywania i bez narzędzi, których nigdy nie użyjesz. Prosto na twoją skrzynkę.",
+      "submit": "Wyślij mi listę"
+    },
+    "plans": {
+      "eyebrow": "Plany i poradniki",
+      "title": "Plany z prawdziwych zleceń, a nie rysowane zza biurka.",
+      "seeAll": "Zobacz wszystkie plany →",
+      "note": "Wszystkie plany i ebooki to pliki PDF po angielsku. Kolejne języki są w drodze."
+    },
+    "realJobs": {
+      "eyebrow": "Prawdziwe zlecenia",
+      "title": "Zrobione dla klientów. Teraz masz je jako plany."
+    },
+    "about": {
+      "title": "Cześć, jestem Tom.",
+      "p1": "Od 15 lat robię dla klientów kuchnie, szafy i całe wnętrza. Wszystko, co nagrywam, to prawdziwe zlecenia, a nie scenografia. Dzielę się tym, czego uczyłem się latami: planami, liczbami i błędami, żebyś ty mógł je ominąć.",
+      "p2": "Czy budujesz pierwszą kuchnię w domu, czy zakładasz pierwszy warsztat, zacznij tutaj.",
+      "homeCta": "Buduję w domu",
+      "shopCta": "Zakładam warsztat",
+      "portraitAlt": "Portret Toma w warsztacie, z tarczą piły w rękach"
+    }
+  },
+  "gallery": {
+    "panelSaw": "Tom kładzie płytę na piłę panelową",
+    "edgeBander": "Tom podaje formatkę do okleiniarki",
+    "cnc": "Centrum obróbcze CNC w warsztacie",
+    "edgeBanderLine": "Okleiniarka z odciągiem trocin pod sufitem",
+    "workshopWide": "Widok warsztatu z regałami na płyty i prasą na gorąco",
+    "shopFloor": "Hala warsztatu z formatówką i frezarką dolnowrzecionową"
+  },
+  "buildAtHome": {
+    "badge": "Buduję w domu",
+    "title": "Do zbudowania własnej kuchni nie potrzebujesz warsztatu.",
+    "text": "Zamów rozkrój i oklejanie obrzeży w usłudze cięcia, a złóż wszystko w domu prostymi narzędziami. Pokażę ci dokładny plan, listę zakupów i kolejność każdego kroku.",
+    "ctaSteps": "Zobacz 5 kroków",
+    "ctaPlans": "Plany do twojej kuchni",
+    "roadmapEyebrow": "Plan działania",
+    "roadmapTitle": "Od pustego pomieszczenia do gotowej kuchni w 5 krokach.",
+    "steps": {
+      "measure": {
+        "title": "Pomiar i projekt",
+        "text": "Jak zmierzyć pomieszczenie i rozplanować szafki, żeby nic nie kolidowało z rurami i gniazdkami."
+      },
+      "order": {
+        "title": "Zamów materiał",
+        "text": "Ile płyt, gdzie zlecić rozkrój i jakie okucia zamówić."
+      },
+      "boxes": {
+        "title": "Złóż korpusy",
+        "text": "Składanie prostych, sztywnych korpusów w domu, seriami."
+      },
+      "install": {
+        "title": "Montaż",
+        "text": "Krzywe ściany, wieszanie szafek górnych, dopasowanie blatu."
+      },
+      "finish": {
+        "title": "Wykończenie",
+        "text": "Fronty za jednym podejściem, cokoły, oświetlenie i końcowa lista kontrolna."
+      }
+    },
+    "freeVideo": "Darmowy film",
+    "productsTitle": "Wszystko do budowania w domu",
+    "listTitle": "Nie wiesz, od czego zacząć?",
+    "listText": "Pobierz listę 10 narzędzi na start, które kupiłbym dziś jeszcze raz. Za darmo.",
+    "listSubmit": "Wyślij mi listę",
+    "switchPath": "Robisz dla klientów? Przejdź do ścieżki warsztatowej →"
+  },
+  "ownShop": {
+    "badge": "Własny warsztat",
+    "title": "Zbuduj warsztat, który zarabia, a nie taki, który <mark>zjada ci wieczory.</mark>",
+    "text": "15 lat realizowania zleceń dla klientów: co kupić najpierw, ile liczyć za robotę i jak zaplanować zlecenie w kilka minut zamiast przez cały wieczór.",
+    "ctaSteps": "Zobacz 6 kroków",
+    "ctaTools": "Narzędzia i poradniki",
+    "photoAlt": "Warsztat ze szlifierką szerokotaśmową i odciągiem pod sufitem",
+    "roadmapEyebrow": "Plan działania",
+    "roadmapTitle": "Od pustego garażu do pierwszego zlecenia z zyskiem.",
+    "stepLabel": "Krok {number}",
+    "ownToolLabel": "Krok {number} · Moje własne narzędzie",
+    "steps": {
+      "space": {
+        "title": "Przestrzeń bez wyrzuconych pieniędzy",
+        "text": "Układ i przestrzeń, które działają, zanim wydasz choćby grosz na maszyny."
+      },
+      "machines": {
+        "title": "Maszyny, które się zwracają",
+        "text": "Co kupić najpierw, a co zostawić usłudze cięcia."
+      },
+      "cutting": {
+        "title": "Rozkrój bez odpadów",
+        "text": "Właśnie po to zrobiłem MebCut. Zrób zdjęcie listy formatek i w kilka sekund dostajesz plan rozkroju.",
+        "cta": "Wypróbuj MebCut za darmo →"
+      },
+      "pricing": {
+        "title": "Wyceniaj z zyskiem",
+        "text": "Cena, która pokrywa okucia, twoje godziny i marżę."
+      },
+      "clients": {
+        "title": "Pierwsi klienci",
+        "text": "Gdzie ich szukać i jak nie sprzedawać się za tanio."
+      },
+      "evenings": {
+        "title": "Wieczory w domu",
+        "text": "Procesy, żeby cały warsztat nie stał na tobie."
+      }
+    },
+    "productsTitle": "Narzędzia i poradniki do twojego warsztatu",
+    "mebcut": {
+      "label": "Aplikacja · mebcut.com",
+      "text": "Plany rozkroju ze zdjęcia, asystent cięcia w telefonie.",
+      "price": "Darmowy start"
+    },
+    "waitlist": {
+      "eyebrow": "Warsztaty online na żywo · wkrótce",
+      "title": "Wyceniaj zlecenia z zyskiem, a nie za darmo.",
+      "text": "2 godziny na żywo, kalkulator, który zostaje u ciebie, i już nigdy nie zapomnisz o okuciach. Zapisz się na listę i poznaj termin jako pierwszy.",
+      "submit": "Zapisz się na listę"
+    },
+    "switchPath": "Budujesz dla siebie? Przejdź do ścieżki domowej →",
+    "freeVideo": "Darmowy film"
+  },
+  "start": {
+    "title": "Od pierwszego cięcia do <mark>własnego warsztatu.</mark>",
+    "text": "Wybierz swoją ścieżkę albo najpierw pobierz darmową listę 10 narzędzi na start.",
+    "leadTitle": "Lista 10 narzędzi na start, które kupiłbym dziś jeszcze raz.",
+    "leadText": "Bez zgadywania i bez narzędzi, których nigdy nie użyjesz. Prosto na twoją skrzynkę.",
+    "submit": "Wyślij mi listę"
+  },
+  "videos": {
+    "title": "Filmy",
+    "text": "Prawdziwe zlecenia nagrywane w warsztacie. Nowy film co tydzień na YouTube, krótsze klipy niemal codziennie na Instagramie i TikToku.",
+    "longFormTitle": "Dłuższe filmy",
+    "tiktokTitle": "Najnowsze na TikToku",
+    "channelsTitle": "Kanały",
+    "youtube": "Nowy film co tydzień, prosto z warsztatu.",
+    "instagram": "Codzienne klipy, rolki i kulisy.",
+    "tiktok": "Krótkie klipy z prawdziwych zleceń.",
+    "facebook": "Cotygodniowe podsumowania z warsztatu."
+  },
+  "forBrands": {
+    "title": "Współpraca z TallWoodMaker",
+    "p1": "Moi widzowie to stolarze i majsterkowicze z Europy i USA: ludzie, którzy naprawdę coś budują, od pierwszej kuchni w domu po własny warsztat.",
+    "p2": "Wszystko, co nagrywam, to prawdziwe zlecenia dla klientów w działającym warsztacie, więc twoje narzędzie czy materiał pokazuję tak, jak się go naprawdę używa, a nie ustawione pod kamerę.",
+    "statsTitle": "W liczbach",
+    "contactTitle": "Porozmawiajmy",
+    "contactText": "Opowiedz mi o swoim produkcie i o tym, co masz na myśli. Odpiszę osobiście.",
+    "emailCta": "Napisz do mnie"
+  },
+  "about": {
+    "title": "Cześć, jestem Tom.",
+    "photoAlt": "Tom, TallWoodMaker, z tarczą piły w warsztacie",
+    "storyP1": "Do stolarki trafiłem, naprawiając starą półkę, która miała iść na śmietnik. Pierwsza rzecz wyszła krzywo, druga lepiej, a trzecia trafiła do internetu. Z tego wyrosła codzienna praca w warsztacie.",
+    "storyP2": "Moje treści to nie tylko najlepsze momenty. Pokazuję wymiary, które się nie sprawdziły, narzędzia, które zasługują na więcej uwagi, i decyzje podejmowane przy samej pile.",
+    "process": {
+      "title": "Proces",
+      "text": "Od projektu do wykończenia: każdy krok udokumentowany, łącznie z błędami."
+    },
+    "tools": {
+      "title": "Narzędzia",
+      "text": "Mieszanka narzędzi ręcznych i maszyn. Tłumaczę co i dlaczego."
+    },
+    "community": {
+      "title": "Społeczność",
+      "text": "Pytania z komentarzy często stają się tematem kolejnego filmu."
+    },
+    "wideAlt": "Widok warsztatu ze szlifierką szerokotaśmową i odciągiem pod sufitem",
+    "galleryTitle": "Galeria",
+    "galleryText": "Zajrzyj do warsztatu: maszyny, proces i ludzie stojący za każdą realizacją.",
+    "galleryItems": {
+      "cnc": {
+        "title": "Maszyna CNC Biesse Rover",
+        "category": "Maszyna CNC",
+        "alt": "Centrum obróbcze CNC Biesse Rover A Smart w warsztacie"
+      },
+      "edgeBanding": {
+        "title": "Oklejanie obrzeży w toku",
+        "category": "Oklejanie obrzeży",
+        "alt": "Okleiniarka nakładająca obrzeże na formatkę"
+      },
+      "feedingEdgeBander": {
+        "title": "Podawanie do okleiniarki",
+        "category": "Oklejanie obrzeży",
+        "alt": "Tom podaje formatkę do okleiniarki"
+      },
+      "onPanelSaw": {
+        "title": "Przy pile panelowej",
+        "category": "Piła panelowa",
+        "alt": "Tom kładzie płytę na piłę panelową Biesse Selco"
+      },
+      "panelSaw": {
+        "title": "Piła panelowa Biesse Selco",
+        "category": "Piła panelowa",
+        "alt": "Piła panelowa Biesse Selco WN2 ze stołami odbiorczymi"
+      },
+      "break": {
+        "title": "Przerwa w warsztacie",
+        "category": "Za kulisami",
+        "alt": "Tom stoi w warsztacie obok ułożonych odpadów płyt"
+      },
+      "controls": {
+        "title": "Panel sterowania okleiniarki",
+        "category": "Oklejanie obrzeży",
+        "alt": "Panel sterowania okleiniarki Cehisa"
+      },
+      "storage": {
+        "title": "Magazyn płyt i prasa na gorąco",
+        "category": "Warsztat",
+        "alt": "Widok warsztatu z regałami na płyty i prasą na gorąco"
+      },
+      "dust": {
+        "title": "Odciąg i linia szlifująca",
+        "category": "Warsztat",
+        "alt": "Widok warsztatu ze szlifierką szerokotaśmową i kanałami odciągu pod sufitem"
+      },
+      "slidingSaw": {
+        "title": "Formatówka",
+        "category": "Warsztat",
+        "alt": "Widok warsztatu z formatówką i frezarką dolnowrzecionową"
+      },
+      "fravol": {
+        "title": "Okleiniarka Fravol",
+        "category": "Oklejanie obrzeży",
+        "alt": "Okleiniarka Fravol z rurami odciągu pod sufitem"
+      },
+      "floor": {
+        "title": "Hala warsztatu",
+        "category": "Warsztat",
+        "alt": "Okleiniarka Fravol i sieć kanałów odciągu pod sufitem warsztatu"
+      }
+    },
+    "videoTitle": "Filmy i social media",
+    "videoText": "Nowy film co tydzień. Krótsze klipy codziennie na Instagramie i TikToku.",
+    "youtubeCardTitle": "Oglądaj na YouTube",
+    "youtubeCardText": "Nowy film co tydzień, prosto z warsztatu.",
+    "instagramCardTitle": "Obserwuj na Instagramie",
+    "instagramCardText": "Codzienne klipy, rolki i kulisy z warsztatu.",
+    "tiktokCardTitle": "Oglądaj na TikToku",
+    "tiktokCardText": "Najnowsze TikToki znajdziesz na stronie Filmy.",
+    "tiktokCardCta": "Filmy →",
+    "facebookText": "Cotygodniowe podsumowania i transmisje na żywo z warsztatu.",
+    "followBuild": "Śledź budowę"
+  },
+  "shop": {
+    "title": "Plany i poradniki",
+    "text": "Plany, listy formatek i ebooki z prawdziwych zleceń, a nie rysowane zza biurka.",
+    "note": "Wszystkie plany i ebooki to pliki PDF po angielsku. Kolejne języki są w drodze.",
+    "all": "Wszystko",
+    "categories": {
+      "ebooks": "Ebooki",
+      "plans": "Plany",
+      "bundles": "Pakiety"
+    },
+    "addToCart": "Dodaj do koszyka",
+    "inCartRemove": "W koszyku · Usuń",
+    "placeholder": {
+      "plan": "podgląd planu",
+      "ebook": "okładka ebooka",
+      "bundle": "okładka pakietu"
+    }
+  },
+  "product": {
+    "back": "← Wróć do sklepu",
+    "whatYouLearn": "Czego się nauczysz",
+    "whatsIncluded": "Co zawiera",
+    "onItsOwn": "{price} osobno",
+    "view": "Zobacz →",
+    "sampleEbook": "Przykładowa strona z ebooka",
+    "samplePlan": "Przykładowa strona z planu",
+    "sampleAlt": "Przykładowa strona z: {title}",
+    "pdfNote": "PDF jest po angielsku."
+  },
+  "cart": {
+    "title": "Twój koszyk",
+    "empty": "Twój koszyk jest pusty.",
+    "back": "← Wróć do sklepu",
+    "remove": "Usuń",
+    "subtotal": "Suma częściowa",
+    "consent": "Chcę uzyskać natychmiastowy dostęp do tych treści cyfrowych i przyjmuję do wiadomości, że z chwilą rozpoczęcia dostarczania tracę prawo do odstąpienia od umowy. Akceptuję <terms>Regulamin</terms>.",
+    "checkout": "Przejdź do płatności",
+    "redirecting": "Przekierowywanie…",
+    "errorEmpty": "Twój koszyk jest pusty albo nic z jego zawartości nie jest już dostępne.",
+    "errorConsent": "Aby kontynuować, potwierdź, że chcesz uzyskać natychmiastowy dostęp do zakupionych treści cyfrowych.",
+    "errorNoUrl": "Stripe nie zwrócił adresu płatności. Spróbuj ponownie."
+  },
+  "success": {
+    "notConfirmedTitle": "Płatność jeszcze niepotwierdzona",
+    "notConfirmedText": "Jeśli właśnie zapłaciłeś, odśwież tę stronę za chwilę. Potwierdzenie może potrwać kilka sekund. Nadal nic? Napisz na <email>tom@tallwoodmaker.com</email> i podaj to zamówienie.",
+    "thanksTitle": "{count, plural, one {Dzięki, oto twój plik do pobrania} few {Dzięki, oto twoje pliki do pobrania} many {Dzięki, oto twoje pliki do pobrania} other {Dzięki, oto twoje pliki do pobrania}}",
+    "download": "Pobierz {file}",
+    "failure": "Płatność przeszła, ale wystąpił problem z wygenerowaniem linku do pobrania dla: {titles}. Napisz na <email>tom@tallwoodmaker.com</email>, podaj ten numer zamówienia, a wyślemy ci pliki:",
+    "expiry": "Te linki działają przez 24 godziny. Jeśli któryś wygaśnie, zapisz tę stronę w zakładkach i wróć na nią. Ponowne otwarcie generuje nowe linki."
+  },
+  "premium": {
+    "badge": "Premium",
+    "title": "Filmy Premium",
+    "text": "Pełne realizacje i dłuższe wersje filmów dla członków. Nowe treści dochodzą regularnie.",
+    "empty": "Nowe treści już wkrótce. Zajrzyj niedługo.",
+    "announcements": "Ogłoszenia",
+    "tabs": {
+      "all": "Wszystko",
+      "article": "Artykuły",
+      "video": "Filmy",
+      "plan_download": "Do pobrania"
+    },
+    "types": {
+      "article": "Artykuł",
+      "video": "Film",
+      "plan_download": "Do pobrania",
+      "announcement": "Aktualność"
+    },
+    "nothingYet": "Na razie nic tu nie ma.",
+    "download": "Pobierz",
+    "videoPlaceholder": "miniatura filmu",
+    "preview": "podgląd"
+  },
+  "subscribe": {
+    "badge": "Premium",
+    "title": "TallWoodMaker Premium",
+    "waitlistText": "Pełne realizacje, dłuższe wersje filmów i pliki warsztatowe dla członków. Dostęp do Premium ruszy wkrótce. Zapisz się na listę oczekujących, żeby być pierwszy w kolejce.",
+    "launchOffer": "Oferta na start",
+    "launchTitle": "Zapisz się teraz i dostań 50% zniżki na pierwsze 3 miesiące",
+    "launchText": "Osoby z listy oczekujących dostają dostęp jako pierwsze, a zniżka nalicza się automatycznie przy płatności.",
+    "heroText": "Pełne realizacje, dłuższe wersje filmów i pliki warsztatowe: to, co nie mieści się na YouTube. Dołącz za 9 €/miesiąc i od razu masz dostęp.",
+    "included": "Co dostajesz",
+    "previewText": "Podgląd tego, co czeka w środku. Nowe treści co miesiąc.",
+    "membersOnly": "Tylko dla członków",
+    "fallbackBenefits": [
+      "Pełne filmy z realizacji, od początku do końca: każdy krok, nie tylko najlepsze momenty",
+      "Dłuższe wersje filmów i oprowadzanie po warsztacie, których nie ma na YouTube",
+      "Plany i listy formatek do pobrania dla wybranych realizacji",
+      "Nowe treści co miesiąc",
+      "Rezygnujesz w każdej chwili, bez długoterminowego zobowiązania"
+    ],
+    "offerBadge": "Oferta na start: 50% zniżki na pierwsze 3 miesiące",
+    "price": "9 €",
+    "perMonth": "/miesiąc",
+    "codeText": "Masz kod startowy? Wpisz go przy płatności, a dostaniesz 50% zniżki na pierwsze 3 miesiące.",
+    "consent": "Chcę uzyskać natychmiastowy dostęp do Premium i przyjmuję do wiadomości, że z chwilą rozpoczęcia dostępu tracę prawo do odstąpienia od umowy. Akceptuję <terms>Regulamin</terms>.",
+    "consentError": "Aby kontynuować, zaznacz pole wyboru.",
+    "linkExpired": "Ten link do logowania wygasł albo został już użyty. Poproś o nowy poniżej.",
+    "subscribeCta": "Subskrybuj teraz: 9 €/miesiąc",
+    "signInPrompt": "Wpisz swój e-mail, żeby się zalogować i przejść do płatności",
+    "faqTitle": "Warto wiedzieć",
+    "faq": [
+      {
+        "q": "Czy mogę zrezygnować w każdej chwili?",
+        "a": "Tak. Rezygnujesz ze swojego konta, kiedy chcesz. Dostęp zostaje do końca okresu rozliczeniowego, za który już zapłaciłeś."
+      },
+      {
+        "q": "Jak wyglądają płatności?",
+        "a": "9 €/miesiąc, pobierane automatycznie, dopóki nie zrezygnujesz. Bez umowy rocznej."
+      },
+      {
+        "q": "Co się dzieje zaraz po zapisaniu się?",
+        "a": "Dostajesz e-mailem link do logowania, a potem trafiasz prosto do płatności. Dostęp odblokowuje się, gdy tylko płatność zostanie zakończona."
+      },
+      {
+        "q": "Co właściwie dostaję?",
+        "a": "Wszystko z sekcji „Co dostajesz” powyżej oraz wszystko, co nowego pojawi się w Premium w czasie twojego członkostwa."
+      }
+    ],
+    "countdown": {
+      "days": "Dni",
+      "hours": "Godziny",
+      "minutes": "Minuty",
+      "seconds": "Sekundy"
+    },
+    "waitlist": {
+      "join": "Zapisz się na listę oczekujących",
+      "joining": "Zapisywanie…",
+      "joined": "Jesteś na liście. Napiszemy do ciebie, gdy Premium ruszy.",
+      "error": "Nie udało się zapisać na listę oczekujących. Spróbuj ponownie."
+    },
+    "magicLink": {
+      "send": "Wyślij mi link",
+      "sending": "Wysyłanie…",
+      "sent": "Sprawdź {email}, tam znajdziesz link do logowania.",
+      "error": "Nie udało się wysłać linku. Spróbuj ponownie."
+    }
+  },
+  "confirmSignIn": {
+    "title": "Potwierdź logowanie",
+    "text": "Dla twojego bezpieczeństwa logujemy cię dopiero po kliknięciu poniżej. Dzięki temu skanery linków w poczcie nie zużyją linku, zanim zrobisz to ty.",
+    "button": "Potwierdź logowanie"
+  },
+  "contact": {
+    "title": "Kontakt",
+    "text": "Meble na wymiar, współpraca przy treściach albo po prostu pytanie o projekt: napisz do mnie.",
+    "name": "Imię",
+    "namePlaceholder": "Twoje imię",
+    "email": "E-mail",
+    "emailPlaceholder": "ty@email.com",
+    "message": "Wiadomość",
+    "messagePlaceholder": "Opisz swój projekt albo pytanie",
+    "send": "Wyślij",
+    "emailHeading": "E-mail",
+    "workshopHeading": "Warsztat",
+    "workshopValue": "Słowacja",
+    "socialHeading": "Social media"
+  },
+  "collaborate": {
+    "title": "Współpraca",
+    "intro": "Dla marek robię tak samo jak dla kamery: bez skrótów i bez zapychaczy. Jeśli twoje narzędzia albo materiały pasują do prawdziwego warsztatu, porozmawiajmy.",
+    "heroAlt": "Centrum obróbcze CNC Biesse Rover A Smart w warsztacie",
+    "philosophyTitle": "Buduj. Dziel się. Inspiruj.",
+    "philosophyText": "Filozofia stojąca za wszystkim, co robię, przed kamerą i poza nią.",
+    "story": "Jestem Tom: od piętnastu lat zawodowo pracuję w drewnie, nie od chwili, gdy wziąłem do ręki kamerę. TallWoodMaker dokumentuje prawdziwą pracę dla klientów: kuchnie, meble na wymiar i kompletne zabudowy wnętrz, robione codziennie na maszynach CNC i piłach panelowych, a nie weekendowe projekty. Kanał istnieje po to, żeby przekazywać fach porządnie, tak jak przekazano go mnie. Rozrywka to efekt uboczny, nie cel.",
+    "numbersTitle": "W liczbach",
+    "numbersText": "Krótko o widzach stojących za kanałem.",
+    "stats": {
+      "followers": "Łącznie obserwujących",
+      "reach": "Miesięczny zasięg",
+      "years": "Lat w zawodzie"
+    },
+    "gettingTitle": "Co właściwie dostajesz",
+    "gettingText": "Oto, co współpraca faktycznie pokazuje prawdziwym stolarzom.",
+    "photoAlts": {
+      "panelSaw": "Tom kładzie płytę na piłę panelową Biesse Selco",
+      "edgeBanding": "Okleiniarka nakładająca obrzeże na formatkę",
+      "workshop": "Widok warsztatu z regałami na płyty i prasą na gorąco"
+    },
+    "benefits": {
+      "audience": {
+        "title": "Widzowie, którzy pracują w drewnie",
+        "text": "Pasjonaci stolarki i przyszli zawodowcy, a nie przypadkowi przewijający: ludzie, którzy oglądają, bo naprawdę coś budują."
+      },
+      "footage": {
+        "title": "Prawdziwe nagrania z warsztatu",
+        "text": "Narzędzia i materiały pokazane dokładnie tak, jak używa się ich przy prawdziwych zleceniach, w działającym warsztacie. Nic ustawionego pod kamerę."
+      },
+      "voice": {
+        "title": "Wiarygodny głos",
+        "text": "Za każdą rekomendacją stoi piętnaście lat doświadczenia w zawodzie, a nie twórca czytający scenariusz z umowy reklamowej."
+      }
+    },
+    "optionsTitle": "Formy współpracy",
+    "optionsText": "Kilka sposobów na współpracę. Każdą dopasowujemy do potrzeb.",
+    "options": {
+      "mention": {
+        "title": "Wzmianka o produkcie",
+        "text": "Twoje narzędzie albo materiał pokazane i nazwane w zwykłym filmie z realizacji."
+      },
+      "feature": {
+        "title": "Dedykowany materiał",
+        "text": "Cały film zbudowany wokół twojego produktu: recenzja, test albo poradnik."
+      },
+      "ongoing": {
+        "title": "Stała współpraca",
+        "text": "Kilka filmów w ciągu sezonu oraz wzmianki w warsztacie i w social mediach."
+      }
+    },
+    "quote": "Poproś o wycenę",
+    "talkTitle": "Porozmawiajmy",
+    "talkText": "Jeśli twoje narzędzia albo materiały dadzą radę w działającym warsztacie, odezwij się i ustalmy, co ma sens.",
+    "talkCta": "Zacznij rozmowę"
+  },
+  "benefits": {
+    "title": "Zniżki",
+    "intro": "Narzędzia i materiały, których naprawdę używam w warsztacie, z kodami rabatowymi dla mojej społeczności.",
+    "text": "To marki, które pojawiają się w prawdziwej pracy dla klientów, a nie sponsorzy, których raz sprawdziłem do filmu. Jeśli coś tu jest, to dlatego, że najpierw zasłużyło na miejsce w warsztacie. Zniżka to realna korzyść dla osób, które mnie śledzą, a nie kolejna reklama.",
+    "deals": {
+      "spetool": {
+        "category": "Narzędzia stolarskie: frezy CNC, ściski do płyt, sanie do frezarki, akcesoria do odciągu",
+        "text": "Precyzyjne frezy i akcesoria warsztatowe używane przy prawdziwych projektach dla klientów, nie tylko recenzowane, ale naprawdę używane.",
+        "discount": "10% zniżki na zamówienie"
+      }
+    },
+    "visit": "Odwiedź stronę →",
+    "noCode": "Kod nie jest potrzebny. Zniżka nalicza się automatycznie przez link powyżej.",
+    "moreTitle": "Więcej ofert wkrótce",
+    "moreText": "Dodaję kolejne kody rabatowe na narzędzia i materiały, których naprawdę używam w warsztacie. Zajrzyj niedługo."
+  },
+  "legal": {
+    "englishOnly": "Ten dokument jest dostępny tylko po angielsku."
+  },
+  "cookies": {
+    "bannerText": "Używamy plików cookies, żeby strona działała, a za twoją zgodą także po to, żeby zrozumieć, jak jest używana. Szczegóły znajdziesz w <link>Polityce cookies</link>.",
+    "manage": "Zarządzaj ustawieniami",
+    "reject": "Odrzuć opcjonalne",
+    "accept": "Akceptuj wszystkie",
+    "save": "Zapisz ustawienia",
+    "modalTitle": "Ustawienia cookies",
+    "modalText": "Wybierz, których plików cookies możemy używać. Możesz to zmienić w każdej chwili przez link w stopce.",
+    "necessary": {
+      "title": "Niezbędne",
+      "text": "Potrzebne do logowania i płatności. Zawsze włączone.",
+      "label": "Niezbędne pliki cookies"
+    },
+    "analytics": {
+      "title": "Analityczne",
+      "text": "Pomagają nam zrozumieć, jak odwiedzający korzystają ze strony, żebyśmy mogli ją ulepszać.",
+      "label": "Analityczne pliki cookies"
+    },
+    "marketing": {
+      "title": "Marketingowe",
+      "text": "Służą do mierzenia i personalizowania reklam. Wyłączone, dopóki ich nie włączysz.",
+      "label": "Marketingowe pliki cookies"
+    }
+  },
+  "notFound": {
+    "title": "Nie znaleziono strony",
+    "text": "Ta strona nie istnieje albo została przeniesiona.",
+    "home": "Wróć na stronę główną"
+  },
+  "products": {
+    "plan-kids-chair": {
+      "short": "Proste, solidne krzesełko dla dziecka. Dla początkujących.",
+      "description": "Pełny plan z wymiarami i lista formatek na proste, solidne krzesełko dla dziecka. Dla początkujących, bez szablonów i przyrządów.",
+      "whatYouLearn": []
+    },
+    "ebook-zero-to-first-client": {
+      "short": "Zaprojektuj, zleć rozkrój, złóż, weź pieniądze.",
+      "description": "Jak przeszedłem od robienia rzeczy dla siebie do pierwszego płacącego klienta w stolarce: dokładne kroki, po kolei.",
+      "whatYouLearn": []
+    },
+    "plan-kitchen-cabinet-library": {
+      "short": "Listy formatek i rysunki 4 modułów szafek.",
+      "description": "Cztery typy szafek kuchennych, jeden system modułowy: plany z wymiarami i listy formatek na szafki dolne, górne, słupki i narożne, które do siebie pasują.",
+      "whatYouLearn": [
+        "Zbuduj wszystkie cztery podstawowe typy szafek — dolne, górne, słupki i narożne jako jeden spójny system modułowy, a nie cztery osobne jednorazowe projekty.",
+        "Dostań pełną listę formatek i rysunek z wymiarami dla każdego modułu — nic zgadywanego, nic do wymyślania na hali.",
+        "Zamów właściwe okucia za pierwszym razem — konfirmaty, mimośrody, zawiasy i nóżki regulowane, dobrane do każdego typu szafki.",
+        "Szafkę narożną zrób bez stresu — to element, na którym w większości kuchni ludzie się wykładają, zaplanowany i narysowany jak każdy inny moduł.",
+        "Wykończ szafki tak, żeby wytrzymały codzienne użytkowanie — kroki wykończenia powierzchni i konserwacji, dzięki którym kuchnia dobrze wygląda przez lata."
+      ]
+    },
+    "ebook-kitchen-from-scratch": {
+      "short": "Od pomiaru pomieszczenia do ostatnich drzwiczek.",
+      "description": "Wszystko, co chciałbym wiedzieć przed budową pierwszej kuchni: pomiar, rozkrój, montaż i wykończenie, od początku do końca, bez profesjonalnego warsztatu.",
+      "whatYouLearn": [
+        "Rozczytaj każdą kuchnię — zmierz pomieszczenie, przygotuj łatę pomiarową i rozplanuj trójkąt roboczy, który naprawdę działa, zanim przytniesz pierwszą płytę.",
+        "Zamień projekt w konkretne zamówienie — połącz listy formatek, policz płyty i zamów potrzebne okucia, bez zgadywania i bez marnowania.",
+        "Zbuduj i zamontuj szafki, które stoją jak trzeba — złóż korpusy seriami, a potem wypoziomuj, skręć i dopasuj do ściany ciąg szafek dolnych i górnych, żeby stały stabilnie i w pionie.",
+        "Sam zrób szablon i dopasuj blat — razem z wycięciami pod zlew i płytę grzewczą, łączeniami i uszczelnieniem, bez płacenia za to firmie.",
+        "Wykończ jak fachowiec — fronty zawieszone prosto za jednym podejściem, cokoły na miejscu, oświetlenie podłączone i końcowa lista kontrolna, żeby nic nie umknęło."
+      ]
+    },
+    "ebook-wardrobes-closets": {
+      "short": "Zabudowy, szafy wolnostojące i garderoby.",
+      "description": "Trzy systemy szaf, jeden poradnik: zabudowa z drzwiami przesuwnymi, wolnostojąca szafa z drzwiami na zawiasach i otwarta garderoba, zaplanowane, zbudowane i zamontowane.",
+      "whatYouLearn": [
+        "Wybierz system pasujący do twojej przestrzeni — zabudowa z drzwiami przesuwnymi, szafa wolnostojąca z drzwiami na zawiasach albo otwarta garderoba, porównane pod kątem głębokości i miejsca, jakich każda naprawdę potrzebuje.",
+        "Zbuduj szafę przesuwną we wnęce — wykorzystując ściany i sufit jako konstrukcję, z górną listwą i szyną dobranymi we właściwym rozmiarze.",
+        "Zbuduj wolnostojącą szafę na zawiasach z pełnego, sześciościennego korpusu — z liczbą zawiasów dobraną do wysokości drzwi, a nie zgadywaną.",
+        "Porządnie rozplanuj wnętrze — wysokości wieszania, drążki i rozstaw półek, które naprawdę mieszczą ubrania, a nie tylko dobrze wyglądają na papierze.",
+        "Zamontuj okucia i dokończ robotę — szyny do drzwi przesuwnych, szuflady i akcesoria, aż po końcową listę kontrolną na dzień montażu."
+      ]
+    },
+    "plan-wardrobe-cabinet-library": {
+      "short": "Rysunki techniczne wszystkich trzech systemów szaf.",
+      "description": "Trzy systemy szaf, jedna wspólna metoda konstrukcji: plany z wymiarami i listy formatek na zabudowę przesuwną, szafę wolnostojącą na zawiasach i otwartą garderobę.",
+      "whatYouLearn": [
+        "Wybierz system szafy pasujący do twojej przestrzeni — zabudowa z drzwiami przesuwnymi, szafa wolnostojąca z drzwiami na zawiasach albo otwarta garderoba, porównane pod kątem głębokości, wysokości i miejsca, jakich każda naprawdę potrzebuje.",
+        "Zbuduj dowolny z trzech systemów na jednym wspólnym korpusie i zestawie okuć — logika konstrukcji zostaje ta sama, niezależnie od tego, który format pasuje do twojego pomieszczenia.",
+        "Pracuj według pełnej listy formatek i rysunku z wymiarami dla każdego systemu — nic zgadywanego, nic do wymyślania na hali.",
+        "Dostań wysokości wieszania, rozstaw półek i specyfikację okuć do drzwi, które pasują do wszystkich trzech systemów — dobrane prawidłowo za pierwszym razem.",
+        "Składaj krok po kroku — od wytrasowania pierwszej listwy montażowej na ścianie albo górnej listwy aż po końcowe listwy maskujące i dopasowanie okuć."
+      ]
+    },
+    "plan-kids-bunk-bed": {
+      "short": "Lita sosna, 90 cm na górze, 140 cm na dole.",
+      "description": "Łóżko piętrowe z litej sosny, pojedyncze na górze i szersze na dole, bezpieczne od początku: stała drabinka, barierka na pełną wysokość, pełna lista formatek i montaż krok po kroku.",
+      "whatYouLearn": [
+        "Zbuduj kompletne łóżko piętrowe — węższe pojedyncze łóżko na górze i szersze na dole, z jednej listy formatek z litej sosny.",
+        "Pracuj według pełnej listy formatek i rysunku z wymiarami — 13 pozycji, 50 elementów, widok z przodu i z boku z każdym wymiarem.",
+        "Składaj we właściwej kolejności — rama dolna, stelaż, rama górna, stelaż, barierka i drabinka, a na koniec kontrola, krok po kroku.",
+        "Zamontuj stałą drabinkę i barierkę na pełną wysokość — wbudowane od początku, a nie przykręcone na doczepkę.",
+        "Wykończ je bezpiecznie dla dzieci — rozstaw szczebli barierki i wskazówki dotyczące wieku do sprawdzenia z lokalną normą bezpieczeństwa, zanim łóżko zacznie być używane."
+      ]
+    },
+    "bundle-kitchen-starter": {
+      "short": "Ebook i wszystkie plany szafek na całą kuchnię.",
+      "description": "Wszystko, czego potrzebujesz do zbudowania własnej kuchni: pełny ebook z instrukcją i pasujące plany szafek, razem taniej niż osobno.",
+      "whatYouLearn": [
+        "Zaplanuj i zbuduj całą kuchnię od zera — pomiar pomieszczenia, trójkąt roboczy, zamówienie materiałów i montaż szafek, od początku do końca.",
+        "Zbuduj każdy potrzebny typ szafki w jednym spójnym systemie — szafki dolne, górne, słupki i narożne, wszystkie z tą samą konstrukcją, materiałem i okuciami.",
+        "Dostań wszystkie listy formatek i rysunki z wymiarami w jednym pakiecie — nic zgadywanego, nic do wymyślania na hali.",
+        "Zamontuj i wykończ jak fachowiec — sam zrób szablon i dopasuj blat, powieś fronty prosto i wykończ szafki, które wytrzymają codzienne użytkowanie.",
+        "Oszczędzasz 10 € w porównaniu z zakupem osobno — 33 € zamiast 43 €."
+      ]
+    },
+    "bundle-complete-builder": {
+      "short": "Myślenie biznesowe + plany kuchni i szaf gotowe dla klienta.",
+      "description": "Myślenie biznesowe + plany kuchni i szaf gotowe dla klienta: wszystko, żeby przejść od budowania dla siebie do budowania dla płacących klientów.",
+      "whatYouLearn": [
+        "Przejdź od budowania dla siebie do budowania dla płacących klientów — dokładne kroki, narzędzia i budżet, jakich naprawdę wymaga zdobycie pierwszego płatnego zlecenia.",
+        "Zbuduj kompletną kuchnię i oba główne formaty szaf — zaplanuj pomieszczenie, zamów materiał i zamontuj szafki i szafy na zawodowym poziomie.",
+        "Pracuj w jednym wspólnym systemie konstrukcji korpusów dla kuchni i szaf — moduły kuchenne dolne, górne, słupki i narożne oraz zabudowa przesuwna, szafa wolnostojąca na zawiasach i otwarta garderoba.",
+        "Dostań wszystkie listy formatek i rysunki z wymiarami ze wszystkich czterech planów w jednym pakiecie — nic zgadywanego, nic do wymyślania na hali.",
+        "Oszczędzasz 42 € w porównaniu z zakupem wszystkich pięciu osobno — 63 € zamiast 105 €."
+      ]
+    }
+  }
+}

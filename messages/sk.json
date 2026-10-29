@@ -1,0 +1,812 @@
+{
+  "meta": {
+    "siteDescription": "Stolárčina od prvého rezu po vlastnú dielňu. Plány, návody a videá zo skutočných zákaziek v dielni s rozlohou 900 m².",
+    "home": {
+      "title": "TallWoodMaker: od prvého rezu po vlastnú dielňu",
+      "description": "Stolárčina od A po Z, natáčaná na skutočných zákazkách v 900 m² dielni. Či robíš doma, alebo si zariaďuješ dielňu: každý krok, nástroj aj chyba."
+    },
+    "buildAtHome": {
+      "title": "Postav si vlastnú kuchyňu doma",
+      "description": "Na vlastnú kuchyňu nepotrebuješ dielňu. Dosky si daj naformátovať na zákazku a poskladaj doma: plán, nákupný zoznam a všetky kroky v poradí."
+    },
+    "ownShop": {
+      "title": "Zariaď si vlastnú stolársku dielňu",
+      "description": "Dielňa, ktorá zarába: čo kúpiť ako prvé, koľko si pýtať a ako naplánovať zákazku za pár minút. 15 rokov práce pre zákazníkov."
+    },
+    "start": {
+      "title": "Začni tu",
+      "description": "Od prvého rezu po vlastnú dielňu. Vyber si cestu a stiahni si zadarmo zoznam 10 nástrojov na začiatok."
+    },
+    "videos": {
+      "title": "Videá",
+      "description": "Skutočné zákazky natočené v dielni: prehliadky dielne, deň v dielni a krátke zostrihy na TikToku."
+    },
+    "forBrands": {
+      "title": "Spolupráca s TallWoodMaker",
+      "description": "Spolupráca so značkami s profesionálnym stolárom. Obsah zo skutočných zákaziek pre stolárov a domácich majstrov v Európe a USA."
+    },
+    "about": {
+      "title": "O mne",
+      "description": "Volám sa Tom. 15 rokov robím pre zákazníkov kuchyne, skrine a kompletné interiéry a všetko, čo natáčam, je skutočná zákazka."
+    },
+    "shop": {
+      "title": "Plány a návody",
+      "description": "Stolárske plány, kusovníky a e-booky zo skutočných zákaziek, nie nakreslené za stolom."
+    },
+    "contact": {
+      "title": "Kontakt",
+      "description": "Nábytok na mieru, spolupráca na obsahu alebo otázka k projektu: ozvi sa."
+    },
+    "cart": {
+      "title": "Košík"
+    },
+    "orderConfirmed": {
+      "title": "Objednávka potvrdená"
+    },
+    "premium": {
+      "title": "Premium",
+      "description": "Kompletné výroby, dlhšie verzie videí a súbory z dielne pre členov."
+    },
+    "subscribe": {
+      "title": "Premium",
+      "description": "Kompletné výroby, dlhšie verzie videí a súbory z dielne pre členov TallWoodMaker Premium. 9 €/mesiac, zrušíš kedykoľvek."
+    },
+    "collaborate": {
+      "title": "Spolupráca",
+      "description": "Spolupráca so značkami s profesionálnym stolárom: pätnásť rokov v remesle, skutočný obsah z dielne, nič narežírované."
+    },
+    "benefits": {
+      "title": "Výhody",
+      "description": "Zľavové kódy a affiliate ponuky na nástroje a materiály, ktoré sa používajú v dielni TallWoodMaker."
+    },
+    "confirmSignIn": {
+      "title": "Potvrdenie prihlásenia"
+    },
+    "terms": {
+      "title": "Obchodné podmienky"
+    },
+    "privacy": {
+      "title": "Ochrana osobných údajov"
+    },
+    "cookies": {
+      "title": "Zásady používania cookies"
+    },
+    "course": {
+      "title": "Online kurz"
+    },
+    "notFound": {
+      "title": "Stránka sa nenašla"
+    }
+  },
+  "topBar": {
+    "text": "Na stiahnutie zadarmo: zoznam 10 nástrojov, ktoré by som si dnes kúpil znova",
+    "cta": "Stiahnuť"
+  },
+  "nav": {
+    "mainLabel": "Hlavné menu",
+    "homeLink": "TallWoodMaker, domovská stránka",
+    "start": "Začni tu",
+    "buildAtHome": "Výroba doma",
+    "ownShop": "Vlastná dielňa",
+    "plans": "Plány a návody",
+    "videos": "Videá",
+    "premium": "Premium",
+    "about": "O mne",
+    "getFreeList": "Zoznam zadarmo",
+    "cart": "Košík",
+    "cartWithCount": "Košík ({count})",
+    "cartAria": "{count, plural, =0 {Košík} one {Košík, # položka} few {Košík, # položky} many {Košík, # položky} other {Košík, # položiek}}",
+    "signIn": "Prihlásiť sa",
+    "openMenu": "Otvoriť menu",
+    "closeMenu": "Zavrieť menu",
+    "changeLanguage": "Zmeniť jazyk",
+    "language": "Jazyk"
+  },
+  "footer": {
+    "forBrands": "Pre značky",
+    "contact": "Kontakt",
+    "copyright": "© {year} TallWoodMaker s.r.o.",
+    "social": "Sociálne siete",
+    "legal": "Právne informácie",
+    "terms": "Obchodné podmienky",
+    "privacy": "Ochrana osobných údajov",
+    "cookiePolicy": "Zásady používania cookies",
+    "cookieSettings": "Nastavenia cookies"
+  },
+  "paths": {
+    "home": "Výroba doma",
+    "shop": "Vlastná dielňa"
+  },
+  "productTypes": {
+    "plan": "Plán",
+    "ebook": "E-book",
+    "bundle": "Balík"
+  },
+  "productCard": {
+    "save": "Ušetríš {amount} €",
+    "bestStart": "Najlepší začiatok · Ušetríš {amount} €",
+    "everything": "Všetko · Ušetríš {amount} €",
+    "pdfInEnglish": "PDF v angličtine",
+    "regularPrice": "Bežná cena {price}"
+  },
+  "pathCards": {
+    "question": "Kde si práve teraz?",
+    "home": {
+      "title": "Robím doma",
+      "text": "Garáž, balkón alebo kút v pivnici"
+    },
+    "shop": {
+      "title": "Zariaďujem si vlastnú dielňu",
+      "text": "Od koníčka k dielni, ktorá zarába"
+    }
+  },
+  "leadForm": {
+    "emailLabel": "E-mailová adresa",
+    "placeholder": "tvoj@email.sk",
+    "sending": "Odosielam…",
+    "success": "Vďaka! Pozri si schránku.",
+    "waitlistSuccess": "Vďaka! Si na zozname. Termín sa dozvieš ako prvý.",
+    "invalidEmail": "Zadaj platnú e-mailovú adresu.",
+    "error": "Niečo sa pokazilo. Skús to znova.",
+    "honeypot": "Toto pole nechaj prázdne"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Pre domácich majstrov a stolárov · od profíka s 15 rokmi v remesle",
+      "title": "Od prvého rezu po <mark>vlastnú dielňu.</mark>",
+      "text": "Stolárčina od A po Z, natáčaná na skutočných zákazkách v 900 m² dielni. Či robíš doma, alebo si zariaďuješ vlastnú dielňu, ukážem ti každý krok, každý nástroj a každú chybu.",
+      "photoAlt": "Tom pri veľkoplošnej píle v dielni, na skutočnej zákazke",
+      "nameTag": "Tom",
+      "nameTagRole": "Stolár a tvorca · 15 rokov",
+      "badge": "Skutočné zákazky, žiadne kulisy"
+    },
+    "proof": {
+      "label": "V číslach",
+      "followers": "sledovateľov na IG, YouTube a TikToku",
+      "monthlyReach": "zhliadnutí mesačne",
+      "yearsValue": "{count} rokov",
+      "years": "výroby pre platiacich zákazníkov",
+      "workshopValue": "{count} m²",
+      "workshop": "skutočná dielňa",
+      "workedWith": "Spolupracoval som s"
+    },
+    "why": {
+      "eyebrow": "Prečo sa učiť odo mňa",
+      "title": "Väčšina videí ti ukáže výsledok. Ja ti ukážem rozhodnutia.",
+      "text": "To, čo sa človek učí roky a čo stojí peniaze, keď to urobí zle.",
+      "items": {
+        "board": {
+          "title": "Akú dosku kúpiť",
+          "text": "Drevotrieska, MDF alebo preglejka, a kde na tom naozaj záleží."
+        },
+        "order": {
+          "title": "Koľko objednať",
+          "text": "Kusovníky, po ktorých ti zostanú odrezky, nie chýbajúce diely."
+        },
+        "walls": {
+          "title": "Krivé steny",
+          "text": "Ako zavesiť skrinky do roviny, keď nič v miestnosti nie je rovné."
+        },
+        "charge": {
+          "title": "Koľko si pýtať",
+          "text": "Ako naceniť zákazku, aby bolo zaplatené kovanie aj tvoje hodiny."
+        }
+      }
+    },
+    "paths": {
+      "title": "Dve cesty. Vyber si svoju.",
+      "home": {
+        "title": "Na vlastnú kuchyňu nepotrebuješ dielňu.",
+        "points": [
+          "Jasný plán od zamerania až po posledné dvierka",
+          "Presný zoznam dosiek a kovania na objednanie",
+          "Výsledok, ktorý vyzerá ako od profíka"
+        ],
+        "cta": "Začni s výrobou doma →"
+      },
+      "shop": {
+        "title": "Postav si dielňu, ktorá zarába, nie takú, ktorá ti zožerie večery.",
+        "points": [
+          "Budeš presne vedieť, koľko si pýtať",
+          "Kúpiš len stroje, ktoré sa ti zaplatia",
+          "Zákazku naplánuješ za pár minút, nie za celý večer"
+        ],
+        "cta": "Začni s vlastnou dielňou →"
+      }
+    },
+    "lead": {
+      "eyebrow": "Začni zadarmo",
+      "title": "Zoznam 10 nástrojov, ktoré by som si dnes kúpil znova.",
+      "text": "Žiadne hádanie, žiadne nástroje, ktoré nikdy nepoužiješ. Priamo do tvojej schránky.",
+      "submit": "Pošli mi zoznam"
+    },
+    "plans": {
+      "eyebrow": "Plány a návody",
+      "title": "Plány zo skutočných zákaziek, nie nakreslené za stolom.",
+      "seeAll": "Všetky plány →",
+      "note": "Všetky plány a e-booky sú PDF v angličtine. Ďalšie jazyky pribudnú."
+    },
+    "realJobs": {
+      "eyebrow": "Skutočné zákazky",
+      "title": "Vyrobené pre zákazníkov. Teraz ako plány pre teba."
+    },
+    "about": {
+      "title": "Ahoj, som Tom.",
+      "p1": "Už 15 rokov robím pre zákazníkov kuchyne, skrine a kompletné interiéry. Všetko, čo natáčam, je skutočná zákazka, nie kulisy. Delím sa o to, čo mi trvalo roky, kým som sa naučil: plány, čísla aj chyby, aby si ich ty mohol preskočiť.",
+      "p2": "Či robíš svoju prvú kuchyňu doma, alebo zariaďuješ svoju prvú dielňu, začni tu.",
+      "homeCta": "Robím doma",
+      "shopCta": "Zariaďujem si dielňu",
+      "portraitAlt": "Portrét Toma v dielni s pílovým kotúčom v ruke"
+    }
+  },
+  "gallery": {
+    "panelSaw": "Tom nakladá dosku na veľkoplošnú pílu",
+    "edgeBander": "Tom zakladá dielec do olepovačky",
+    "cnc": "CNC obrábacie centrum v dielni",
+    "edgeBanderLine": "Olepovačka s odsávaním zhora",
+    "workshopWide": "Celkový pohľad na dielňu s regálmi na dosky a horúcim lisom",
+    "shopFloor": "Dielňa s formátovacou pílou a spodnou frézou"
+  },
+  "buildAtHome": {
+    "badge": "Výroba doma",
+    "title": "Na vlastnú kuchyňu nepotrebuješ dielňu.",
+    "text": "Dosky si daj naformátovať a olepiť na zákazku a doma ich poskladáš so základným náradím. Ukážem ti presný plán, nákupný zoznam a poradie všetkých krokov.",
+    "ctaSteps": "Pozri si 5 krokov",
+    "ctaPlans": "Plány pre tvoju kuchyňu",
+    "roadmapEyebrow": "Postup",
+    "roadmapTitle": "Z prázdnej miestnosti po hotovú kuchyňu v 5 krokoch.",
+    "steps": {
+      "measure": {
+        "title": "Zameranie a plán",
+        "text": "Ako zamerať miestnosť a rozvrhnúť skrinky tak, aby nič nekolidovalo s rúrami a zásuvkami."
+      },
+      "order": {
+        "title": "Objednávka materiálu",
+        "text": "Koľko dosiek, kde ich dať naformátovať a aké kovanie objednať."
+      },
+      "boxes": {
+        "title": "Výroba korpusov",
+        "text": "Ako doma poskladať pravouhlé a pevné korpusy, po sériách."
+      },
+      "install": {
+        "title": "Montáž",
+        "text": "Krivé steny, vešanie horných skriniek, osadenie pracovnej dosky."
+      },
+      "finish": {
+        "title": "Dokončenie",
+        "text": "Dvierka naraz, sokle, osvetlenie a záverečný kontrolný zoznam."
+      }
+    },
+    "freeVideo": "Video zadarmo",
+    "productsTitle": "Všetko na výrobu doma",
+    "listTitle": "Nevieš, kde začať?",
+    "listText": "Stiahni si zoznam 10 nástrojov, ktoré by som si dnes kúpil znova. Zadarmo.",
+    "listSubmit": "Pošli mi zoznam",
+    "switchPath": "Robíš pre zákazníkov? Prejdi na cestu vlastnej dielne →"
+  },
+  "ownShop": {
+    "badge": "Vlastná dielňa",
+    "title": "Postav si dielňu, ktorá zarába, nie takú, ktorá ti <mark>zožerie večery.</mark>",
+    "text": "15 rokov práce pre zákazníkov: čo kúpiť ako prvé, koľko si pýtať a ako naplánovať zákazku za pár minút namiesto celého večera.",
+    "ctaSteps": "Pozri si 6 krokov",
+    "ctaTools": "Nástroje a návody",
+    "photoAlt": "Dielňa so širokopásovou brúskou a odsávaním zhora",
+    "roadmapEyebrow": "Postup",
+    "roadmapTitle": "Z prázdnej garáže po prvú zákazku so ziskom.",
+    "stepLabel": "Krok {number}",
+    "ownToolLabel": "Krok {number} · Môj vlastný nástroj",
+    "steps": {
+      "space": {
+        "title": "Priestor bez vyhodených peňazí",
+        "text": "Rozloženie a priestor, ktoré fungujú skôr, než minieš čo i len euro na stroje."
+      },
+      "machines": {
+        "title": "Stroje, ktoré sa zaplatia",
+        "text": "Čo kúpiť ako prvé a čo nechať na formátovanie na zákazku."
+      },
+      "cutting": {
+        "title": "Rezné plány bez odpadu",
+        "text": "Presne na toto som vytvoril MebCut. Odfoť kusovník a rezný plán máš za pár sekúnd.",
+        "cta": "Vyskúšaj MebCut zadarmo →"
+      },
+      "pricing": {
+        "title": "Cena so ziskom",
+        "text": "Cena, ktorá pokryje kovanie, tvoje hodiny aj maržu."
+      },
+      "clients": {
+        "title": "Prví zákazníci",
+        "text": "Kde ich nájsť a ako sa nepredať lacno."
+      },
+      "evenings": {
+        "title": "Večery doma",
+        "text": "Procesy, aby celá dielňa nestála len na tebe."
+      }
+    },
+    "productsTitle": "Nástroje a návody pre tvoju dielňu",
+    "mebcut": {
+      "label": "Aplikácia · mebcut.com",
+      "text": "Rezné plány z fotky, asistent na rezanie v mobile.",
+      "price": "Na začiatok zadarmo"
+    },
+    "waitlist": {
+      "eyebrow": "Živý online workshop · čoskoro",
+      "title": "Naceň zákazku so ziskom, nie zadarmo.",
+      "text": "2 hodiny naživo, kalkulačka, ktorá ti ostane, a na kovanie už nikdy nezabudneš. Pridaj sa na zoznam a termín sa dozvieš ako prvý.",
+      "submit": "Pridať sa na zoznam"
+    },
+    "switchPath": "Robíš pre seba? Prejdi na cestu výroby doma →",
+    "freeVideo": "Video zadarmo"
+  },
+  "start": {
+    "title": "Od prvého rezu po <mark>vlastnú dielňu.</mark>",
+    "text": "Vyber si cestu, alebo si najprv stiahni zadarmo zoznam 10 nástrojov na začiatok.",
+    "leadTitle": "Zoznam 10 nástrojov, ktoré by som si dnes kúpil znova.",
+    "leadText": "Žiadne hádanie, žiadne nástroje, ktoré nikdy nepoužiješ. Priamo do tvojej schránky.",
+    "submit": "Pošli mi zoznam"
+  },
+  "videos": {
+    "title": "Videá",
+    "text": "Skutočné zákazky natočené v dielni. Každý týždeň nové video na YouTube, kratšie zostrihy takmer denne na Instagrame a TikToku.",
+    "longFormTitle": "Dlhé videá",
+    "tiktokTitle": "Najnovšie na TikToku",
+    "channelsTitle": "Kanály",
+    "youtube": "Každý týždeň nové video, priamo z dielne.",
+    "instagram": "Denné zostrihy, reels a zákulisie.",
+    "tiktok": "Krátke klipy zo skutočných zákaziek.",
+    "facebook": "Týždenné zhrnutia z dielne."
+  },
+  "forBrands": {
+    "title": "Spolupráca s TallWoodMaker",
+    "p1": "Moje publikum sú stolári a domáci majstri z Európy a USA: ľudia, ktorí naozaj niečo vyrábajú, od prvej kuchyne doma až po vlastnú dielňu.",
+    "p2": "Všetko, čo natáčam, je skutočná zákazka v bežne fungujúcej dielni, takže tvoj nástroj alebo materiál uvidia tak, ako sa naozaj používa, nie narežírovaný pre kameru.",
+    "statsTitle": "V číslach",
+    "contactTitle": "Poďme sa porozprávať",
+    "contactText": "Napíš mi o svojom produkte a o tom, čo máš na mysli. Odpíšem ti osobne.",
+    "emailCta": "Napíš mi e-mail"
+  },
+  "about": {
+    "title": "Ahoj, som Tom.",
+    "photoAlt": "Tom, TallWoodMaker, s pílovým kotúčom v dielni",
+    "storyP1": "K stolárčine som sa dostal tak, že som opravil starú policu, ktorá mala ísť na smetisko. Prvý kus vyšiel krivý, druhý bol lepší a tretí skončil na internete. Odtiaľ to prerástlo do každodennej práce v dielni.",
+    "storyP2": "Obsah, ktorý robím, nie je len zostrih najlepších momentov. Ukazujem rozmery, ktoré nevyšli, nástroje, ktoré si zaslúžia viac pozornosti, a rozhodnutia urobené priamo pri píle.",
+    "process": {
+      "title": "Postup",
+      "text": "Od návrhu po povrchovú úpravu: každý krok zdokumentovaný, aj s chybami."
+    },
+    "tools": {
+      "title": "Náradie",
+      "text": "Kombinácia ručného náradia a strojov. Vysvetľujem čo a prečo."
+    },
+    "community": {
+      "title": "Komunita",
+      "text": "Otázky z komentárov sa často stanú témou ďalšieho videa."
+    },
+    "wideAlt": "Celkový pohľad na dielňu so širokopásovou brúskou a odsávaním zhora",
+    "galleryTitle": "Galéria",
+    "galleryText": "Pohľad do dielne: stroje, postup a ľudia za každou zákazkou.",
+    "galleryItems": {
+      "cnc": {
+        "title": "CNC stroj Biesse Rover",
+        "category": "CNC stroj",
+        "alt": "CNC obrábacie centrum Biesse Rover A Smart v dielni"
+      },
+      "edgeBanding": {
+        "title": "Olepovanie hrán v praxi",
+        "category": "Olepovanie hrán",
+        "alt": "Olepovačka nanáša hranu na dielec"
+      },
+      "feedingEdgeBander": {
+        "title": "Zakladanie do olepovačky",
+        "category": "Olepovanie hrán",
+        "alt": "Tom zakladá dielec do olepovačky"
+      },
+      "onPanelSaw": {
+        "title": "Pri veľkoplošnej píle",
+        "category": "Veľkoplošná píla",
+        "alt": "Tom nakladá dosku na veľkoplošnú pílu Biesse Selco"
+      },
+      "panelSaw": {
+        "title": "Veľkoplošná píla Biesse Selco",
+        "category": "Veľkoplošná píla",
+        "alt": "Veľkoplošná píla Biesse Selco WN2 s odkladacími stolmi"
+      },
+      "break": {
+        "title": "Prestávka v dielni",
+        "category": "Zákulisie",
+        "alt": "Tom stojí v dielni vedľa naukladaných odrezkov dosiek"
+      },
+      "controls": {
+        "title": "Ovládanie olepovačky",
+        "category": "Olepovanie hrán",
+        "alt": "Ovládací panel olepovačky Cehisa"
+      },
+      "storage": {
+        "title": "Sklad dosiek a horúci lis",
+        "category": "Pohľad na dielňu",
+        "alt": "Celkový pohľad na dielňu s regálmi na dosky a horúcim lisom"
+      },
+      "dust": {
+        "title": "Odsávanie a brúsna linka",
+        "category": "Pohľad na dielňu",
+        "alt": "Pohľad na dielňu so širokopásovou brúskou a potrubím odsávania zhora"
+      },
+      "slidingSaw": {
+        "title": "Formátovacia píla",
+        "category": "Pohľad na dielňu",
+        "alt": "Pohľad na dielňu s formátovacou pílou a spodnou frézou"
+      },
+      "fravol": {
+        "title": "Olepovačka Fravol",
+        "category": "Olepovanie hrán",
+        "alt": "Olepovačka Fravol s potrubím odsávania zhora"
+      },
+      "floor": {
+        "title": "Priestor dielne",
+        "category": "Pohľad na dielňu",
+        "alt": "Olepovačka Fravol a rozvod odsávania pod stropom dielne"
+      }
+    },
+    "videoTitle": "Videá a sociálne siete",
+    "videoText": "Každý týždeň nové video. Kratšie zostrihy pribúdajú denne na Instagrame a TikToku.",
+    "youtubeCardTitle": "Pozri na YouTube",
+    "youtubeCardText": "Každý týždeň nové video, priamo z dielne.",
+    "instagramCardTitle": "Sleduj na Instagrame",
+    "instagramCardText": "Denné zostrihy, reels a zákulisie z dielne.",
+    "tiktokCardTitle": "Pozri na TikToku",
+    "tiktokCardText": "Najnovšie TikToky nájdeš na stránke Videá.",
+    "tiktokCardCta": "Videá →",
+    "facebookText": "Týždenné zhrnutia a živé vysielania z dielne.",
+    "followBuild": "Sleduj výrobu"
+  },
+  "shop": {
+    "title": "Plány a návody",
+    "text": "Plány, kusovníky a e-booky zo skutočných zákaziek, nie nakreslené za stolom.",
+    "note": "Všetky plány a e-booky sú PDF v angličtine. Ďalšie jazyky pribudnú.",
+    "all": "Všetko",
+    "categories": {
+      "ebooks": "E-booky",
+      "plans": "Plány",
+      "bundles": "Balíky"
+    },
+    "addToCart": "Pridať do košíka",
+    "inCartRemove": "V košíku · Odstrániť",
+    "placeholder": {
+      "plan": "náhľad plánu",
+      "ebook": "obálka e-booku",
+      "bundle": "obálka balíka"
+    }
+  },
+  "product": {
+    "back": "← Späť do obchodu",
+    "whatYouLearn": "Čo sa naučíš",
+    "whatsIncluded": "Čo obsahuje",
+    "onItsOwn": "{price} samostatne",
+    "view": "Zobraziť →",
+    "sampleEbook": "Ukážková strana z e-booku",
+    "samplePlan": "Ukážková strana z plánu",
+    "sampleAlt": "Ukážková strana: {title}",
+    "pdfNote": "PDF je v angličtine."
+  },
+  "cart": {
+    "title": "Tvoj košík",
+    "empty": "Tvoj košík je prázdny.",
+    "back": "← Späť do obchodu",
+    "remove": "Odstrániť",
+    "subtotal": "Medzisúčet",
+    "consent": "Chcem okamžitý prístup k tomuto digitálnemu obsahu a beriem na vedomie, že začatím dodania strácam právo na odstúpenie od zmluvy. Súhlasím s <terms>obchodnými podmienkami</terms>.",
+    "checkout": "Pokračovať k platbe",
+    "redirecting": "Presmerúvam…",
+    "errorEmpty": "Tvoj košík je prázdny alebo nič z neho už nie je dostupné.",
+    "errorConsent": "Ak chceš pokračovať, potvrď, že chceš okamžitý prístup k digitálnemu nákupu.",
+    "errorNoUrl": "Stripe nevrátil odkaz na platbu. Skús to znova."
+  },
+  "success": {
+    "notConfirmedTitle": "Platba zatiaľ nie je potvrdená",
+    "notConfirmedText": "Ak si práve dokončil platbu, o chvíľu túto stránku obnov. Potvrdenie môže trvať pár sekúnd. Stále to nejde? Napíš na <email>tom@tallwoodmaker.com</email> a uveď túto objednávku.",
+    "thanksTitle": "{count, plural, one {Ďakujem, tu je tvoj súbor na stiahnutie} few {Ďakujem, tu sú tvoje súbory na stiahnutie} many {Ďakujem, tu sú tvoje súbory na stiahnutie} other {Ďakujem, tu sú tvoje súbory na stiahnutie}}",
+    "download": "Stiahnuť {file}",
+    "failure": "Platba prebehla, ale pri vytváraní odkazu na stiahnutie pre {titles} sa niečo zaseklo. Napíš na <email>tom@tallwoodmaker.com</email> s týmto číslom objednávky a pošleme ti ho:",
+    "expiry": "Odkazy fungujú 24 hodín. Ulož si túto stránku medzi záložky, a ak niektorý vyprší, vráť sa na ňu. Pri každom otvorení sa vytvoria nové odkazy."
+  },
+  "premium": {
+    "badge": "Premium",
+    "title": "Premium videá",
+    "text": "Kompletné výroby a dlhšie verzie videí pre členov. Nový obsah pravidelne pribúda.",
+    "empty": "Nový obsah už čoskoro. Pozri sa sem o chvíľu.",
+    "announcements": "Oznamy",
+    "tabs": {
+      "all": "Všetko",
+      "article": "Články",
+      "video": "Videá",
+      "plan_download": "Na stiahnutie"
+    },
+    "types": {
+      "article": "Článok",
+      "video": "Video",
+      "plan_download": "Na stiahnutie",
+      "announcement": "Novinka"
+    },
+    "nothingYet": "Zatiaľ tu nič nie je.",
+    "download": "Stiahnuť",
+    "videoPlaceholder": "náhľad videa",
+    "preview": "ukážka"
+  },
+  "subscribe": {
+    "badge": "Premium",
+    "title": "TallWoodMaker Premium",
+    "waitlistText": "Kompletné výroby, dlhšie verzie videí a súbory z dielne pre členov. Prístup do Premium sa čoskoro otvorí. Pridaj sa na čakaciu listinu a budeš prvý na rade.",
+    "launchOffer": "Úvodná ponuka",
+    "launchTitle": "Prihlás sa teraz a prvé 3 mesiace máš o 50 % lacnejšie",
+    "launchText": "Ľudia na čakacej listine dostanú prístup ako prví a zľava sa im pri platbe uplatní automaticky.",
+    "heroText": "Kompletné výroby, dlhšie verzie videí a súbory z dielne: to, čo sa na YouTube nezmestí. Pridaj sa za 9 €/mesiac a prístup máš hneď.",
+    "included": "Čo dostaneš",
+    "previewText": "Ukážka toho, čo ťa čaká vnútri. Nový obsah pribúda každý mesiac.",
+    "membersOnly": "Len pre členov",
+    "fallbackBenefits": [
+      "Videá celých výrob od začiatku do konca: každý krok, nie len to najzaujímavejšie",
+      "Dlhšie verzie videí a prehliadky dielne nad rámec YouTube",
+      "Plány a kusovníky na stiahnutie k vybraným výrobám",
+      "Nový obsah každý mesiac",
+      "Zrušíš kedykoľvek, bez dlhodobého záväzku"
+    ],
+    "offerBadge": "Úvodná ponuka: prvé 3 mesiace o 50 % lacnejšie",
+    "price": "9 €",
+    "perMonth": "/mesiac",
+    "codeText": "Máš úvodný kód? Zadaj ho pri platbe a prvé 3 mesiace máš o 50 % lacnejšie.",
+    "consent": "Chcem okamžitý prístup k Premium a beriem na vedomie, že sprístupnením strácam právo na odstúpenie od zmluvy. Súhlasím s <terms>obchodnými podmienkami</terms>.",
+    "consentError": "Ak chceš pokračovať, zaškrtni políčko.",
+    "linkExpired": "Tento prihlasovací odkaz vypršal alebo už bol použitý. Nižšie si vyžiadaj nový.",
+    "subscribeCta": "Predplatiť: 9 €/mesiac",
+    "signInPrompt": "Zadaj e-mail, prihlás sa a pokračuj k platbe",
+    "faqTitle": "Dobré vedieť",
+    "faq": [
+      {
+        "q": "Môžem predplatné kedykoľvek zrušiť?",
+        "a": "Áno. Zrušíš ho vo svojom účte, kedy chceš. Prístup ti ostane do konca obdobia, ktoré už máš zaplatené."
+      },
+      {
+        "q": "Ako funguje platba?",
+        "a": "9 €/mesiac, strháva sa automaticky, kým predplatné nezrušíš. Žiadna ročná zmluva."
+      },
+      {
+        "q": "Čo sa stane hneď po registrácii?",
+        "a": "Na e-mail ti príde prihlasovací odkaz a potom sa dostaneš rovno k platbe. Prístup sa odomkne hneď po zaplatení."
+      },
+      {
+        "q": "Čo vlastne dostanem?",
+        "a": "Všetko z časti „Čo dostaneš“ vyššie a k tomu všetko nové, čo do Premium pribudne počas tvojho členstva."
+      }
+    ],
+    "countdown": {
+      "days": "Dni",
+      "hours": "Hodiny",
+      "minutes": "Minúty",
+      "seconds": "Sekundy"
+    },
+    "waitlist": {
+      "join": "Pridať sa na čakaciu listinu",
+      "joining": "Pridávam…",
+      "joined": "Si na zozname. Keď sa Premium otvorí, pošleme ti e-mail.",
+      "error": "Na čakaciu listinu sa nepodarilo pridať. Skús to znova."
+    },
+    "magicLink": {
+      "send": "Pošli mi odkaz e-mailom",
+      "sending": "Odosielam…",
+      "sent": "Prihlasovací odkaz nájdeš v schránke {email}.",
+      "error": "Odkaz sa nepodarilo odoslať. Skús to znova."
+    }
+  },
+  "confirmSignIn": {
+    "title": "Potvrdenie prihlásenia",
+    "text": "Kvôli tvojej bezpečnosti ťa prihlásime, až keď klikneš nižšie. Vďaka tomu e-mailové skenery odkazov nespotrebujú odkaz skôr ako ty.",
+    "button": "Potvrdiť prihlásenie"
+  },
+  "contact": {
+    "title": "Kontakt",
+    "text": "Nábytok na mieru, spolupráca na obsahu alebo len otázka k projektu: ozvi sa.",
+    "name": "Meno",
+    "namePlaceholder": "Tvoje meno",
+    "email": "E-mail",
+    "emailPlaceholder": "ty@email.sk",
+    "message": "Správa",
+    "messagePlaceholder": "Opíš svoj projekt alebo otázku",
+    "send": "Odoslať",
+    "emailHeading": "E-mail",
+    "workshopHeading": "Dielňa",
+    "workshopValue": "Slovensko",
+    "socialHeading": "Sociálne siete"
+  },
+  "collaborate": {
+    "title": "Spolupráca",
+    "intro": "Pre značky robím rovnako ako pre kameru: bez skratiek, bez vaty. Ak tvoje nástroje alebo materiály patria do skutočnej dielne, poďme sa porozprávať.",
+    "heroAlt": "CNC obrábacie centrum Biesse Rover A Smart v dielni",
+    "philosophyTitle": "Vyrob. Zdieľaj. Inšpiruj.",
+    "philosophyText": "Filozofia za všetkým, čo vyrábam, pred kamerou aj mimo nej.",
+    "story": "Som Tom: drevu sa profesionálne venujem pätnásť rokov, nie odvtedy, čo som vzal do ruky kameru. TallWoodMaker dokumentuje skutočnú prácu pre zákazníkov: kuchyne, nábytok na mieru a kompletné interiéry, vyrábané každý deň na CNC strojoch a veľkoplošných pílach, žiadne víkendové projekty. Kanál existuje preto, aby sa remeslo odovzdávalo poriadne, tak, ako ma ho naučili. Zábava je vedľajší efekt, nie cieľ.",
+    "numbersTitle": "V číslach",
+    "numbersText": "Rýchly pohľad na publikum za kanálom.",
+    "stats": {
+      "followers": "Sledovatelia spolu",
+      "reach": "Mesačný dosah",
+      "years": "Rokov v remesle"
+    },
+    "gettingTitle": "Čo naozaj dostaneš",
+    "gettingText": "Toto spolupráca reálne dostane pred oči skutočných stolárov.",
+    "photoAlts": {
+      "panelSaw": "Tom nakladá dosku na veľkoplošnú pílu Biesse Selco",
+      "edgeBanding": "Olepovačka nanáša hranu na dielec",
+      "workshop": "Celkový pohľad na dielňu s regálmi na dosky a horúcim lisom"
+    },
+    "benefits": {
+      "audience": {
+        "title": "Publikum, ktoré pracuje s drevom",
+        "text": "Nadšenci do stolárčiny a budúci profesionáli, nie náhodní scrolleri: ľudia, ktorí pozerajú, pretože naozaj niečo vyrábajú."
+      },
+      "footage": {
+        "title": "Skutočné zábery z dielne",
+        "text": "Nástroje a materiály ukázané presne tak, ako sa používajú na skutočných zákazkách v bežne fungujúcej dielni. Nič narežírované pre kameru."
+      },
+      "voice": {
+        "title": "Dôveryhodný hlas",
+        "text": "Za každým odporúčaním je pätnásť rokov v remesle, nie tvorca, ktorý číta scenár za peniaze od značky."
+      }
+    },
+    "optionsTitle": "Možnosti spolupráce",
+    "optionsText": "Pár spôsobov, ako spolupracovať. Každú spoluprácu prispôsobíme na mieru.",
+    "options": {
+      "mention": {
+        "title": "Zmienka o produkte",
+        "text": "Tvoj nástroj alebo materiál ukázaný a pomenovaný v bežnom videu z výroby."
+      },
+      "feature": {
+        "title": "Samostatné video",
+        "text": "Celé video postavené okolo tvojho produktu: recenzia, test alebo návod."
+      },
+      "ongoing": {
+        "title": "Dlhodobá spolupráca",
+        "text": "Viacero videí počas sezóny a k tomu zmienky v dielni a na sociálnych sieťach."
+      }
+    },
+    "quote": "Vyžiadať ponuku",
+    "talkTitle": "Poďme sa porozprávať",
+    "talkText": "Ak by tvoje nástroje alebo materiály obstáli v skutočnej dielni, ozvi sa a spolu prídeme na to, čo dáva zmysel.",
+    "talkCta": "Začať rozhovor"
+  },
+  "benefits": {
+    "title": "Výhody",
+    "intro": "Nástroje a materiály, ktoré v dielni naozaj používam, so zľavovými kódmi pre moju komunitu.",
+    "text": "Sú to značky, ktoré sa objavujú pri skutočnej práci pre zákazníkov, nie sponzori, ktorých som raz vyskúšal kvôli videu. Ak je niečo uvedené tu, je to preto, že si to najprv vyslúžilo miesto v dielni. Zľava je skutočná výhoda pre ľudí, ktorí ma sledujú, nie ďalšia reklama.",
+    "deals": {
+      "spetool": {
+        "category": "Stolárske nástroje: CNC frézy, svorky na lepenie dosiek, frézovacie sane, príslušenstvo na odsávanie",
+        "text": "Presné frézy a príslušenstvo do dielne, ktoré používam na skutočných zákazkách. Nie len zrecenzované, ale naozaj používané.",
+        "discount": "10 % zľava na objednávku"
+      }
+    },
+    "visit": "Navštíviť web →",
+    "noCode": "Kód netreba. Zľava sa uplatní automaticky cez odkaz vyššie.",
+    "moreTitle": "Ďalšie zľavy čoskoro",
+    "moreText": "Pridávam ďalšie zľavové kódy na nástroje a materiály, ktoré v dielni naozaj používam. Pozri sa sem čoskoro."
+  },
+  "legal": {
+    "englishOnly": "Tento dokument je dostupný len v angličtine."
+  },
+  "cookies": {
+    "bannerText": "Cookies používame, aby web fungoval, a s tvojím súhlasom aj na to, aby sme pochopili, ako sa používa. Podrobnosti nájdeš v <link>zásadách používania cookies</link>.",
+    "manage": "Spravovať nastavenia",
+    "reject": "Odmietnuť nepotrebné",
+    "accept": "Prijať všetko",
+    "save": "Uložiť nastavenia",
+    "modalTitle": "Nastavenia cookies",
+    "modalText": "Vyber, ktoré cookies môžeme používať. Zmeniť to môžeš kedykoľvek cez odkaz v pätičke.",
+    "necessary": {
+      "title": "Nevyhnutné",
+      "text": "Potrebné na fungovanie prihlásenia a platby. Vždy zapnuté.",
+      "label": "Nevyhnutné cookies"
+    },
+    "analytics": {
+      "title": "Analytické",
+      "text": "Pomáhajú nám pochopiť, ako návštevníci web používajú, aby sme ho mohli zlepšiť.",
+      "label": "Analytické cookies"
+    },
+    "marketing": {
+      "title": "Marketingové",
+      "text": "Slúžia na meranie a prispôsobenie reklám. Vypnuté, kým ich nezapneš.",
+      "label": "Marketingové cookies"
+    }
+  },
+  "notFound": {
+    "title": "Stránka sa nenašla",
+    "text": "Táto stránka neexistuje alebo bola presunutá.",
+    "home": "Späť na domovskú stránku"
+  },
+  "products": {
+    "plan-kids-chair": {
+      "short": "Jednoduchá, pevná detská stolička. Zvládne ju aj začiatočník.",
+      "description": "Kompletný okótovaný plán a kusovník jednoduchej, pevnej detskej stoličky. Zvládne ju aj začiatočník, bez prípravkov.",
+      "whatYouLearn": []
+    },
+    "ebook-zero-to-first-client": {
+      "short": "Navrhni, daj naformátovať, poskladaj, nechaj si zaplatiť.",
+      "description": "Ako som sa dostal od výroby pre seba k prvému platiacemu zákazníkovi: presné kroky v správnom poradí.",
+      "whatYouLearn": []
+    },
+    "plan-kitchen-cabinet-library": {
+      "short": "Kusovníky a výkresy pre 4 kuchynské moduly.",
+      "description": "Štyri typy kuchynských skriniek, jeden modulový systém: okótované plány a kusovníky na spodné, horné, vysoké/potravinové a rohové skrinky, ktoré do seba zapadajú.",
+      "whatYouLearn": [
+        "Postavíš všetky štyri základné typy skriniek — spodné, horné, vysoké/potravinové a rohové ako jeden zladený modulový systém, nie štyri samostatné kusové výroby.",
+        "Dostaneš kompletný kusovník a okótovaný výkres ku každému modulu — nič odhadované, nič, čo by si musel vymýšľať až v dielni.",
+        "Objednáš správne kovanie hneď napoprvé — konfirmáty, excentry, pánty a rektifikačné nožičky v správnych rozmeroch pre každý typ skrinky.",
+        "Rohovú skrinku zvládneš s istotou — časť, na ktorej sa pri väčšine kuchýň ľudia zaseknú, je naplánovaná a nakreslená ako každý iný modul.",
+        "Dokončíš skrinky, ktoré vydržia každodenné používanie — povrchová úprava a údržba, vďaka ktorým kuchyňa vyzerá dobre roky."
+      ]
+    },
+    "ebook-kitchen-from-scratch": {
+      "short": "Od zamerania miestnosti po posledné dvierka.",
+      "description": "Všetko, čo by som bol rád vedel pred výrobou svojej prvej kuchyne: zameranie, porez, montáž a dokončenie, od začiatku do konca, bez profesionálnej dielne.",
+      "whatYouLearn": [
+        "Pochopíš každú kuchyňu — zameriaš miestnosť, pripravíš si meraciu latu a rozvrhneš pracovný trojuholník, ktorý naozaj funguje, ešte predtým, než prerežeš prvú dosku.",
+        "Z návrhu urobíš skutočnú objednávku — spojíš kusovníky, spočítaš dosky a objednáš kovanie, ktoré potrebuješ, nič odhadované a nič zbytočné.",
+        "Postavíš a namontuješ skrinky, ktoré sedia — korpusy vyrobíš v sérii, potom rad spodných a horných skriniek vyrovnáš, spojíš a dorovnáš k stene tak, aby stáli pevne a pravouhlo.",
+        "Pracovnú dosku si podľa šablóny osadíš sám — vrátane výrezov na drez a varnú dosku, spojov a utesnenia, bez toho, aby si za to platil firmu.",
+        "Dokončíš to ako profík — dvierka zavesené rovno naraz, osadené sokle, zapojené osvetlenie a záverečný kontrolný zoznam, aby ti nič neušlo."
+      ]
+    },
+    "ebook-wardrobes-closets": {
+      "short": "Vstavané a voľne stojace skrine a šatne.",
+      "description": "Tri systémy skríň, jeden návod: vstavaná skriňa s posuvnými dverami, voľne stojaca s otváracími dverami a otvorená šatňa, naplánované, vyrobené a namontované.",
+      "whatYouLearn": [
+        "Vyberieš správny systém pre svoj priestor — vstavaná skriňa s posuvnými dverami, voľne stojaca s otváracími dverami alebo otvorená šatňa, porovnané podľa hĺbky a voľného miesta, ktoré každá naozaj potrebuje.",
+        "Postavíš vstavanú skriňu s posuvnými dverami do niky — steny a strop ti poslúžia ako konštrukcia, s horným profilom a koľajnicou v správnych rozmeroch.",
+        "Postavíš voľne stojacu skriňu s otváracími dverami z plného šesťstranného korpusu — so správnym počtom pántov podľa výšky dverí, nie odhadom.",
+        "Vnútro rozvrhneš poriadne — výšky vešania, šatníkové tyče a rozostupy políc, do ktorých sa oblečenie naozaj zmestí, nielen dobre vyzerajú na papieri.",
+        "Osadíš kovanie a dotiahneš prácu do konca — koľajnice posuvných dverí, zásuvky a doplnky až po záverečný kontrolný zoznam na deň montáže."
+      ]
+    },
+    "plan-wardrobe-cabinet-library": {
+      "short": "Technické výkresy pre všetky tri systémy skríň.",
+      "description": "Tri systémy skríň, jeden spoločný spôsob konštrukcie: okótované plány a kusovníky na vstavanú skriňu s posuvnými dverami, voľne stojacu s otváracími dverami a otvorenú šatňu.",
+      "whatYouLearn": [
+        "Vyberieš správny systém skríň pre svoj priestor — vstavaná s posuvnými dverami, voľne stojaca s otváracími dverami alebo otvorená šatňa, porovnané podľa hĺbky, výšky a voľného miesta, ktoré každá naozaj potrebuje.",
+        "Postavíš ktorýkoľvek z troch na jednom spoločnom systéme korpusov a kovania — logika konštrukcie ostáva rovnaká, nech sa do tvojej miestnosti hodí ktorýkoľvek formát.",
+        "Pracuješ podľa kompletného kusovníka a okótovaného výkresu ku každému systému — nič odhadované, nič, čo by si musel vymýšľať až v dielni.",
+        "Dostaneš výšky vešania, rozostupy políc a parametre kovania dverí, ktoré platia pre všetky tri systémy — v správnych rozmeroch hneď napoprvé.",
+        "Poskladáš to krok za krokom — od vyznačenia prvej nosnej lišty na stene alebo horného profilu až po krycie lišty a osadenie kovania."
+      ]
+    },
+    "plan-kids-bunk-bed": {
+      "short": "Masívna borovica, hore 90 cm, dole 140 cm.",
+      "description": "Poschodová posteľ z masívnej borovice, užšia hore a širšia dole, bezpečná od začiatku: pevný rebrík, zábrana v plnej výške, kompletný kusovník a montáž krok za krokom.",
+      "whatYouLearn": [
+        "Postavíš celú poschodovú posteľ — užšiu jednolôžkovú hore a širšiu dole, z jedného kusovníka z masívnej borovice.",
+        "Pracuješ podľa kompletného kusovníka a okótovaného výkresu — 13 riadkov, 50 dielov, pohľad spredu a zboku so všetkými rozmermi.",
+        "Poskladáš ju v správnom poradí — spodný rám, lamely, horný rám, lamely, zábrana a rebrík, potom záverečná kontrola, krok za krokom.",
+        "Osadíš pevný rebrík a zábranu v plnej výške — sú súčasťou konštrukcie od začiatku, nie dodatočne priskrutkované.",
+        "Dokončíš ju bezpečne pre deti — rozostupy na zábrane a odporúčaný vek, ktoré pred použitím over podľa miestnej bezpečnostnej normy."
+      ]
+    },
+    "bundle-kitchen-starter": {
+      "short": "E-book a všetky plány skriniek na celú kuchyňu.",
+      "description": "Všetko, čo potrebuješ na výrobu vlastnej kuchyne: kompletný e-book s postupom a k nemu plány skriniek, spolu lacnejšie, ako keby si ich kupoval zvlášť.",
+      "whatYouLearn": [
+        "Naplánuješ a postavíš celú kuchyňu od nuly — zameranie miestnosti, pracovný trojuholník, objednávka materiálu a montáž skriniek, od začiatku do konca.",
+        "Postavíš každý typ skrinky, ktorý potrebuješ, z jedného zladeného systému — spodné, horné, vysoké/potravinové a rohové skrinky s rovnakou konštrukciou, materiálom aj kovaním.",
+        "Dostaneš všetky kusovníky a okótované výkresy v jednom balíku — nič odhadované, nič, čo by si musel vymýšľať až v dielni.",
+        "Namontuješ a dokončíš ju ako profík — pracovnú dosku si podľa šablóny osadíš sám, dvierka zavesíš rovno a skrinky dokončíš tak, aby vydržali každodenné používanie.",
+        "Ušetríš 10 € oproti kúpe oboch zvlášť — 33 € namiesto 43 €."
+      ]
+    },
+    "bundle-complete-builder": {
+      "short": "Podnikateľské myslenie + plány kuchyne a skríň pripravené pre zákazníkov.",
+      "description": "Podnikateľské myslenie + plány kuchyne a skríň pripravené pre zákazníkov: všetko, čo potrebuješ, aby si prešiel od výroby pre seba k výrobe pre platiacich zákazníkov.",
+      "whatYouLearn": [
+        "Prejdeš od výroby pre seba k výrobe pre platiacich zákazníkov — presné kroky, náradie a rozpočet, ktoré naozaj potrebuješ na prvú platenú zákazku.",
+        "Postavíš celú kuchyňu a oba hlavné typy skríň — naplánuješ miestnosť, objednáš materiál a namontuješ kuchynské skrinky aj skrine na profesionálnej úrovni.",
+        "Pracuješ s jedným spoločným systémom konštrukcie korpusov pre kuchyne aj skrine — spodné, horné, vysoké/potravinové a rohové kuchynské moduly, plus vstavaná skriňa s posuvnými dverami, voľne stojaca s otváracími dverami a otvorená šatňa.",
+        "Dostaneš všetky kusovníky a okótované výkresy zo všetkých štyroch plánov v jednom balíku — nič odhadované, nič, čo by si musel vymýšľať až v dielni.",
+        "Ušetríš 42 € oproti kúpe všetkých piatich zvlášť — 63 € namiesto 105 €."
+      ]
+    }
+  }
+}

@@ -1,54 +1,59 @@
-import Link from "next/link";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import CookieSettingsLink from "@/components/cookies/CookieSettingsLink";
 
 const SOCIAL_LINKS = [
-  { label: "YouTube", href: "https://www.youtube.com/@tallwoodmaker" },
   { label: "Instagram", href: "https://www.instagram.com/tallwoodmaker" },
+  { label: "YouTube", href: "https://www.youtube.com/@tallwoodmaker" },
   { label: "TikTok", href: "https://www.tiktok.com/@tallwoodmaker" },
-  { label: "Facebook", href: "https://www.facebook.com/tallwoodmaker" },
 ];
 
+const LINK_CLASS =
+  "inline-flex min-h-11 items-center text-on-dark hover:text-cream hover:underline";
+
 export default function Footer() {
+  const t = useTranslations("footer");
+
   return (
-    <footer className="bg-brand section-px py-12">
-      <div className="container-page grid grid-cols-2 gap-8 md:grid-cols-4">
-        <div>
-          <div className="mb-2 text-base font-extrabold tracking-[0.03em] text-ink">
-            TallWoodMaker
-          </div>
-          <div className="text-sm text-ink-muted">Build. Share. Inspire.</div>
-        </div>
-        <div className="flex flex-col gap-3 text-sm font-medium">
-          <Link href="/collaborate" className="text-ink hover:text-ink">
-            Collaborate
-          </Link>
-          <Link href="/benefits" className="text-ink hover:text-ink">
-            Benefits
-          </Link>
-        </div>
-        <div className="flex flex-col gap-3 text-sm font-medium">
+    <footer className="bg-ink text-on-dark">
+      <div className="container-page section-px flex flex-wrap items-center justify-between gap-x-6 gap-y-4 pb-6 pt-12 text-[14px]">
+        <span className="font-display text-[18px] font-bold text-cream">
+          TallWoodMaker
+        </span>
+        <nav className="flex flex-wrap gap-x-5">
           {SOCIAL_LINKS.map(({ label, href }) => (
-            <a key={label} href={href} target="_blank" rel="noopener noreferrer">
+            <a
+              key={label}
+              href={href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={LINK_CLASS}
+            >
               {label}
             </a>
           ))}
-        </div>
-        <div className="text-right text-sm text-ink-muted">
-          <div>tom@tallwoodmaker.com</div>
-          <div>© 2026 TallWoodMaker</div>
-        </div>
+          <Link href="/for-brands" className={LINK_CLASS}>
+            {t("forBrands")}
+          </Link>
+          <Link href="/contact" className={LINK_CLASS}>
+            {t("contact")}
+          </Link>
+        </nav>
+        <span>{t("copyright", { year: new Date().getFullYear() })}</span>
       </div>
-      <div className="container-page mt-8 flex flex-wrap gap-5 border-t border-ink/15 pt-5 text-[13px] text-ink-muted">
-        <Link href="/terms" className="text-ink-muted hover:text-ink">
-          Terms of Service
-        </Link>
-        <Link href="/privacy" className="text-ink-muted hover:text-ink">
-          Privacy Policy
-        </Link>
-        <Link href="/cookies" className="text-ink-muted hover:text-ink">
-          Cookie Policy
-        </Link>
-        <CookieSettingsLink className="cursor-pointer text-ink-muted underline-offset-2 hover:text-ink hover:underline" />
+      <div className="container-page section-px">
+        <div className="flex flex-wrap gap-x-5 border-t border-line-dark py-3 text-[13px]">
+          <Link href="/terms" className={LINK_CLASS}>
+            {t("terms")}
+          </Link>
+          <Link href="/privacy" className={LINK_CLASS}>
+            {t("privacy")}
+          </Link>
+          <Link href="/cookies" className={LINK_CLASS}>
+            {t("cookiePolicy")}
+          </Link>
+          <CookieSettingsLink className={`${LINK_CLASS} cursor-pointer`} />
+        </div>
       </div>
     </footer>
   );
