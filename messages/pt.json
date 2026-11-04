@@ -13,6 +13,10 @@
       "title": "Monta a tua própria oficina de marcenaria",
       "description": "Monta uma oficina que dá lucro: o que comprar primeiro, quanto cobrar e como planear um trabalho em minutos. 15 anos a fazer trabalhos para clientes."
     },
+    "workshop": {
+      "title": "Orçamenta um trabalho com lucro: workshop online",
+      "description": "Como orçamento mobiliário por medida e interiores ao fim de 15 anos como marceneiro. Trabalhos reais, números reais, passo a passo. Entra na lista de espera."
+    },
     "start": {
       "title": "Começa aqui",
       "description": "Do primeiro corte à tua própria oficina. Escolhe o teu caminho e recebe grátis a lista das 10 ferramentas para começar."
@@ -341,6 +345,46 @@
     },
     "switchPath": "Constróis para ti? Vai para o caminho em casa →",
     "freeVideo": "Vídeo grátis"
+  },
+  "workshop": {
+    "label": "Workshop online · lançamento no final de novembro de 2026",
+    "title": "Orçamenta um trabalho com lucro",
+    "subtitle": "Como orçamento mobiliário por medida e interiores ao fim de 15 anos como marceneiro. Trabalhos reais, números reais, passo a passo.",
+    "learnTitle": "O que vais aprender",
+    "bullets": {
+      "forgottenCosts": "Os 9 custos que a maioria dos marceneiros se esquece de orçamentar",
+      "hourlyRate": "Como definir o teu preço por hora",
+      "reserve": "Uma reserva para erros em cada orçamento",
+      "profit": "Como somar o lucro por cima, e não «se sobrar alguma coisa»"
+    },
+    "audience": "Para marceneiros que têm a sua própria oficina ou estão a abrir uma.",
+    "perk": "Quem está na lista de espera tem acesso primeiro e um desconto de lançamento.",
+    "form": {
+      "title": "Entra na lista de espera",
+      "email": "Email",
+      "emailPlaceholder": "o-teu@email.com",
+      "firstName": "Nome",
+      "optional": "(opcional)",
+      "segment": "Qual é o teu caso?",
+      "segmentPlaceholder": "Escolhe uma opção",
+      "segments": {
+        "ownShop": "Tenho a minha própria oficina",
+        "startingShop": "Estou a abrir uma oficina",
+        "home": "Construo em casa"
+      },
+      "consent": "Aceito receber emails sobre o workshop. Posso cancelar a qualquer momento.",
+      "consentRequired": "Marca a caixa para eu te poder escrever sobre o workshop.",
+      "submit": "Entrar na lista de espera",
+      "sending": "A enviar…",
+      "invalidEmail": "Introduz um endereço de email válido.",
+      "error": "Algo correu mal. Tenta outra vez.",
+      "honeypot": "Deixa este campo vazio"
+    },
+    "thanks": {
+      "title": "Já estás na lista.",
+      "text": "Acabei de te enviar um email de confirmação. O workshop é lançado no final de novembro e vais ter acesso primeiro e o desconto de lançamento.",
+      "link": "Entretanto: planos e guias para a tua própria oficina →"
+    }
   },
   "start": {
     "title": "Do primeiro corte à tua <mark>própria oficina.</mark>",
@@ -818,13 +862,15 @@
   "email": {
     "subjectStarter": "A tua lista de 10 ferramentas",
     "subjectStarterReady": "Aqui está a tua lista de 10 ferramentas",
-    "subjectWaitlist": "Estás na lista: workshop ao vivo sobre orçamentos",
+    "subjectWaitlist": "Estás na lista: Orçamenta um trabalho com lucro",
     "greeting": "Olá,",
+    "greetingName": "Olá {name},",
     "starterReady": "Obrigado por pedires a lista. Aqui está: as 10 ferramentas que voltaria a comprar hoje se começasse do zero.",
     "starterReadyLater": "Como prometido, aqui está a lista de 10 ferramentas: as que voltaria a comprar hoje se começasse do zero.",
     "starterPending": "Obrigado por pedires a lista. Estou a dar-lhe os últimos retoques, por isso envio-ta por email dentro de poucos dias.",
     "starterButton": "Descarregar a lista",
-    "waitlist": "Obrigado por te juntares à lista do workshop ao vivo sobre orçamentos. Vais saber a data antes de toda a gente.",
+    "waitlist": "Obrigado por entrares na lista de espera de «Orçamenta um trabalho com lucro», o meu workshop online sobre como orçamentar mobiliário por medida e interiores. É lançado no final de novembro e vais saber antes de toda a gente.",
+    "waitlistDiscount": "Como agradecimento por te inscreveres cedo, vais ter um desconto de lançamento. Envio-to no dia do lançamento.",
     "consentYes": "Também pediste emails ocasionais com dicas e novos planos. Vão ser poucos e úteis.",
     "reply": "Dúvidas? Responde a este email. Leio todos.",
     "signoff": "Tom",

@@ -13,6 +13,10 @@
       "title": "Monte ton propre atelier de menuiserie",
       "description": "Monte un atelier rentable : quoi acheter en premier, combien facturer et comment préparer un chantier en quelques minutes. 15 ans de chantiers pour des clients."
     },
+    "workshop": {
+      "title": "Chiffre un chantier avec du bénéfice : atelier en ligne",
+      "description": "Comment je chiffre les meubles sur mesure et l’agencement intérieur après 15 ans comme menuisier. De vrais chantiers, de vrais chiffres, étape par étape. Rejoins la liste d’attente."
+    },
     "start": {
       "title": "Commence ici",
       "description": "De ta première coupe à ton propre atelier. Choisis ton parcours et reçois gratuitement la liste des 10 outils pour débuter."
@@ -341,6 +345,46 @@
     },
     "switchPath": "Tu fabriques pour toi ? Passe au parcours maison →",
     "freeVideo": "Vidéo gratuite"
+  },
+  "workshop": {
+    "label": "Atelier en ligne · lancement fin novembre 2026",
+    "title": "Chiffre un chantier avec du bénéfice",
+    "subtitle": "Comment je chiffre les meubles sur mesure et l’agencement intérieur après 15 ans comme menuisier. De vrais chantiers, de vrais chiffres, étape par étape.",
+    "learnTitle": "Ce que tu vas apprendre",
+    "bullets": {
+      "forgottenCosts": "Les 9 coûts que la plupart des menuisiers oublient de chiffrer",
+      "hourlyRate": "Comment fixer ton taux horaire",
+      "reserve": "Une réserve pour les erreurs dans chaque devis",
+      "profit": "Comment ajouter le bénéfice par-dessus, pas « s’il reste quelque chose »"
+    },
+    "audience": "Pour les menuisiers qui ont leur propre atelier ou qui se lancent.",
+    "perk": "Les inscrits à la liste d’attente ont l’accès en premier et une remise de lancement.",
+    "form": {
+      "title": "Rejoins la liste d’attente",
+      "email": "E-mail",
+      "emailPlaceholder": "ton@email.com",
+      "firstName": "Prénom",
+      "optional": "(facultatif)",
+      "segment": "Ta situation",
+      "segmentPlaceholder": "Choisis une option",
+      "segments": {
+        "ownShop": "J’ai mon propre atelier",
+        "startingShop": "Je lance mon atelier",
+        "home": "Je construis chez moi"
+      },
+      "consent": "J’accepte de recevoir des e-mails sur l’atelier. Désinscription à tout moment.",
+      "consentRequired": "Coche la case pour que je puisse t’écrire au sujet de l’atelier.",
+      "submit": "Rejoindre la liste d’attente",
+      "sending": "Envoi…",
+      "invalidEmail": "Saisis une adresse e-mail valide.",
+      "error": "Une erreur s’est produite. Réessaie.",
+      "honeypot": "Laisse ce champ vide"
+    },
+    "thanks": {
+      "title": "Tu es sur la liste.",
+      "text": "Je viens de t’envoyer un e-mail de confirmation. L’atelier sera lancé fin novembre, et tu auras l’accès en premier et la remise de lancement.",
+      "link": "En attendant : plans et guides pour ton propre atelier →"
+    }
   },
   "start": {
     "title": "De ta première coupe à ton <mark>propre atelier.</mark>",
@@ -818,13 +862,15 @@
   "email": {
     "subjectStarter": "Ta liste des 10 outils",
     "subjectStarterReady": "Voici ta liste des 10 outils",
-    "subjectWaitlist": "Tu es sur la liste : atelier en direct sur les devis",
+    "subjectWaitlist": "Tu es sur la liste : Chiffre un chantier avec du bénéfice",
     "greeting": "Salut,",
+    "greetingName": "Salut {name},",
     "starterReady": "Merci d’avoir demandé la liste. La voici : les 10 outils que je rachèterais aujourd’hui si je recommençais de zéro.",
     "starterReadyLater": "Comme promis, voici la liste des 10 outils : ceux que je rachèterais aujourd’hui si je recommençais de zéro.",
     "starterPending": "Merci d’avoir demandé la liste. J’y apporte les dernières retouches, je te l’envoie donc par e-mail d’ici quelques jours.",
     "starterButton": "Télécharger la liste",
-    "waitlist": "Merci de t’être inscrit à la liste de l’atelier en direct sur les devis. Tu connaîtras la date avant tout le monde.",
+    "waitlist": "Merci pour ton inscription sur la liste d’attente de « Chiffre un chantier avec du bénéfice », mon atelier en ligne pour chiffrer les meubles sur mesure et l’agencement intérieur. Il sera lancé fin novembre, et tu le sauras avant tout le monde.",
+    "waitlistDiscount": "Pour te remercier de ton inscription anticipée, tu auras une remise de lancement. Je te l’enverrai le jour du lancement.",
     "consentYes": "Tu as aussi demandé à recevoir de temps en temps des e-mails avec des astuces et de nouveaux plans. Ils seront rares et utiles.",
     "reply": "Une question ? Réponds simplement à cet e-mail. Je les lis tous.",
     "signoff": "Tom",

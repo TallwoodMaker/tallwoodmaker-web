@@ -20,6 +20,7 @@ export type LeadForEmail = {
   email: string;
   source: string;
   locale: string | null;
+  first_name?: string | null;
   marketing_consent: boolean;
   unsubscribe_token: string;
 };
@@ -58,7 +59,7 @@ export async function sendLeadEmail(
 
   if (lead.source === "workshop-pricing") {
     subject = t("subjectWaitlist");
-    paragraphs.push(t("waitlist"));
+    paragraphs.push(t("waitlist"), t("waitlistDiscount"));
   } else if (listUrls) {
     subject =
       kind === "starter-ready" ? t("subjectStarterReady") : t("subjectStarter");
@@ -82,7 +83,9 @@ export async function sendLeadEmail(
 
   const content = {
     lang: locale,
-    greeting: t("greeting"),
+    greeting: lead.first_name
+      ? t("greetingName", { name: lead.first_name })
+      : t("greeting"),
     paragraphs,
     button,
     secondaryLink,

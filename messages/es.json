@@ -13,6 +13,10 @@
       "title": "Monta tu propio taller de carpintería",
       "description": "Monta un taller que sea rentable: qué comprar primero, cuánto cobrar y cómo preparar un trabajo en minutos. 15 años haciendo trabajos para clientes."
     },
+    "workshop": {
+      "title": "Presupuesta un trabajo con beneficio: taller online",
+      "description": "Cómo presupuesto muebles a medida e interiorismo después de 15 años como carpintero. Trabajos reales, números reales, paso a paso. Únete a la lista de espera."
+    },
     "start": {
       "title": "Empieza aquí",
       "description": "De tu primer corte a tu propio taller. Elige tu camino y llévate gratis la lista de 10 herramientas para empezar."
@@ -341,6 +345,46 @@
     },
     "switchPath": "¿Construyes para ti? Ve al camino de casa →",
     "freeVideo": "Vídeo gratis"
+  },
+  "workshop": {
+    "label": "Taller online · lanzamiento a finales de noviembre de 2026",
+    "title": "Presupuesta un trabajo con beneficio",
+    "subtitle": "Cómo presupuesto muebles a medida e interiorismo después de 15 años como carpintero. Trabajos reales, números reales, paso a paso.",
+    "learnTitle": "Lo que aprenderás",
+    "bullets": {
+      "forgottenCosts": "Los 9 costes que la mayoría de los carpinteros olvida presupuestar",
+      "hourlyRate": "Cómo fijar tu tarifa por hora",
+      "reserve": "Una reserva para errores en cada presupuesto",
+      "profit": "Cómo sumar el beneficio encima, no «si sobra algo»"
+    },
+    "audience": "Para carpinteros que tienen su propio taller o están montándolo.",
+    "perk": "Quienes estén en la lista de espera tendrán acceso antes que nadie y un descuento de lanzamiento.",
+    "form": {
+      "title": "Únete a la lista de espera",
+      "email": "Email",
+      "emailPlaceholder": "tu@correo.com",
+      "firstName": "Nombre",
+      "optional": "(opcional)",
+      "segment": "¿Cuál es tu caso?",
+      "segmentPlaceholder": "Elige una opción",
+      "segments": {
+        "ownShop": "Tengo mi propio taller",
+        "startingShop": "Estoy montando un taller",
+        "home": "Construyo en casa"
+      },
+      "consent": "Acepto recibir emails sobre el taller. Puedo darme de baja cuando quiera.",
+      "consentRequired": "Marca la casilla para que pueda escribirte sobre el taller.",
+      "submit": "Unirme a la lista de espera",
+      "sending": "Enviando…",
+      "invalidEmail": "Introduce un correo electrónico válido.",
+      "error": "Algo ha fallado. Inténtalo de nuevo.",
+      "honeypot": "Deja este campo vacío"
+    },
+    "thanks": {
+      "title": "Ya estás en la lista.",
+      "text": "Te acabo de enviar un email de confirmación. El taller se lanza a finales de noviembre y tendrás acceso antes que nadie y el descuento de lanzamiento.",
+      "link": "Mientras tanto: planos y guías para tu propio taller →"
+    }
   },
   "start": {
     "title": "De tu primer corte a tu <mark>propio taller.</mark>",
@@ -818,13 +862,15 @@
   "email": {
     "subjectStarter": "Tu lista de 10 herramientas",
     "subjectStarterReady": "Aquí tienes tu lista de 10 herramientas",
-    "subjectWaitlist": "Estás en la lista: taller en directo sobre presupuestos",
+    "subjectWaitlist": "Estás en la lista: Presupuesta un trabajo con beneficio",
     "greeting": "Hola:",
+    "greetingName": "Hola, {name}:",
     "starterReady": "Gracias por pedir la lista. Aquí la tienes: las 10 herramientas que volvería a comprar hoy si empezara de cero.",
     "starterReadyLater": "Como te prometí, aquí tienes la lista de 10 herramientas: las que volvería a comprar hoy si empezara de cero.",
     "starterPending": "Gracias por pedir la lista. Le estoy dando los últimos retoques, así que te la enviaré por email en unos días.",
     "starterButton": "Descargar la lista",
-    "waitlist": "Gracias por apuntarte a la lista del taller en directo sobre presupuestos. Sabrás la fecha antes que nadie.",
+    "waitlist": "Gracias por apuntarte a la lista de espera de «Presupuesta un trabajo con beneficio», mi taller online sobre cómo presupuestar muebles a medida e interiorismo. Se lanza a finales de noviembre y lo sabrás antes que nadie.",
+    "waitlistDiscount": "Como agradecimiento por apuntarte pronto, tendrás un descuento de lanzamiento. Te lo enviaré el día del lanzamiento.",
     "consentYes": "También has pedido recibir de vez en cuando emails con consejos y planos nuevos. Serán pocos y útiles.",
     "reply": "¿Dudas? Responde a este email. Los leo todos.",
     "signoff": "Tom",

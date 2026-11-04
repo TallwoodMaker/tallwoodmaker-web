@@ -13,6 +13,10 @@
       "title": "Založ si vlastní truhlářskou dílnu",
       "description": "Postav dílnu, která vydělává: co koupit jako první, kolik si účtovat a jak naplánovat zakázku za pár minut. 15 let zakázek pro klienty."
     },
+    "workshop": {
+      "title": "Naceň zakázku se ziskem: online workshop",
+      "description": "Jak naceňuji nábytek na míru a interiéry po 15 letech v truhlařině. Skutečné zakázky, skutečná čísla, krok za krokem. Přidej se na čekací listinu."
+    },
     "start": {
       "title": "Začni tady",
       "description": "Od prvního řezu po vlastní dílnu. Vyber si svou cestu a stáhni si zdarma seznam 10 základních nástrojů."
@@ -341,6 +345,46 @@
     },
     "switchPath": "Stavíš pro sebe? Přejdi na cestu „Stavím doma“ →",
     "freeVideo": "Video zdarma"
+  },
+  "workshop": {
+    "label": "Online workshop · spuštění koncem listopadu 2026",
+    "title": "Naceň zakázku se ziskem",
+    "subtitle": "Jak naceňuji nábytek na míru a interiéry po 15 letech v truhlařině. Skutečné zakázky, skutečná čísla, krok za krokem.",
+    "learnTitle": "Co se naučíš",
+    "bullets": {
+      "forgottenCosts": "9 nákladů, které většina truhlářů zapomíná nacenit",
+      "hourlyRate": "Jak si stanovit hodinovou sazbu",
+      "reserve": "Rezerva na chyby v každé nabídce",
+      "profit": "Jak přidat zisk navrch, ne „jestli něco zbyde“"
+    },
+    "audience": "Pro truhláře, kteří mají vlastní dílnu nebo ji zakládají.",
+    "perk": "Lidé z čekací listiny dostanou přístup jako první a slevu ke spuštění.",
+    "form": {
+      "title": "Přidej se na čekací listinu",
+      "email": "E-mail",
+      "emailPlaceholder": "tvuj@email.cz",
+      "firstName": "Křestní jméno",
+      "optional": "(nepovinné)",
+      "segment": "Co platí pro tebe?",
+      "segmentPlaceholder": "Vyber možnost",
+      "segments": {
+        "ownShop": "Mám vlastní dílnu",
+        "startingShop": "Zakládám dílnu",
+        "home": "Vyrábím doma"
+      },
+      "consent": "Souhlasím se zasíláním e-mailů o workshopu. Odhlásit se můžu kdykoli.",
+      "consentRequired": "Zaškrtni políčko, ať ti můžu o workshopu napsat.",
+      "submit": "Přidat se na čekací listinu",
+      "sending": "Odesílám…",
+      "invalidEmail": "Zadej platnou e-mailovou adresu.",
+      "error": "Něco se pokazilo. Zkus to prosím znovu.",
+      "honeypot": "Toto pole nevyplňuj"
+    },
+    "thanks": {
+      "title": "Jsi na seznamu.",
+      "text": "Právě jsem ti poslal potvrzovací e-mail. Workshop spouštím koncem listopadu a ty dostaneš přednostní přístup i slevu ke spuštění.",
+      "link": "Mezitím: plány a návody pro vlastní dílnu →"
+    }
   },
   "start": {
     "title": "Od prvního řezu po <mark>vlastní dílnu.</mark>",
@@ -818,13 +862,15 @@
   "email": {
     "subjectStarter": "Tvůj seznam 10 nástrojů",
     "subjectStarterReady": "Tady je tvůj seznam 10 nástrojů",
-    "subjectWaitlist": "Jsi na seznamu: živý workshop o nacenění zakázek",
+    "subjectWaitlist": "Jsi na seznamu: Naceň zakázku se ziskem",
     "greeting": "Ahoj,",
+    "greetingName": "Ahoj {name},",
     "starterReady": "Díky, že sis o seznam řekl. Tady je: 10 nástrojů, které bych si dnes koupil znovu, kdybych začínal od nuly.",
     "starterReadyLater": "Jak jsem slíbil, tady je seznam 10 nástrojů: těch, které bych si dnes koupil znovu, kdybych začínal od nuly.",
     "starterPending": "Díky, že sis o seznam řekl. Právě ho dokončuji, takže ti ho pošlu e-mailem během pár dní.",
     "starterButton": "Stáhnout seznam",
-    "waitlist": "Díky, že ses zapsal na seznam k živému workshopu o nacenění zakázek. Termín se dozvíš jako první.",
+    "waitlist": "Díky za přihlášení na čekací listinu workshopu „Naceň zakázku se ziskem“. Je to můj online workshop o naceňování nábytku na míru a interiérů. Spouštím ho koncem listopadu a dozvíš se o tom mezi prvními.",
+    "waitlistDiscount": "Jako poděkování za včasné přihlášení dostaneš slevu ke spuštění. Pošlu ti ji v den spuštění.",
     "consentYes": "Požádal jsi i o občasné e-maily s tipy a novými plány. Budou výjimečně a jen užitečné.",
     "reply": "Máš otázku? Stačí odpovědět na tento e-mail. Čtu každý.",
     "signoff": "Tom",

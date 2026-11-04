@@ -13,6 +13,10 @@
       "title": "Załóż własny warsztat stolarski",
       "description": "Warsztat, który na siebie zarabia: co kupić najpierw, ile liczyć za robotę i jak zaplanować zlecenie w kilka minut. 15 lat pracy dla klientów."
     },
+    "workshop": {
+      "title": "Wyceniaj zlecenia z zyskiem: warsztat online",
+      "description": "Jak wyceniam meble na wymiar i zabudowy wnętrz po 15 latach pracy jako stolarz. Prawdziwe zlecenia, prawdziwe liczby, krok po kroku. Zapisz się na listę oczekujących."
+    },
     "start": {
       "title": "Zacznij tutaj",
       "description": "Od pierwszego cięcia do własnego warsztatu. Wybierz swoją ścieżkę i pobierz darmową listę 10 narzędzi na start."
@@ -341,6 +345,46 @@
     },
     "switchPath": "Budujesz dla siebie? Przejdź do ścieżki domowej →",
     "freeVideo": "Darmowy film"
+  },
+  "workshop": {
+    "label": "Warsztat online · start pod koniec listopada 2026",
+    "title": "Wyceniaj zlecenia z zyskiem",
+    "subtitle": "Jak wyceniam meble na wymiar i zabudowy wnętrz po 15 latach pracy jako stolarz. Prawdziwe zlecenia, prawdziwe liczby, krok po kroku.",
+    "learnTitle": "Czego się nauczysz",
+    "bullets": {
+      "forgottenCosts": "9 kosztów, o których większość stolarzy zapomina przy wycenie",
+      "hourlyRate": "Jak ustalić swoją stawkę godzinową",
+      "reserve": "Rezerwa na błędy w każdej wycenie",
+      "profit": "Jak doliczyć zysk na górze, a nie „jeśli coś zostanie”"
+    },
+    "audience": "Dla stolarzy, którzy prowadzą własny warsztat albo go zakładają.",
+    "perk": "Osoby z listy oczekujących dostaną dostęp jako pierwsze i zniżkę na start.",
+    "form": {
+      "title": "Zapisz się na listę oczekujących",
+      "email": "E-mail",
+      "emailPlaceholder": "twoj@email.com",
+      "firstName": "Imię",
+      "optional": "(opcjonalnie)",
+      "segment": "Kim jesteś?",
+      "segmentPlaceholder": "Wybierz",
+      "segments": {
+        "ownShop": "Prowadzę własny warsztat",
+        "startingShop": "Zakładam warsztat",
+        "home": "Robię meble w domu"
+      },
+      "consent": "Zgadzam się na otrzymywanie e-maili o warsztacie. Mogę zrezygnować w każdej chwili.",
+      "consentRequired": "Zaznacz pole, żebym mógł pisać do Ciebie o warsztacie.",
+      "submit": "Zapisz się na listę",
+      "sending": "Wysyłanie…",
+      "invalidEmail": "Wpisz poprawny adres e-mail.",
+      "error": "Coś poszło nie tak. Spróbuj ponownie.",
+      "honeypot": "Zostaw to pole puste"
+    },
+    "thanks": {
+      "title": "Jesteś na liście.",
+      "text": "Właśnie wysłałem Ci e-mail z potwierdzeniem. Warsztat startuje pod koniec listopada, a Ty dostaniesz pierwszeństwo dostępu i zniżkę na start.",
+      "link": "W międzyczasie: plany i poradniki dla własnego warsztatu →"
+    }
   },
   "start": {
     "title": "Od pierwszego cięcia do <mark>własnego warsztatu.</mark>",
@@ -818,13 +862,15 @@
   "email": {
     "subjectStarter": "Twoja lista 10 narzędzi",
     "subjectStarterReady": "Oto twoja lista 10 narzędzi",
-    "subjectWaitlist": "Jesteś na liście: warsztat na żywo o wycenie zleceń",
+    "subjectWaitlist": "Jesteś na liście: Wyceniaj zlecenia z zyskiem",
     "greeting": "Cześć,",
+    "greetingName": "Cześć {name},",
     "starterReady": "Dzięki, że poprosiłeś o listę. Oto ona: 10 narzędzi, które kupiłbym dziś ponownie, gdybym zaczynał od zera.",
     "starterReadyLater": "Tak jak obiecałem, oto lista 10 narzędzi: tych, które kupiłbym dziś ponownie, gdybym zaczynał od zera.",
     "starterPending": "Dzięki, że poprosiłeś o listę. Właśnie ją dopracowuję, więc wyślę ci ją mailem w ciągu kilku dni.",
     "starterButton": "Pobierz listę",
-    "waitlist": "Dzięki, że zapisałeś się na listę warsztatu na żywo o wycenie zleceń. Termin poznasz jako pierwszy.",
+    "waitlist": "Dzięki za zapis na listę oczekujących na „Wyceniaj zlecenia z zyskiem”, mój warsztat online o wycenie mebli na wymiar i zabudów wnętrz. Startuje pod koniec listopada i dowiesz się o tym przed innymi.",
+    "waitlistDiscount": "W podziękowaniu za wczesny zapis dostaniesz zniżkę na start. Wyślę Ci ją w dniu premiery.",
     "consentYes": "Poprosiłeś też o okazjonalne maile z poradami i nowymi planami. Będzie ich niewiele i będą konkretne.",
     "reply": "Pytania? Po prostu odpowiedz na tego maila. Czytam każdego.",
     "signoff": "Tom",

@@ -13,6 +13,10 @@
       "title": "Die eigene Schreinerei aufbauen",
       "description": "Eine Werkstatt, die sich rechnet: was du zuerst kaufst, was du verlangst und wie du einen Auftrag in Minuten planst. 15 Jahre Aufträge für Kunden."
     },
+    "workshop": {
+      "title": "Aufträge mit Gewinn kalkulieren: Online-Workshop",
+      "description": "Wie ich nach 15 Jahren als Schreiner Möbel nach Maß und Innenausbau kalkuliere. Echte Aufträge, echte Zahlen, Schritt für Schritt. Trag dich in die Warteliste ein."
+    },
     "start": {
       "title": "Hier starten",
       "description": "Vom ersten Schnitt zur eigenen Werkstatt. Wähl deinen Weg und hol dir die kostenlose Starterliste mit 10 Werkzeugen."
@@ -341,6 +345,46 @@
     },
     "switchPath": "Du baust für dich selbst? Zum Weg für zu Hause →",
     "freeVideo": "Gratis-Video"
+  },
+  "workshop": {
+    "label": "Online-Workshop · Start Ende November 2026",
+    "title": "Aufträge mit Gewinn kalkulieren",
+    "subtitle": "Wie ich nach 15 Jahren als Schreiner Möbel nach Maß und Innenausbau kalkuliere. Echte Aufträge, echte Zahlen, Schritt für Schritt.",
+    "learnTitle": "Das lernst du",
+    "bullets": {
+      "forgottenCosts": "Die 9 Kosten, die die meisten Schreiner beim Kalkulieren vergessen",
+      "hourlyRate": "Wie du deinen Stundensatz festlegst",
+      "reserve": "Eine Reserve für Fehler in jedem Angebot",
+      "profit": "Wie du den Gewinn obendrauf rechnest, nicht „wenn etwas übrig bleibt“"
+    },
+    "audience": "Für Schreiner, die eine eigene Werkstatt führen oder gerade gründen.",
+    "perk": "Wer auf der Warteliste steht, bekommt zuerst Zugang und einen Rabatt zum Start.",
+    "form": {
+      "title": "Auf die Warteliste",
+      "email": "E-Mail",
+      "emailPlaceholder": "deine@email.de",
+      "firstName": "Vorname",
+      "optional": "(optional)",
+      "segment": "Was trifft auf dich zu?",
+      "segmentPlaceholder": "Bitte wählen",
+      "segments": {
+        "ownShop": "Ich führe meine eigene Werkstatt",
+        "startingShop": "Ich gründe gerade eine Werkstatt",
+        "home": "Ich baue zu Hause"
+      },
+      "consent": "Ich bin einverstanden, E-Mails zum Workshop zu erhalten. Abmeldung jederzeit möglich.",
+      "consentRequired": "Setz bitte das Häkchen, damit ich dir zum Workshop schreiben darf.",
+      "submit": "Auf die Warteliste",
+      "sending": "Wird gesendet…",
+      "invalidEmail": "Gib eine gültige E-Mail-Adresse ein.",
+      "error": "Da ist etwas schiefgelaufen. Bitte versuch es noch einmal.",
+      "honeypot": "Dieses Feld leer lassen"
+    },
+    "thanks": {
+      "title": "Du stehst auf der Liste.",
+      "text": "Ich habe dir gerade eine Bestätigung per E-Mail geschickt. Der Workshop startet Ende November, und du bekommst vor allen anderen Zugang und den Startrabatt.",
+      "link": "Bis dahin: Pläne und Anleitungen für deine eigene Werkstatt →"
+    }
   },
   "start": {
     "title": "Vom ersten Schnitt zur <mark>eigenen Werkstatt.</mark>",
@@ -818,13 +862,15 @@
   "email": {
     "subjectStarter": "Deine Liste mit 10 Werkzeugen",
     "subjectStarterReady": "Hier ist deine Liste mit 10 Werkzeugen",
-    "subjectWaitlist": "Du stehst auf der Liste: Live-Workshop zur Preiskalkulation",
+    "subjectWaitlist": "Du stehst auf der Liste: Aufträge mit Gewinn kalkulieren",
     "greeting": "Hallo,",
+    "greetingName": "Hallo {name},",
     "starterReady": "Danke, dass du die Liste angefordert hast. Hier ist sie: die 10 Werkzeuge, die ich heute wieder kaufen würde, wenn ich neu anfangen müsste.",
     "starterReadyLater": "Wie versprochen, hier ist die Liste mit 10 Werkzeugen: die, die ich heute wieder kaufen würde, wenn ich neu anfangen müsste.",
     "starterPending": "Danke, dass du die Liste angefordert hast. Ich lege gerade letzte Hand an und schicke sie dir in den nächsten Tagen per E-Mail.",
     "starterButton": "Liste herunterladen",
-    "waitlist": "Danke, dass du dich für den Live-Workshop zur Preiskalkulation eingetragen hast. Du erfährst den Termin als Erster.",
+    "waitlist": "Danke, dass du dich für „Aufträge mit Gewinn kalkulieren“ eingetragen hast, meinen Online-Workshop zur Kalkulation von Möbeln nach Maß und Innenausbau. Er startet Ende November, und du erfährst es vor allen anderen.",
+    "waitlistDiscount": "Als Dankeschön fürs frühe Eintragen bekommst du einen Rabatt zum Start. Den schicke ich dir am Starttag.",
     "consentYes": "Du hast auch gelegentliche E-Mails mit Tipps und neuen Bauplänen angefordert. Ich schicke sie selten und nur, wenn sie nützlich sind.",
     "reply": "Fragen? Antworte einfach auf diese E-Mail. Ich lese jede.",
     "signoff": "Tom",

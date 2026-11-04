@@ -17,6 +17,7 @@ const STATIC_ROUTES: {
   { path: "/", changeFrequency: "weekly", priority: 1 },
   { path: "/build-at-home", changeFrequency: "monthly", priority: 0.9 },
   { path: "/own-shop", changeFrequency: "monthly", priority: 0.9 },
+  { path: "/workshop", changeFrequency: "monthly", priority: 0.8 },
   { path: "/shop", changeFrequency: "weekly", priority: 0.9 },
   { path: "/videos", changeFrequency: "weekly", priority: 0.7 },
   { path: "/about", changeFrequency: "monthly", priority: 0.8 },

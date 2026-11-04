@@ -49,10 +49,17 @@ export async function applyLeadRetention(now = new Date()): Promise<{
       consent_at: null,
       consent_text: null,
       starter_sent_at: null,
+      first_name: null,
+      segment: null,
+      utm_source: null,
+      utm_medium: null,
+      utm_campaign: null,
+      utm_content: null,
+      utm_term: null,
     })
     .not("unsubscribed_at", "is", null)
     .or(
-      "path.not.is.null,locale.not.is.null,ref.not.is.null,marketing_consent.eq.true,consent_at.not.is.null,consent_text.not.is.null,starter_sent_at.not.is.null"
+      "path.not.is.null,locale.not.is.null,ref.not.is.null,marketing_consent.eq.true,consent_at.not.is.null,consent_text.not.is.null,starter_sent_at.not.is.null,first_name.not.is.null,segment.not.is.null,utm_source.not.is.null,utm_medium.not.is.null,utm_campaign.not.is.null,utm_content.not.is.null,utm_term.not.is.null"
     )
     .select("id");
   if (minimizeError) throw minimizeError;

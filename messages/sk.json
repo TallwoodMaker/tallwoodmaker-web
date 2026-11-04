@@ -13,6 +13,10 @@
       "title": "Zariaď si vlastnú stolársku dielňu",
       "description": "Dielňa, ktorá zarába: čo kúpiť ako prvé, koľko si pýtať a ako naplánovať zákazku za pár minút. 15 rokov práce pre zákazníkov."
     },
+    "workshop": {
+      "title": "Naceň zákazku so ziskom: online workshop",
+      "description": "Ako naceňujem nábytok na mieru a interiéry po 15 rokoch v stolárstve. Skutočné zákazky, skutočné čísla, krok za krokom. Pridaj sa na čakaciu listinu."
+    },
     "start": {
       "title": "Začni tu",
       "description": "Od prvého rezu po vlastnú dielňu. Vyber si cestu a stiahni si zadarmo zoznam 10 nástrojov na začiatok."
@@ -341,6 +345,46 @@
     },
     "switchPath": "Robíš pre seba? Prejdi na cestu Robím doma →",
     "freeVideo": "Video zadarmo"
+  },
+  "workshop": {
+    "label": "Online workshop · spustenie koncom novembra 2026",
+    "title": "Naceň zákazku so ziskom",
+    "subtitle": "Ako naceňujem nábytok na mieru a interiéry po 15 rokoch v stolárstve. Skutočné zákazky, skutočné čísla, krok za krokom.",
+    "learnTitle": "Čo sa naučíš",
+    "bullets": {
+      "forgottenCosts": "9 nákladov, ktoré väčšina stolárov zabúda naceniť",
+      "hourlyRate": "Ako si stanoviť hodinovú sadzbu",
+      "reserve": "Rezerva na chyby v každej ponuke",
+      "profit": "Ako pridať zisk navrch, nie „ak niečo zostane“"
+    },
+    "audience": "Pre stolárov, ktorí majú vlastnú dielňu alebo ju zakladajú.",
+    "perk": "Ľudia z čakacej listiny dostanú prístup ako prví a zľavu pri spustení.",
+    "form": {
+      "title": "Pridaj sa na čakaciu listinu",
+      "email": "E-mail",
+      "emailPlaceholder": "tvoj@email.sk",
+      "firstName": "Krstné meno",
+      "optional": "(nepovinné)",
+      "segment": "Čo platí pre teba?",
+      "segmentPlaceholder": "Vyber možnosť",
+      "segments": {
+        "ownShop": "Mám vlastnú dielňu",
+        "startingShop": "Zakladám dielňu",
+        "home": "Vyrábam doma"
+      },
+      "consent": "Súhlasím so zasielaním e-mailov o workshope. Odhlásiť sa môžem kedykoľvek.",
+      "consentRequired": "Zaškrtni políčko, aby som ti mohol o workshope písať.",
+      "submit": "Pridať sa na čakaciu listinu",
+      "sending": "Odosielam…",
+      "invalidEmail": "Zadaj platnú e-mailovú adresu.",
+      "error": "Niečo sa pokazilo. Skús to znova.",
+      "honeypot": "Toto pole nechaj prázdne"
+    },
+    "thanks": {
+      "title": "Si na zozname.",
+      "text": "Práve som ti poslal potvrdzujúci e-mail. Workshop spúšťam koncom novembra a ty dostaneš prednostný prístup aj zľavu pri spustení.",
+      "link": "Zatiaľ: plány a návody pre vlastnú dielňu →"
+    }
   },
   "start": {
     "title": "Od prvého rezu po <mark>vlastnú dielňu.</mark>",
@@ -818,13 +862,15 @@
   "email": {
     "subjectStarter": "Tvoj zoznam 10 nástrojov",
     "subjectStarterReady": "Tu je tvoj zoznam 10 nástrojov",
-    "subjectWaitlist": "Si na zozname: živý workshop o nacenení zákaziek",
+    "subjectWaitlist": "Si na zozname: Naceň zákazku so ziskom",
     "greeting": "Ahoj,",
+    "greetingName": "Ahoj {name},",
     "starterReady": "Vďaka, že si si vypýtal zoznam. Tu je: 10 nástrojov, ktoré by som si dnes kúpil znova, keby som začínal od nuly.",
     "starterReadyLater": "Ako som sľúbil, tu je zoznam 10 nástrojov: tých, ktoré by som si dnes kúpil znova, keby som začínal od nuly.",
     "starterPending": "Vďaka, že si si vypýtal zoznam. Práve ho dokončujem, takže ti ho pošlem e-mailom do pár dní.",
     "starterButton": "Stiahnuť zoznam",
-    "waitlist": "Vďaka, že si sa zapísal na zoznam k živému workshopu o nacenení zákaziek. Termín sa dozvieš ako prvý.",
+    "waitlist": "Ďakujem za prihlásenie na čakaciu listinu workshopu „Naceň zákazku so ziskom“. Je to môj online workshop o naceňovaní nábytku na mieru a interiérov. Spúšťam ho koncom novembra a dozvieš sa o tom medzi prvými.",
+    "waitlistDiscount": "Ako poďakovanie za skoré prihlásenie dostaneš zľavu pri spustení. Pošlem ti ju v deň spustenia.",
     "consentYes": "Vypýtal si si aj občasné e-maily s tipmi a novými plánmi. Budú zriedka a len užitočné.",
     "reply": "Máš otázku? Stačí odpísať na tento e-mail. Čítam každý.",
     "signoff": "Tom",

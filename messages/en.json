@@ -13,6 +13,10 @@
       "title": "Set up your own woodworking shop",
       "description": "Build a workshop that pays: what to buy first, what to charge, and how to plan a job in minutes. 15 years of running jobs for clients."
     },
+    "workshop": {
+      "title": "Price a Job With Profit: online workshop",
+      "description": "How I price custom furniture and interiors after 15 years as a woodworker. Real jobs, real numbers, step by step. Join the waitlist."
+    },
     "start": {
       "title": "Start here",
       "description": "From your first cut to your own workshop. Pick your path and get the free 10-tool starter list."
@@ -341,6 +345,46 @@
     },
     "switchPath": "Building for yourself? Go to the home path →",
     "freeVideo": "Free video"
+  },
+  "workshop": {
+    "label": "Online workshop · launching end of November 2026",
+    "title": "Price a Job With Profit",
+    "subtitle": "How I price custom furniture and interiors after 15 years as a woodworker. Real jobs, real numbers, step by step.",
+    "learnTitle": "What you'll learn",
+    "bullets": {
+      "forgottenCosts": "The 9 costs most woodworkers forget to price",
+      "hourlyRate": "How to set your hourly rate",
+      "reserve": "A reserve for mistakes in every quote",
+      "profit": "How to add profit on top, not 'if something is left'"
+    },
+    "audience": "For woodworkers who run or are starting their own shop.",
+    "perk": "Waitlist members get first access and a launch discount.",
+    "form": {
+      "title": "Join the waitlist",
+      "email": "Email",
+      "emailPlaceholder": "your@email.com",
+      "firstName": "First name",
+      "optional": "(optional)",
+      "segment": "I am...",
+      "segmentPlaceholder": "Choose one",
+      "segments": {
+        "ownShop": "I run my own shop",
+        "startingShop": "I'm starting a shop",
+        "home": "I build at home"
+      },
+      "consent": "I agree to receive emails about the workshop. Unsubscribe anytime.",
+      "consentRequired": "Tick the box so I can email you about the workshop.",
+      "submit": "Join the waitlist",
+      "sending": "Sending…",
+      "invalidEmail": "Enter a valid email address.",
+      "error": "Something went wrong. Please try again.",
+      "honeypot": "Leave this field empty"
+    },
+    "thanks": {
+      "title": "You're on the list.",
+      "text": "I've just sent you a confirmation email. The workshop launches at the end of November, and you'll get first access and the launch discount.",
+      "link": "Meanwhile: plans and guides for your own shop →"
+    }
   },
   "start": {
     "title": "From your first cut to your <mark>own workshop.</mark>",
@@ -818,13 +862,15 @@
   "email": {
     "subjectStarter": "Your 10-tool starter list",
     "subjectStarterReady": "Here's your 10-tool starter list",
-    "subjectWaitlist": "You're on the list: live pricing workshop",
+    "subjectWaitlist": "You're on the list: Price a Job With Profit",
     "greeting": "Hi,",
+    "greetingName": "Hi {name},",
     "starterReady": "Thanks for asking for the list. Here it is: the 10 tools I'd buy again today if I were starting over.",
     "starterReadyLater": "As promised, here's the 10-tool starter list: the tools I'd buy again today if I were starting over.",
     "starterPending": "Thanks for asking for the list. I'm putting the finishing touches on it, so I'll send it to you by email within a few days.",
     "starterButton": "Download the starter list",
-    "waitlist": "Thanks for joining the list for the live pricing workshop. You'll get the date before anyone else.",
+    "waitlist": "Thanks for joining the waitlist for Price a Job With Profit, my online workshop on pricing custom furniture and interiors. It launches at the end of November, and you'll hear about it before anyone else.",
+    "waitlistDiscount": "As a thank-you for joining early, you'll get a launch discount. I'll send it to you on launch day.",
     "consentYes": "You also asked for occasional emails with tips and new plans. I'll keep them rare and useful.",
     "reply": "Questions? Just reply to this email. I read every one.",
     "signoff": "Tom",

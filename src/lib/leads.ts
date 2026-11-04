@@ -21,7 +21,7 @@ const PATHS: LeadPath[] = ["home", "shop", "general"];
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 const LEAD_COLUMNS =
-  "id, email, source, locale, marketing_consent, unsubscribe_token";
+  "id, email, source, locale, first_name, marketing_consent, unsubscribe_token";
 
 function hasAnalyticsConsent(raw: string | undefined): boolean {
   if (!raw) return false;
@@ -142,6 +142,122 @@ export async function submitLead(
     if (marketingConsent) await syncResendContact(email, false);
   });
 
+  return { status: "success" };
+}
+
+export type WorkshopSegment = "own-shop" | "starting-shop" | "home";
+const SEGMENTS: WorkshopSegment[] = ["own-shop", "starting-shop", "home"];
+const UTM_KEYS = [
+  "utm_source",
+  "utm_medium",
+  "utm_campaign",
+  "utm_content",
+  "utm_term",
+] as const;
+
+/** Optional free-text field: trimmed, capped, empty → null. */
+function optionalText(value: FormDataEntryValue | null, max: number) {
+  const text = String(value ?? "").trim().slice(0, max);
+  return text || null;
+}
+
+export type WorkshopWaitlistState = {
+  status: "idle" | "success" | "invalid" | "consent" | "error";
+};
+
+/**
+ * /workshop waitlist ("Price a Job With Profit"): a `leads` row with
+ * source = 'workshop-pricing', plus first name, the "I am..." answer and
+ * the page's UTM tags. The checkbox there is required consent to emails
+ * about the workshop only, so it's recorded in consent_at/consent_text but
+ * doesn't set marketing_consent (the general newsletter).
+ *
+ * Joining again with the same email never creates a second row: it updates
+ * name/segment, re-records consent, and shows the same thank-you.
+ */
+export async function joinWorkshopWaitlist(
+  _prevState: WorkshopWaitlistState,
+  formData: FormData
+): Promise<WorkshopWaitlistState> {
+  if (String(formData.get("company") ?? "") !== "") {
+    return { status: "success" };
+  }
+
+  const email = String(formData.get("email") ?? "")
+    .trim()
+    .toLowerCase();
+  if (!email || email.length > 254 || !EMAIL_RE.test(email)) {
+    return { status: "invalid" };
+  }
+  if (formData.get("consent") !== "on") {
+    return { status: "consent" };
+  }
+
+  const rawLocale = String(formData.get("locale") ?? "");
+  const locale = hasLocale(routing.locales, rawLocale)
+    ? rawLocale
+    : routing.defaultLocale;
+  const firstName = optionalText(formData.get("firstName"), 80);
+  const rawSegment = String(formData.get("segment") ?? "") as WorkshopSegment;
+  const segment = SEGMENTS.includes(rawSegment) ? rawSegment : null;
+  const utm = Object.fromEntries(
+    UTM_KEYS.map((key) => [key, optionalText(formData.get(key), 200)])
+  );
+  const cookieStore = await cookies();
+  const ref = hasAnalyticsConsent(cookieStore.get(CONSENT_COOKIE_NAME)?.value)
+    ? cookieStore.get(REF_COOKIE)?.value
+    : undefined;
+
+  const consentFields = {
+    consent_at: new Date().toISOString(),
+    // The checkbox text exactly as shown, in the page language.
+    consent_text: (
+      await getTranslations({ locale, namespace: "workshop.form" })
+    )("consent"),
+  };
+
+  const supabase = createAdminClient();
+  const { data: lead, error } = await supabase
+    .from("leads")
+    .insert({
+      email,
+      source: "workshop-pricing",
+      path: "workshop",
+      locale,
+      ref: isRef(ref) ? ref : null,
+      first_name: firstName,
+      segment,
+      ...utm,
+      ...consentFields,
+    })
+    .select(LEAD_COLUMNS)
+    .single();
+
+  if (error) {
+    // 23505 = unique_violation on (email, source): already on the list
+    // (maybe from the /own-shop form). Keep the original UTM/ref, fill in
+    // what's new, and don't email them a second time.
+    if (error.code !== "23505") {
+      console.error("Failed to save workshop signup:", error);
+      return { status: "error" };
+    }
+    const { error: updateError } = await supabase
+      .from("leads")
+      .update({
+        ...(firstName ? { first_name: firstName } : {}),
+        ...(segment ? { segment } : {}),
+        ...consentFields,
+        unsubscribed_at: null,
+      })
+      .eq("email", email)
+      .eq("source", "workshop-pricing");
+    if (updateError) {
+      console.error("Failed to update workshop signup:", updateError);
+    }
+    return { status: "success" };
+  }
+
+  after(() => sendLeadEmail(lead, "welcome"));
   return { status: "success" };
 }
 
