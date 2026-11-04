@@ -268,7 +268,7 @@ export default async function AdminDashboardPage() {
         )}
       </Section>
 
-      <Section title="Revenue (Stripe)" note="Net of refunds, including VAT. Purchases = completed checkouts (shop + Premium).">
+      <Section title="Revenue (Stripe)" note="TallWoodMaker only (MebCut shares the Stripe account and is left out). Amounts paid incl. VAT, before refunds. Purchases = completed checkouts (shop + Premium).">
         {!S ? (
           <Failed what="Stripe" message={money$.ok ? "" : money$.message} />
         ) : (
@@ -276,7 +276,7 @@ export default async function AdminDashboardPage() {
             <div className={grid2}>
               <Stat label="This month" value={money(S.revenue.thisMonth)} />
               <Stat label="Last 30 days" value={money(S.revenue.last30)} />
-              <Stat label="All time" value={money(S.revenue.allTime)} sub={S.truncated ? "first 5,000 payments only" : undefined} />
+              <Stat label="All time" value={money(S.revenue.allTime)} sub={S.truncated ? "first 5,000 checkouts only" : `incl. ${money(S.premiumRevenue)} Premium`} />
               <Stat label="Workshop" value={S.workshop.orders ? money(S.workshop.revenue) : "Not on sale yet"} sub={S.workshop.orders ? `${nf.format(S.workshop.orders)} sold` : "Shows up once the workshop is sold through Stripe"} />
             </div>
             <div className={grid2}>

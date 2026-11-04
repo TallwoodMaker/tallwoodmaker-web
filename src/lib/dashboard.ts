@@ -1,7 +1,8 @@
 import "server-only";
 import type Stripe from "stripe";
 import type { Platform } from "@/config/social";
-import { stripe } from "@/lib/stripe";
+import { PREMIUM_PRICE_ID, stripe } from "@/lib/stripe";
+import { SHOP_PRODUCTS } from "@/lib/shopProducts";
 import { createAdminClient } from "@/lib/supabase/admin";
 
 /**
@@ -334,9 +335,21 @@ const PER_MONTH: Record<Stripe.Price.Recurring.Interval, number> = {
 
 const WORKSHOP_PRODUCT = /workshop|price a job/i;
 
+// The Stripe account is shared with MebCut, so only TallWoodMaker's own
+// prices count: the shop products (incl. ones no longer for sale) and
+// Premium. The workshop is matched by name until it has a price here.
+const SHOP_PRICES = new Map(
+  SHOP_PRODUCTS.map((product) => [product.stripePriceId, product.title])
+);
+
+function isPremium(subscription: Stripe.Subscription) {
+  return subscription.items.data.some(
+    (item) => item.price.id === PREMIUM_PRICE_ID
+  );
+}
+
 export async function getStripeStats(p: Periods) {
-  const [charges, sessions, subscriptions] = await Promise.all([
-    listAll(stripe.charges.list({ limit: 100 })),
+  const [sessions, allSubscriptions] = await Promise.all([
     listAll(
       stripe.checkout.sessions.list({
         limit: 100,
@@ -346,40 +359,70 @@ export async function getStripeStats(p: Periods) {
     ),
     listAll(stripe.subscriptions.list({ limit: 100, status: "all" })),
   ]);
+  const subscriptions = allSubscriptions.filter(isPremium);
 
   const revenue = {
     thisMonth: {} as Money,
     last30: {} as Money,
     allTime: {} as Money,
   };
-  for (const charge of charges) {
-    if (charge.status !== "succeeded") continue;
-    const net = charge.amount - charge.amount_refunded;
-    const at = new Date(charge.created * 1000);
-    add(revenue.allTime, charge.currency, net);
-    if (at >= p.thirtyDaysAgo) add(revenue.last30, charge.currency, net);
-    if (at >= p.thisMonthStart) add(revenue.thisMonth, charge.currency, net);
-  }
+  const addRevenue = (at: Date, currency: string, cents: number) => {
+    add(revenue.allTime, currency, cents);
+    if (at >= p.thirtyDaysAgo) add(revenue.last30, currency, cents);
+    if (at >= p.thisMonthStart) add(revenue.thisMonth, currency, cents);
+  };
 
-  const paidSessions = sessions.filter((s) => s.payment_status === "paid");
+  // Shop + workshop: one-time checkouts, only TallWoodMaker line items.
   const purchases = { thisMonth: 0, lastMonth: 0 };
   const products = new Map<string, { orders: number; revenue: Money }>();
   const workshop = { orders: 0, revenue: {} as Money };
-  for (const session of paidSessions) {
-    const w = windowOf(new Date(session.created * 1000), p);
+  for (const session of sessions) {
+    if (session.payment_status !== "paid") continue;
+    const at = new Date(session.created * 1000);
+    const items = (session.line_items?.data ?? []).filter((item) => {
+      const priceId = item.price?.id ?? "";
+      return (
+        SHOP_PRICES.has(priceId) ||
+        priceId === PREMIUM_PRICE_ID ||
+        WORKSHOP_PRODUCT.test(item.description ?? "")
+      );
+    });
+    if (items.length === 0) continue; // a MebCut checkout
+    const w = windowOf(at, p);
     if (w) purchases[w]++;
-    if (session.mode !== "payment") continue;
-    for (const item of session.line_items?.data ?? []) {
-      const name = item.description ?? "Unknown product";
+    if (session.mode !== "payment") continue; // Premium: counted via invoices
+    for (const item of items) {
+      const name =
+        SHOP_PRICES.get(item.price?.id ?? "") ??
+        item.description ??
+        "Unknown product";
       const product = products.get(name) ?? { orders: 0, revenue: {} };
       product.orders += item.quantity ?? 1;
       add(product.revenue, item.currency, item.amount_total);
       products.set(name, product);
+      addRevenue(at, item.currency, item.amount_total);
       if (WORKSHOP_PRODUCT.test(name)) {
         workshop.orders += item.quantity ?? 1;
         add(workshop.revenue, item.currency, item.amount_total);
       }
     }
+  }
+
+  // Premium: every paid invoice (first month and renewals).
+  const invoices = (
+    await Promise.all(
+      subscriptions.slice(0, 200).map((s) =>
+        listAll(
+          stripe.invoices.list({ subscription: s.id, status: "paid", limit: 100 })
+        )
+      )
+    )
+  ).flat();
+  const premiumRevenue: Money = {};
+  for (const invoice of invoices) {
+    const paidAt = invoice.status_transitions?.paid_at ?? invoice.created;
+    addRevenue(new Date(paidAt * 1000), invoice.currency, invoice.amount_paid);
+    add(premiumRevenue, invoice.currency, invoice.amount_paid);
   }
 
   const active = subscriptions.filter(
@@ -399,6 +442,7 @@ export async function getStripeStats(p: Periods) {
       (a, b) => b[1].orders - a[1].orders
     ),
     workshop,
+    premiumRevenue,
     activeSubscribers: active.length,
     mrr,
     cancellations: {
@@ -407,7 +451,8 @@ export async function getStripeStats(p: Periods) {
       scheduled: active.filter((s) => s.cancel_at_period_end).length,
     },
     truncated:
-      charges.length >= MAX_OBJECTS || sessions.length >= MAX_OBJECTS,
+      sessions.length >= MAX_OBJECTS ||
+      allSubscriptions.length >= MAX_OBJECTS,
   };
 }
 
