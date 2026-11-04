@@ -65,7 +65,7 @@ function Start() {
               {t("leadTitle")}
             </h2>
             <p className="text-[18px] leading-[1.5]">{t("leadText")}</p>
-            <LeadForm source="starter-list" path="general" submitLabel={t("submit")} />
+            <LeadForm source="starter-list" path="start" submitLabel={t("submit")} />
           </div>
         </section>
       </main>

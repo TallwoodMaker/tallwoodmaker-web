@@ -68,9 +68,12 @@ export async function sendLeadEmail(
     );
     // The list in the language the visitor picked (stored as leads.locale),
     // plus the English original whenever that's a different language.
-    button = { label: t("starterButton"), url: listUrls[locale] };
+    // Links go through /api/starter-list, which records the first download.
+    const downloadUrl = (l: Locale) =>
+      `${SITE_URL}/api/starter-list?l=${l}&t=${token}`;
+    button = { label: t("starterButton"), url: downloadUrl(locale) };
     if (locale !== "en") {
-      secondaryLink = { label: "English version", url: listUrls.en };
+      secondaryLink = { label: "English version", url: downloadUrl("en") };
     }
     sentStarterList = true;
   } else {

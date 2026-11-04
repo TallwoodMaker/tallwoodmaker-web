@@ -156,7 +156,7 @@
     "invalidEmail": "Zadej platnou e-mailovou adresu.",
     "error": "Něco se pokazilo. Zkus to prosím znovu.",
     "honeypot": "Toto pole nevyplňuj",
-    "consent": "Posílej mi 1 e-mail týdně s praktickými tipy + dřívější přístup a slevy ke spuštění workshopu a plánů.",
+    "consent": "Posílej mi maximálně 1 e-mail týdně s praktickými tipy + dřívější přístup a slevy ke spuštění workshopu a plánů TallWoodMaker. Odhlásit se můžu kdykoli.",
     "listLanguage": "Pošli mi seznam v jazyce:"
   },
   "home": {
@@ -866,7 +866,7 @@
     "starterButton": "Stáhnout seznam",
     "waitlist": "Díky za přihlášení na čekací listinu workshopu „Naceň zakázku se ziskem“. Je to můj online workshop o naceňování nábytku na míru a interiérů. Spouštím ho koncem listopadu a dozvíš se o tom mezi prvními.",
     "waitlistDiscount": "Jako poděkování za včasné přihlášení dostaneš slevu ke spuštění. Pošlu ti ji v den spuštění.",
-    "consentYes": "Budeš ode mě dostávat i týdenní e-mail s praktickými tipy a k tomu dřívější přístup a slevy ke spuštění workshopu a plánů. Odhlásit se můžeš jedním kliknutím dole v každém e-mailu.",
+    "consentYes": "Budeš ode mě dostávat i maximálně 1 e-mail týdně s praktickými tipy a k tomu dřívější přístup a slevy ke spuštění workshopu a plánů TallWoodMaker. Odhlásit se můžeš kdykoli jedním kliknutím dole v každém e-mailu.",
     "reply": "Máš otázku? Stačí odpovědět na tento e-mail. Čtu každý.",
     "signoff": "Tom",
     "signoffRole": "TallWoodMaker · 15 let výroby pro zákazníky",

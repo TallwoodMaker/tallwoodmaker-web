@@ -156,7 +156,7 @@
     "invalidEmail": "Introduz um endereço de email válido.",
     "error": "Algo correu mal. Tenta outra vez.",
     "honeypot": "Deixa este campo vazio",
-    "consent": "Envia-me 1 email por semana com dicas práticas + acesso antecipado e descontos de lançamento para o workshop e os planos.",
+    "consent": "Envia-me até 1 email por semana com dicas práticas + acesso antecipado e descontos de lançamento para o workshop e os planos TallWoodMaker. Posso cancelar a qualquer momento.",
     "listLanguage": "Envia-me a lista em:"
   },
   "home": {
@@ -866,7 +866,7 @@
     "starterButton": "Descarregar a lista",
     "waitlist": "Obrigado por entrares na lista de espera de «Orçamenta um trabalho com lucro», o meu workshop online sobre como orçamentar mobiliário por medida e interiores. É lançado no final de novembro e vais saber antes de toda a gente.",
     "waitlistDiscount": "Como agradecimento por te inscreveres cedo, vais ter um desconto de lançamento. Envio-to no dia do lançamento.",
-    "consentYes": "Também vais receber o meu email semanal com dicas práticas, além de acesso antecipado e descontos de lançamento para o workshop e os planos. Podes cancelar com um clique no fundo de qualquer email.",
+    "consentYes": "Também vais receber até 1 email por semana com dicas práticas, além de acesso antecipado e descontos de lançamento para o workshop e os planos TallWoodMaker. Podes cancelar a qualquer momento com um clique no fundo de qualquer email.",
     "reply": "Dúvidas? Responde a este email. Leio todos.",
     "signoff": "Tom",
     "signoffRole": "TallWoodMaker · 15 anos a trabalhar para clientes",

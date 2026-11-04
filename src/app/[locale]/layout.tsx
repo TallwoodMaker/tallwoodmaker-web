@@ -10,6 +10,7 @@ import { CartProvider } from "@/lib/cart/CartContext";
 import CookieBanner from "@/components/cookies/CookieBanner";
 import CookiePreferencesModal from "@/components/cookies/CookiePreferencesModal";
 import RefTracker from "@/components/cookies/RefTracker";
+import PageViewTracker from "@/components/PageViewTracker";
 import { routing } from "@/i18n/routing";
 import { SITE_URL } from "@/i18n/metadata";
 
@@ -83,6 +84,7 @@ export default async function LocaleLayout({
             <CartProvider>
               <Analytics />
               <RefTracker />
+              <PageViewTracker />
               {children}
               <CookieBanner />
               <CookiePreferencesModal />

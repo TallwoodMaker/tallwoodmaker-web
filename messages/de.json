@@ -156,7 +156,7 @@
     "invalidEmail": "Gib eine gültige E-Mail-Adresse ein.",
     "error": "Da ist etwas schiefgelaufen. Bitte versuch es noch einmal.",
     "honeypot": "Dieses Feld leer lassen",
-    "consent": "Schick mir 1 E-Mail pro Woche mit praktischen Tipps + frühen Zugang und Startrabatte für den Workshop und die Pläne.",
+    "consent": "Schick mir bis zu 1 E-Mail pro Woche mit praktischen Tipps + frühen Zugang und Startrabatte für den TallWoodMaker-Workshop und die Pläne. Abmeldung jederzeit möglich.",
     "listLanguage": "Schick mir die Liste auf:"
   },
   "home": {
@@ -866,7 +866,7 @@
     "starterButton": "Liste herunterladen",
     "waitlist": "Danke, dass du dich für „Aufträge mit Gewinn kalkulieren“ eingetragen hast, meinen Online-Workshop zur Kalkulation von Möbeln nach Maß und Innenausbau. Er startet Ende November, und du erfährst es vor allen anderen.",
     "waitlistDiscount": "Als Dankeschön fürs frühe Eintragen bekommst du einen Rabatt zum Start. Den schicke ich dir am Starttag.",
-    "consentYes": "Du bekommst außerdem meine wöchentliche E-Mail mit praktischen Tipps, dazu frühen Zugang und Startrabatte für den Workshop und die Pläne. Abmelden kannst du dich mit einem Klick unten in jeder E-Mail.",
+    "consentYes": "Du bekommst außerdem bis zu 1 E-Mail pro Woche mit praktischen Tipps, dazu frühen Zugang und Startrabatte für den TallWoodMaker-Workshop und die Pläne. Abmelden kannst du dich jederzeit mit einem Klick unten in jeder E-Mail.",
     "reply": "Fragen? Antworte einfach auf diese E-Mail. Ich lese jede.",
     "signoff": "Tom",
     "signoffRole": "TallWoodMaker · seit 15 Jahren im Kundenauftrag",

@@ -11,10 +11,10 @@ import { createAdminClient } from "@/lib/supabase/admin";
 import { sendLeadEmail, syncResendContact } from "@/lib/email/leadEmails";
 
 export type LeadSource = "starter-list" | "workshop-pricing";
-export type LeadPath = "home" | "shop" | "general";
+export type LeadPath = "home" | "shop" | "general" | "start";
 
 const SOURCES: LeadSource[] = ["starter-list", "workshop-pricing"];
-const PATHS: LeadPath[] = ["home", "shop", "general"];
+const PATHS: LeadPath[] = ["home", "shop", "general", "start"];
 
 // Deliberately loose: one @, something on each side, a dot in the domain.
 // Anything stricter rejects real addresses; the inbox is the real test.

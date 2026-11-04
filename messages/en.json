@@ -156,7 +156,7 @@
     "invalidEmail": "Enter a valid email address.",
     "error": "Something went wrong. Please try again.",
     "honeypot": "Leave this field empty",
-    "consent": "Send me 1 email a week with practical tips + early access and launch discounts for my workshop and plans.",
+    "consent": "Send me up to 1 email a week with practical tips + early access and launch discounts for the TallWoodMaker workshop and plans. Unsubscribe anytime.",
     "listLanguage": "Send me the list in:"
   },
   "home": {
@@ -866,7 +866,7 @@
     "starterButton": "Download the starter list",
     "waitlist": "Thanks for joining the waitlist for Price a Job With Profit, my online workshop on pricing custom furniture and interiors. It launches at the end of November, and you'll hear about it before anyone else.",
     "waitlistDiscount": "As a thank-you for joining early, you'll get a launch discount. I'll send it to you on launch day.",
-    "consentYes": "You also asked for my weekly email with practical tips, plus early access and launch discounts for the workshop and plans. You can unsubscribe with one click at the bottom of any email.",
+    "consentYes": "You also asked for up to 1 email a week with practical tips, plus early access and launch discounts for the TallWoodMaker workshop and plans. You can unsubscribe anytime with one click at the bottom of any email.",
     "reply": "Questions? Just reply to this email. I read every one.",
     "signoff": "Tom",
     "signoffRole": "TallWoodMaker · 15 years building for clients",

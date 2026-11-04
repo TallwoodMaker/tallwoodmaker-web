@@ -2,6 +2,7 @@ import { type NextRequest } from "next/server";
 import { createServerClient, type CookieOptions } from "@supabase/ssr";
 import createIntlMiddleware from "next-intl/middleware";
 import { routing } from "@/i18n/routing";
+import { BOT_UA } from "@/lib/bots";
 
 const intlMiddleware = createIntlMiddleware(routing);
 
@@ -12,8 +13,6 @@ const crawlerMiddleware = createIntlMiddleware({
   localeDetection: false,
 });
 
-const CRAWLER_UA =
-  /bot|crawl|spider|slurp|bingpreview|facebookexternalhit|embedly|pinterest|whatsapp|telegram|linkedin|google-inspectiontool|lighthouse/i;
 
 /**
  * Two jobs on every page request:
@@ -57,7 +56,7 @@ export async function proxy(request: NextRequest) {
   // valid session.
   await supabase.auth.getUser();
 
-  const isCrawler = CRAWLER_UA.test(request.headers.get("user-agent") ?? "");
+  const isCrawler = BOT_UA.test(request.headers.get("user-agent") ?? "");
   const response = (isCrawler ? crawlerMiddleware : intlMiddleware)(request);
 
   refreshedCookies.forEach(({ name, value, options }) =>
