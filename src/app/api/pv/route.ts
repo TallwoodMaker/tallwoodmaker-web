@@ -1,4 +1,6 @@
+import { cookies } from "next/headers";
 import { LOCALES } from "@/i18n/routing";
+import { OWNER_COOKIE } from "@/config/owner";
 import { isRef } from "@/config/ref";
 import { isBot } from "@/lib/bots";
 import { createAdminClient } from "@/lib/supabase/admin";
@@ -15,7 +17,8 @@ function text(value: string | null, max = 200): string | null {
  * First-party page views from PageViewTracker. No cookies, no IP, no user
  * agent stored: only the page, whether it was the visit's landing page, and
  * the landing page's ref/UTM tags and referring host. Only production
- * traffic is recorded (TRACK_DEV_PAGEVIEWS=1 records local dev too).
+ * traffic is recorded (TRACK_DEV_PAGEVIEWS=1 records local dev too), and
+ * never the owner's own devices.
  */
 export async function POST(request: Request) {
   const done = new Response(null, { status: 204 });
@@ -26,6 +29,8 @@ export async function POST(request: Request) {
     return done;
   }
   if (isBot(request.headers.get("user-agent"))) return done;
+  // The owner's own devices (cookie set by src/proxy.ts for the admin).
+  if ((await cookies()).has(OWNER_COOKIE)) return done;
 
   let body: { p?: unknown; e?: unknown; s?: unknown; r?: unknown };
   try {

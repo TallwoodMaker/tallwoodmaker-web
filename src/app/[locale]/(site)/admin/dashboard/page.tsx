@@ -298,7 +298,7 @@ export default async function AdminDashboardPage() {
         title="Website traffic"
         note={
           T?.since
-            ? `First-party, cookieless page views since ${shortDate(T.since)}. A visit = a landing on the site from outside. Bots, admin pages and preview deploys aren't counted.`
+            ? `First-party, cookieless page views since ${shortDate(T.since)}. A visit = a landing on the site from outside. Bots, admin pages, preview deploys and your own devices (any device you've used while signed in as admin) aren't counted.`
             : "First-party, cookieless page views. Nothing recorded yet: counting starts with this deploy."
         }
       >

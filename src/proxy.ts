@@ -3,6 +3,8 @@ import { createServerClient, type CookieOptions } from "@supabase/ssr";
 import createIntlMiddleware from "next-intl/middleware";
 import { routing } from "@/i18n/routing";
 import { BOT_UA } from "@/lib/bots";
+import { isAdmin } from "@/lib/admin";
+import { OWNER_COOKIE, OWNER_COOKIE_MAX_AGE } from "@/config/owner";
 
 const intlMiddleware = createIntlMiddleware(routing);
 
@@ -54,7 +56,9 @@ export async function proxy(request: NextRequest) {
 
   // Refreshes the token if expired; required for Server Components to see a
   // valid session.
-  await supabase.auth.getUser();
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
 
   const isCrawler = BOT_UA.test(request.headers.get("user-agent") ?? "");
   const response = (isCrawler ? crawlerMiddleware : intlMiddleware)(request);
@@ -65,6 +69,17 @@ export async function proxy(request: NextRequest) {
   Object.entries(refreshHeaders).forEach(([key, value]) =>
     response.headers.set(key, value)
   );
+
+  // The admin's devices are left out of the dashboard's traffic numbers.
+  if (isAdmin(user?.email) && !request.cookies.has(OWNER_COOKIE)) {
+    response.cookies.set(OWNER_COOKIE, "1", {
+      maxAge: OWNER_COOKIE_MAX_AGE,
+      httpOnly: true,
+      sameSite: "lax",
+      secure: process.env.NODE_ENV === "production",
+      path: "/",
+    });
+  }
 
   return response;
 }
