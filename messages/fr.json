@@ -156,7 +156,7 @@
     "invalidEmail": "Saisis une adresse e-mail valide.",
     "error": "Une erreur s’est produite. Réessaie.",
     "honeypot": "Laisse ce champ vide",
-    "consent": "Envoie-moi aussi de temps en temps des e-mails avec des astuces et de nouveaux plans. Désinscription à tout moment.",
+    "consent": "Envoie-moi 1 e-mail par semaine avec des conseils pratiques + un accès anticipé et des remises de lancement sur l’atelier et les plans.",
     "listLanguage": "Envoie-moi la liste en :"
   },
   "home": {
@@ -866,7 +866,7 @@
     "starterButton": "Télécharger la liste",
     "waitlist": "Merci pour ton inscription sur la liste d’attente de « Chiffre un chantier avec du bénéfice », mon atelier en ligne pour chiffrer les meubles sur mesure et l’agencement intérieur. Il sera lancé fin novembre, et tu le sauras avant tout le monde.",
     "waitlistDiscount": "Pour te remercier de ton inscription anticipée, tu auras une remise de lancement. Je te l’enverrai le jour du lancement.",
-    "consentYes": "Tu as aussi demandé à recevoir de temps en temps des e-mails avec des astuces et de nouveaux plans. Ils seront rares et utiles.",
+    "consentYes": "Tu recevras aussi mon e-mail hebdomadaire avec des conseils pratiques, ainsi qu’un accès anticipé et des remises de lancement sur l’atelier et les plans. Tu peux te désinscrire en un clic en bas de chaque e-mail.",
     "reply": "Une question ? Réponds simplement à cet e-mail. Je les lis tous.",
     "signoff": "Tom",
     "signoffRole": "TallWoodMaker · 15 ans de chantiers pour des clients",

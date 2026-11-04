@@ -156,7 +156,7 @@
     "invalidEmail": "Wpisz poprawny adres e-mail.",
     "error": "Coś poszło nie tak. Spróbuj ponownie.",
     "honeypot": "Zostaw to pole puste",
-    "consent": "Wysyłaj mi też od czasu do czasu maile z poradami i nowymi planami. Możesz się wypisać w każdej chwili.",
+    "consent": "Wysyłaj mi 1 e-mail tygodniowo z praktycznymi poradami + wcześniejszy dostęp i zniżki na start warsztatu i planów.",
     "listLanguage": "Wyślij mi listę po:"
   },
   "home": {
@@ -866,7 +866,7 @@
     "starterButton": "Pobierz listę",
     "waitlist": "Dzięki za zapis na listę oczekujących na „Wyceniaj zlecenia z zyskiem”, mój warsztat online o wycenie mebli na wymiar i zabudów wnętrz. Startuje pod koniec listopada i dowiesz się o tym przed innymi.",
     "waitlistDiscount": "W podziękowaniu za wczesny zapis dostaniesz zniżkę na start. Wyślę Ci ją w dniu premiery.",
-    "consentYes": "Poprosiłeś też o okazjonalne maile z poradami i nowymi planami. Będzie ich niewiele i będą konkretne.",
+    "consentYes": "Dostaniesz też mój cotygodniowy e-mail z praktycznymi poradami oraz wcześniejszy dostęp i zniżki na start warsztatu i planów. Możesz zrezygnować jednym kliknięciem na dole każdego e-maila.",
     "reply": "Pytania? Po prostu odpowiedz na tego maila. Czytam każdego.",
     "signoff": "Tom",
     "signoffRole": "TallWoodMaker · 15 lat pracy dla klientów",
