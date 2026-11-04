@@ -337,12 +337,6 @@
       "text": "Planes de corte a partir de una foto y asistente de corte en el móvil.",
       "price": "Gratis para empezar"
     },
-    "waitlist": {
-      "eyebrow": "Taller online en directo · próximamente",
-      "title": "Presupuesta un trabajo con beneficio, no gratis.",
-      "text": "2 horas en directo, una calculadora que te quedas y no volverás a olvidarte de los herrajes. Apúntate a la lista y sé el primero en saber la fecha.",
-      "submit": "Apuntarme a la lista"
-    },
     "switchPath": "¿Construyes para ti? Ve al camino de casa →",
     "freeVideo": "Vídeo gratis"
   },
@@ -382,6 +376,7 @@
     },
     "thanks": {
       "title": "Ya estás en la lista.",
+      "already": "Ya estás en la lista. ¡Nos vemos en el lanzamiento!",
       "text": "Te acabo de enviar un email de confirmación. El taller se lanza a finales de noviembre y tendrás acceso antes que nadie y el descuento de lanzamiento.",
       "link": "Mientras tanto: planos y guías para tu propio taller →"
     }

@@ -337,12 +337,6 @@
       "text": "Zuschnittpläne aus einem Foto, Zuschnittassistent auf dem Handy.",
       "price": "Kostenlos starten"
     },
-    "waitlist": {
-      "eyebrow": "Live-Online-Workshop · demnächst",
-      "title": "Einen Auftrag mit Gewinn kalkulieren, nicht umsonst.",
-      "text": "2 Stunden live, ein Kalkulator, den du behältst, und du vergisst nie wieder die Beschläge. Trag dich in die Liste ein und erfahre den Termin als Erster.",
-      "submit": "Auf die Liste setzen"
-    },
     "switchPath": "Du baust für dich selbst? Zum Weg für zu Hause →",
     "freeVideo": "Gratis-Video"
   },
@@ -382,6 +376,7 @@
     },
     "thanks": {
       "title": "Du stehst auf der Liste.",
+      "already": "Du stehst schon auf der Liste. Wir sehen uns zum Start!",
       "text": "Ich habe dir gerade eine Bestätigung per E-Mail geschickt. Der Workshop startet Ende November, und du bekommst vor allen anderen Zugang und den Startrabatt.",
       "link": "Bis dahin: Pläne und Anleitungen für deine eigene Werkstatt →"
     }

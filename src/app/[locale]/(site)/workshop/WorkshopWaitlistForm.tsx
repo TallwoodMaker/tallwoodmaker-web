@@ -52,9 +52,31 @@ export default function WorkshopWaitlistForm() {
   const thanksRef = useRef<HTMLHeadingElement>(null);
   const [state, formAction, pending] = useActionState(withUtm, initialState);
 
+  const done = state.status === "success" || state.status === "already";
+
   useEffect(() => {
-    if (state.status === "success") thanksRef.current?.focus();
-  }, [state.status]);
+    if (done) thanksRef.current?.focus();
+  }, [done]);
+
+  if (state.status === "already") {
+    return (
+      <div role="status" className="flex flex-col gap-3">
+        <h2
+          ref={thanksRef}
+          tabIndex={-1}
+          className="text-[28px] font-bold leading-[1.1] tracking-[-0.02em] outline-none"
+        >
+          {t("thanks.already")}
+        </h2>
+        <Link
+          href="/own-shop"
+          className="mt-1 inline-flex min-h-11 items-center self-start text-[15px] font-semibold underline underline-offset-4"
+        >
+          {t("thanks.link")}
+        </Link>
+      </div>
+    );
+  }
 
   if (state.status === "success") {
     return (

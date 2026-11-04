@@ -162,7 +162,7 @@ function optionalText(value: FormDataEntryValue | null, max: number) {
 }
 
 export type WorkshopWaitlistState = {
-  status: "idle" | "success" | "invalid" | "consent" | "error";
+  status: "idle" | "success" | "already" | "invalid" | "consent" | "error";
 };
 
 /**
@@ -173,7 +173,7 @@ export type WorkshopWaitlistState = {
  * doesn't set marketing_consent (the general newsletter).
  *
  * Joining again with the same email never creates a second row: it updates
- * name/segment, re-records consent, and shows the same thank-you.
+ * name/segment, re-records consent, and tells them they're already on it.
  */
 export async function joinWorkshopWaitlist(
   _prevState: WorkshopWaitlistState,
@@ -254,7 +254,7 @@ export async function joinWorkshopWaitlist(
     if (updateError) {
       console.error("Failed to update workshop signup:", updateError);
     }
-    return { status: "success" };
+    return { status: "already" };
   }
 
   after(() => sendLeadEmail(lead, "welcome"));

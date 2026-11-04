@@ -337,12 +337,6 @@
       "text": "Plany rozkroju ze zdjęcia, asystent cięcia w telefonie.",
       "price": "Darmowy start"
     },
-    "waitlist": {
-      "eyebrow": "Warsztaty online na żywo · wkrótce",
-      "title": "Wyceniaj zlecenia z zyskiem, a nie za darmo.",
-      "text": "2 godziny na żywo, kalkulator, który zostaje u ciebie, i już nigdy nie zapomnisz o okuciach. Zapisz się na listę i poznaj termin jako pierwszy.",
-      "submit": "Zapisz się na listę"
-    },
     "switchPath": "Budujesz dla siebie? Przejdź do ścieżki domowej →",
     "freeVideo": "Darmowy film"
   },
@@ -382,6 +376,7 @@
     },
     "thanks": {
       "title": "Jesteś na liście.",
+      "already": "Już jesteś na liście. Do zobaczenia na starcie!",
       "text": "Właśnie wysłałem Ci e-mail z potwierdzeniem. Warsztat startuje pod koniec listopada, a Ty dostaniesz pierwszeństwo dostępu i zniżkę na start.",
       "link": "W międzyczasie: plany i poradniki dla własnego warsztatu →"
     }

@@ -337,12 +337,6 @@
       "text": "Cutting plans from a photo, cutting assistant on your phone.",
       "price": "Free to start"
     },
-    "waitlist": {
-      "eyebrow": "Live online workshop · coming soon",
-      "title": "Price a job with profit, not for free.",
-      "text": "2 hours live, a calculator you keep, and you'll never forget the hardware again. Join the list and get the date first.",
-      "submit": "Join the list"
-    },
     "switchPath": "Building for yourself? Go to the home path →",
     "freeVideo": "Free video"
   },
@@ -382,6 +376,7 @@
     },
     "thanks": {
       "title": "You're on the list.",
+      "already": "You're already on the list. See you at launch!",
       "text": "I've just sent you a confirmation email. The workshop launches at the end of November, and you'll get first access and the launch discount.",
       "link": "Meanwhile: plans and guides for your own shop →"
     }

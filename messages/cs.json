@@ -337,12 +337,6 @@
       "text": "Řezné plány z fotky, asistent řezání v mobilu.",
       "price": "Na začátek zdarma"
     },
-    "waitlist": {
-      "eyebrow": "Živý online workshop · již brzy",
-      "title": "Naceň zakázku se ziskem, ne zadarmo.",
-      "text": "2 hodiny živě, kalkulačka, která ti zůstane, a už nikdy nezapomeneš na kování. Přidej se na seznam a termín se dozvíš jako první.",
-      "submit": "Přidat se na seznam"
-    },
     "switchPath": "Stavíš pro sebe? Přejdi na cestu „Stavím doma“ →",
     "freeVideo": "Video zdarma"
   },
@@ -382,6 +376,7 @@
     },
     "thanks": {
       "title": "Jsi na seznamu.",
+      "already": "Už jsi na seznamu. Uvidíme se při spuštění!",
       "text": "Právě jsem ti poslal potvrzovací e-mail. Workshop spouštím koncem listopadu a ty dostaneš přednostní přístup i slevu ke spuštění.",
       "link": "Mezitím: plány a návody pro vlastní dílnu →"
     }

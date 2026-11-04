@@ -337,12 +337,6 @@
       "text": "Planos de corte a partir de uma foto, assistente de corte no smartphone.",
       "price": "Grátis para começar"
     },
-    "waitlist": {
-      "eyebrow": "Workshop online ao vivo · em breve",
-      "title": "Orçamenta um trabalho com lucro, não de graça.",
-      "text": "2 horas ao vivo, uma calculadora para ficares com ela, e nunca mais te esqueces das ferragens. Entra na lista e sabe a data em primeiro lugar.",
-      "submit": "Entrar na lista"
-    },
     "switchPath": "Constróis para ti? Vai para o caminho em casa →",
     "freeVideo": "Vídeo grátis"
   },
@@ -382,6 +376,7 @@
     },
     "thanks": {
       "title": "Já estás na lista.",
+      "already": "Já estás na lista. Vemo-nos no lançamento!",
       "text": "Acabei de te enviar um email de confirmação. O workshop é lançado no final de novembro e vais ter acesso primeiro e o desconto de lançamento.",
       "link": "Entretanto: planos e guias para a tua própria oficina →"
     }

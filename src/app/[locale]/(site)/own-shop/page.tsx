@@ -13,7 +13,6 @@ import {
   type ShopProduct,
 } from "@/lib/shopProducts";
 import { PathProductCard } from "@/components/site/ProductCards";
-import LeadForm from "@/components/LeadForm";
 
 export async function generateMetadata({
   params,
@@ -39,6 +38,7 @@ export default async function OwnShopPage({
 function OwnShop() {
   const t = useTranslations("ownShop");
   const tc = useTranslations("productCard");
+  const tw = useTranslations("workshop");
   const locale = useLocale();
 
   const products = SHOP_PATH_PRODUCT_IDS.map((id) => getShopProduct(id)).filter(
@@ -208,21 +208,21 @@ function OwnShop() {
       <section id="waitlist" className="container-page section-px scroll-mt-4 py-[clamp(56px,8vw,88px)]">
         <div className="flex flex-wrap items-center gap-9 rounded-[20px] bg-ink p-[clamp(24px,5vw,48px)] text-cream">
           <div className="flex min-w-0 flex-[1_1_480px] flex-col gap-3.5">
-            <div className="eyebrow text-brand">{t("waitlist.eyebrow")}</div>
+            <div className="eyebrow text-brand">{tw("label")}</div>
             <h2 className="text-[clamp(28px,3.2vw,42px)] font-bold leading-[1.08] tracking-[-0.03em]">
-              {t("waitlist.title")}
+              {tw("title")}
             </h2>
             <p className="text-[17px] leading-[1.55] text-on-dark">
-              {t("waitlist.text")}
+              {tw("perk")}
             </p>
           </div>
           <div className="min-w-0 flex-[1_1_380px]">
-            <LeadForm
-              source="workshop-pricing"
-              path="shop"
-              submitLabel={t("waitlist.submit")}
-              tone="dark"
-            />
+            <Link
+              href="/workshop"
+              className="inline-flex min-h-[52px] w-full items-center justify-center rounded-[10px] bg-brand px-6 text-[17px] font-bold text-ink hover:text-ink"
+            >
+              {tw("form.submit")} →
+            </Link>
           </div>
         </div>
       </section>

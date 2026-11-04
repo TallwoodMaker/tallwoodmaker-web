@@ -337,12 +337,6 @@
       "text": "Des plans de découpe à partir d’une photo, un assistant de découpe sur ton téléphone.",
       "price": "Gratuit pour commencer"
     },
-    "waitlist": {
-      "eyebrow": "Atelier en ligne en direct · bientôt",
-      "title": "Chiffre un chantier avec du bénéfice, pas gratuitement.",
-      "text": "2 heures en direct, un calculateur que tu gardes, et tu n’oublieras plus jamais la quincaillerie. Inscris-toi sur la liste et reçois la date en premier.",
-      "submit": "M’inscrire sur la liste"
-    },
     "switchPath": "Tu fabriques pour toi ? Passe au parcours maison →",
     "freeVideo": "Vidéo gratuite"
   },
@@ -382,6 +376,7 @@
     },
     "thanks": {
       "title": "Tu es sur la liste.",
+      "already": "Tu es déjà sur la liste. À bientôt pour le lancement !",
       "text": "Je viens de t’envoyer un e-mail de confirmation. L’atelier sera lancé fin novembre, et tu auras l’accès en premier et la remise de lancement.",
       "link": "En attendant : plans et guides pour ton propre atelier →"
     }
