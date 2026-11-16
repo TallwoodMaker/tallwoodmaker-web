@@ -27,24 +27,24 @@ export const FREE_OFFERS: Record<OfferKey, FreeOffer> = {
     productId: "ebook-wardrobes-closets",
     title: "Wardrobes & Closets",
     priceEur: 6,
-    stripePriceId: { test: "price_1UcLfICa2aoiD18ocXwPIGVQ", live: null },
+    stripePriceId: { test: "price_1UcLfICa2aoiD18ocXwPIGVQ", live: "price_1UcM9FCa2aoiD18oX2BoEZH9" },
   },
   paid: {
     productId: "ebook-zero-to-first-client",
     title: "Zero to First Client",
     priceEur: 6,
-    stripePriceId: { test: "price_1UcLfJCa2aoiD18o6ZNnjtAi", live: null },
+    stripePriceId: { test: "price_1UcLfJCa2aoiD18o6ZNnjtAi", live: "price_1UcM9GCa2aoiD18o68mKk3kP" },
   },
   kitchen: {
     productId: "ebook-kitchen-from-scratch",
     title: "Kitchen from Scratch",
     priceEur: 6,
-    stripePriceId: { test: "price_1UcLfJCa2aoiD18oNFQnfmuF", live: null },
+    stripePriceId: { test: "price_1UcLfJCa2aoiD18oNFQnfmuF", live: "price_1UcM9GCa2aoiD18oQfHEFqVt" },
     addon: {
       productId: "plan-kitchen-cabinet-library",
       title: "Kitchen Cabinet Library",
       priceEur: 14,
-      stripePriceId: { test: "price_1UcLfJCa2aoiD18o6DehDqzU", live: null },
+      stripePriceId: { test: "price_1UcLfJCa2aoiD18o6DehDqzU", live: "price_1UcM9GCa2aoiD18o5LDgmOKL" },
     },
   },
 };
