@@ -285,3 +285,37 @@ create table if not exists public.social_stats (
 );
 
 alter table public.social_stats enable row level security;
+
+-- Paid-ad lead magnet test + course waitlist. Same SQL as
+-- supabase/migrations/20261116120000_leads_ad_test.sql.
+alter table public.leads drop constraint if exists leads_source_check;
+alter table public.leads
+  add constraint leads_source_check
+  check (source in (
+    'starter-list', 'workshop-pricing',
+    'ad-build', 'ad-paid', 'ad-kitchen', 'course-waitlist'
+  ));
+
+alter table public.leads drop constraint if exists leads_path_check;
+alter table public.leads
+  add constraint leads_path_check
+  check (path in (
+    'home', 'shop', 'general', 'workshop', 'start',
+    'free-small-shop', 'free-first-client', 'free-kitchen-checklist', 'course'
+  ));
+
+alter table public.leads drop constraint if exists leads_ref_check;
+alter table public.leads
+  add constraint leads_ref_check
+  check (ref is null or ref in ('ig', 'tt', 'yt', 'ad-1', 'ad-2', 'ad-3'));
+
+alter table public.leads
+  -- set on every row of an email that joins the course waitlist on /course
+  add column if not exists course_waitlist boolean not null default false,
+  add column if not exists course_waitlist_at timestamptz,
+  -- random secret for /free/thanks?l=… (separate from unsubscribe_token)
+  add column if not exists offer_token text not null
+    default replace(gen_random_uuid()::text || gen_random_uuid()::text, '-', '');
+
+create unique index if not exists leads_offer_token_key
+  on public.leads (offer_token);
