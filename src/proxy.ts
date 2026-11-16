@@ -1,4 +1,4 @@
-import { type NextRequest } from "next/server";
+import { NextResponse, type NextRequest } from "next/server";
 import { createServerClient, type CookieOptions } from "@supabase/ssr";
 import createIntlMiddleware from "next-intl/middleware";
 import { routing } from "@/i18n/routing";
@@ -15,6 +15,16 @@ const crawlerMiddleware = createIntlMiddleware({
   localeDetection: false,
 });
 
+// English-only pages: the paid-ad landing pages (/free/...) and the course
+// waitlist (/course). They are never redirected by browser language or the
+// language cookie, and a prefixed URL (/de/free/...) goes back to English.
+const ENGLISH_ONLY = /^\/(free|course)(\/|$)/;
+const OTHER_LOCALES = routing.locales
+  .filter((locale) => locale !== routing.defaultLocale)
+  .join("|");
+const PREFIXED_ENGLISH_ONLY = new RegExp(
+  "^/(?:" + OTHER_LOCALES + ")(/(?:free|course)(?:/.*)?)$"
+);
 
 /**
  * Two jobs on every page request:
@@ -25,6 +35,14 @@ const crawlerMiddleware = createIntlMiddleware({
  *    /en/..., and redirects first-time visitors to their browser language.
  */
 export async function proxy(request: NextRequest) {
+  const { pathname } = request.nextUrl;
+  const prefixed = pathname.match(PREFIXED_ENGLISH_ONLY);
+  if (prefixed) {
+    const url = request.nextUrl.clone();
+    url.pathname = prefixed[1];
+    return NextResponse.redirect(url, 307);
+  }
+
   let refreshedCookies: {
     name: string;
     value: string;
@@ -61,7 +79,9 @@ export async function proxy(request: NextRequest) {
   } = await supabase.auth.getUser();
 
   const isCrawler = BOT_UA.test(request.headers.get("user-agent") ?? "");
-  const response = (isCrawler ? crawlerMiddleware : intlMiddleware)(request);
+  const response = (
+    isCrawler || ENGLISH_ONLY.test(pathname) ? crawlerMiddleware : intlMiddleware
+  )(request);
 
   refreshedCookies.forEach(({ name, value, options }) =>
     response.cookies.set(name, value, options)

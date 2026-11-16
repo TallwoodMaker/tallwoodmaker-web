@@ -22,7 +22,8 @@ export type EmailContent = {
   button?: { label: string; url: string };
   /** Small text link under the button (e.g. the English version). */
   secondaryLink?: { label: string; url: string };
-  reply: string;
+  /** Closing line above the sign-off; omitted when not set. */
+  reply?: string;
   signoff: string;
   signoffRole: string;
   footer: string;
@@ -63,7 +64,7 @@ export function renderEmailHtml(c: EmailContent): string {
           ${c.paragraphs.map(p).join("\n          ")}
           ${button}
           ${secondary}
-          ${p(c.reply)}
+          ${c.reply ? p(c.reply) : ""}
           <p style="margin:24px 0 0;font-size:16px;line-height:1.4;color:${INK};font-weight:600;">${escapeHtml(c.signoff)}</p>
           <p style="margin:2px 0 0;font-size:14px;line-height:1.4;color:${MUTED};">${escapeHtml(c.signoffRole)}</p>
         </td></tr>
@@ -88,8 +89,7 @@ export function renderEmailText(c: EmailContent): string {
     ...(c.secondaryLink
       ? [`${c.secondaryLink.label}: ${c.secondaryLink.url}`, ""]
       : []),
-    c.reply,
-    "",
+    ...(c.reply ? [c.reply, ""] : []),
     c.signoff,
     c.signoffRole,
     "",
