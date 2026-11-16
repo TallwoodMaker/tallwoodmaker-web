@@ -12,7 +12,9 @@ export const RETENTION_MONTHS = 12;
  *    (created_at) when nothing was ever sent (e.g. the workshop waitlist).
  * 2. Unsubscribed rows are stripped down to the email address and the
  *    unsubscribe date (plus the columns the table requires), so we never
- *    email them again by mistake. They are not deleted: they are the
+ *    email them again by mistake. The course waitlist flag is left alone:
+ *    unsubscribing already cleared it, so if it is set, they joined the
+ *    waitlist again afterwards. They are not deleted: they are the
  *    suppression list.
  *
  * Rows with active newsletter consent are untouched. Run daily by the
@@ -58,12 +60,10 @@ export async function applyLeadRetention(now = new Date()): Promise<{
       utm_term: null,
       starter_downloaded_at: null,
       starter_download_locale: null,
-      course_waitlist: false,
-      course_waitlist_at: null,
     })
     .not("unsubscribed_at", "is", null)
     .or(
-      "path.not.is.null,locale.not.is.null,ref.not.is.null,marketing_consent.eq.true,consent_at.not.is.null,consent_text.not.is.null,starter_sent_at.not.is.null,first_name.not.is.null,segment.not.is.null,utm_source.not.is.null,utm_medium.not.is.null,utm_campaign.not.is.null,utm_content.not.is.null,utm_term.not.is.null,starter_downloaded_at.not.is.null,starter_download_locale.not.is.null,course_waitlist.eq.true,course_waitlist_at.not.is.null"
+      "path.not.is.null,locale.not.is.null,ref.not.is.null,marketing_consent.eq.true,consent_at.not.is.null,consent_text.not.is.null,starter_sent_at.not.is.null,first_name.not.is.null,segment.not.is.null,utm_source.not.is.null,utm_medium.not.is.null,utm_campaign.not.is.null,utm_content.not.is.null,utm_term.not.is.null,starter_downloaded_at.not.is.null,starter_download_locale.not.is.null"
     )
     .select("id");
   if (minimizeError) throw minimizeError;

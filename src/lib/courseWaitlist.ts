@@ -37,9 +37,14 @@ export type CourseWaitlistState = {
  * which lead magnet the waitlist signup came from. Only an email that isn't
  * in `leads` yet gets a new row with source = 'course-waitlist'.
  *
- * Joining is a fresh request to be emailed about the course, so it also
- * lifts an earlier unsubscribe; the newsletter stays off unless the
- * optional checkbox is ticked.
+ * Someone who unsubscribed earlier and joins now gets the flag but stays
+ * unsubscribed (unsubscribed_at is kept), so nothing else, neither the
+ * newsletter nor an email series nor the starter list, can reach them
+ * again. Unsubscribing clears the flag (src/lib/unsubscribe.ts), so
+ * course_waitlist = true always means "asked for course emails and hasn't
+ * unsubscribed since": the course emails go to exactly those rows, without
+ * looking at unsubscribed_at. Only ticking the optional newsletter checkbox
+ * lifts the unsubscribe, as on every other form.
  */
 export async function joinCourseWaitlist(
   _prevState: CourseWaitlistState,
@@ -81,21 +86,15 @@ export async function joinCourseWaitlist(
     if (error) throw error;
     if (!rows.length) return null;
 
-    if (!marketingConsent) {
-      // An earlier unsubscribe is lifted below for the course email only:
-      // it must not bring newsletter consent back with it.
-      const { error: resetError } = await supabase
+    if (marketingConsent) {
+      // A newly ticked newsletter checkbox is a new consent, so it also
+      // lifts an earlier unsubscribe. Without it, unsubscribed_at stays.
+      const { error: updateError } = await supabase
         .from("leads")
-        .update({ marketing_consent: false, consent_at: null, consent_text: null })
-        .eq("email", email)
-        .not("unsubscribed_at", "is", null);
-      if (resetError) throw resetError;
+        .update({ ...consentFields, unsubscribed_at: null })
+        .eq("email", email);
+      if (updateError) throw updateError;
     }
-    const { error: updateError } = await supabase
-      .from("leads")
-      .update({ ...consentFields, unsubscribed_at: null })
-      .eq("email", email);
-    if (updateError) throw updateError;
     // Keeps the date of the first signup on rows that already had the flag.
     const { error: flagError } = await supabase
       .from("leads")

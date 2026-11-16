@@ -31,7 +31,13 @@ export async function unsubscribeByToken(
 
   const { error: updateError } = await supabase
     .from("leads")
-    .update({ unsubscribed_at: new Date().toISOString() })
+    // Also off the course waitlist: a flag set after this point means they
+    // joined again later (src/lib/courseWaitlist.ts).
+    .update({
+      unsubscribed_at: new Date().toISOString(),
+      course_waitlist: false,
+      course_waitlist_at: null,
+    })
     .eq("email", lead.email)
     .is("unsubscribed_at", null);
 
