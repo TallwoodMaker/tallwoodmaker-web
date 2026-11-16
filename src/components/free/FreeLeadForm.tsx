@@ -5,6 +5,7 @@ import { useTranslations } from "next-intl";
 import { Link, useRouter } from "@/i18n/navigation";
 import { submitFreeLead, type FreeLeadState } from "@/lib/freeLeads";
 import type { FreeSource } from "@/config/freeMagnets";
+import { MetaPixelEvent } from "@/components/MetaPixel";
 
 const initialState: FreeLeadState = { status: "idle" };
 
@@ -39,6 +40,9 @@ export default function FreeLeadForm({ source }: { source: FreeSource }) {
   if (state.status === "success") {
     return (
       <p role="status" className="text-[18px] font-semibold text-ink">
+        {state.source && (
+          <MetaPixelEvent event="Lead" params={{ content_name: state.source }} />
+        )}
         {t("success")}{" "}
         {state.next && (
           <Link href={state.next} className="underline underline-offset-4">

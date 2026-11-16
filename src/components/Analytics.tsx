@@ -18,10 +18,8 @@ declare global {
  * Google-recommended pattern for staying compliant while still using GA in
  * the EEA. Renders nothing until NEXT_PUBLIC_GA_MEASUREMENT_ID is set.
  *
- * Meta Pixel (or any other marketing pixel) should follow this same shape
- * when added: always load the base script, but gate its actual tracking
- * calls on consent.marketing via the same useConsent() check below — never
- * fire pixel events before the visitor has granted marketing consent.
+ * Meta Pixel is stricter (src/components/MetaPixel.tsx): its script isn't
+ * loaded at all until the visitor has granted marketing consent.
  */
 export default function Analytics() {
   const { ready, consent } = useConsent();

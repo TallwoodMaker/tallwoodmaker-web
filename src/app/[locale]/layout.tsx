@@ -5,6 +5,7 @@ import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import "../globals.css";
 import Analytics from "@/components/Analytics";
+import MetaPixel from "@/components/MetaPixel";
 import { ConsentProvider } from "@/components/cookies/ConsentContext";
 import { CartProvider } from "@/lib/cart/CartContext";
 import CookieBanner from "@/components/cookies/CookieBanner";
@@ -83,6 +84,7 @@ export default async function LocaleLayout({
           <ConsentProvider>
             <CartProvider>
               <Analytics />
+              <MetaPixel />
               <RefTracker />
               <PageViewTracker />
               {children}

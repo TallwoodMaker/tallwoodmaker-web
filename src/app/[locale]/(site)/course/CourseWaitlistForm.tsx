@@ -6,6 +6,8 @@ import {
   joinCourseWaitlist,
   type CourseWaitlistState,
 } from "@/lib/courseWaitlist";
+import { MetaPixelEvent } from "@/components/MetaPixel";
+import { COURSE_WAITLIST_SOURCE } from "@/config/freeMagnets";
 
 const initialState: CourseWaitlistState = { status: "idle" };
 
@@ -33,6 +35,12 @@ export default function CourseWaitlistForm() {
   if (state.status === "success") {
     return (
       <p role="status" className="text-[18px] font-semibold text-ink">
+        {state.isNew && (
+          <MetaPixelEvent
+            event="Lead"
+            params={{ content_name: COURSE_WAITLIST_SOURCE }}
+          />
+        )}
         You are on the list. I will e-mail you before it opens.
       </p>
     );

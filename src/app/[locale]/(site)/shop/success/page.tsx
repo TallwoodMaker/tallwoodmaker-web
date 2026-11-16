@@ -7,6 +7,7 @@ import { getShopProduct, type ShopProduct } from "@/lib/shopProducts";
 import { pageMetadata } from "@/i18n/metadata";
 import type { Locale } from "@/i18n/routing";
 import ClearCartOnSuccess from "./ClearCartOnSuccess";
+import { MetaPixelEvent } from "@/components/MetaPixel";
 
 export async function generateMetadata({
   params,
@@ -117,6 +118,16 @@ export default async function ShopSuccessPage({
   return (
     <>
       <ClearCartOnSuccess />
+      {session.amount_total !== null && session.currency && (
+        <MetaPixelEvent
+          event="Purchase"
+          params={{
+            value: session.amount_total / 100,
+            currency: session.currency.toUpperCase(),
+          }}
+          onceKey={session.id}
+        />
+      )}
       <section className="container-page section-px py-[clamp(24px,5vw,64px)]">
         <h1 className="mb-4 text-[clamp(32px,5vw,44px)] font-bold leading-[1.1] tracking-[-0.03em]">
           {t("thanksTitle", { count: Math.max(1, downloads.length) })}

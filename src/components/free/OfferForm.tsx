@@ -3,6 +3,7 @@
 import { useActionState, useState } from "react";
 import { Link } from "@/i18n/navigation";
 import { formatPrice } from "@/lib/format";
+import { trackPixel } from "@/lib/metaPixel";
 import {
   createOfferCheckoutSession,
   type OfferCheckoutState,
@@ -34,7 +35,17 @@ export default function OfferForm({
   const total = priceEur + (withAddon && addon ? addon.priceEur : 0);
 
   return (
-    <form action={formAction} className="flex flex-col gap-4">
+    <form
+      action={(formData) => {
+        trackPixel("InitiateCheckout", {
+          value: total,
+          currency: "EUR",
+          content_name: offer,
+        });
+        formAction(formData);
+      }}
+      className="flex flex-col gap-4"
+    >
       <input type="hidden" name="offer" value={offer} />
       {token && <input type="hidden" name="token" value={token} />}
       {addon && (
