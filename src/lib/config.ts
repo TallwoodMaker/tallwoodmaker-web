@@ -1,6 +1,7 @@
 /** Feature flags for the site. */
 export const SHOP_ENABLED = true;
-export const COURSE_ENABLED = false;
+// /course: waitlist for "Furniture Without a Big Shop" (opens in January).
+export const COURSE_ENABLED = true;
 export const HOME_PROJECTS_ENABLED = false;
 
 /** Premium launches — countdown/waitlist page shows until this date. */

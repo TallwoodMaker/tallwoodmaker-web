@@ -1,14 +1,16 @@
 import type { MetadataRoute } from "next";
 import { getAvailableShopProducts } from "@/lib/shopProducts";
-import { alternatesFor, localizedUrl } from "@/i18n/metadata";
+import { alternatesFor, localizedUrl, SITE_URL } from "@/i18n/metadata";
+import { COURSE_ENABLED } from "@/lib/config";
 import { LOCALES } from "@/i18n/routing";
 
 // Static marketing pages, plus every available shop product (so new plans
 // and ebooks show up here automatically as they're added to
 // shopProducts.ts). Each page is listed once per language, with hreflang
 // alternates (incl. x-default → English). /cart, /premium (redirect-only),
-// /start (link-in-bio duplicate of the homepage), /course (disabled
-// feature) and auth/admin routes are intentionally left out.
+// /start (link-in-bio duplicate of the homepage), /free/* (ad landing
+// pages) and auth/admin routes are intentionally left out. /course is
+// English only, so it is listed once, without alternates.
 const STATIC_ROUTES: {
   path: string;
   changeFrequency: MetadataRoute.Sitemap[number]["changeFrequency"];
@@ -38,7 +40,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })),
   ];
 
-  return routes.flatMap(({ path, changeFrequency, priority }) =>
+  const englishOnly: MetadataRoute.Sitemap = COURSE_ENABLED
+    ? [
+        {
+          url: `${SITE_URL}/course`,
+          changeFrequency: "monthly",
+          priority: 0.8,
+        },
+      ]
+    : [];
+
+  const localized = routes.flatMap(({ path, changeFrequency, priority }) =>
     LOCALES.map((locale) => ({
       url: localizedUrl(locale, path),
       changeFrequency,
@@ -51,4 +63,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       },
     }))
   );
+
+  return [...localized, ...englishOnly];
 }
