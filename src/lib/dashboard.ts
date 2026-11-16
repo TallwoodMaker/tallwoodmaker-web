@@ -2,7 +2,8 @@ import "server-only";
 import type Stripe from "stripe";
 import type { Platform } from "@/config/social";
 import { PREMIUM_PRICE_ID, stripe } from "@/lib/stripe";
-import { SHOP_PRODUCTS } from "@/lib/shopProducts";
+import { SHOP_PRODUCTS, getShopProduct } from "@/lib/shopProducts";
+import { offerPriceIds } from "@/config/freeOffers";
 import { createAdminClient } from "@/lib/supabase/admin";
 
 /**
@@ -341,6 +342,12 @@ const WORKSHOP_PRODUCT = /workshop|price a job/i;
 const SHOP_PRICES = new Map(
   SHOP_PRODUCTS.map((product) => [product.stripePriceId, product.title])
 );
+// The "New subscriber price" offer on /free/thanks sells the same products
+// under their own prices (src/config/freeOffers.ts).
+for (const [priceId, productId] of offerPriceIds()) {
+  const title = getShopProduct(productId)?.title;
+  if (title) SHOP_PRICES.set(priceId, title);
+}
 
 function isPremium(subscription: Stripe.Subscription) {
   return subscription.items.data.some(
